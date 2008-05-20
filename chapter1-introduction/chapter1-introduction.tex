@@ -1,0 +1,192 @@
+\documentclass[12pt]{mitthesis}
+\usepackage{lgrind, braket, amsmath, amssymb, bbm, booktabs, color}
+\usepackage[pdftex]{graphicx}
+\usepackage[version=3]{mhchem}
+\pagestyle{plain}
+
+\newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
+\newcommand{\POINT}[1]{\textcolor{magenta}{\emph{#1}}}
+
+\hyphenation{acetylene}
+\hyphenation{Hamiltonian}
+
+\begin{document}
+\tableofcontents
+\clearpage
+
+\chapter{Introduction}
+
+\section{The importance of studying triplet states and intersystem
+  crossing}
+
+\POINT{Introduce triplet states and motivate research. Metastable
+  energy carriers, easy to populate collisionally, hard to study.}
+
+\POINT{Introduce ISC as the dynamical manifestation of mixing between
+  states of different multiplicities. Make the point that energy
+  enters and also leaves the triplet manifold through interaction with
+  the radiation field.}
+
+\POINT{Introduce ISC parameter $\gamma = \langle H_{sd} \rangle /
+  \rho_d$}
+
+\TODO{Go through talks, proposals and gather motivation points.}
+
+\section{The low-lying triplet electronic states of acetylene}
+
+\POINT{Summarize the electronic structure of the acetylene valence
+  triplet states.  Show molecular orbitals and energy level diagrams.}
+
+\begin{figure}
+  \caption{Principal molecular orbital configurations for excited
+    states in the valence M.O.'s of \emph{trans}-bent acetylene.  The
+    four lowest-lying electronic states are listed with their
+    electronic symmetry above the diagram.  An electronic transition
+    from $S_1$ to $T_3$ requires a change in one antibonding spin
+    orbital, from $a_g^*(\downharpoonright)$ to
+    $b_g^*(\upharpoonright)$.}
+  \label{fig:mol-rbitals}
+
+  \centering
+  \setlength{\unitlength}{1cm}
+  \begin{picture}(8,8)
+    \put(0,1){$b_u$}
+    \put(0,2){$a_u$}
+    \put(0,4){$a_g^*$}
+    \put(0,5){$b_g^*$}
+
+
+    \put(1,1){\line(1,0){1}}
+    \put(1,2){\line(1,0){1}}
+    \put(1,4){\line(1,0){1}}
+    \put(1,5){\line(1,0){1}}
+    \put(1.333,0.666){\vector(0, 1){.666}}
+    \put(1.333,1.666){\vector(0, 1){.666}}
+    \put(1.666,2.333){\vector(0,-1){.666}}
+    \put(1.666,3.666){\vector(0, 1){.666}}
+    \put(1.333,7){$T_1$}
+    \put(1.333,6){$B_u$}
+
+    \put(3,1){\line(1,0){1}}
+    \put(3,2){\line(1,0){1}}
+    \put(3,4){\line(1,0){1}}
+    \put(3,5){\line(1,0){1}}
+    \put(3.333,0.666){\vector(0, 1){.666}}
+    \put(3.333,1.666){\vector(0, 1){.666}}
+    \put(3.666,1.333){\vector(0,-1){.666}}
+    \put(3.666,3.666){\vector(0, 1){.666}}
+    \put(3.333,7){$T_2$}
+    \put(3.333,6){$A_u$}
+
+
+    \put(5,1){\line(1,0){1}}
+    \put(5,2){\line(1,0){1}}
+    \put(5,4){\line(1,0){1}}
+    \put(5,5){\line(1,0){1}}
+    \put(5.333,0.666){\vector(0, 1){.666}}
+    \put(5.333,1.666){\vector(0, 1){.666}}
+    \put(5.666,1.333){\vector(0,-1){.666}}
+    \put(5.666,4.666){\vector(0, 1){.666}}
+    \put(5.333,7){$T_3$}
+    \put(5.333,6){$B_u$}
+
+
+    \put(7,1){\line(1,0){1}}
+    \put(7,2){\line(1,0){1}}
+    \put(7,4){\line(1,0){1}}
+    \put(7,5){\line(1,0){1}}
+    \put(7.333,0.666){\vector(0, 1){.666}}
+    \put(7.333,1.666){\vector(0, 1){.666}}
+    \put(7.666,1.333){\vector(0,-1){.666}}
+    \put(7.666,4.333){\vector(0,-1){.666}}
+    \put(7.333,7){$S_1$}
+    \put(7.333,6){$A_u$}
+
+  \end{picture}
+\end{figure}
+
+\POINT{Discuss spin-orbit coupling with trans-bent S1 state.  Show the
+  spin-orbit operator and one-electron matrix elements among the
+  triplet states.  The $\ell_+s_-$ operator requires a change in
+  spin-orbital.  (Examples of Slater determinants: p.59 of
+  11/2007--1/2008 notebook [\ce{CO2}])}
+
+\POINT{Many ab initio studies of acetylene triplet states.  Give a
+  summary of the most recent theoretical results.}
+
+\POINT{Almost no direct experimental evidence concerning triplet
+  states.  No spectra for trans-bent triplet states, although spectra
+  have been recorded for the cis-well.}
+
+\POINT{Discuss propensity/selection rules for triplet-triplet
+  transitions.  No allowed T-T electronic transitions among the
+  valence states in the trans well.}
+
+\POINT{Discuss density of triplet vibrational levels as a function of
+  energy.  Discussion of Ryan and Bryan's paper here?}
+
+\section{Previous experiments involving ISC in acetylene}
+
+\POINT{Summarize and explain the results of the Zeeman anticrossing
+  experiments.} 
+
+Main ideas:
+\begin{enumerate}
+
+\item Strong triplet-triplet interactions dominate the intramolecular
+  dynamics.  Evidence: the local Land\'{e} g-factor varies from
+  $0.3-2.0$.
+
+\item The $T_1 \sim T_2$ coupling strength increases only slightly over
+  the energy range of $0\nu_3'-2\nu_3'$.  Evidence: an observed
+  decrease in the average Land\'{e} g-factor with energy.
+
+\item Couplings between the $S_1$ and $S_0$ electronic states are
+  induced by mixed triplet levels.  Evidence: \TODO{Find evidence for
+    this.}
+
+\item There is a rapid increase in $S_1 \sim T_3$ coupling in the range of
+  $0\nu_3'-2\nu_3'$. \TODO{Cite evidence.}
+
+\end{enumerate}
+These observations led the authors to propose a heirarchy of of
+interactions between the electronic states of acetylene:
+\begin{equation}
+  T_1 \sim T_2 \gg S_1 \sim T \gg S_0 \sim T \gg S_1 \sim S_0
+\end{equation}
+
+\POINT{Talk about the ZQB experiments of Tsuchiya.}
+
+\POINT{Talk about earlier SEELEM experiments on acetylene.}
+
+\POINT{Discuss observation of triplet perturbations by HB/AHS/AM in
+  their investigation of bending polyads.}
+
+\section{Summary}
+
+In Chapter 2, we develop several frameworks for thinking about
+doorway-mediated intersystem crossing.  Using these frameworks, the
+relative statistical properties of LIF and SEELEM intensity
+distributions are derived for several doorway-coupling model
+Hamiltonians.  Moving beyond statistical properties, Chapter 3
+demonstrates that a doorway-coupling model Hamiltonian can be
+generated directly from spectral data by applying the standard LKL
+deconvolution technique in a recursive manner.  Chapter 4 presents a
+new and extended analysis of the famous $3\nu'_3$ vibrational level of
+$S_1$ acetylene, highlighting experimental evidence for a dynamical
+(local $+$ distant) double doorway model.  Several other vibrational
+levels of $S_1$ acetylene are investigated in Chapter 5.  The complex
+interplay between bending vibrations and Singlet$\sim$Triplet coupling
+is apparent from the drastically different LIF/SEELEM spectra
+obtained.  We discuss the ubiquitous role of $T_3$ in mediating $S_1
+\sim T_{1,2}$ coupling in light of these results.  Chapter 6 presents
+the results of IR-UV double resonance SEELEM experiments, which reveal
+similar Singlet-Triplet coupling characteristics for the torsion and
+antisymmetric in-plane bending motions.  We depart from our study of
+the acetylene molecule in Chapter 7, where a new method is considered
+for the manufacture of metastable molecules in a molecular beam.  The
+basis of this method is two-photon optical pumping of metastable atoms
+followed by collisional excitation transfer.  Chapter 8 concludes and
+discusses the prospects for future research.
+
+\end{document}

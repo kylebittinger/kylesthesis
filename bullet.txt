@@ -1,0 +1,42 @@
+Here are some awesome acetylene-related things the Triplet project has
+done in the last three years:
+
+* SEELEM/LIF spectra of (2^1 3^1 4^2) and (2^1 3^1 6^2) K=1
+  (the JPC paper)
+
+* IR-UV double resonance spectra of (3^3 6^1) and (3^3 4^1) K=0:
+  SEELEM spectra over ~10 cm-1 without overlap from neighboring lines
+
+* IR-UV double resonance: observation of rotationless level using
+  polarization
+
+* Bryan & Ryan's T3 calculation, FC factors
+
+* Better 3n3 data out to higher J', statistical analysis to confirm
+  double doorway hypothesis (underway)
+
+* Lawrence-Knight-Lehmann-Kyle (LKLK) deconvolution
+
+
+
+Extra Spectra: Last winter, we recorded a bunch of high quality SEELEM
+spectra during our hunt for bending polyad members. I am still trying
+to fit these into a complete picture.
+
+* SEELEM spectrum of (3^2 4^2)
+  with lone SEELEM peak in band gap
+
+* SEELEM spectrum of (4^1 6^3)
+  (Feb 02) very weak
+
+* SEELEM spectrum of (2^2 3^1)
+  when we thought it was (3^2 4^2)
+
+* SEELEM spectrum of (2^1 3^2) P, Q-branch 
+  (Jan 16A,B)
+
+* SEELEM spectrum of (4^3) K=2 hot band
+  (Jan 16A) -- need to check this in Watson's atlas
+
+* SEELEM spectrum of (3^3) K=2 hot band
+  (Jan 22C)

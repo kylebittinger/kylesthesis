@@ -1,0 +1,14 @@
+# Compiled output
+*.pdf
+*.dvi
+
+# Intermediate files
+*.aux
+*.bbl
+*.toc
+*.blg
+*.log
+
+# Version control directories
+*/_darcs*
+*/RCS*

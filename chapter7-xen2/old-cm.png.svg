@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2226"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   width="1250"
+   height="600"
+   version="1.0"
+   sodipodi:docbase="/home/kyle/Desktop/graduation - writing/chapter7-xen2"
+   sodipodi:docname="old-cm.png.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/kyle/Desktop/graduation - writing/chapter7-xen2/old-cm.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata2231">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2229" />
+  <sodipodi:namedview
+     inkscape:window-height="777"
+     inkscape:window-width="1156"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="0.94338199"
+     inkscape:cx="625"
+     inkscape:cy="300"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg2226" />
+  <image
+     xlink:href="old-cm.png"
+     sodipodi:absref="/home/kyle/Desktop/graduation - writing/chapter7-xen2/old-cm.png"
+     width="1250"
+     height="600"
+     id="image2233"
+     x="0"
+     y="0" />
+  <path
+     style="fill:#4e9a06;fill-opacity:0.75;fill-rule:evenodd;stroke:#0d9f00;stroke-width:3.27324533;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 325.37018,152.28214 L 325.37018,538.6459"
+     id="path2237" />
+  <path
+     style="fill:#4e9a06;fill-opacity:0.75;fill-rule:evenodd;stroke:#0d9f00;stroke-width:3.28658295;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 569.15938,148.72126 L 569.15938,538.24009"
+     id="path3212" />
+  <text
+     xml:space="preserve"
+     style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="287.59641"
+     y="92.287918"
+     id="text3214"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       x="287.59641"
+       y="92.287918"
+       id="tspan3218">N2 c.m. velocity</tspan><tspan
+       sodipodi:role="line"
+       x="287.59641"
+       y="114.28792"
+       id="tspan3222">224 m/s</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="536.3681"
+     y="90.132301"
+     id="text3224"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3226"
+       x="536.3681"
+       y="90.132301">B(v'=4)</tspan><tspan
+       sodipodi:role="line"
+       x="536.3681"
+       y="117.6323"
+       id="tspan3228">+975 m/s</tspan></text>
+  <path
+     style="fill:#4e9a06;fill-opacity:0.75;fill-rule:evenodd;stroke:#0d9f00;stroke-width:3.28658295;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 720.74144,149.67333 L 720.74144,539.19216"
+     id="path3230" />
+  <text
+     xml:space="preserve"
+     style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="687.95013"
+     y="91.084373"
+     id="text3232"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3234"
+       x="687.95013"
+       y="91.084373">B(v'=3)</tspan><tspan
+       sodipodi:role="line"
+       x="687.95013"
+       y="118.58437"
+       id="tspan3236">+1528 m/s</tspan></text>
+</svg>

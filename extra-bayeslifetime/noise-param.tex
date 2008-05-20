@@ -1,0 +1,211 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+
+\setlength\parskip{4mm}
+
+\begin{document}
+
+\section{A simple Bayesian model for LIF}
+
+
+Traditional least-squares fitting offers answers to questions like,
+``What is the best fit to this data?''  I would like to move to
+questions like, ``What is the best model?''  More specifically, ``How
+many spectral lines are in this data?''  To answer these questions, we
+need to know something about the probability of making a measurement
+given certain parameters in a model.
+
+We begin by addressing the sources of error in our measurements:
+\begin{enumerate}
+\item Those that vary shot-to-shot and depend on signal strength (e.g.
+  laser intensity fluctuations leading to varying amounts of
+  fluorescence)
+
+\item Those that vary shot-to-shot but are independent of signal
+  strength (e.g. scattered light and voltage noise leading to baseline
+  fluctuations in LIF; dark counts in SEELEM)
+
+\item Those that are inherent to experiments that count rare events.
+  (Poisson statistics in SEELEM, not present in LIF)
+\end{enumerate}
+At the end of each section, I'll write down the things we can do to
+actually characterize these noise sources for our experiment.
+
+\subsection{Shot-to-shot laser intensity fluctuation}
+
+Our goal is to derive an expression for measurement error in
+signal-averaged traces. 
+
+First, consider a trace where no laser light enters the apparatus, but
+the rest of the experiment is otherwise running.  The trace is
+averaged over a number of trials $N$, as it would be while taking a
+spectrum.  This is essentially a control experiment; the trace
+consists of whatever voltage noise or offset is present when the
+molecules do not interact with the light field.  Several varieties of
+noise arise in a photomultiplier tube under these conditions: shot
+noise, $1/f$ noise, and stray photon counts.
+
+(Discuss references for detector/PMT noise.) 
+
+In any case, this noise can be measured in the laboratory before an
+experiment.  Results from a typical set of trials are shown in figure
+1 (TODO).  We parameterize the voltage noise at each time $t$ in the
+trace as a gaussian distribution.  This model assumes that the signal
+at each time is independent of its neighbors, and that successive
+trials are independent of those following and preceeding them.  The
+latter assumption is, in general, good, while the former assumption is
+generally not true for time-series data.  Nevertheless, this simple
+model of noise in time traces has been shown to work surprisingly
+well, for example in NMR data (cite Bretthorst), so we adopt it as a
+starting point.
+
+The probability of measuring a voltage $s_0$ at time $t$ is thus
+\begin{equation}
+  p(s_{0} \vert \hat{s}_{0}, \sigma_{0}) 
+  = \frac{1}{\sqrt{2 \pi} \; \sigma_{0}} \,
+  exp 
+  \left[
+    -\frac{(s_{0}-\hat{s}_{0})^2}{4 \; \sigma_{0}^2}
+  \right] ,
+\end{equation}
+where $\hat{s}_{0}$ is the mean value of the measurement at time $t$,
+and $\sigma^2_{0}$ is the variance in this measurement.  As seen in
+the figure, this distribution parameterizes the measurements well.  If
+the effects of other triggered noise sources in the laboratory are
+negligable, then we can remove the functional dependence of $\sigma_0$
+on $t$, and the null model $M_0$ reduces to one parameter $\sigma_0$.
+
+Now, consider a trace where the laser light is allowed to enter the
+apparatus, but is tuned off resonance.  We label this model $M_1$.  A
+signal arising from scattered laser light is present, along with
+associated noise. Measurements from such a set of trials are shown in
+figure 2 (TODO).
+
+It is readily apparent from the histograms in figure 2 that the
+variance of measured signal from scattered laser light is very nearly
+proportional to its mean value.  This linear dependence arises from
+the liner response of the photomultiplier tube to the intensity of
+scattered laser light.  We parameterize the noise arising from
+fluctuating laser intensity in terms of the voltage noise in $M_0$:
+\begin{equation}
+  \sigma_1(\hat{s}_1)^2 = \sigma_0^2 + \beta \hat{s}_1
+\end{equation}
+The probability of measuring a signal $s_1$ under model $M_1$ retains
+the form of a gaussian distribution, only now a functional dependence
+of $\sigma_1^2$ on $\hat{s}_1$ is included:
+\begin{equation}
+  p(s_1 \vert \hat{s}_1, \sigma_1) 
+  = \frac{1}{\sqrt{2 \pi} \; \sigma_1(\hat{s}_1)} \,
+  exp 
+  \left[
+    -\frac{(s_1-\hat{s}_1)^2}{4 \; \sigma_1(\hat{s}_1)^2}
+  \right] .
+\end{equation}
+
+To consider the effects of signal averaging, we evaluate the
+probability of $N$ successive measurements,
+\begin{equation}
+  P(D \vert \hat{s}_1, \sigma_1) 
+  = \prod_{N} \frac{1}{\sqrt{2 \pi} \; \sigma_1(\hat{s}_1)} \,
+  exp 
+  \left[
+    -\frac{(s_1-\hat{s}_1)^2}{4 \; \sigma_1(\hat{s}_1)^2}
+  \right] .
+\end{equation}
+
+STOPPED HERE
+
+If we define a normalized gaussian function over x as
+Then the probability of having some laser intensity $I$ on any given
+laser shot is
+\begin{equation}
+  p(I) = gauss(I; I_{ave},sigma)
+       = gauss(I; I_{ave}, (a*I_{ave}))
+\end{equation}
+where $I_{ave}$ is the average laser intensity.
+
+The probability of measuring a signal S after 100 shots at this laser
+frequency can be parameterized as
+\begin{equation}
+  p(S) = gauss(S; S_ave, (b*S_ave))
+\end{equation}
+So, the point is that this can be described with two parameters, and
+that the deviation will be somewhat proportional to the average signal
+level.
+
+To measure this experimentally: we could tune the laser to a strong
+LIF/SEELEM line, and take repeated measurements at the same frequency.
+Plot a histogram if the intensity to verify an approximately gaussian
+distribution.
+
+To measure the (supposedly linear) dependence of signal stdev on
+signal strength, we could repeat this measurement on several different
+spectral lines.
+
+\subsubsection{LIF Baseline Noise}
+
+Baseline fluctuations in the experiment come from two sources: voltage noise
+and scattered light (i.e. that which does not come from electrons traveling
+through the PMT and that which does).
+
+Because of the scattered light, the baseline fluctuations will depend weakly
+on average laser intensity. However, we are going to ignore this for now,
+because we expect this effect to change slowly over the course of the
+experiment.
+
+We're going to assume that we can parameterize the baseline fluctuations
+with two parameters, and that we take enough measurements that their
+distribution is approximately normal.
+
+In this case, the probability of measuring a signal with baseline at S0 is:
+\begin{equation}
+  p(S_0) = gauss(S_0; ave(S_0),\sigma_{S_0})
+\end{equation}
+We can measure this in an experiment by tuning our laser to a frequency
+where there is no spectral line, collecting data, and plotting a histogram
+of the baseline signal intensity.
+
+\subsubsection{SEELEM dark counts}
+
+My opinion on this is that we should ignore this most of the time. We
+probably have dark counts on the order of 1 per 100 shots or 1 per 1000
+shots. This is much lower than our other noise sources.
+
+When we have equipment errors that generate a lrage number of dark counts, I
+think we should not use these data points in our analysis; it is very
+unlikely that they will help us get closer to the right answer.
+
+Regardless, dark counts should have an constant rate over time (independent
+of when the laser fires), so we can measure their occurrence by looking in
+the third SEELEM time window, which we measure during every experiment.
+
+\subsection{Poisson Statistics}
+
+There is an intrinsic probability for counting a certain number of
+independent events from a process with constant rate. The probability
+ditribution is the Poisson Distribution. It has one parameter: the
+"expected" number of counts, which is just the rate multiplied by the time
+of observation. (And it is also the mean of the distribution.)
+\begin{equation}
+  poisson (n; n_ave) = (e^(-n_ave)) * (n_ave^(n)) / n!
+\end{equation}
+And this is the probability of measuring n counts given $n_{ave}$.
+\begin{equation}
+  p(n) = poisson(n; n_ave)
+\end{equation}
+It goes without saying that we don't need to measure this property in the
+experiment because it is determined a priori.
+
+So, now we can calculate the probability of a certain signal in the
+experiment for a given value of the "true" signal:
+
+  Model parameters:
+  $S_ave$  = proposed signal at some frequency and laser intensity
+  $S0_ave$ = proposed baseline signal
+
+  Noise parameters:
+  $b$        = proportionality constant for signal deviation with signal
+             intensity
+  $S0_stdev$ = stdev of baseline noise
+
+\end{document}

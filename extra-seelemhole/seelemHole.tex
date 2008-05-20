@@ -1,0 +1,275 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, braket}
+\begin{document}
+
+\section{The SEELEM intensity expression}
+
+The intensity of a SEELEM-active eigenstate is formulated as a product
+of sequential events that must happen for a metastable molecule to
+eject an electron from the detector surface. Each factor in the
+intensity expression can be expressed in terms of matrix elements and
+energy differences between zero-oder $S_1$, $T_3$, and $T_{1,2}$
+states. We derive, to a proportionality constant, the functional form
+of this expression. We will show that the formulas become surprisingly
+simple in regions where a few specific approximations are appropriate.
+
+\subsection{Excitation probability factor}
+
+The first event that must happen in order to detect an electron
+ejected by a laser-excited metastable is laser excitation of the
+molecule. The excitation probability is proportional to the amount of
+zero-order bright state character squared:
+\begin{equation}
+P_{excit.} \propto C_{S_1}^2
+\end{equation}
+
+
+\subsection{Survival probability factor}
+
+If an eigenstate has too much $S_1$ character, its SEELEM detectivity
+will be small, because it will not live long enough to reach the
+detector surface. This factor is exponential in its functional form,
+and it acts as a sort of ``switch,'' filtering out SEELEM-active
+states that exceed a certain threshold.
+\begin{equation}
+P_{surv.} \propto exp \left( -\frac{200 \mu s}{270 ns} \times C_{S_1}^2 \right)
+\end{equation}
+
+\subsection{Electron ejection factor}
+
+There is some contraversy surrounding the exact form of the electron
+ejection probability. In early SEELEM experiments, it was given
+initially as
+\begin{equation}
+P_{eject.} \propto (C_{S1} + C_{T3})^2 .
+\end{equation}
+Later, it was revised by Altunata et. al. to
+\begin{equation}
+P_{eject.} \propto (C_{S1} + \beta \times C_{T3})^2 ,
+\end{equation}
+where $\beta$ is a proportionality factor (less than unity) that
+expresses the relative excitation efficiencies of $S_1$ and $T_3$
+basis states.
+
+For many reasons, this has been rejected as the dominant form for the
+electron ejection probability. We use the form
+\begin{equation}
+P_{eject.} \propto (C_{S1}^2 + C_{T3}^2)
+\end{equation}
+as a starting point, and in the next section we examine its effects on
+the statistical properties of SEELEM intensity.
+
+\section{Properties of the LEM intensity expression}
+
+We wish to find relationships between statistical properties of the
+SEELEM intensity distribution and the functional form for electron
+ejection probability. To this end, we begin by examining the form of
+the intensity expression \emph{before electron ejection}. We label
+this the LEM (Laser-Excited Metastable) intensity expression, since it
+includes factors for excitation and survival probability:
+\begin{equation}
+I_{LEM} \propto P_{excit.} \times P_{surv.}
+\end{equation}
+
+Since our goal is to investigate the functional form of the LEM
+intensity and not its absolute magnitude, we henceforth drop an
+absolute proportionality factor from the intensity equations. Relative
+intensities are maintained in the presence of this global factor,
+which is to be implicit in all further expressions that involve
+absolute intensities.
+
+Since the electron ejection probability will be similar in form to the
+excitation probability, the properties of the LEM intensity
+distribution will serve as an upper/lower bound to the properties of
+the full SEELEM intensity expression.
+
+\subsection{Approximations for $C_{S_1}$}
+
+We evaluate the fractional $S_1$ character in a dark state by
+pre-diagonalizing the $S_1 \sim T_3$ interaction and using
+second-order perturbation theory. Defining the $S_1 \sim T_3$ mixing
+amplitude as $\alpha = H_{ST} / \Delta E_{ST}$ and the $T_3 \sim$ dark
+state spin-orbit matrix element as $H_{Td} =
+\bra{T_d}H^{SO}\ket{T_3}$, we have
+\begin{equation}
+C_{S_1} = \alpha (1 - \alpha^2)^{1/2} \times H_{Td} \times \biggl\lbrace
+  \frac{1}{\Delta E_{d1}} - \frac{1}{\Delta E_{d2}} \biggr\rbrace ,
+\end{equation}
+where $\Delta E_{d1,d2}$ represent the energy difference between the
+dark state and the mixed $S_1$ or $T_3$ state, respectively.
+
+To justify the use of perturbation theory for the $T_3 \sim T_d$
+interaction, the energy difference between the two zero-order states
+must not be less than twice the matrix element:
+\begin{equation}
+\Delta E_{Td} > 2 \times H_{Td} .
+\end{equation}
+If this condition is not satisfied, we muct check our work by direct
+diagonalization of the effective Hamiltonian.
+
+In the case that the $S_1 \sim T_3$ mixing amplitude is small (less
+than about $0.25$), we can make the approximation that
+\begin{equation}
+(1 - \alpha^2) \approx 1 .
+\end{equation}
+This will diminish the result by 1 percent when the value of
+$\alpha$ is [such and such].
+
+In the case that the dark state of interest lies close in energy to
+the pre-diagonalized $S_1$ state but much farther away from the
+prediagonalized $T_3$ state, we have the condition that
+\begin{equation}
+\Delta E_{d1} \ll \Delta E_{d2} ,
+\end{equation}
+allowing the following factor to be simplified in the intensity
+expression:
+\begin{equation}
+  \biggl\lbrace 
+  \frac{1}{\Delta E_{d1}} - \frac{1}{\Delta E_{d2}} 
+  \biggr\rbrace
+  \approx \frac{1}{\Delta E_{d1}} .
+\end{equation}
+If this approximation cannot be made, all is not lost, because the
+above expression can be rewritten in terms of $\Delta E_{d1}$ and
+$\Delta E_{ST}$,
+\begin{equation}
+  \Delta E_{d2} = \Delta E_{ST} + 2 \alpha^2 \Delta E_{ST} + \Delta
+  E_{d1} ,
+\end{equation}
+eliminating $\Delta E_{d2}$ as a parameter wherever second-order
+perturbation theory applies.
+
+In the presence of these two approximations, the excitation
+probability becomes
+\begin{equation}
+  P_{excit.} \propto
+  \biggl(
+  \frac{H_{ST} \, H_{Td}}{\Delta E_{ST} \, \Delta E_{d1} }
+  \biggr)^2
+\end{equation}
+
+\subsection{Peak intensity and FWHM}
+
+The LEM intensity will have two maxima, where the survival probability
+and excitation probability counteract each other exactly. The
+derivative of the LEM intensity is easily written without any
+approximations or perturbation theory, using the functional
+relationships between the two contributing factors. The function is
+maximized at the non-trivial zeros of the derivative, where
+\begin{equation}
+  \frac{\partial P_{excit.}}{\partial \Delta E_{d1}} \times P_{surv.} +
+  \frac{\partial P_{surv.}}{\partial \Delta E_{d1}} \times P_{excit.}
+  = 0 .
+\end{equation}
+
+The derivative of the survival probability may be written in terms of
+the derivative of the excitation probability:
+\begin{equation}
+  \frac{\partial P_{surv.}}{\partial \Delta E_{d1}} = 
+  - R_m \times P_{surv.} \times 
+  \frac{\partial P_{excit.}}{\partial \Delta E_{d1}}
+\end{equation}
+This yields maxima where
+\begin{equation}
+  P_{excit.} = \frac{1}{R_m} .
+\end{equation}
+Consequently, the peak LEM intensities at the maxima are constant:
+\begin{equation}
+  (I_{LEM})_{max} = \frac{1}{e \times R_m}
+\end{equation}
+
+Up to this point, we have used no perturbation theory, nor have we
+used any energy-dependent approximations which may break down under
+certain conditions. The constant value of the LEM intensity maximum
+comes as a result of it functional form alone.
+
+This is a rather surprising result, but its shock is mitigated in part
+when we examine the FWHM of the LEM intensity distribution using
+perturbation theory. far from the center of the intensity
+distribution, the survival probability is near unity, and we can
+approximate the LEM intensity by the excitation probability
+alone. Making the approximations outlined in the preceeding section,
+it can be seen that the FWHM of $I_{LEM}$ varies linearly with the
+coupling matrix elements.
+\begin{equation}
+FWHM = 2 \sqrt{2 e R_m} \biggl\lvert
+\frac{H_{ST} \, H_{Td}}{\Delta E_{ST}} \biggr\rvert
+\end{equation}
+Under typical experimental conditions, the leading numerical factor is
+about 174.
+
+The expression for total LEM intensity is slightly more complicated,
+but again varies almost linearly with the matrix elements.
+
+\subsection{Possibility and width of a ``SEELEM hole'' in the
+  spectrum}
+
+We wish to investigate the possibility that, within a spectrum, some
+dark states near the bright state energy may be systematically turned
+off by the survival probability factor. This would have the effect of
+producing a ``hole'' in the SEELEM spectrum, located in the immediate
+vicinity of the bright state.
+
+The HWHM of this hole is derived by setting the survival probability
+to $0.5$:
+\begin{equation}
+\frac{1}{2} = exp \left[ -\frac{200 \mu s}{270 ns} \times C_{S_1}^2 \right],
+\end{equation}
+and finding the energy separation between the dark state and the
+bright state which satisfies this condition. 
+
+The amount of $S_1$ character is strongly energy dependent, so we
+solve for this quantity:
+\begin{equation}
+log \frac{1}{2} = - \frac{200 * 10^{-6} s}{270 * 10^{-9} s} \times
+C_{S_1}^2.
+\end{equation}
+Evaluating the numerical parts of this expression for typical
+experimental conditions, we find that the amount of $S_1$ character in
+a dark state on the cusp of the SEELEM hole is
+\begin{equation}
+C_{S_1}^2 \approx 10^{-3}
+\end{equation}
+
+Since we are investigating the energy immediately surrounding the mixed $S_1$
+state, we make the approximation that $\Delta E_{d1} \gg \Delta
+E_{d2}$, so
+\begin{equation}
+C_{S_1} \approx \frac{ \alpha (1 - \alpha^2)^{1/2} \times H_{Td}}{\Delta E_{d1}}.
+\end{equation}
+
+Substituting this into the original equation, we solve for the energy
+difference between the mixed $S_1$ state and the dark state:
+\begin{equation}
+\Delta E_{d1} = \sqrt{\alpha^2 (1 - \alpha^2) \times H_{Td}^2 \times 10^{-3}}
+\end{equation}
+Furthermore, we make the apprximation that $(1 - \alpha^2) \approx 1$.
+Although this condition may not always be true, the quantity is
+certainly always less than 1, so in the worst case this gives an upper
+bound for the width of the hole.
+
+We rewrite the quantity in terms of the matrix element between the
+zero-order $S_1$ and $T_3$ states, and factor out the approximately
+constant parts to obtain the FWHM of the hole:
+\begin{equation}
+FWHM \approx 0.06 \times \biggl\lvert \frac{ H_{ST} \times H_{Td} }{ \Delta
+  E_{ST} } \biggr\rvert .
+\end{equation}
+
+Coincidentally, the numerical factor in this expression is
+approximately our laser linewidth in $cm^{-1}$. If we consider this
+expression in units of reciporical centemeters, the SEELEM hole
+will be resolvable in our experiments only if the factor in the
+absolute value bars is greater than 1. Since spin-orbit matrix
+elements between rovibronic states in acetylene are typically on the
+order of 0.1, the SEELEM hole will not be resolvable unless the
+zero-order $S_1 \sim T_3$ energy difference is less than approximately
+$0.01 \, cm^{-1}$.
+
+Since the vast majority of cases will not meet this requirement, we
+conclude that such a SEELEM hole would not be resolvable in acetylene
+unless the $S_1$ and $T_3$ rovibronic states are at an exact crossing
+point. If this situation were to occur, such a resonance would almost
+certainly last for only one value of $J$.
+
+\end{document}

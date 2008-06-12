@@ -1,0 +1,157 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage, amsmath, amssymb}
+\usepackage[pdftex]{graphicx}
+\usepackage[version=3]{mhchem}
+\hyphenation{density}
+\setlength{\parskip}{3mm}
+
+\begin{document}
+
+\section*{Acetylene Zeeman Anticrossing Experiments}
+
+In a Zeeman anticrossing experiment, the laser is locked on an optical
+transition in the molecule (we'll call this ``the singlet level'').
+As the magnetic field is tuned, triplet-mixed levels tune through
+resonance with the singlet.  Relative to the singlet level at
+$E=0$, the energy of a mixed triplet level is (linear Zeeman effect)
+\begin{equation}
+E = g \, M_s \, \mu_B \, (B-B_0),
+\end{equation}
+where $g$ is the mixed-triplet level's $g$-factor, $M_s$ is the
+lab-fixed projection of spin, $B_0$ is the field required to bring the
+level's energy to 0, and $\mu_B$ is the Bohr magneton (constant).  An
+excited electron which is not coupled to the molecular axis (Hund's
+case \emph{b}) has a $g$-factor of $2.0023$.
+
+When the singlet level and one of the weakly interacting background
+levels are at exactly the same energy, they become 50:50 mixed.  When
+this happens under the experimental conditions, half the molecules
+decay by collision instead of fluorescence, and the fluorescence
+intensity decreases by half.  The \emph{width} of the resonance is
+proportional to the matrix element between the bright state and the
+interacting level:
+\begin{equation}
+\Delta B = \frac{4\,V}{g\,\mu_B}
+\end{equation}
+
+What were the results and conclusions of these experiments?
+
+\subsection*{Paper 1: Anomalous behavior of the anticrossing density}
+
+Dupr\'{e}, Jost, Lombardi, Green Abramson, and Field.
+\emph{Chem. Phys.}  \textbf{152}, 293 (1991).\\
+Measured anticrossing spectra of $\nu_3=1-3$ rotationless levels,
+field strength $0-8T$.
+
+\begin{description}
+\item[Observation: Rapid increase in density of mixed-triplet levels
+  with $\nu_3$ excitation.]  Observed density of states is larger than
+  number of $T_{1,2}$ levels, therefore the triplet levels must mix
+  with and contaminate the denser manifold of $S_0$ levels.
+
+  However, increasing the $T_{1,2} \sim S_0$ coupling by itself does
+  not make more mixed-triplet levels accessible to cross the $S_1$
+  level.  The $S_1$ level can only undergo triplet-mediated mixing
+  with $S_0$ levels over an energy range on the order of the $S_1 \sim
+  T$ matrix element.
+
+  Therefore, coupling between $S_1$ and a subset of the triplet levels
+  $T$ must increase to make the dense manifold of contaminated
+  $T_{1,2} \sim S_0$ levels observable in the experiment.
+
+\item[Observation: Rapid increase in anticrossing linewidth.]  Since
+  the linewidth is proportional to the $S_1 \sim T$ matrix element,
+  this supports the conclusion that the $S_1 \sim T$ coupling is
+  increasing with excitation in $\nu_3$.
+
+\item[Excluded Mechanism: Direct $S_1 \sim S_0$ internal conversion.]
+  No mechanism for sudden increase in vibrational overlap integrals
+  between relatively unmixed $S_1$ levels and essentially fully mixed
+  $S_0$ levels over this energy range.
+
+\item[Excluded Mechanism: $S_0$ dissociation limit increases total
+  density of states.]  The increase in state density would be
+  accompanied by a decrease in vibrational overlap integrals.
+
+\item[Proposed Mechanism: $S_1 \sim T_3$ curve crossing.]  The
+  observed $S_1 \sim T$ coupling could be induced by a sparse
+  collection $T_3$ levels, mostly distant.  Question proposed by
+  authors: too many broad anticrossings in $3\nu_3$ spectrum?
+
+\item[Proposed Mechanism: $T_2$ linear isomerization barrier.]  The
+  vibrational overlap between $T_2$ levels in the \emph{cis}-well and
+  $S_1$ levels in the \emph{trans}-well would increase in the region
+  of the linear turning point.
+\end{description}
+
+\subsection*{Paper 2: Characterization of a large singlet-triplet
+  coupling}
+
+Dupr\'{e} and Green. \emph{Chem. Phys. Lett.} \textbf{212}, 555
+(1993).\\
+Measured LIF spectrum of rotationless $3\nu_3$ level at 0T and near 7.075T
+
+Ryan provides a useful summary of this paper in his article ``Studies
+of Intersystem Crossing Dynamics in Acetylene,'' \emph{JCP}
+\textbf{126}, 184307 (2007).  
+
+A $T_3$ level with energy $\Delta E = \pm 6.67$ cm$^{-1}$ interacts
+with the $J=K=0$ level of $3\nu_3$.  This strong interaction is very
+well characterized by the Zeeman anticrossing data.  Many weaker
+interactions with nominal $S_0$ levels can be seen perturbing the
+strong $S_1 \sim T_3$ anticrossing.  The zero-field $S_1 \sim T_3$
+matrix element is $0.29$ cm$^{-1}$ if $K_{T_3}=0$ or $0.58$ if
+$K_{T_3}=1$.
+
+\subsection*{Paper 3: Quantum beat spectroscopic studies}
+
+Dupr\'{e}, Green, and Field.  \emph{Chem. Phys.} \textbf{196}, 211
+(1995).\\
+A number ($\sim 60$) of anticrossings from $\nu_3=0-2$ are analyzed
+individually.
+
+\begin{description}
+\item[Observation: Large variation in measured $g$ factors.]
+  Mixing between triplet states with the selection rule $\Delta M_S =
+  \pm 1$ causes the $g$ factors to vary from the expected value of
+  $2$.  The triplet$\sim$triplet interactions must be strong relative
+  to the mediated interactions between $S_1$ and $T_{1,2}$.
+
+  If the $S_0 \sim T_{1,2}$ were strong, the $g$ factors would all be
+  close to zero.
+
+\item[Observation: All quantum beats change with field strength.]
+  Direct ``internal conversion'' interactions between $S_1$ and $S_0$
+  would give rise to quantum beats which would not tune with magnetic
+  field strength ($M_S=0$ for both states).
+
+\item[Proposed order of interaction strengths: $T_1 \sim T_2 \gg S_1
+  \sim T_{1,2} \gg S_0 \sim T_{1,2} \gg S_1 \sim S_0$.] The first
+  inequality is supported by the large variation in measured $g$
+  factors.  The second inequality allows the dense number of $S_0$
+  levels to be sampled in the experiment, as observed in paper \#1.
+  The third inequality states that the internal conversion process
+  from $S_1$ to $S_0$ is triplet-mediated, as supported by the second
+  observation in this paper.
+
+  The ordering of interaction strengths not only proceeds from the
+  observations, but also makes sense according to our chemical
+  intuition.
+\end{description}
+
+\subsection*{Paper 4: Study by Fourier transform}
+
+Dupr\'{e}. \emph{Chem. Phys.} \textbf{196}, 239 (1995).\\
+The product $\rho_{vib} \cdot \langle V \rangle$ is derived from the
+Fourier xform of anticrossing spectra for $\nu_3=0-4$.
+
+\begin{description}
+\item[Observation: The product $\rho_{vib} \cdot \langle V \rangle$
+  increases exponentially from $0\nu_3$ to $4\nu_3$.]  See figure 1
+  for a great example of how the spectra change from $0\nu_3$ to
+  $4\nu_3$ (ignore frame E, which is the singlet perturber in
+  $3\nu_3$).  The density of states does not increase appreciably over
+  this energy range, so the effect must arise from an increasing
+  matrix element.
+\end{description}
+\end{document}

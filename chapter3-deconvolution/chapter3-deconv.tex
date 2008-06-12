@@ -18,35 +18,27 @@
 
 \subsubsection*{NOTES}
 
-I need some way to differentiate between the set of dark states in the
-direct and doorway-coupling Hamiltonians.  My choices are:
-\begin{itemize}
-\item use a different letter ($E_m$ for direct and $E_n$ for doorway)
-\item use a superscript or apostrophe ($E_m$ for direct and $E_{m'}$
-  or $E_{m}^{(1)}$ for doorway),
-\item use a different font ($E_m$ for direct and $E_{\mathfrak{m}}$
-  for doorway)
-\item use $\ell$ for the dark states in the direct-coupling model and
-  $L$ for the doorway state ($E_{\ell}$ for direct and $E_m$ for doorway).
-\end{itemize}
-I am using the first option as a quick fix.  The fourth option would
-require major changes in my previous chapter.  It also violates the
-rule of naming abstract classes of basis states with lower case
-letters and saving upper case letters for actual quantum numbers,
-including electronic labels such as $S_1$ and $T_3$.  
+This is the third chapter of my thesis, essentially a final draft.  It
+follows the introduction chapter and the ``Models'' chapter (you
+have already seen the latter).
 
-I am also looking for advice on structural changes.  Anything that
-doesn't connect to the main point should be removed or explained more
-clearly.  Plots or discussion that drive the point home should be
-added.
+A couple small changes still to be made: a long list of references in
+the second paragraph, and changing the lines below the spectrum to
+arrows in Figures 2 and 3.
 
-I have two remaining TODO's, neither of which should influence the
-overall paper very much. In the conclusion, I plan to summarize the
-major points, discuss the possible applications again (IVR and ISC),
-and include the usual deconvolution caveat (it only gives you a model;
-you must use chemistry to relate the model to the molecule).
+I am looking especially for any big changes that should be made --
+additional topics to include, sections to drop, or points to make more
+clear.
 
-Thanks for reading,
+I have also recently discovered two more examples of the use of
+deconvolution for doorway-coupling schemes, for propyne and
+methyl-vinyl-ether [Cupp, JCP 109, 4302 (1998); Go, JCP 97, 6994
+(1992)].  In both cases, the bright$\sim$doorway coupling is so strong
+that it splits the spectrum into two distinct clumps, which can be
+analyzed separately.  I think this provides a great example of the
+strong coupling case described in the ``Models'' chapter.  I will also
+mention these papers in the paragraph where I discuss previous efforts
+to take deconvolution beyond the direct-coupling model.\\
 
 --Kyle
 
@@ -69,9 +61,11 @@ continuous formulation, the procedure returns a zero-order spectral
 density function for coupling to the bright state.
 
 Spectral deconvolution has been used to study Intramolecular
-Vibrational Redistribution (IVR) in \ce{NO2} and trifluoropropyne.  It
-has been used to study intersystem crossing in acetylene, napthalene,
-and pyrazine.  \TODO{Expand literature search and cite papers.}
+Vibrational Redistribution (IVR) in many small molecules, including
+\ce{NO2}, allene, and several substituted propynes.  It was originally
+developed in the study of intersystem crossing, where it has been used
+on the spectra of intermediate case molecules such as acetylene,
+napthalene, and pyrazine. \TODO{Citations}
 
 The technique for decovolution of continuous spectra was described by
 Berg and independently, in a more general form, by Ziv and Rhodes
@@ -161,11 +155,13 @@ doorway state energy and matrix element, using moments of the spectral
 intensity.  By comparison with the discrete method, we show that the
 continuous method produces exact results for the zero-order density
 function, within the spectral resolution, when used with Lorentzian
-line shapes.  To investigate errors in the deconvolution results, we
-apply the process to a set of simulated spectra.  The usefulness of
+line shapes.  
+%To investigate errors in the deconvolution results, we
+%apply the process to a set of simulated spectra.  
+The usefulness of
 the technique is then demonstrated by application to a spectrum of the
 acetylene molecule.  The doorway deconvolution results are shown to be
-consistent with other investigations of this system.
+consistent with other investigations of the system.
 
 \begin{figure}
   \caption{Top: Diagram of a direct-coupling model Hamiltonian.  One
@@ -313,8 +309,8 @@ We add in passing that the principal values in the Kramers-Kr\"{o}nig
 integrals of equation \ref{eq:hilbert} need not be calculated
 explicitly.  Instead, the real part of the Green's function may be
 computed by a method of convolution using standard signal processing
-algorithms for Hilbert transformation of a non-recurring waveform
-[\emph{cite signal processing books}].
+algorithms for Hilbert transformation of a non-recurring
+waveform. \TODO{Cite signal processing books}
 
 If all transitions in the spectrum are fully resolved, the procedure
 for deconvolution is simplified greatly.  A method for deconvolution
@@ -382,8 +378,8 @@ eigenstate upon diagonalization is reflected in its bright state
 character.  A general form of this relationship between level shift
 and bright state character holds for any effective Hamiltonian with a
 single bright state.  It makes it possible to compute, for the general
-case, spectral intensities without computation of full eigenvectors
-[\emph{cite Gruebele}].
+case, spectral intensities without computation of full eigenvectors.
+\TODO{Cite Gruebele}
 
 \section{Extended deconvolution: \\
   Formation of a doorway-coupling model Hamiltonian}
@@ -392,7 +388,7 @@ We wish to go a step beyond the LKL deconvolution procedure and
 construct a Hamiltonian in which only a single dark basis state,
 $\ket{\ell}$, is coupled to the bright state.  The doorway state
 mediates all coupling between the bright state and the set of
-remaining dark states $\lbrace \ket{m} \rbrace$:
+remaining dark states $\lbrace \ket{n} \rbrace$:
 \begin{equation}
   \begin{split}
     \mathbf{H}_{doorway} =&
@@ -699,7 +695,7 @@ spectral lines will have the correct functional form, although some
 peaks may remain unresolved in the resulting interaction density
 spectrum.  Thus, for a spectrum with homogeneous width $\gamma$, the
 interaction density spectrum $\mathcal{F}(E)$ for the doorway state is
-equal to,
+equal to
 \begin{equation}
   \mathcal{F}_{\ell}(E) = 
     \mathcal{L}_{\gamma} \; * \;
@@ -918,7 +914,25 @@ are described in the appendix of reference \cite{delon95}.)
 
 \section{Conclusion}
 
-\TODO{Write this section.}
+We have shown how to extend established methods of spectral
+deconvolution to uniquely determine the parameters of a
+doorway-coupling effective Hamiltonian.  The most important parameters
+of the effective Hamiltonian, the doorway state energy and
+bright$\sim$doorway matrix element, were related to simple moments of
+the spectral intensity distribution.  By making a correspondence to
+the work of Ziv and Rhodes on continuous deconvolution, we have shown
+how an effective Hamiltonian could be derived for any number of
+sequential doorway states.
+
+This technique was applied to the spectrum of the $3\nu_3$ $K=1$
+vibrational level of $S_1$ acetylene, where a single, local $T_3$
+doorway level mediates coupling to the $T_{1,2}$ manifold.  The
+deperturbed $T_3$ energies and matrix elements were shown to be
+consistent with past studies.  A comparison was made to the $S$
+parameter of Altunata and Field, which is equal to the product
+$E_{\ell} \times H_{s\ell}^2$.
+
+
 
 \bibliographystyle{deconv}
 \bibliography{deconv}

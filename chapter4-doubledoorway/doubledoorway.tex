@@ -1,5 +1,6 @@
 \documentclass[12pt]{mitthesis}
-\usepackage{lgrind, amsmath, amssymb, longtable, booktabs, subfig, color}
+\usepackage{lgrind, amsmath, amssymb, longtable, booktabs, subfig,
+  color, braket}
 \usepackage[pdftex]{graphicx}
 \pagestyle{plain}
 
@@ -25,56 +26,120 @@
 \subsubsection*{NOTES}
 \clearpage
 
-\chapter{Evidence for a dynamical ``double doorway'' in the
-  $V^3_0K^1_0$ subband of $S_1$ acetylene}
+\chapter{Evidence for a singlet$\sim$triplet dynamical ``double
+  doorway'' in acetylene $\tilde{A} ^1A_u-\tilde{X}^1\Sigma^+_g$
+  $V^3_0K^1_0$}
 
 \section{Introduction}
+The $\tilde{A} ^1A_u-\tilde{X}^1\Sigma^+_g$ $V^3_0K^1_0$ transition of
+acetylene has been heavily studied, in part because it plays host to
+several interesting energy resonances.  Firstly, a singlet vibrational
+level involving 4 quanta of the Fermi-resonant bending modes $\nu_4$
+and $\nu_6$ is near degenerate with $3\nu_3$ at $J=0$.  This singlet
+perturber quickly detunes due to a relatively large difference in
+rotational constant.  However, due to strong anharmonic and Coriolis
+interactions between modes 4 and 6, the singlet level has never been
+assigned.  A series of recent ultra-sensitive LIF studies have
+resulted in the conclusive assignment of this level as \TODO{Get
+  assignment.}
 
-\begin{quote}
-  Review the past work on this particular subband and explain why it's
-  still interesting.
+Secondly, a vibrational level of the $T_3$ electronic state crosses
+the $S_1$ $3\nu_3$ level near $J=3$.  The interaction between this
 
-  Citations: Ryan + Adya (2004), Drabbels (1994), Abramson (80's),
-  other triplet SEELEM (90's, 00's), Dupre papers (90's)
-
-  Also need to review the Dupre work to show a consistent argument for
-  distant doorways in the trans bending levels of acetylene.
-\end{quote}
-
-\section{New evidence from photoelectron spectroscopy}
+\TODO{Include citations: Ryan + Adya (2004), Drabbels (1994), Abramson
+  (80's), other triplet SEELEM (90's, 00's), Dupre papers (90's)}
 
 \POINT{Review the data from Mattijs and make the trends in (S1, T3)
-vs. (T1, T2) intensity more apparent. Mention that Mattijs used a 1T
-magnetic field during his experiments.}
+  vs. (T1, T2) intensity more apparent.}  Recently, DeGroot \emph{et
+  al.} have observed in photoelectron kinetic energy experiments that
+the coupling between $S_1$ $3\nu_3$ and the manifold of $T_{1,2}$
+states \emph{increases} with rotational quantum number.
 
-\begin{figure}[htp]
-  \includegraphics[scale=0.8]{mattijs-traces-2n3.png}
+\begin{figure}
+  %\includegraphics[scale=0.8]{mattijs-traces-2n3.png}
   \includegraphics[scale=0.8]{mattijs-traces-3n3.png}
-  \caption{Energy-resolved photoelectron intensities from the
-    $V^2_0K^1_0$ (top) and $V^3_0K^1_0$ (bottom) vibrational subbands
-    of $S_1$ acetylene.}
+  \caption{Energy-resolved photoelectron intensity from acetylene
+    $S_1$ $V^3_0K^1_0$.  \TODO{Get permission to use this data.}}
   \label{fig:mattijs-traces}
 \end{figure}
 
-[Figure~\ref{fig:mattijs-traces}: DONE. Early and late photoelectron
-signals from $2\nu'_3$ and $3\nu'_3$.]
+% \POINT{Mention that Mattijs used a 1T magnetic field during his
+%   experiments. Derive the energy of the local doorway under these
+%   conditions using a $g$ value of 2.}  
 
-\begin{figure}[htp]
+A magnetic field of approximately 1 T was used in the energy-resolved
+photoelectron experiments.  This has the effect of splitting the
+triplet level into three components according to the possible values
+of the laboratory-fixed projection of spin, $M_S=0,\pm 1$.  The change
+in energy with magnetic field is given by the linear approximation of
+the Zeeman effect:
+\begin{equation}
+  \Delta E = M_S \, g \, \mu_B \, \Delta B,
+\end{equation}
+where $g$ is the Land\'{e} $g$ factor for the triplet level, and
+$\mu_B$=0.4669 cm$^{-1}$/T is the Bohr magneton.  For a triplet level
+in the limit of Hund's case ($b$), the $g$ factor is expected to be
+close to the ``free electron'' value of 2.0015.  Under the
+experimental conditions of DeGroot \emph{et al.}, the magnetic
+field-induced splitting in the local $T_3$ perturber is about 1
+cm$^{-1}$.
+
+\POINT{}
+
+\POINT{Report the spectroscopic parameters of the local doorway to the
+  best of our understanding.}  The matrix element between $S_1$
+$3\nu_3$ and the local triplet perturber is approximately $0.1$ \rcm.
+We have shown conclusively in the last chapter, by applying a compund
+spectral deconvolution technique to high-resolution LIF spectra, that
+the local $T_3$ doorway level crosses the $S_1$ $3\nu_3$ $e$-symmetry
+levels at $J=3$ and tunes \emph{away} in energy as $J$ increases.  The
+rotational constant and...
+
+\POINT{Discuss the assignment of the local $T_3$ pertuber as the $F_2$
+  component of a $K_T=1$ level.  An $F_1$ or $F_3$ component with a
+  reasonable $B$-value would only be near-resonant with the singlet
+  level for a single value of $J$.}
+
+\POINT{Give the resulting dependence of spin-orbit matrix element on
+  $J$.}  Stevens and Brand have derived vibronic spin-orbit matrix
+elements for polyatomic molecules.  For the $F_2$ component of a local
+doorway with $K_T=1$, the spin-orbit matrix element is
+\begin{equation}
+  \braket{\psi_{S_1}J_S1|H^{SO}|\psi_{T_3}J_S1} = 
+  \frac{1}{\sqrt{J_S(J_S+1)}}\braket{\psi_{S_1}|\psi_{T_3}}\braket{H^{SO}(R_z)},
+\end{equation}
+that is, the spin-orbit matrix element decreases weakly with rotation.
+If the local doorway instead has $K_T=0$, the rotational dependence of
+the spin-orbit coupling disappears completely: 
+\begin{equation}
+  \braket{\psi_{S_1}J_S1|H^{SO}|\psi_{T_3}J_S0} =
+  \frac{1}{2}\braket{\psi_{S_1}|\psi_{T_3}}
+  (\braket{H^{SO}(R_x)} - \braket{H^{SO}(R_y)}).
+\end{equation}
+Under either circumstance, the spin-orbit interaction is not expected
+to increase with rotation.
+
+Therefore, if the local $T_3$ doorway level were the sole mediator for
+intersystem crossing between $S_1$ $3\nu_3$ and the manifold of
+$T_{1,2}$ levels, one would expect the $S_1 \sim T_{1,2}$ coupling to
+decrease with the $S_1 \sim T_3$ energy difference.  The authors
+address this issue by proposing that an unobserved, energetically
+distant $T_3$ level interacts more strongly with the $S_1$ $3\nu_3$
+level.  Interference between the local and distant doorway levels
+could cause the $S_1 \sim T_{1,2}$ coupling to decrease in the
+vicinity of the local $S_1 \sim T_3$ crossing.
+
+
+
+\POINT{Discuss Figure~\ref{fig:mattijs-traces}: Early and late photoelectron
+signals from $2\nu'_3$ and $3\nu'_3$.}
+
+\begin{figure}
   \centering
   \includegraphics[width=7in]{mattijs-ratios.png}
   \caption{}
   \label{fig:mattijs-ratios}
 \end{figure}
-
-[Figure~\ref{fig:mattijs-ratios}: NIXED FOR NOW. Scatterplot of
-integrated pe signal vs. $J'$, with error bars.]
-
-% \begin{quote}
-%   Make a comparison to the Au:SEELEM data from our own lab, with
-%   integrated intensities out to $J' = 7$. 
-% \end{quote}
-
-% [Figure: integrated LIF + SEELEM intensities from our data.]
 
 \POINT{Discuss J-dependent effects in spin-orbit coupling and rule out
   other mechanisms (L-uncoupling) capable of producing the same
@@ -96,6 +161,13 @@ integrated pe signal vs. $J'$, with error bars.]
   8/2007--10/2007 notebook.)}
 
 \section{Results: new and revised assignments}
+
+\TODO{Prepare a comparison to the Au:SEELEM data from our own lab, with
+integrated intensities out to $J' = 7$.}
+
+\TODO{Figure: integrated LIF + SEELEM intensities from our data.}
+
+
 
 A more extensive and detailed Au:SEELEM/LIF spectrum has been recorded
 in the vicinity of the $V^3_0K^1_0$ subband. This data set covers the

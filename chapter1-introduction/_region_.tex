@@ -1,4 +1,4 @@
-\documentclass[12pt]{mitthesis}
+\message{ !name(chapter1-introduction.tex)}\documentclass[12pt]{mitthesis}
 \usepackage{lgrind, braket, amsmath, amssymb, bbm, booktabs, color}
 \usepackage[pdftex]{graphicx}
 \usepackage[version=3]{mhchem}
@@ -11,6 +11,9 @@
 \hyphenation{Hamiltonian}
 
 \begin{document}
+
+\message{ !name(chapter1-introduction.tex) !offset(-3) }
+
 \tableofcontents
 \clearpage
 
@@ -37,18 +40,8 @@
 
 \POINT{Summarize the electronic structure of the acetylene valence
   triplet states.  Show molecular orbitals and energy level diagrams.}
-Figure \ref{fig:mol-orbitals} shows the principal molecular orbital
-configurations for the 4 lowest excited electronic states of
-acetylene.
 
-\POINT{Discuss the change in geometry, cis and trans wells.}  The
-$a_g*$ molecular orbital is stabilized with increasing \ce{CCH} bond
-angle.  Balanced against the destabilization of filled
-$\sigma$-bonding orbitals, this effect creates potential energy wells
-in bent geometry for the low-lying electronic states of acetylene.
-The valence excited states of acetylene considered in this work,
-namely $S_1$, $T_1$, $T_2$, and $T_3$, each have minima in both the
-\emph{cis} and\emph{trans} geometries.
+\POINT{Discuss the change in geometry, cis and trans wells.}  
 
 \POINT{Discuss the forbiddenness of the singlet transition and how it
   is made allowed only in the \emph{trans} well.}  Since the
@@ -58,7 +51,7 @@ intersystem crossing between singlet and triplet excited states
 proceeds locally on this side of the barrier.  For this reason, we
 will no longer explicitly write the geometry when referring to the
 valence electronic states of acetylene; the \emph{trans} geometry is
-implied unless otherwise stated.
+implied unless stated otherwise.
 
 \begin{figure}
   \caption{Principal molecular orbital configurations for the valence
@@ -67,7 +60,7 @@ implied unless otherwise stated.
     the diagram.  An electronic transition from $S_1$ to $T_3$
     involves a change in one antibonding spin orbital, from
     $a_g^*(\downharpoonright)$ to $b_g^*(\upharpoonright)$.}
-  \label{fig:mol-orbitals}
+  \label{fig:mol-rbitals}
 
   \centering
   \setlength{\unitlength}{1cm}
@@ -127,24 +120,16 @@ implied unless otherwise stated.
   \end{picture}
 \end{figure}
 
-\POINT{Discuss spin-orbit coupling with S1 state.  Show the spin-orbit
-  operator and one-electron matrix elements among the triplet states.
-  The $\ell_+s_-$ operator requires a change in spin-orbital.
-  (Examples of Slater determinants: p.59 of 11/2007--1/2008 notebook
-  [\ce{CO2}])}
+\POINT{Discuss spin-orbit coupling with trans-bent S1 state.  Show the
+  spin-orbit operator and one-electron matrix elements among the
+  triplet states.  The $\ell_+s_-$ operator requires a change in
+  spin-orbital.  (Examples of Slater determinants: p.59 of
+  11/2007--1/2008 notebook [\ce{CO2}])}
 
 \POINT{Many ab initio studies of acetylene triplet states.  Give a
   summary of the most recent theoretical results.}  The electronic
 energy of $T_3$ has been determined in several \emph{ab initio}
-calculations.  Malsch and coworkers found an energy of 5.46eV, almost
-2200cm$^{-1}$ higher than their calculated energy for $S_1$
-\cite{malsch98}.  The most recent and sophistocated determination of
-the $T_3$ energy was carried out by Thom and coworkers \cite{thom07}.
-After explicitly diabatizing the $T_2$ and $T_3$ surfaces, they
-obtained an energy difference $T_e(S_1)-T_e(T_3)$ of 270cm$^{-1}$,
-placing the $T_3$ state at approximately the same energy as, and
-perhaps slightly lower than, the $S_1$ state.  It is in light of these
-most recent calculations that we continue our discussion.
+calculations.  Malsch and coworkers found
 
 \POINT{Almost no direct experimental evidence concerning triplet
   states.  No spectra for trans-bent triplet states, although spectra
@@ -388,7 +373,5 @@ in a molecular beam.  The basis of this method is two-photon optical
 pumping of metastable atoms followed by collisional excitation
 transfer.  Chapter 8 concludes and discusses the prospects for future
 research.
-
-\bibliography{master}
-\bibliographystyle{plain}
 \end{document}
+\message{ !name(chapter1-introduction.tex) !offset(-377) }

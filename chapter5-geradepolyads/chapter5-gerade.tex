@@ -415,12 +415,34 @@ Information about the relative B-value of a mediating level can be
 recovered by studying the statistical properties of delayed
 fluorescence as a function of rotational quantum number.
 
-We take as a model system a series of equally spaced bright state
-transitions with increasing rotational quantum number $J$.  The total
-bright$\sim$dark coupling strength for each transition is function of
-the energy separation between the bright state $\ket{s;J}$ and three
-components of the non-local mediating level: $F_1$, $\ket{\ell;J-1}$;
-$F_2$, $\ket{\ell;J}$; and $F_3$, $\ket{\ell;J+1}$.
+\POINT{Review components and selection rules.}  We take as a model
+system a series of equally spaced bright state transitions with
+increasing rotational quantum number $J$.  The total bright$\sim$dark
+coupling strength for each transition is function of the energy
+separation between the bright state $\ket{s;J}$ and three components
+of the non-local mediating level: $F_1$, $\ket{\ell;J-1}$; $F_2$,
+$\ket{\ell;J}$; and $F_3$, $\ket{\ell;J+1}$.
+
+\begin{figure}
+  \caption{ Reduced term value plot of the three singlet$\sim$triplet
+    roational components permitted by the spin-orbit operator in
+    Hund's case ($b$).  The $F_1$ component corresponds to  }
+  \label{fig:components}
+  \centering
+  \includegraphics[width=6in]{f-components.png}
+\end{figure}
+
+To a very good approximation the total first-order spin-orbit matrix
+element between two rovibrational states is given by the product of
+three factors: an electronic spin-orbit matrix element, a vibrational
+overlap factor, and a rotational factor arising from angular momentum
+coupling rules.  The rotational factors are given for the general case
+of polyatomic molecules by Stevens and Brand \cite{stevens73}.  
+
+Plots of the spin-orbit rotational factors are presented for singlet
+levels having $K$=0 (Figure \ref{fig:rotational-factors-0}), $K$=1
+(Figure \ref{fig:rotational-factors-1}), and $K$=2 (Figure
+\ref{fig:rotational-factors-2}).
 
 The rotational dependence of energy differences for the three
 components is
@@ -451,6 +473,30 @@ state and the mediating components is
 \begin{equation}
   \alpha_{s\ell}(J) = \frac{H_{s\ell}}{\Delta B_{s\ell}J(J+1)}.
 \end{equation}
+
+\POINT{Present rotational factors for first-order spin-orbit
+  coupling.}
+
+\begin{figure}
+  \caption{}
+  \label{fig:rotational-factors-0}
+  \centering
+  \includegraphics[width=6in]{rotational_factors_k0.png}
+\end{figure}
+
+\begin{figure}
+  \caption{}
+  \label{fig:rotational-factors-1}
+  \centering
+  \includegraphics[width=6in]{rotational_factors_k1.png}
+\end{figure}
+
+\begin{figure}
+  \caption{}
+  \label{fig:rotational-factors-2}
+  \centering
+  \includegraphics[width=6in]{rotational_factors_k2.png}
+\end{figure}
 
 \section{Experiment}
 
@@ -841,9 +887,11 @@ the doorway mediated mechanism for intersystem crossing in acetylene.
 
 \POINT{Darling-Dennison and A-type Coriolis coupling play a major role
   in determining the singlet-triplet interactions for vibrational
-  levels involving modes 4 and 6.}
+  levels involving modes 4 and 6 \cite{ochi91}.}
 
 \POINT{Make the case for studying the bending motions without
   complications from Darling-Dennison or $a$-type Coriolis coupling.}
 
+\bibliography{master}
+\bibliographystyle{plain}
 \end{document}

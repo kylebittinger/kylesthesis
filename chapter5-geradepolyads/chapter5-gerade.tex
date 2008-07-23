@@ -2,6 +2,7 @@
 
 \usepackage{lgrind, braket, amsmath,
   amssymb, bbm, booktabs, subfig, color} 
+
 \usepackage[pdftex]{graphicx}
 \usepackage[version=3]{mhchem}
 
@@ -22,7 +23,8 @@
 
 \chapter{SEELEM/LIF spectroscopy of 
 %\emph{ungerade}  vibrational levels of 
-  acetylene $\tilde{A} ^1A_u$: 
+%$\tilde{A} ^1A_u$
+  acetylene: 
 %contrasting singlet-triplet dynamical behavior
 spectral patterns of mediated spin-orbit coupling
 }
@@ -36,36 +38,40 @@ T_3 \rightarrow T_{1,2} \rightarrow S_0$ for \emph{trans} acetylene.
 The model agrees with trends predicted from simple density-of-states
 and one-electron matrix element arguments.
 
+\TODO{Adapt the following from the article.}  Surface Electron
+Ejection by Laser-Excited Metastables \cite{sneh89, sneh91,
+  humphrey97} (SEELEM) and LIF spectroscopy are complementary tools
+that have been used to gain insight into singlet $\sim$ triplet
+interactions in the $\tilde{A} ^1A_u \leftarrow \tilde{X}
+^1\Sigma_g^+$ ($S_1$-$S_0$) electronic spectrum of acetylene,
+\ce{C2H2} \cite{humphrey97, mishra04, altunata00, altunata02}.  LIF
+detection is limited to short-lived ($\tau_{radiative}<10$ $\mu$s),
+strongly fluorescing singlet states, while SEELEM detection is
+sensitive only to long-lived ($\tau>300$ $\mu$s) states with vertical
+electronic excitation above a threshold energy set by the work
+function of the metal used as the SEELEM detector surface. Therefore,
+SEELEM and LIF detection channels observe mutually exclusive sets of
+eigenstates that arise from spin-orbit mixed $S_1$, $T_{3,2,1}$
+zero-order basis states.  A comparison of simultaneously recorded
+SEELEM and LIF spectra reveals features of electronic structure and
+photochemical pathways that are invisible via traditional,
+single-channel spectroscopic probes such as LIF alone, REMPI,
+phosphorescence, or phosphor surface \cite{shi98, campos01, burton72}.
+The information gained from comparison of acetylene SEELEM / LIF
+spectra can yield a mechanistic description of singlet $\sim$ triplet
+interaction, and holds promise for describing the structure and
+dynamics of other small polyatomic species \cite{jung07, allen07}.
 SEELEM spectroscopy has been used in this effort as a tool to examine
 $S_1 \sim T_3$ coupling, by allowing detection of the local manifold
 of predominantly $T_{1,2}$ eigenstates in the region surrounding an
-$S_1 \leftarrow S_0$ transition.  Spectroscopic patterns arising from
-the effects of the local $T_3$ perturber in have been discussed by
-several authors.  \TODO{Cite Selen and Adya.}  \TODO{Adapt the
-  following from the article.}  Surface Electron Ejection by
-Laser-Excited Metastables1-3 (SEELEM) and LIF spectroscopy are
-complementary tools that have been used to gain insight into singlet
-$\sim$ triplet interactions in the $\tilde{A} ^1A_u \leftarrow
-\tilde{X} ^1\Sigma_g^+$ ($S_1$-$S_0$) electronic spectrum of
-acetylene, \ce{C2H2}.  LIF detection is limited to short-lived
-($\tau$radiative < 10 $\mu$s), strongly fluorescing singlet states,
-while SEELEM detection is sensitive only to long-lived ($\tau$> 300
-$\mu$s) states with vertical electronic excitation above a threshold
-energy set by the work function of the metal used as the SEELEM
-detector surface. Therefore, SEELEM and LIF detection channels observe
-mutually exclusive sets of eigenstates that arise from spin-orbit
-mixed $S_1$, $T_{3,2,1}$ zero-order basis states.  A comparison of
-simultaneously recorded SEELEM and LIF spectra reveals features of
-electronic structure and photochemical pathways that are invisible via
-traditional, single-channel spectroscopic probes such as LIF alone,
-REMPI, phosphorescence, phosphor surface, etc. The information
-gained from comparison of acetylene SEELEM / LIF spectra can yield a
-mechanistic description of singlet $\sim$ triplet interaction, and
-holds promise for describing the structure and dynamics of other small
-polyatomic species.  
+$S_1 \leftarrow S_0$ transition.  Spectroscopic patterns in SEELEM
+arising from the effects of the local $T_3$ perturber in have been
+discussed by several authors \cite{humphrey97, altunata00,
+  altunata-thesis, cunningham-thesis, thom-thesis, mishra04}.
+
 
 \POINT{Make the case for studying the role of $\nu_3$ in ISC.  Cite
-  trends observed on ZAC papers. }  The \emph{trans}-bending mode of
+  trends observed on ZAC papers.}  The \emph{trans}-bending mode of
 $S_1$, $\nu_3$, has been shown to be an important controller of $S_1
 \sim T$ coupling.  Dupr\'{e} and coworkers observed an exponential
 increase in the product $\rho_{\text{vib}} H_{st}$ with energy in
@@ -75,9 +81,9 @@ of acetylene near the region of the $\tilde{A} ^1A_u$ state are
 governed by a doorway mediated mechanism, where particular vibrational
 levels of the $T_3$ state provide a doorway for intersystem crossing
 between the initially excited $S_1$ bright state and the dense
-manifold of dark $T_{1,2}$ states.  The $3 \nu_3$ level in particular
-has been heavily studied due to a local $S_1 \sim T_3$ level crossing
-at low $J$.
+manifold of dark $T_{1,2}$ states \cite{dupre91, dupre95a}.  The $3
+\nu_3$ level in particular has been heavily studied due to a local
+$S_1 \sim T_3$ level crossing at low $J$.
 
 Here, we turn our attention to vibrational levels of $S_1$,
 which are not near-degenerate with a mediating $T_3$ level.  The
@@ -409,7 +415,16 @@ shift at small mixing coefficients.
 
 Information about the relative energy of a mediating level can be
 recovered by studying the statistical properties of delayed
-fluorescence as a function of rotational quantum number.
+fluorescence as a function of rotational quantum number.  For a
+near-symmetric prolate top in Hund's case ($b$), the spin-orbit
+operator couples states according to the selection rules
+\begin{equation}
+  \begin{split}
+    \Delta J &= 0 \\
+    \Delta N &= 0, \pm 1\\
+    \Delta K_a &= 0, \pm 1.
+  \end{split}
+\end{equation}
 
 \POINT{Review components and selection rules.}  We take as a model
 system a series of equally spaced bright state transitions with
@@ -470,6 +485,7 @@ is less than a factor of 2 in all cases.  \POINT{These variations are
 The rotational dependence of energy differences for the three
 components is
 \begin{equation}
+  \label{eq:components}
   \Delta E_{s\ell}(J) = 
   \begin{cases}
     \Delta B_{s\ell}J(J+1) + 2B_{\ell}J           
@@ -480,8 +496,22 @@ components is
     & F_3 \text{ component}.\\
   \end{cases}
 \end{equation}
+\POINT{Give a general idea of the expected $T_3$ rotational constant
+  from calculations and the RA experiment.  The product $\Delta
+  B_{s\ell}J(J+1)$ is expected to remain small compared to $2BJ$.}
 
+The effects of widely varying vibrational overlap factors will divide
+$S_1 \sim T_3$ perturbations into two classes: those where
+$H_{st}/\Delta E_{st} \ll 2B$, and those where $H_{st} / \Delta
+E_{st}$ is on the order of $2B$.  Perturbations in the first class
+will appear only once in the spectrum.  However, once a triplet level
+with small vibrational overlap is found at a particular $J$, its
+energy above or below the perturbed singlet level may be found
+according to Equation \ref{eq:components}.
 
+Perturbations falling into the second class will affect the
+singlet$\sim$triplet coupling at several values of $J$; these are the
+distant $T_3$ doorways with which we are most concerned.
 
 % We simplify the above formulas by considering the \emph{average}
 % energy difference, taking all components into account.  Giving equal
@@ -506,23 +536,21 @@ components is
 
 \section{Experiment}
 
-\TODO{Adapt this from paper.}
-
-SEELEM is a versatile and sensitive technique for investigating
-``dark'' (weakly-fluorescing) metastable molecules produced via laser
-excitation.1-6 In the SEELEM experiment, a molecular beam of acetylene
-is excited by a $\sim$5 ns pulsed laser into spin-rotation-vibration
-eigenstates of metastable electronic states via weak, nominally
-forbidden transitions. After excitation, the long-lived species must
-travel 35 cm before colliding with an Au metal detector surface, where
-an electron is ejected in a de-excitation process. Two criteria must
-be met for electron ejection by a metastable species. First, the
-vertical electronic energy of the metastable approaching the surface
-must exceed the work function of the metal ($\Phi$Au = 5.1
-eV). Second, the radiative lifetime of the detected metastable
-eigenstate ($\tau_\text{rad}$) must exceed the flight time from the
-point of laser excitation to the SEELEM surface ($\Delta$t=300
-$\mu$s).
+\TODO{Adapt this from paper.}  SEELEM is a versatile and sensitive
+technique for investigating ``dark'' (weakly-fluorescing) metastable
+molecules produced via laser excitation.1-6 In the SEELEM experiment,
+a molecular beam of acetylene is excited by a $\sim$5 ns pulsed laser
+into spin-rotation-vibration eigenstates of metastable electronic
+states via weak, nominally forbidden transitions. After excitation,
+the long-lived species must travel 35 cm before colliding with an Au
+metal detector surface, where an electron is ejected in a
+de-excitation process. Two criteria must be met for electron ejection
+by a metastable species. First, the vertical electronic energy of the
+metastable approaching the surface must exceed the work function of
+the metal ($\Phi$Au = 5.1 eV). Second, the radiative lifetime of the
+detected metastable eigenstate ($\tau_\text{rad}$) must exceed the
+flight time from the point of laser excitation to the SEELEM surface
+($\Delta$t=300 $\mu$s).
 
 A sample of acetylene (BOC gases) at a backing pressure of one
 atmosphere was pulsed through a 0.5 mm diameter nozzle operating at 10

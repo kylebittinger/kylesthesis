@@ -1,4 +1,4 @@
-\documentclass[12pt,draft]{mitthesis} 
+\documentclass[12pt]{mitthesis} 
 
 \usepackage{lgrind, braket, amsmath,
   amssymb, bbm, booktabs, subfig, color} 
@@ -43,8 +43,7 @@
 \setcounter{chapter}{3}
 \chapter{SEELEM/LIF spectroscopy of acetylene: 
 Spectral patterns of mediated spin-orbit coupling
-in a near iso-energetic set of vibrational levels
-}
+in a near iso-energetic set of vibrational levels}
 
 \section{Introduction}
 
@@ -54,11 +53,22 @@ extensively studied.  This body of work establishes a heirarchical
 model for electronic coupling, which leads to the effects of
 intersystem crossing and internal conversion: $S_1 \rightarrow T_3
 \rightarrow T_{1,2} \rightarrow S_0$.  Top-tier interactions between
-the $S_1$ and $T_3$ electronic states are of particular interest
-because (1) they control coupling to the remaining electronic states
-of the molecule and (2) they are primarily determined by vibrational
-overlap factors and energy denominators, two sensitive consequents of
-the molecule's electronic structure.
+the relatively sparse levels of the $S_1$ and $T_3$ electronic states
+are of particular interest because (1) they control coupling to the
+remaining electronic states of the molecule and (2) they are primarily
+determined by vibrational overlap factors and energy denominators, two
+sensitive consequents of the molecule's electronic structure.
+
+% Singlet~triplet coupling in the S_1 state of trans-acetylene is
+% mediated by the relatively sparse (0.1 per cm-1) levels of the third
+% triplet state, T_3.  When a mediating T_3 level is energetically
+% distant from an interacting singlet level, traces of its influence
+% appear in the patterns of coupling between the singlet level and the
+% dense, local manifold of T_1,2 levels (10 per cm-1).  The method of
+% SEELEM spectroscopy is tuned to detect molecules in such second-tier
+% eigenstates, being most sensitive to states with about 0.1\% S_1
+% character.  Conversely, LIF spectroscopy is sensitive to molecules in
+% states with large amounts of S_1 character.
 
 Surface Electron Ejection by Laser-Excited Metastables \cite{sneh89,
   sneh91, humphrey97} (SEELEM) and LIF spectroscopy are complementary
@@ -78,6 +88,7 @@ SEELEM and LIF spectra reveals features of electronic structure and
 photochemical pathways that are invisible via traditional,
 single-channel spectroscopic probes such as LIF alone, REMPI,
 phosphorescence, or phosphor surface \cite{shi98, campos01, burton72}.
+
 % Information gained from comparison of acetylene SEELEM
 % and LIF spectra can yield a mechanistic description of
 % singlet$\sim$triplet interaction, and holds promise for describing the
@@ -114,14 +125,14 @@ perturber in have been discussed by several authors \cite{humphrey97,
   altunata00, altunata01, mishra04}.  Using vibrational overlap
 integrals gained from \emph{ab initio} calculations of the $T_3$
 electronic surface, Thom and coauthors were able to exclude all but
-several candidate $T_3$ levels as the local triplet perturber in $S_1$
-$3 \nu_3$ $K_a$=1 \cite{thom07}.
+several candidate $T_3$ levels as the $3\nu_3$ local perturber
+\cite{thom07}.
 % \POINT{Overlap between $S_1$ and $T_3$ levels predicted by Bryan and
 %   Ryan.  (See p.40 of 1/2007--3/2007 notebook.)}
-However, recent observations of an increase in $S_1 \sim T_{1,2}$
-coupling at higher values of $J$ suggest that the local $T_3$
-perturber is not the sole, and perhaps not the primary, doorway for
-$3 \nu_3$ \cite{degroot07}.
+However, recent observations of an increase in average $T_{1,2}$
+electronic character at higher values of $J$ suggest that the local
+$T_3$ perturber is not the sole, and perhaps not the primary, doorway
+for $3 \nu_3$ \cite{degroot07}.
 
 That an energetically distant doorway, which would be required to have
 a correspondingly larger spin-orbit matrix element, may play a role in
@@ -145,25 +156,26 @@ region, are not near-degenerate with a mediating $T_3$ level at low
 $J$.  The levels chosen for study all lie within 500 \rcm\ of $3
 \nu_3$ $K_a$=1, and involve excitation in only the Franck-Condon
 active modes of $S_1$ acetlyene, $\nu_2$ (C-C stretch) and $\nu_3$
-(\emph{trans} bend).
+(\emph{trans} bend), with one exception.
 
-The coupling between these $S_1$ levels and the local manifold of
-$T_{1,2}$ states is expected, in this case, to be mediated by
-energetically distant $T_3$ levels.  Evidence for energetically
-distant, mediating $T_3$ levels is obtained by comparing
-simultaneously recorded LIF and SEELEM spectra, and a new technique
-for comparison is developed to suit this purpose.  This new technique
-takes into account shifting intensity patterns in the frequency-domain
-LIF spectrum as a function of delay time, due to the time development
-of an incoherent ensemble of eigenstates with different fluorescence
-lifetimes.  When used on a segment of spectrum that includes just one
-singlet rovibronic transition, the technique reveals a
-coupling-dependent shift in the statistical properties of the
-spectrum.  Comparison with other transitions in a rotational series
-can reveal local perturbations caused by weakly coupled $T_3$ levels.
-When used on a spectrum containing several rovibronic transitions in
-series, the technique can give insight into the matrix element and
-relative energy of a $T_3$ doorway level.
+In the absence of a local $T_3$ perturber, coupling between $S_1$
+levels and the local manifold of $T_{1,2}$ states is expected to be
+mediated by energetically distant $T_3$ levels.  Evidence for
+energetically distant, mediating $T_3$ levels is obtained by comparing
+simultaneously recorded LIF and SEELEM spectra.  Additionally, a new
+technique for comparison is developed to suit the purpose of detecting
+distant coupling doorways.  This new technique takes into account
+shifting intensity patterns in the frequency-domain LIF spectrum as a
+function of delay time, due to the time development of an incoherent
+ensemble of eigenstates with different fluorescence lifetimes.  When
+used on a segment of spectrum that includes just one singlet
+rovibronic transition, the technique reveals a coupling-dependent
+shift in the statistical properties of the spectrum.  Comparison with
+other transitions in a rotational series can reveal local
+perturbations caused by weakly coupled $T_3$ levels.  When used on a
+spectrum containing several rovibronic transitions in series, the
+technique can give insight into the matrix element and relative energy
+of a $T_3$ doorway level.
 
 \section{Patterns of spectral intensity in gated fluorescence and
   SEELEM}
@@ -566,10 +578,7 @@ frequency, along with the simultaneously recorded LIF spectra. Both
 SEELEM and LIF signals were averaged over 100 laser shots / data
 point.
 
-\section{Investigation of a near-isoenergetic set of $2^n3^m$ ($n+m=3$)
-  vibrational levels}
-
-\subsection{Observations}
+\section{Results}
 
 \TODO{Figures of spectra for these bands (with assignments). See IGOR
   task list.}
@@ -692,24 +701,249 @@ shown in Figure \ref{fig:spectrum-32b2}.
   \includegraphics[width=7.5in,angle=90]{spectrum-32b2.png}
 \end{figure}
 
-\subsection{LIF/SEELEM intensity distributions}
+\section{Analysis: LIF/SEELEM intensity distributions}
 
-\subsection{Analysis}
+\subsection{The $2^23^1$ $K_a$=1 sublevel}
 
-\POINT{Analyze the remaining bands under the assumption of distant
-  doorway coupling via $T_3$.  Include center-of-gravity metrics,
-  lifetime/gated fluorescence metrics, and intensity distributions.}
+\subsection{The $2^13^2$ $K_a$=1 sublevel}
+
+Figure \ref{fig:2132-qbranch-cog-delay} shows the shifting center of
+gravity of a series of rotational lines Q(1-5) in the LIF spectrum of
+the $2^13^2$ $K_a$=1 sublevel.
+
+\begin{figure}
+  \caption{Shifting center of gravity of a series of rotational lines
+    Q(1-5) in the LIF spectrum of the $2^13^2$ $K_a$=1 sublevel.}
+  \label{fig:2132-qbranch-cog-delay}
+  \centering
+  \includegraphics[width=6in]{2132-qbranch-cog-delay.pdf}
+\end{figure}
+
+Figure \ref{fig:2132-indiv-cog-delay} shows the shifting center of
+gravity of individual transitions Q(1-5) in the LIF spectrum of
+the $2^13^2$ $K_a$=1 sublevel.
+
+\begin{figure}
+  \caption{Shifting center of gravity of a series of individual
+    transitions Q(1-5) in the LIF spectrum of the $2^13^2$ $K_a$=1
+    sublevel.}
+  \label{fig:2132-indiv-cog-delay}
+  \centering
+  \includegraphics[width=6in]{2132-indiv-cog-delay.pdf}
+\end{figure}
+
+Figure \ref{fig:2132-indiv-var-delay} shows the increasing variance of
+individual transitions Q(1-5) in the LIF spectrum of the $2^13^2$
+$K_a$=1 sublevel.
+
+\begin{figure}
+  \caption{Spectral variance plotted as a function of LIF delay time
+    for a series of individual transitions Q(1-5) in the LIF spectrum
+    of the $2^13^2$ $K_a$=1 sublevel.}
+  \label{fig:2132-indiv-var-delay}
+  \centering
+  \includegraphics[width=6in]{2132-indiv-var-delay.pdf}
+\end{figure}
+
+\subsection{The $3^3$ $K_a$=2 sublevel}
+
+Figure \ref{fig:33k2-cog-delay} shows the shifting center of gravity
+of a series of rotational lines R(1-7) in the LIF spectrum of the
+$3^3$ $K_a$=2 sublevel.
+
+\begin{figure}
+  \caption{Shifting center of gravity of a series of rotational lines
+    R(1-7) in the LIF spectrum of the $3^3$ $K_a$=2 sublevel.}
+  \label{fig:33k2-cog-delay}
+  \centering
+  \includegraphics[width=6in]{33k2-cog-delay.png}
+\end{figure}
+
+\subsection{The $3^24^2$ $K_a$=1 sublevel}
+
+\TODO{Adapt from email.}  Consider the R-branch of this transition.  A
+look at the long vs. short gates shows a systematic shift to higher
+energy in the delayed (long) gate spectrum.  Here is what happens when
+the data is examined using all 500 time divisions available
+\ref{fig:32b2-cog-delay}.
+
+\begin{figure}
+  \caption{Shifting center of gravity of individual rotational
+    lines in the LIF spectrum of the $3^24^2$ $K_a$=1 sublevel.}
+  \label{fig:32b2-cog-delay}
+  \centering
+  \includegraphics[width=6in]{32b2-cog-delay.png}
+\end{figure}
+
+The systematic shift to higher energies at greater time delays is
+evident for all the lines, EXCEPT R(1).  In a somewhat peculiar
+manner, R(1) begins to shift upward in energy, but then shifts
+downward at later times. I believe this to be evidence of a local
+perturbation, probably a T3 level which happens to have a small matrix
+element with the $3^2 4^2$ level.  (Since the perturbation occurrs
+only at $J'$=2, it most likely involves a change in $N$ of $\pm$1 --
+see Ryan and Adya's paper for details.)  Looking at the SEELEM
+spectrum near the R(1) transition, you'll notice that it is the
+strongest feature in the band.  A local $T_3$ perturber which is
+fractionated among $T_1$ and $T_2$ levels would explain this strong,
+anamolous feature in the SEELEM spectrum.
+
+Although I did not write out the theory for this in my report, I've
+also plotted out the variance of the spectral features as a function
+of time \ref{fig:32b2-var-delay}
+
+\begin{figure}
+  \caption{Shifting variance of individual rotational lines in the LIF
+    spectrum of the $3^24^2$ $K_a$=1 sublevel.}
+  \label{fig:32b2-var-delay}
+  \centering
+  \includegraphics[width=6in]{32b2-variance-delay.png}
+\end{figure}
+
+All of the transitions exhibit similar behavior, increasing in
+spectral width as our detection method becomes more and more sensitive
+to states with smaller amounts of bright state character.  The R(1)
+transition may be increasing in variance slightly faster due to the
+proposed local interaction, but I hesitate to hang too much weight on
+that due to intensity noise.
+
+\section{Discussion}
+
+\TODO{Adapt from email.} In conclusion, I think the analysis shows
+that the coupling between S1 ($3^2 4^2$) and the local manifold of
+T1,2 levels is induced by a non-local mediating (probably T3) level at
+higher energy.  If the coupling were non-mediated, the manifold of
+T1,2 levels would mix according to their energy denominators, and we
+would not observe a systematic shift in the center of gravity for all
+transitions in the R-branch.  The analysis also shows a local
+perturbation at J'=2.
 
 \section{Conclusion}
 
-\POINT{The LIF/SEELEM spectra for the progression of $2^n3^m$ levels
-  shows the expected trends for strong coupling.}
+The mechanism of doorway-mediated coupling by an energetically distant
+$T_3$ level skews the coupling to the local $T_{1,2}$ states appearing
+in the SEELEM spectrum, resulting in a 'center-of-gravity' shift
+between the LIF and SEELEM spectra.  Additionally, when viewed with a
+delayed time window, the center of gravity of the LIF spectrum shows a
+transition to the limiting behavior exhibited in the SEELEM spectrum.
+A simple model can be used to show that strong coupling between the
+singlet level and the mediating $T_3$ level causes a gradual shift in
+the center of gravity, while weak coupling to the mediating level
+induces a more delayed and rapid shift in the center of gravity.
 
-\POINT{Prospects for other vibrational levels: (1) levels with
-  perturbations observed by the singlets, (2) other $3^2B^2$ polyad
-  members, (3) other K-sublevels in the FC active modes.}
+Rotational selection rules for $S_1 \sim T_3$ spin-orbit coupling give
+rise to J-dependent effects in the LIF/SEELEM spectrum.  As J
+increases, the $\Delta N$= +1 or -1 components of any distant $T_3$
+level approach the singlet at a rate of approximately $2B_T$ (about
+2\rcm\ per $J$).  In the spectrum, the result is a shift in the
+LIF-SEELEM center of gravity when integrated across an entire branch
+of transitions.  The effect not only leads to strong changes in
+$T_3$-mediated coupling with rotation, but also ensures "accidental"
+$S_1 \sim T_3$ near-degeneracies at relatively low values of $J$.
 
+% \POINT{The LIF/SEELEM spectra for the progression of $2^n3^m$ levels
+%   shows the expected trends for strong coupling.}
+
+The universality of triplet perturbations via $F_1$ and $F_3$
+components of $T_3$ levels in the spectrum of acetylene ensures that
+further LIF/SEELEM spectroscopy of the \astate\ state will be fruitful
+and informative.  Primary candidates for further investigations are
+(1) levels exhibiting long lifetimes or quantum beats in the LIF
+spectrum, (2) levels with unassigned perturbations or splittings, (3)
+other $3^2B^2$ polyad members, (4) other $K$-sublevels of the
+Franck-Condon active levels studied here.
 
 \bibliography{master}
 \bibliographystyle{plain}
 \end{document}
+
+
+
+
+President's Report:
+
+The T_3 electronic state is peculiar among the valence states of
+acetylene due to its out-of-plane equilibrium geometry. One of the
+most interesting unsolved problems in the intersystem crossing of
+acetylene is the role of the non-symmetric in- and out-of-plane S_1
+bending modes (\nu_4 and \nu_6) in promoting coupling to the nonplanar
+T_3 state.  To investigate this issue, we have used an IR-UV-Double
+Resonance technique to record simultaneous LIF/SEELEM spectra of the
+3^3 4^1 K=0 and 3^3 6^1 K=0 levels.  This method allows us to record
+the spectrum of weakly coupled T_1,2 levels without overlap from
+adjacent rotational transitions.
+
+[Additionally, we have used a polarization technique in tandem with
+IRUVDR to record the spectrum of the rotationless level in 3^3 6^1
+K=0.  Due to spin-orbit selection rules, only triplet levels having
+K_T = J_T = N_T = 0 may appear in the spectrum -- thus, the local
+T_1,2 level density may be obtained from a direct count of SEELEM
+transitions.]
+
+
+That should be K_T = J_T = 0 and N_T = 1...my bad. For a K=0 triplet
+level in Hund's case (b),
+
+N            J
+
+  ---------- 3
+2 ---------- 2
+  ---------- 1
+
+
+  ---------- 2
+1 ---------- 1
+  ---------- 0  ***
+
+
+0 ---------- 1
+
+--Kyle
+
+
+
+The total spin-orbit matrix element between a rovibronic level of S_1
+and a level of T_3 is the product of an electronic factor, a
+vibrational overlap factor, and a rotational factor (arising from
+angular momentum coupling laws).
+
+OK, these are kind of hairy, but hold on before you start to panic.
+As it turns out, the energy differences between levels of S_1 and T_3
+vary much more rapidly than the rotational factors.  This is due to
+the spin-orbit selection rule of \Delta_N = 0, +1, -1.
+
+Take a look at this plot: It shows the relative energies of the three
+triplet rotational components that are connected to singlet level: F_1
+(\Delta_N = -1), F_2 (\Delta_N = 0), and F_3 (\Delta_N = +1).  This
+plot is made in the approximation that the singlet and triplet
+B-values are nearly equal.  Imagine placing a singlet level at some
+energy on the plot - the energy of the singlet could be represented by
+a horizontal line.  If the singlet is very close to zero, the F_2
+component varies slowly with rotation and the F_1,2 components rapidly
+speed away.  Essentially, only the F_2 component matters when J>1.
+
+If the singlet is not located close to zero, EITHER the F_1 or the F_3
+component of the triplet is rapidly approaching.  The triplet
+component approaches with a rate of about 2 cm-1 per rotational
+quantum number. According to Ryan and Bryan's calculations, the
+<electronic*vibrational> spin-orbit matrix elements between S_1 and
+T_3 max out at about 0.1 cm-1. The rotational factor only reduces this
+value.  Compared to the matrix element, an energy difference of 2 cm-1
+per J is huge!
+
+I believe that strongly coupled, mediating T_3 levels will make
+themselves known at several values of J through this
+energy-denominator effect.  I think this is what we observe in our 3^3
+K=2 data.  Weakly coupled T_3 levels should appear as perturbations at
+a single J, and then immediately disappear, because their matrix
+elements are much, much less than 2 cm-1. This means that weak triplet
+perturbations should be _common_, and it means that we should be able
+to infer their approximate energy from the value of J which is
+perturbed in the singlet, i.e. + or - (J*2*B).
+
+This means that further SEELEM spectroscopy of the S_1 state should be
+fruitful and informative.  I hope you are all totally stoked!  I'll
+discuss the experimental consequences and possibilities in a later
+email.
+
+--Kyle

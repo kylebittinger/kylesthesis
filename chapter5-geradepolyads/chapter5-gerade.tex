@@ -1,4 +1,4 @@
-\documentclass[12pt]{mitthesis} 
+\documentclass[12pt,draft]{mitthesis} 
 
 \usepackage{lgrind, braket, amsmath,
   amssymb, bbm, booktabs, subfig, color} 
@@ -8,7 +8,7 @@
 
 \newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
 \newcommand{\NOTE} [1]{\textcolor{magenta}{[\emph{#1}]}}
-\newcommand{\POINT}[1]{\textcolor{magenta}{#1}}
+\newcommand{\POINT}[1]{\textcolor{magenta}{\textbf{POINT:} #1}}
 
 \newcommand{\rcm}{cm$^{-1}$}
 \newcommand{\bigspace}{$
@@ -41,9 +41,8 @@
 \clearpage
 
 \setcounter{chapter}{3}
-\chapter{SEELEM/LIF spectroscopy of acetylene: 
-Spectral patterns of mediated spin-orbit coupling
-in a near iso-energetic set of vibrational levels}
+\chapter{SEELEM/LIF spectroscopy of acetylene: Spectral signatures of
+  energetically distant doorway levels}
 
 \section{Introduction}
 
@@ -154,8 +153,8 @@ T_3$ ``active'' coupling region.  We turn our attention to other
 vibrational levels of $S_1$, which, while in this critical energy
 region, are not near-degenerate with a mediating $T_3$ level at low
 $J$.  The levels chosen for study all lie within 500 \rcm\ of $3
-\nu_3$ $K_a$=1, and involve excitation in only the Franck-Condon
-active modes of $S_1$ acetlyene, $\nu_2$ (C-C stretch) and $\nu_3$
+\nu_3$ $K_a$=1, and involve excitation in the Franck-Condon active
+modes of $S_1$ acetlyene, $\nu_2$ (C-C stretch) and $\nu_3$
 (\emph{trans} bend), with one exception.
 
 In the absence of a local $T_3$ perturber, coupling between $S_1$
@@ -163,19 +162,19 @@ levels and the local manifold of $T_{1,2}$ states is expected to be
 mediated by energetically distant $T_3$ levels.  Evidence for
 energetically distant, mediating $T_3$ levels is obtained by comparing
 simultaneously recorded LIF and SEELEM spectra.  Additionally, a new
-technique for comparison is developed to suit the purpose of detecting
-distant coupling doorways.  This new technique takes into account
-shifting intensity patterns in the frequency-domain LIF spectrum as a
-function of delay time, due to the time development of an incoherent
-ensemble of eigenstates with different fluorescence lifetimes.  When
-used on a segment of spectrum that includes just one singlet
-rovibronic transition, the technique reveals a coupling-dependent
-shift in the statistical properties of the spectrum.  Comparison with
-other transitions in a rotational series can reveal local
-perturbations caused by weakly coupled $T_3$ levels.  When used on a
-spectrum containing several rovibronic transitions in series, the
-technique can give insight into the matrix element and relative energy
-of a $T_3$ doorway level.
+technique for comparison is developed that is sensitive to the
+presence of distant $T_3$ doorway levels.  This new technique takes
+into account shifting intensity patterns in the frequency-domain LIF
+spectrum as a function of delay time, due to the time development of
+an incoherent ensemble of eigenstates with different fluorescence
+lifetimes.  When used on a segment of spectrum that includes just one
+singlet rovibronic transition, the technique reveals a
+coupling-dependent shift in the statistical properties of the spectrum
+with delay time.  Comparison with other transitions in a rotational
+series can reveal local perturbations caused by weakly coupled $T_3$
+levels.  When used on a spectrum containing several rovibronic
+transitions in series, the technique can give insight into the matrix
+element and relative energy of a $T_3$ doorway level.
 
 \section{Patterns of spectral intensity in gated fluorescence and
   SEELEM}
@@ -428,13 +427,30 @@ for spin-orbit coupling are \cite{stevens73}
     \Delta K_a &= 0, \pm 1.
   \end{split}
 \end{equation}
-
-We take as a model system a series of equally spaced bright state
-transitions with increasing rotational quantum number $J$.  The total
-bright$\sim$dark coupling strength for each transition is function of
-the energy separation between the bright state $\ket{s;J}$ and three
-components of the non-local mediating level: $F_1$, $\ket{\ell;J-1}$;
-$F_2$, $\ket{\ell;J}$; and $F_3$, $\ket{\ell;J+1}$.
+The $\Delta N$ selection rule gives rise to three rotational
+components of a dark triplet state $\ket{\ell}$ coupled to a singlet
+bright state $\ket{s;N}$ : $F_1$, $\ket{\ell;N-1}$; $F_2$,
+$\ket{\ell;N}$; and $F_3$, $\ket{\ell;N+1}$.  The relative energies of
+the three components are, in terms of the singlet rotational quantum
+number $J$,
+\begin{equation}
+  \label{eq:components}
+  \Delta E_{s\ell}(J) = (E_{s} - E_{\ell}) +
+  \begin{cases}
+    \Delta B_{s\ell}J(J+1) + 2B_{\ell}J           
+    & F_1 \text{ component}\\
+    \Delta B_{s\ell}J(J+1)                      
+    & F_2 \text{ component}\\
+    \Delta B_{s\ell}J(J+1) - 2B_{\ell}J - 2B_{\ell} 
+    & F_3 \text{ component}.\\
+  \end{cases}
+\end{equation}
+In the approximation that $B_s \approx B_{\ell}$, the relative
+energies of the $F_{1,2,3}$ components change linearly when plotted
+against $J$.  The relative energy of the $F_2$ component has a slope
+of approximately zero, while the $F_1$ and $F_3$ components have a
+slope of approximately $\pm2B$.  These relative energy differences are
+presented in Figure \ref{fig:components}.
 
 \begin{figure}
   \caption{ Reduced term value plot of the three singlet$\sim$triplet
@@ -445,62 +461,55 @@ $F_2$, $\ket{\ell;J}$; and $F_3$, $\ket{\ell;J+1}$.
   \includegraphics[width=6in]{f-components.png}
 \end{figure}
 
+Based on the existing assignment of a local $T_3$ perturber in $S_1$
+$3 \nu_3$ $K_a$=1, as well as $T_3$ geometries prediced by \emph{ab
+  initio} calculations, we expect the product $\Delta B_{s\ell}J(J+1)$
+to remain small compared to $2BJ$ for any combination of $S_1$ and
+$T_3$ vibrational levels \cite{mishra04, ventura03, thom07}.
+\POINT{The figure is a good approximation to what we expect from the
+  molecule.}
+
 To a very good approximation the total first-order spin-orbit matrix
 element between two rovibrational states is given by the product of
 three factors: an electronic spin-orbit matrix element, a vibrational
 overlap factor, and a rotational factor arising from angular momentum
 coupling rules.  The rotational factors are given for the general case
-of polyatomic molecules by Stevens and Brand \cite{stevens73}.  
-
-\POINT{Present rotational factors for first-order spin-orbit
-  coupling.}  Plots of the spin-orbit rotational factors are presented
-for singlet levels having $K$=0 (Figure
-\ref{fig:rotational-factors-0}), $K$=1 (Figure
+of polyatomic molecules by Stevens and Brand \cite{stevens73}.  Plots
+of the spin-orbit rotational factors are presented for singlet levels
+having $K$=0 (Figure \ref{fig:rotational-factors-0}), $K$=1 (Figure
 \ref{fig:rotational-factors-1}), and $K$=2 (Figure
 \ref{fig:rotational-factors-2}).  With the exception of the $\Delta N
 = \Delta K = 0$ components, the rotational factors quickly approach
-their asymptotic ratios.  Even at low values of $J$, their variation
-is less than a factor of 2 in all cases.  \POINT{These variations are
-  trumped by energy denominator effects.}
+their asymptotic limits, usually between 0.1 and 0.6.  Even at low
+values of $J$, their variation with rotational quantum number is
+always less than a factor of 2.  \POINT{These variations are trumped
+  by energy denominator and vibrational overlap effects.}
 
 \begin{figure}
-  \caption{}
+  \caption{Rotational factors for spin-orbit coupling in polyatomic
+    molecules, $K_s$=0}
   \label{fig:rotational-factors-0}
   \centering
   \includegraphics[width=6in]{rotational_factors_k0.png}
 \end{figure}
 
 \begin{figure}
-  \caption{}
+  \caption{Rotational factors for spin-orbit coupling in polyatomic
+    molecules, $K_s$=1}
   \label{fig:rotational-factors-1}
   \centering
   \includegraphics[width=6in]{rotational_factors_k1.png}
 \end{figure}
 
 \begin{figure}
-  \caption{}
+  \caption{Rotational factors for spin-orbit coupling in polyatomic
+    molecules, $K_s$=2}
   \label{fig:rotational-factors-2}
   \centering
   \includegraphics[width=6in]{rotational_factors_k2.png}
 \end{figure}
 
-The rotational dependence of energy differences for the three
-components is
-\begin{equation}
-  \label{eq:components}
-  \Delta E_{s\ell}(J) = 
-  \begin{cases}
-    \Delta B_{s\ell}J(J+1) + 2B_{\ell}J           
-    & F_1 \text{ component}\\
-    \Delta B_{s\ell}J(J+1)                      
-    & F_2 \text{ component}\\
-    \Delta B_{s\ell}J(J+1) - 2B_{\ell}J - 2B_{\ell} 
-    & F_3 \text{ component}.\\
-  \end{cases}
-\end{equation}
-\POINT{Give a general idea of the expected $T_3$ rotational constant
-  from calculations and the RA experiment.  The product $\Delta
-  B_{s\ell}J(J+1)$ is expected to remain small compared to $2BJ$.}
+
 
 The effects of widely varying vibrational overlap factors will divide
 $S_1 \sim T_3$ perturbations into two classes: those where
@@ -513,28 +522,11 @@ according to Equation \ref{eq:components}.
 
 Perturbations falling into the second class will affect the
 singlet$\sim$triplet coupling at several values of $J$; these are the
-distant $T_3$ doorways with which we are most concerned.
-
-% We simplify the above formulas by considering the \emph{average}
-% energy difference, taking all components into account.  Giving equal
-% weights to all components, the average energy separation is
-% \begin{equation}
-%   \Delta E_{s\ell}(J)_{\text{ave}} = \Delta B_{s\ell}J(J+1) - \frac{2}{3}B_{\ell}.
-% \end{equation}
-% We define a mixing coefficient $\alpha_{s\ell}$ between the bright
-% state and the three components of the mediating level.  The mixing
-% coefficient can be related to $\Delta E_{s\ell}$ using second order
-% perturbation theory.  Introducing the average spin-orbit matrix
-% element $H_{s\ell}$ for the three rotational components, the relation
-% is $\alpha_{s\ell}(J) = H_{s\ell} / \Delta E_{s\ell}(J)$.  The
-% relative strengths of the three components are given by simple
-% formulas, which can be found in the literature.  We find that the
-% functional dependence of the mixing coefficient between the bright
-% state and the mediating components is
-% \begin{equation}
-%   \alpha_{s\ell}(J) = \frac{H_{s\ell}}{\Delta B_{s\ell}J(J+1)}.
-% \end{equation}
-
+distant $T_3$ doorways with which we are most concerned.  \TODO{Plot
+  mixing coefficients of distant doorways as a fcn of rotational
+  quantum number.  Trend will be: weakly coupled states turn on/off
+  suddenly, strongly coupled states are visible for several values of
+  $N$.}
 
 \section{Experiment}
 
@@ -580,17 +572,15 @@ point.
 
 \section{Results}
 
-\TODO{Figures of spectra for these bands (with assignments). See IGOR
-  task list.}
-
 \POINT{SEELEM spectrum of $2^2 3^1$ (Oct/Nov 2006, see ``similitude''
   calculations, p.62 of Sep 2006--Jan 2007 notebook.)}  This spectrum
 is shown in Figure \ref{fig:spectrum-2231}.  For this band, several
 scans were repeated with finer frequency steps.  Figure
 \ref{fig:spectrum-2231-q123} shows the first three transitions of the
 Q-branch.  Figure \ref{fig:spectrum-2231-q1r0} shows the two
-transitions Q(1) and R(0).  The upper states for the transitions are
-assigned as $J'=1$, and have $f$- and $e$-symmetry, respectively.
+transitions, Q(1) and R(0).  These two transitions have the same upper
+state rotational quantum number ($J'=1$), but differ in parity (having
+$f$- and $e$-symmetry, respectively).
 % Selection rules: Q   -> e-f
 %                  P,R -> e-e, f-f
 
@@ -705,7 +695,11 @@ shown in Figure \ref{fig:spectrum-32b2}.
 
 \subsection{The $2^23^1$ $K_a$=1 sublevel}
 
+\TODO{Get trace data from MIT.}
+
 \subsection{The $2^13^2$ $K_a$=1 sublevel}
+
+\TODO{Import calibration points from IGOR.}
 
 Figure \ref{fig:2132-qbranch-cog-delay} shows the shifting center of
 gravity of a series of rotational lines Q(1-5) in the LIF spectrum of
@@ -734,7 +728,9 @@ the $2^13^2$ $K_a$=1 sublevel.
 
 Figure \ref{fig:2132-indiv-var-delay} shows the increasing variance of
 individual transitions Q(1-5) in the LIF spectrum of the $2^13^2$
-$K_a$=1 sublevel.
+$K_a$=1 sublevel.  \POINT{Huge difference between $J'=1,2$ and
+  $J'=3,4,5$ is consistent with coupling to an energetically distant
+  doorway with $K_a$=2 via the $F_1$ component.}
 
 \begin{figure}
   \caption{Spectral variance plotted as a function of LIF delay time
@@ -746,6 +742,8 @@ $K_a$=1 sublevel.
 \end{figure}
 
 \subsection{The $3^3$ $K_a$=2 sublevel}
+
+\TODO{Import calibration points from IGOR.}
 
 Figure \ref{fig:33k2-cog-delay} shows the shifting center of gravity
 of a series of rotational lines R(1-7) in the LIF spectrum of the
@@ -809,27 +807,30 @@ that due to intensity noise.
 
 \section{Discussion}
 
-\TODO{Adapt from email.} In conclusion, I think the analysis shows
-that the coupling between S1 ($3^2 4^2$) and the local manifold of
-T1,2 levels is induced by a non-local mediating (probably T3) level at
-higher energy.  If the coupling were non-mediated, the manifold of
-T1,2 levels would mix according to their energy denominators, and we
-would not observe a systematic shift in the center of gravity for all
-transitions in the R-branch.  The analysis also shows a local
-perturbation at J'=2.
+\TODO{Adapt from email, on the subject of $3^2 4^2$ $K_a$=1.}  The
+analysis indicates that the coupling between S1 ($3^2 4^2$) and the
+local manifold of T1,2 levels is induced by a non-local mediating
+(probably T3) level at higher energy.  If the coupling were
+non-mediated, the manifold of T1,2 levels would mix according to their
+energy denominators, and we would not observe a systematic shift in
+the center of gravity for all transitions in the R-branch.  The
+analysis also shows a local perturbation at J'=2.
+
+\TODO{Write this section.}
 
 \section{Conclusion}
 
-The mechanism of doorway-mediated coupling by an energetically distant
-$T_3$ level skews the coupling to the local $T_{1,2}$ states appearing
-in the SEELEM spectrum, resulting in a 'center-of-gravity' shift
-between the LIF and SEELEM spectra.  Additionally, when viewed with a
-delayed time window, the center of gravity of the LIF spectrum shows a
-transition to the limiting behavior exhibited in the SEELEM spectrum.
-A simple model can be used to show that strong coupling between the
-singlet level and the mediating $T_3$ level causes a gradual shift in
-the center of gravity, while weak coupling to the mediating level
-induces a more delayed and rapid shift in the center of gravity.
+\TODO{Adapt from President's report.}  The mechanism of
+doorway-mediated coupling by an energetically distant $T_3$ level
+skews the coupling to the local $T_{1,2}$ states appearing in the
+SEELEM spectrum, resulting in a 'center-of-gravity' shift between the
+LIF and SEELEM spectra.  Additionally, when viewed with a delayed time
+window, the center of gravity of the LIF spectrum shows a transition
+to the limiting behavior exhibited in the SEELEM spectrum.  A simple
+model can be used to show that strong coupling between the singlet
+level and the mediating $T_3$ level causes a gradual shift in the
+center of gravity, while weak coupling to the mediating level induces
+a more delayed and rapid shift in the center of gravity.
 
 Rotational selection rules for $S_1 \sim T_3$ spin-orbit coupling give
 rise to J-dependent effects in the LIF/SEELEM spectrum.  As J

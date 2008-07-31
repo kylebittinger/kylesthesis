@@ -28,6 +28,13 @@
   $}
 \newcommand{\microsec}{$\mu$s}
 
+% scientific notation
+\newcommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+% temperatures
+\newcommand{\degrees}{\ensuremath{^\circ}}
+
+% hyphenation
 \hyphenation{acetylene}
 \hyphenation{Hamiltonian}
 
@@ -250,16 +257,17 @@ which we cast in units of the bright state lifetime:
 \end{equation}
 At a chosen value of $R$, the fluorescence intensity equation
 \ref{eq:int-m} has a single maximum with respect to fractional bright
-state character.  \TODO{Insert relevant minmax equation.}  Within the
-range $0 \le a_m^2 \le 1$, the fluorescence intensity equation is
-maximized when the mixing fraction is (Chapter 2, equation 31)
+state character.  \TODO{Insert relevant minmax equation.}
+\TODO{Reword: when $R<2$, when $R<2$...} Within the range $0 \le a_m^2
+\le 1$, the fluorescence intensity equation is maximized when the
+mixing fraction is (Chapter 2, equation 31)
 \begin{equation}
   \label{eq:am-max}
   a_m^2 = \frac{2}{R}.
 \end{equation}
 
 \begin{figure}
-  \caption{The intensity of a mixed eigenstate at time $R_c =
+  \caption{The intensity of a mixed eigenstate at time $R =
     t/\tau_s$, plotted as a function of bright
     state character.}
   \label{fig:int-at-rc}
@@ -418,7 +426,7 @@ interesting aspect of the center of gravity shift shown in Figure
 coefficients.
 
 \begin{figure}
-  \caption{(Top) Time development of the relative intensity ratio for
+  \caption{(Top) Time development of the intensity ratio for
     a two state system. (Bottom) Time development of the center of
     gravity for a two state system.}
   \label{fig:cog-devel}
@@ -430,11 +438,14 @@ coefficients.
 \subsection{Delayed fluorescence of a series of rotational
   transitions}
 
-Information about the relative energy of a mediating level can be
-recovered by studying the statistical properties of delayed
-fluorescence as a function of rotational quantum number.  For a
-near-symmetric prolate top in Hund's case ($b$), the selection rules
-for spin-orbit coupling are \cite{stevens73}
+Information about the relative energy of a doorway level can be
+recovered from the statistical properties of delayed fluorescence as a
+function of rotational quantum number.  \POINT{Continue explaining the
+general idea.}
+
+\POINT{Present energy level spacings.} For a near-symmetric prolate
+top in Hund's case ($b$), the spin-orbit selection rules are
+\cite{stevens73}
 \begin{equation}
   \begin{split}
     \Delta J &= 0 \\
@@ -442,12 +453,13 @@ for spin-orbit coupling are \cite{stevens73}
     \Delta K_a &= 0, \pm 1.
   \end{split}
 \end{equation}
-The $\Delta N$ selection rule gives rise to three rotational
-components of a dark triplet state $\ket{\ell}$ coupled to a singlet
-bright state $\ket{s;N}$ : $F_1$, $\ket{\ell;N-1}$; $F_2$,
-$\ket{\ell;N}$; and $F_3$, $\ket{\ell;N+1}$.  The relative energies of
-the three components are, in terms of the singlet rotational quantum
-number $J$,
+\TODO{Rewrite this.}  Due to the $\Delta N$ selection rule, a singlet
+level $\ket{s;N=J}$ may interact with three rotational components of a
+dark triplet state: $F_1$, $\ket{\ell;N=J-1}$; $F_2$,
+$\ket{\ell;N=J}$; and $F_3$, $\ket{\ell;N=J+1}$.  The relative
+energies of the three components are, in terms of the singlet
+rotational quantum number $J$, \TODO{use different notation for
+  $\Delta B$?}
 \begin{equation}
   \label{eq:components}
   \Delta E_{s\ell}(J) = (E_{s} - E_{\ell}) +
@@ -462,15 +474,17 @@ number $J$,
 \end{equation}
 In the approximation that $B_s \approx B_{\ell}$, the relative
 energies of the $F_{1,2,3}$ components change linearly when plotted
-against $J$.  The relative energy of the $F_2$ component has a slope
-of approximately zero, while the $F_1$ and $F_3$ components have a
-slope of approximately $\pm2B$.  These relative energy differences are
-presented in Figure \ref{fig:components}.
+against $J$.  The energy of the $F_2$ component relative to the
+singlet state has a slope of approximately zero, while the $F_1$ and
+$F_3$ components have slopes of approximately $\pm2B$.  The relative
+energy differences between $S_1$ and $T(F_1,F_2,F_3)$ are plotted in
+Figure \ref{fig:components}.
 
 \begin{figure}
-  \caption{ Reduced term value plot of the three singlet$\sim$triplet
-    roational components permitted by the spin-orbit operator in
-    Hund's case ($b$).  The $F_1$ component corresponds to  }
+  \caption{\TODO{Change xlabel to $J$.}  Reduced term value plot of
+    the three singlet$\sim$triplet roational components permitted by
+    the spin-orbit operator in Hund's case ($b$).  The $F_1$ component
+    corresponds to...  }
   \label{fig:components}
   \centering
   \includegraphics[width=6in]{f-components.png}
@@ -480,25 +494,26 @@ Based on the existing assignment of a local $T_3$ perturber in $S_1$
 $3 \nu_3$ $K_a$=1, as well as $T_3$ geometries prediced by \emph{ab
   initio} calculations, we expect the product $\Delta B_{s\ell}J(J+1)$
 to remain small compared to $2BJ$ for any combination of $S_1$ and
-$T_3$ vibrational levels \cite{mishra04, ventura03, thom07}.
-\POINT{The figure is a good approximation to what we expect from the
-  molecule.}
+$T_3$ vibrational levels \cite{mishra04, ventura03, thom07} up to the
+maximum $J$ values ($J<8$) observed in our experiment .  \POINT{The
+  figure is a good approximation to what we expect from the molecule.}
 
-To a very good approximation the total first-order spin-orbit matrix
-element between two rovibrational states is given by the product of
-three factors: an electronic spin-orbit matrix element, a vibrational
-overlap factor, and a rotational factor arising from angular momentum
-coupling rules.  The rotational factors are given for the general case
-of polyatomic molecules by Stevens and Brand \cite{stevens73}.  Plots
-of the spin-orbit rotational factors are presented for singlet levels
-having $K$=0 (Figure \ref{fig:rotational-factors-0}), $K$=1 (Figure
-\ref{fig:rotational-factors-1}), and $K$=2 (Figure
-\ref{fig:rotational-factors-2}).  With the exception of the $\Delta N
-= \Delta K = 0$ components, the rotational factors quickly approach
+The total first-order spin-orbit matrix element between two
+rovibrational states is given by the product of three factors: an
+electronic spin-orbit matrix element, a vibrational overlap factor,
+and a rotational factor arising from angular momentum coupling.  The
+rotational factors are given for the general case of polyatomic
+molecule asymmetric tops by Stevens and Brand \cite{stevens73}.  Plots
+of the spin-orbit rotational factors are presented in Figure
+\ref{fig:rotational-factors-0} for singlet levels with $K$=0, $K$=1
+(Figure \ref{fig:rotational-factors-1}), and $K$=2 (Figure
+\ref{fig:rotational-factors-2}).  With the exception of $\Delta N =
+\Delta K = 0$ interactions, the rotational factors quickly approach
 their asymptotic limits, usually between 0.1 and 0.6.  Even at low
-values of $J$, their variation with rotational quantum number is
-always less than a factor of 2.  \POINT{These variations are trumped
-  by energy denominator and vibrational overlap effects.}
+values of $J$, the variation of rotational factor with rotational
+quantum number is always less than a factor of 2.  \POINT{These
+  variations are trumped by energy denominator and vibrational overlap
+  effects.}
 
 \begin{figure}
   \caption{Rotational factors for spin-orbit coupling in polyatomic
@@ -524,15 +539,19 @@ always less than a factor of 2.  \POINT{These variations are trumped
   \includegraphics[width=6in]{rotational_factors_k2.png}
 \end{figure}
 
-The effects of widely varying vibrational overlap factors will divide
-$S_1 \sim T_3$ perturbations into two classes: those where
-$H_{st}/\Delta E_{st} \ll 2B$, and those where $H_{st} / \Delta
-E_{st}$ is on the order of $2B$.  Perturbations in the first class
-will appear only once in the spectrum.  However, once a triplet level
-with small vibrational overlap is found at a particular $J$, its
-energy above or below the perturbed singlet level may be found
-according to Equation \ref{eq:components}.
+\POINT{Expect vibrational factor to vary greatly.}  The effects of
+widely varying vibrational overlap factors divide $S_1 \sim T_3$
+perturbations into two classes: those where $H_{st}/\Delta E_{st} \ll
+2B$, and those where $H_{st} / \Delta E_{st}$ is on the order of $2B$.
 
+\POINT{Explain pattern when $H_{st}/\Delta E_{st} \ll 2B$.}
+Perturbations in the first class, observable as a level shift, will
+occur only once in the spectrum.  However, once a triplet level with
+small vibrational overlap is found at a particular $J$, its energy
+above or below the perturbed singlet level may be found according to
+Equation \ref{eq:components}.
+
+\POINT{Explain pattern when $H_{st}/\Delta E_{st} \approx 2B$.}
 Perturbations falling into the second class will affect the
 singlet$\sim$triplet coupling at several values of $J$; these are the
 distant $T_3$ doorways with which we are most concerned.  \TODO{Plot
@@ -544,44 +563,46 @@ distant $T_3$ doorways with which we are most concerned.  \TODO{Plot
 \section{Experiment}
 
 \TODO{Adapt this from paper.}  SEELEM is a versatile and sensitive
-technique for investigating ``dark'' (weakly-fluorescing) metastable
-molecules produced via laser excitation.1-6 In the SEELEM experiment,
-a molecular beam of acetylene is excited by a $\sim$5 ns pulsed laser
-into spin-rotation-vibration eigenstates of metastable electronic
-states via weak, nominally forbidden transitions. After excitation,
-the long-lived species must travel 35 cm before colliding with an Au
-metal detector surface, where an electron is ejected in a
-de-excitation process. Two criteria must be met for electron ejection
-by a metastable species. First, the vertical electronic energy of the
-metastable approaching the surface must exceed the work function of
-the metal ($\Phi$Au = 5.1 eV). Second, the radiative lifetime of the
-detected metastable eigenstate ($\tau_\text{rad}$) must exceed the
-flight time from the point of laser excitation to the SEELEM surface
-($\Delta$t=300 $\mu$s).
+technique for investigating molecules in ``dark'' (weakly-fluorescing)
+metastable states populated by laser excitation.1-6 In the SEELEM
+experiment, a molecular beam of acetylene is excited by a $\sim$5 ns
+FWHM pulsed tunable laser into spin-rotation-vibration eigenstates of
+metastable electronic states via weak, nominally forbidden
+transitions. After excitation, the long-lived species must travel 35
+cm before colliding with an Au metal detector surface, where an
+electron is ejected in a de-excitation process. Two criteria must be
+met for electron ejection by a metastable species. First, the vertical
+electronic energy of the metastable approaching the surface must
+exceed the work function of the metal ($\Phi_{\text{Au}}$ = 5.1
+eV). Second, the radiative lifetime of the detected metastable
+eigenstate ($\tau_\text{rad}$) must exceed the flight time from the
+point of laser excitation to the SEELEM surface ($\Delta$t=300
+$\mu$s).
 
 A sample of acetylene (BOC gases) at a backing pressure of one
 atmosphere was pulsed through a 0.5 mm diameter nozzle operating at 10
-Hz into a diffusion pumped vacuum chamber at $\sim$5x10-5 torr.  An Nd:YAG
-pumped, frequency-doubled dye laser (220 nm) excited the acetylene
-molecules in the pulsed jet expansion 2 cm downstream from the nozzle
-orifice. UV-LIF was detected perpendicular to the plane defined by the
-intersection of the pulsed molecular and laser beams using f/1.2
-collection optics, a fluorescence filter (UG-11) to reduce scattered
-laser light, and a PMT (Hamamatsu model R375). The fluorescence signal
-was averaged by a boxcar integrator and recorded. For SEELEM
-detection, the excited molecules in the pulsed expansion passed
-through a conical skimmer (3mm diameter) to form a collimated
-molecular beam, which traveled into a differentially pumped detector
-chamber maintained at $\sim$4x10-7 torr, and collided with a heated (300
-C) Au metal surface 35 cm downstream from the point of laser
-excitation. The SEELEM detector was identical to that used in the
-previously described apparatus with Au foil ($\Phi$ = 5.1 eV) as the
-metal surface.  Particle counting techniques, including a multichannel
-scalar (Oxford Tennelec Nucleus Inc. MCS-II v2.091) were used to
-record laser-excited metastable counts as a function of laser
-frequency, along with the simultaneously recorded LIF spectra. Both
-SEELEM and LIF signals were averaged over 100 laser shots / data
-point.
+Hz into a diffusion pumped vacuum chamber at $\sim$5\e{-5} torr.  An
+Nd:YAG pumped, frequency-doubled dye laser (220 nm) excited the
+acetylene molecules in the pulsed jet expansion 2 cm downstream from
+the nozzle orifice. UV-LIF was detected perpendicular to the plane
+defined by the intersection of the pulsed molecular and laser beams
+using f/1.2 collection optics, a fluorescence filter (UG-11) to reduce
+scattered laser light, and a PMT (Hamamatsu model R375). The
+fluorescence signal was averaged by a boxcar integrator and
+recorded. For SEELEM detection, the excited molecules in the pulsed
+expansion passed through a conical skimmer (3mm diameter) to form a
+collimated molecular beam, which traveled into a differentially pumped
+detector chamber maintained at $\sim$4\e{-7} torr, and collided with a
+heated (300\degrees\ C) Au metal surface 35 cm downstream from the
+point of laser excitation. The SEELEM detector was identical to that
+used in the previously described apparatus with Au foil ($\Phi$ = 5.1
+eV) as the detector surface.  Particle counting techniques, including
+a multichannel scalar (Oxford Tennelec Nucleus Inc. MCS-II v2.091)
+were used to record laser-excited metastable counts as a function of
+laser frequency, along with the simultaneously recorded LIF
+spectra. Both SEELEM and LIF signals were averaged over 100 laser
+shots per data point.  The typical signal level for SEELEM detection
+of acetylene was 2-20 counts per laser pulse.
 
 \section{LIF/SEELEM intensity distributions}
 

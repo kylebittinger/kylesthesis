@@ -177,24 +177,25 @@ levels.  When used on a spectrum containing several rovibronic
 transitions in series, the technique can give insight into the matrix
 element and relative energy of a $T_3$ doorway level.
 
-\section{COMMUNICATION: Patterns of spectral intensity in delayed,
-  incoherent fluorescence measurements}
+\section{COMMUNICATION: Signatures of doorway-mediated intersystem
+  crossing in delayed, incoherent fluorescence measurements}
 
 In Chapter 2, we introduced the concept of a SEELEM intensity
-distribution associated with a singlet bright state.  Here, we extend
-the idea of dark state intensity distributions to fluorescence
-measurements by considering intensities in the \emph{incoherent,
-  frequency domain} LIF spectrum at a time window $t+dt$ after
-excitation of the molecule.  The SEELEM spectrum is shown to be an
-extreme, limiting case of delayed fluorescence.  Furthermore, we
-demonstrate that molecular properties such as coupling matrix element
-and the energy denominator for a mediating doorway state are revealed
-by changes in statistical properties of the spectrum as it changes
-from sub-\microsec\ gated LIF, into delayed LIF, and finally to
-SEELEM.
+distribution associated with one singlet bright state.  
+
+Here, we extend the idea of dark state intensity distributions to
+fluorescence measurements by considering intensities in the
+\emph{incoherent, frequency domain} LIF spectrum with a time window
+$t$ to $t+dt$ after excitation of the molecule.  The SEELEM spectrum
+is shown to be a limiting case of delayed fluorescence.  Furthermore,
+we demonstrate that molecular properties, such as the spin-orbit
+matrix element and the energy denominator for a doorway state, are
+revealed by changes in statistical properties of the spectrum as the
+time window is shifted from sub-\microsec\ gated LIF, into delayed
+LIF, and finally to SEELEM.
 
 \TODO{Adapt following from delayedfluorescence report.}  For a pure
-singlet bright state $\ket{s}$, the time-dependent fluorescence
+singlet bright state, $\ket{s}$, the time-dependent fluorescence
 intensity is
 \begin{equation}
   I_s(t) = \frac{1}{\tau_s} \;
@@ -204,16 +205,16 @@ intensity is
 \end{equation}
 normalized such that $\int_0^{\infty} I_s(t) \, dt = 1$.
 
-We consider the case where $\ket{s}$ is directly coupled with a set of
-$N$ triplet dark states to create a set of $N$+1 mixed states
-$\lbrace\ket{m}\rbrace$.  Each state $\ket{m}$ has some bright state
-amplitude $a_m$.  In the case of direct or doorway-mediated coupling,
-the Hamiltonian contains only one pathway from each dark state to the
-bright state (see Chapter 3).  As a result, the mixing amlitudes may
-be taken to be real and positive by convention.  If the lifetime of a
-pure triplet dark state is much longer than $\tau_s$, the lifetime of
-a mixed eigenstate $\ket{m}$ having bright state character
-$\alpha_m^2$ is
+We consider the case where $\ket{s}$ is admixed into a set of $N$
+triplet dark states to create a set of $N$+1 mixed states
+$\lbrace\ket{m}\rbrace$.  Each mixed state, $\ket{m}$, has some bright
+state amplitude $a_m$.  In the case of direct or doorway-mediated
+coupling, the Hamiltonian contains only one pathway from each dark
+state to the bright state (see Chapter 3).  As a result, all of the
+mixing amplitudes may be taken to be real and positive.  If the
+lifetime of a pure triplet dark state is much longer than $\tau_s$,
+the lifetime of a mixed eigenstate $\ket{m}$ having bright state
+fractional character $\alpha_m^2$ is
 \begin{equation}
   \label{eq:tau-m}
   \tau_m = \tau_s / a_m^2,
@@ -228,30 +229,33 @@ and its time-dependent fluorescence intensity is
 \end{equation}
 The total integrated fluorescence intensity for a mixed state is
 $\int_0^{\infty} I_m(t) \, dt = a_m^2$, relative to unit intensity for
-a pure bright state.
+a pure bright state.  This reflects the $a_m^2$ times smaller
+probability for excitation of the $\ket{m}$ state.
 
-The normalization condition for bright state character $\sum_m a_m^2 =
-1$ leads to the relation
-\begin{equation}
-  \tau_s^{-1} = \sum_m \tau_m^{-1};
-\end{equation}
-in this way, $\tau_s$ can be derived from the set of mixed state
-lifetimes $\lbrace \tau_m \rbrace$.
+% The normalization condition for bright state character $\sum_m a_m^2 =
+% 1$ leads to the relation
+% \begin{equation}
+%   \tau_s^{-1} = \sum_m \tau_m^{-1};
+% \end{equation}
+% in this way, $\tau_s$ can be derived from the set of mixed state
+% lifetimes $\lbrace \tau_m \rbrace$.
 
-\subsection{SEELEM detection as an extreme limit of delayed fluorescence}
+\subsection{An incoherent, high-resolution fluorescence spectrum after
+  a time delay}
 
-We examine the fluorescence intensity after a time delay $t_c$,
+We examine the fluorescence intensity after a time delay $t$,
 which we cast in units of the bright state lifetime:
 \begin{equation}
-  R_c = t_c / \tau_s.
+  R = t / \tau_s.
 \end{equation}
-At a chosen $R_c$, the fluorescence intensity equation has a single
-peak according to some value of bright state character.  Within the
-range $0 \le a_m^2 \le 1$, the fluorescence intensity equation is at a
-maximum when (Chapter 2, equation 31)
+At a chosen value of $R$, the fluorescence intensity equation
+\ref{eq:int-m} has a single maximum with respect to fractional bright
+state character.  \TODO{Insert relevant minmax equation.}  Within the
+range $0 \le a_m^2 \le 1$, the fluorescence intensity equation is
+maximized when the mixing fraction is (Chapter 2, equation 31)
 \begin{equation}
   \label{eq:am-max}
-  a_m^2 = \frac{2}{R_c}.
+  a_m^2 = \frac{2}{R}.
 \end{equation}
 
 \begin{figure}
@@ -264,69 +268,71 @@ maximum when (Chapter 2, equation 31)
 \end{figure}
 
 Figure \ref{fig:int-at-rc} shows the dependence of fluorescence
-intensity on bright state character for several values of $R_c$.  At
-early fluorescence times ($\sim \tau_s$), the fluorescence intensity
-is greatest for states with large amounts of bright state character
-($2/R_c > 1$).  At a delay of $5 \tau_s$, the fluorescence intensity
-equation discriminates against states with large amounts of bright
-state character, since molecules in such states have already
-fluoresced with high probability.  States with small amounts of bright
-state character are also discriminated against -- molecules in these
-states have a low probability of fluorescing at the time under
-consideration.  The fluorescence intensity is thus ``tuned'' to a
-particular value of bright state character at every time delay $R_c$,
-according to Equation \ref{eq:am-max}.
+intensity on fractional bright state character at several selectable
+values of $R$.  At early fluorescence window times ($t \sim \tau_s$),
+the fluorescence intensity is greatest for states with large amounts
+of fractional bright state character ($2/R > 1$).  At a delay of $t =
+R \tau_s = 5 \tau_s$, the fluorescence intensity equation
+discriminates against states with large fractional bright state
+character, since molecules in such states have already fluoresced with
+high probability.  States with small fractional bright state character
+are also discriminated against.  Molecules in such states have a low
+probability of fluorescing in the time window under consideration.
+The detectable fluorescence intensity may thus be ``tuned'' to a
+chosen value of fractional bright state character merely by selecting
+a time delay $R$, according to Equation \ref{eq:am-max}.
 
-Note that the intensity expression used here does not account for
-molecules leaving the field of view of the fluorescence detection
-optics.  We consider only the distribution of bright state character
-\emph{among molecules remaining in the field of view at time $R_c$}.
-However, since there is no momentum transfer from the excitation
-photon to the molecule, the rate of molecules exiting the field of
-view is independent of bright state character.  Therefore,
-simple reasoning according to the above intensity formulas will be
-correct as long as we discuss fluorescence intensities only in terms
-of ratios.
+\POINT{Remove this paragraph?}  Note that the intensity expression
+used here does not account for molecules moving out of the field of
+view of the fluorescence detection optics.  We consider only the
+distribution of bright state character \emph{among molecules that
+  remain within the field of view at time $R$}.  However, since there
+is no momentum transfer from the excitation photon to the molecule,
+the rate of molecules exiting the field of view is independent of
+bright state character.  Thus, the statistical properties of the
+spectrum in the frequency domain, involving only fluorescence
+intensity ratios between molecules with differing fractional bright
+state character, are undistorted by molecules moving out of the field
+of view.
 
-To foster a more concrete discussion, consider our experiments on
-intersystem crossing in acetylene.  For the $S_1$ electronic state,
-$\tau_s=270$ ns.  In our apparatus, the field-of-view of the
-fluorescence detection optics is several mm, which amounts to a
-maximum viewing time of 3 $\mu$s, about $10\tau_s$, for molecules in
-the molecular beam with a velocity of $10^3$ m/s.  At times later than
-$10\tau_s$, there are simply no molecules left to observe in the
-fluorescence field of view.  This places an upper limit on the value
-of $R_c$ that can be examined in our fluorescence experiments.  Figure
-\ref{fig:int-at-rc} shows the intensity equation for the limit of
-fluorescence detection, $10\tau_s$.
+\TODO{Move this to beginning.}  For the $S_1$ electronic state of
+acetylene, $\tau_s=270$ ns \cite{ochi91}.  The field-of-view of the
+fluorescence detection optics is about 5 mm, which amounts to a
+maximum viewing time of about 5 $\mu$s, about $18\tau_s$, for
+molecules in the molecular beam, which has an average velocity of
+$10^3$ m/s.  At times later than $10\tau_s$, no molecules remain
+within the fluorescence field of view.  This places an upper limit on
+the value of $R$ that can be selected in our fluorescence experiments.
+Figure \ref{fig:int-at-rc} shows the intensity equation for the long
+time limit of fluorescence detection, $18\tau_s$.
 
 The SEELEM detector used in our experiments detects metastable
 molecules after a 309 $\mu$s flight time.  If we set aside some
-particularly interesting aspects of SEELEM detectivity and consider
-only its detection sensitivity to bright state character, we arrive at
-the following equation for SEELEM detection probability (Chapter 2,
-equation 28):
+aspects of SEELEM detectivity and consider only its detection
+sensitivity to bright state character, we arrive at the following
+equation for SEELEM detection probability (Chapter 2, equation 28):
 \begin{equation}
   \label{eq:seelem-prob-s}
   P_{SEELEM}^{(s)} \propto a_m^4 \; \exp \left( -R_c \, a_m^2 \right).
 \end{equation}
-(This is a good approximation to its overall detection sensitivity,
-including $T_3$, in the weak coupling limit.)  The SEELEM detection
-probability equation above has the same functional form as the
-Equation \ref{eq:int-m}.  Thus, the SEELEM detector may be viewed in
-this limited sense as an extreme discriminator for states with small
-amounts of bright state character.
+(This is a good approximation to the overall detection sensitivity of
+SEELEM, including electron ejection probability resulting from
+fractional $T_3$ electronic character, in the weak coupling limit.)
+The SEELEM detection probability equation above has the same
+functional form as Equation \ref{eq:int-m}.  Thus, the SEELEM detector
+may be viewed in this limited sense as an extreme discriminator for
+detecting states with small fractional bright state character.
 
 Acetylene molecules in our apparatus are detected after an average
 flight time of 309 $\mu$s, yielding an $R_c$ value of $1144$ for the
 SEELEM detector.  This corresponds to a maximum detection probability
 for states with $0.17\%$ bright state character.
 
-\subsection{Delayed fluorescence of a two-level system}
+\subsection{Delayed fluorescence of a model system}
 
-Our next step is to examine the changing characteristics of a
-fluorescence intensity distribution as we increase the time delay
-$R_c$.  We model the interaction between a bright state and an
+Our next step is to examine how the characteristics of a
+fluorescence intensity distribution change as we increase the time delay
+$R$.  We model the interaction between a bright state and an
 ensemble of dark states by generalizing from a two-level system.
 Consider a Hamiltonian with only one dark state.  Define the two mixed
 states $\ket{m=1,2}$ as
@@ -342,15 +348,16 @@ state, is
   \begin{split}
     I_1 &= \frac{(1 - \alpha^2)^2}{\tau_s} \; \exp 
           \left[
-            - R_c \, (1 - \alpha^2)
+            - R \, (1 - \alpha^2)
           \right]\\
     I_2 &= \frac{\alpha^4}{\tau_s} \; \exp 
           \left[
-            - R_c \, \alpha^2
+            - R \, \alpha^2
           \right],
   \end{split}
 \end{equation}
-and the ratio of the fluorescence intensities changes with time as
+and the ratio of the fluorescence intensities changes with time,
+$t=R\tau_s$, as
 \begin{equation}
   I_{12} = I_1 / I_2 = 
   \left(
@@ -358,21 +365,25 @@ and the ratio of the fluorescence intensities changes with time as
   \right)^2
   \exp
   \left[
-    - R_c \, (1 - 2\alpha^2)
+    - R \, (1 - 2\alpha^2)
   \right].
-\end{equation}
-The fluorescence intensity ratio may be used to write an equation for
-the dependence of average intensity on $R_c$.
+\end{equation}  \TODO{Explain behavior of this equation.  Prefactor
+  determines initial ratio.  Long time limit, always approaches zero.}
+
+\TODO{Rwrite this -- frame center of gravity in terms of intensity
+  ratios.  Explain center of gravity.}  The fluorescence intensity
+ratio may be incorporated into an equation for the dependence of
+average detected intensity on $R$,
 \begin{equation}
   \label{eq:ratio}
   \braket{I_{LIF}} = 
   \frac{\Delta E_{12}}{2} \,
   \left(
     \frac{I_{12}-1}{I_{12}+1}
-  \right)
+  \right).
 \end{equation}
-Figure \ref{fig:ratio} shows the dependence of center-of-gravity on
-the intensity ratio $I_{12}$.
+Figure \ref{fig:ratio} shows the dependence of the intensity-weighted
+center-of-gravity on the intensity ratio $I_{12}$.
 
 \begin{figure}
   \caption{Center of gravity as a function of the intensity ratio
@@ -396,12 +407,15 @@ The initial intensity ratio at time $R_c=0$ is
 From this, the initial center of gravity can be found according to
 Equation \ref{eq:ratio} or Figure \ref{fig:ratio}.  At large values of
 $R_c$, the intensity ratio decreases to zero as $I_1 \ll I_2$, if the
-states are not 50:50 mixed.  As the ratio decreases to zero, the
-center of gravity approaches $-\Delta E_{12} / 2$.  The development of
-intensity ratios and the consequent shift in center of gravity are
-shown in Figure \ref{fig:cog-devel}.  One interesting aspect of the
-center of gravity shift shown in the figure is the rapid onset of the
-shift at small mixing coefficients.
+states are not 50:50 mixed.  As the ratio decreases toward zero, the
+intensity-weighted center of gravity approaches $-\Delta E_{12} / 2$.
+The R-dependence of intensity ratios and the consequent shift in
+center of gravity are shown in Figure \ref{fig:cog-devel}.  
+
+\TODO{Say this more clearly.  Explain weak and strong limits.} One
+interesting aspect of the center of gravity shift shown in Figure
+\ref{fig:cog-devel} is the sudden onset of the shift at small mixing
+coefficients.
 
 \begin{figure}
   \caption{(Top) Time development of the relative intensity ratio for
@@ -509,8 +523,6 @@ always less than a factor of 2.  \POINT{These variations are trumped
   \centering
   \includegraphics[width=6in]{rotational_factors_k2.png}
 \end{figure}
-
-
 
 The effects of widely varying vibrational overlap factors will divide
 $S_1 \sim T_3$ perturbations into two classes: those where

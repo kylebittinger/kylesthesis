@@ -8,6 +8,8 @@
 *.toc
 *.blg
 *.log
+*.lof
+*.lot
 
 # Version control directories
 */_darcs*

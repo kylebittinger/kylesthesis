@@ -280,9 +280,7 @@ rotational energy differences are
 \end{equation}
 
 \begin{figure}
-  \caption{Reduced term value plot of the three singlet$\sim$triplet
-    roational components permitted by the spin-orbit operator in
-    Hund's case ($b$).  The $F_1$ component corresponds to...  }
+  \caption{\TODO{Write caption} }
   \label{fig:rotational-energy-differences}
   \centering
   \includegraphics[width=6in]{rotational-energy-differences.pdf}
@@ -344,7 +342,7 @@ $F_1$ or $F_3$ component, depending on the sign of $T_{0,T} - T_{0,S}$.
 \begin{figure}
   \caption{Rotational factors of spin-orbit matrix elements between
     rovibrational levels of the $S_1$ and $T_3$ electronic states,
-    $K_s$=1.  The plot includes matrix elements for the $F_3$ ($\Delta
+    $K_S$=1.  The plot includes matrix elements for the $F_3$ ($\Delta
     N = +1$) and $F_1$ ($\Delta N = -1$) components of a $T_3$
     sublevel with $K_T=0,1,2$.  The rotational factors deviate in all
     cases by less than a factor of 2 from their initial positions as a
@@ -357,7 +355,7 @@ $F_1$ or $F_3$ component, depending on the sign of $T_{0,T} - T_{0,S}$.
 \begin{figure}
   \caption{Rotational factors of spin-orbit matrix elements between
     rovibrational levels of the $S_1$ and $T_3$ electronic states,
-    $K_s$=2.  The plot includes matrix elements for the $F_3$ ($\Delta
+    $K_S$=2.  The plot includes matrix elements for the $F_3$ ($\Delta
     N = +1$) and $F_1$ ($\Delta N = -1$) components of a $T_3$
     sublevel with $K_T=1,2,3$.  The rotational factors are essentially
     the same as those for $K_S=1$.}
@@ -711,18 +709,15 @@ coefficients.
 
 \section{Experiment}
 
-\TODO{Adapt this from paper.}  SEELEM is a versatile and sensitive
-technique for investigating molecules in ``dark'' (weakly-fluorescing)
-metastable states populated by laser excitation.1-6 In the SEELEM
-experiment, a molecular beam of acetylene is excited by a $\sim$5 ns
-FWHM pulsed tunable laser into spin-rotation-vibration eigenstates of
-metastable electronic states via weak, nominally forbidden
-transitions. After excitation, the long-lived species must travel 35
-cm before colliding with an Au metal detector surface, where an
-electron is ejected in a de-excitation process. Two criteria must be
-met for electron ejection by a metastable species. First, the vertical
-electronic energy of the metastable approaching the surface must
-exceed the work function of the metal ($\Phi_{\text{Au}}$ = 5.1
+In the SEELEM experiment, a molecular beam of acetylene is excited by
+a $\sim$5 ns FWHM pulsed tunable laser into spin-rotation-vibration
+eigenstates of metastable electronic states via weak, nominally
+forbidden transitions. After excitation, the long-lived species must
+travel 35 cm before colliding with an Au metal detector surface, where
+an electron is ejected in a de-excitation process. Two criteria must
+be met for electron ejection by a metastable species. First, the
+vertical electronic energy of the metastable approaching the surface
+must exceed the work function of the metal ($\Phi_{\text{Au}}$ = 5.1
 eV). Second, the radiative lifetime of the detected metastable
 eigenstate ($\tau_\text{rad}$) must exceed the flight time from the
 point of laser excitation to the SEELEM surface ($\Delta$t=300
@@ -731,10 +726,10 @@ $\mu$s).
 A sample of acetylene (BOC gases) at a backing pressure of one
 atmosphere was pulsed through a 0.5 mm diameter nozzle (Jordan Valve)
 operating at 10 Hz into a diffusion pumped vacuum chamber at
-$\sim$5\e{-5} torr.  An Nd:YAG pumped, frequency-doubled dye laser
-(220 nm) excited the acetylene molecules in the pulsed jet expansion 2
-cm downstream from the nozzle orifice.  \TODO{Include laser details
-  here.}
+$\sim$5\e{-5} torr.  An Nd:YAG pumped (Spectra Physics GCR-270),
+frequency-doubled dye laser (Lambda Physik FL3002, 220 nm) excited the
+acetylene molecules in the pulsed jet expansion 2 cm downstream from
+the nozzle orifice.  \TODO{Include laser details here.}
 
 UV-LIF was detected perpendicular to the plane defined by the
 intersection of the pulsed molecular and laser beams using f/1.2
@@ -769,9 +764,9 @@ level for SEELEM detection of acetylene was 2-20 counts per laser
 pulse.
 
 Both SEELEM and LIF signals were averaged over 100 laser shots at each
-laser frequency.  The frequency increment was typically
-$\sim$0.015 \rcm\ in the doubled output, although several detailed
-spectra were recorded with a 4$\times$ smaller step size.  
+laser frequency.  The frequency increment was typically $\sim$0.015
+\rcm\ in the doubled output, although several detailed spectra were
+recorded with a 4$\times$ smaller frequency step size.
 
 
 
@@ -804,13 +799,40 @@ spectra were recorded with a 4$\times$ smaller step size.
 \section{SEELEM/LIF spectroscopy of four $S_1$ vibrational levels
   above the minimum of the $S_1 \sim T_3$ seam of intersection}
 
+
+The choice of $S_1$ vibrational levels in this study was guided by two
+considerations: the energetic accessibility of $T_3$ vibrational
+levels \cite{cui97, thom07} and absence of predissociation effects.
+The minimum of the $S_1 \sim T_3$ electronic seam of intersection,
+located near $3^3$ \Ka{1}, $T_0 \simeq 45300$ \rcm, provides a lower
+energy bound for the Franck-Condon accessibility of $T_3$ vibrational
+levels from the $S_1$ electronic surface \cite{cui97}.  Above this
+energy, any $S_1$ level may, in principle, have a large vibrational
+overlap with one or more $T_3$ levels.  The first dissociation
+barrier, located near $3^4$ \Ka{1}, $T_0 \simeq 46300$ \rcm, provides
+an upper energy bound for this study \cite{mordaunt98}.  Below this
+barrier, predissociation pathways are not energetically accessible,
+and do not complicate the study of $S_1 \sim T_3$ interactions.
+
+We consider four $S_1$ sublevels in this energy region, observed in
+the $\tilde{A}^1A_u \leftarrow \tilde{X} ^1\Sigma_g^+$ spectrum of
+acetylene.  The levels are listed with their total (rotationless)
+vibronic energy, $T_0$, in Table \ref{table:termvals}.  Included in
+the table is an order-of-magnitude estimate of the SEELEM:LIF
+intensity ratio observed in the spectrum.  To determine this quantity,
+relative LIF intensties were estimated from a low resolution jet
+spectrum reported by Merer and coworkers \cite{merer03}.  The absolute
+SEELEM intensity was then divided by the estimated LIF intensity, and
+normalized to the largest SEELEM:LIF ratio.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% INSERT LEVEL TABLE HERE
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}[t]
+\begin{table}
   \caption{The four acetylene $S_1$ vibrational levels considered in
     this study, listed here, have total vibronic energies in the
     critical region above the minimum of the $S_1 \sim T_3$ electronic
@@ -838,30 +860,6 @@ spectra were recorded with a 4$\times$ smaller step size.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The choice of $S_1$ vibrational levels in this study was guided by two
-considerations: the energetic accessibility of $T_3$ vibrational
-levels \cite{cui97, thom07} and absence of predissociation effects.
-The minimum of the $S_1 \sim T_3$ electronic seam of intersection,
-located near $3^3$ \Ka{1}, $T_0 \simeq 45300$ \rcm, provides a lower
-energy bound for the Franck-Condon accessibility of $T_3$ vibrational
-levels from the $S_1$ electronic surface \cite{cui97}.  Above this
-energy, any $S_1$ level may, in principle, have a large vibrational
-overlap with one or more $T_3$ levels.  The first dissociation
-barrier, located near $3^4$ \Ka{1}, $T_0 \simeq 46300$ \rcm, provides
-an upper energy bound for this study \cite{mordaunt98}.  Below this
-barrier, predissociation pathways are not energetically accessible,
-and do not complicate the study of $S_1 \sim T_3$ interactions.
-
-We consider four $S_1$ sublevels in this energy region, observed in
-the $\tilde{A}^1A_u \leftarrow \tilde{X} ^1\Sigma_g^+$ spectrum of
-acetylene.  The levels are listed with their total (rotationless)
-vibronic energy, $T_0$, in Table \ref{table:termvals}.  Included in
-the table is an order-of-magnitude estimate of the SEELEM:LIF
-intensity ratio observed in the spectrum.  To determine this quantity,
-relative LIF intensties were estimated from a low resolution jet
-spectrum reported by Merer and coworkers \cite{merer03}.  The absolute
-SEELEM intensity was then divided by the estimated LIF intensity, and
-normalized to the largest SEELEM:LIF ratio.
 
 We observe that the highest energy state in our study has the lowest
 SEELEM:LIF intensity ratio.  Rather than total energy, the SEELEM:LIF
@@ -1139,69 +1137,73 @@ the Q(3,4,5,6) transitions, if the interaction were to \emph{begin} at
 $J'=3$.
 
 Not only is such an interaction possible, but it leads to an
-assignment of $K_T$ for the second doorway level.  The selection rule
-$\Delta K = 0, \pm 1$ gives the possibilities of $K_T=$0, 1, and 2.  A
-level with $K_T=2$ has rotational levels beginning with $N_T=2$.  An
-$S_1 \sim T_3$ interaction with the $F_1$ components of such a level
-follows the selection rule $\Delta N = -1$, and would begin at
-$J'=N_S=3$, as observed in the spectrum.  All other combinations of
-$\Delta K$ and $\Delta N$ lead to $S_1 \sim T_3$ interactions
-beginning at $J'=1$ or $2$.  Thus, we can make the assignment of
-$K_T=2$ for the second $T_3$ doorway level.
+assignment of $K_T$ for the second doorway level.  The spin-orbit
+selection rule $\Delta K = 0, \pm 1$ restricts possible assignments to
+$K_T=$0, 1, and 2.  A level with $K_T=2$ has rotational levels that
+begin with $N_T=2$.  An $S_1 \sim T_3$ interaction with the $F_1$
+component of such a level follows the selection rule $\Delta N = -1$,
+and would first turn on at $J'=N_S \geq 3$, as observed in the spectrum.
+All other combinations of $\Delta K$ and $\Delta N$ lead to $S_1 \sim
+T_3$ interactions starting at $J' \geq 1$ or $2$.  Thus, we can 
+assign $K_T=2$ for the second $T_3$ doorway level.
 
-For the $F_1$ component of a triplet level, the relative
-singlet-triplet energy has a negative slope with respect to $J'$.  At
-$J'=3$, where the interaction with the second doorway level begins,
-the $F_1$ component is $6B \simeq 6$ \rcm\ lower in energy than the
-$F_2$ component.  As $J'$ increases, the relative energy of the $F_1$
-component decreases by $2B$ per $J'$.  Since the interaction must
-occur through an $F_1$ component in order to turn on at $J'=3$, and
-since the $F_1$ component is appreciably lower in relative energy than
-the other two components, we must conclude from the assignment of
-$K_T$ that the second $T_3$ doorway level is higher in energy than the
-singlet level.  This is, in fact, what is observed in the dependence
-of intensity-weighted center of gravity on delay time.
+For the $F_1$ component of a triplet level, the energy of the triplet
+relative to the singlet has a negative slope with respect to $J'$ (see
+Figure \ref{rotational-energy-differences}).  At $J'=3$, where the
+interaction with the second doorway level begins, the $F_1$ component
+is $6B \simeq 6$ \rcm\ lower in energy than the $F_2$ component.  As
+$J'$ increases, the relative energy of the $F_1$ component decreases
+by $2B$ per $J'$.  Since the interaction must occur through an $F_1$
+component in order to turn on at $J'=3$, and since the relative energy
+of the $F_1$ component is appreciably lower than that of the other two
+components, we must conclude from the assignment of $K_T$ that the
+second $T_3$ doorway level is higher in energy than the singlet level.
+This is, in fact, what is deduced from in the dependence of
+intensity-weighted center of gravity on delay time.
 
-The assignment of $K_T=2$ for the second doorway has further
+The assignment of $K_T=2$ for the second doorway state has additional
 consequences.  The $K_T=2$ doorway level, higher in energy than the
 singlet level, must be accompanied by a $K_T=1$ doorway level at lower
-energy.  The energy separation between $K=1$ and $2$ sublevels of the
-same vibration is $3A_T$, where $A_T$ is the a-axis rotational
-constant for the triplet level in question.  According to \emph{ab
-  initio} calculations, the $A_T$ rotational constants for $T_3$
-vibrational levels vary between 10 and 30 \rcm \cite{thom07}.  This
-places the $K_T=1$ sublevel 30$-$90 \rcm\ lower in energy than the
-second doorway.
+energy.  A diagram of the relevant energy level structure is given in
+Figure \ref{fig:double-doorway-k-levels}. The energy separation
+between the $K=1$ and $2$ sublevels of the same vibrational level is
+$3A_T$, where $A_T$ is the a-axis rotational constant for the triplet
+level in question.  According to \emph{ab initio} calculations, the
+$A_T$ rotational constants for $T_3$ vibrational levels vary between
+10 and 30 \rcm \cite{thom07}.  This places the $K_T=1$ sublevel
+30$-$90 \rcm\ lower in energy than the second $K_T=2$ doorway level.
 
-Furthermore, the vibrational overlap factors for the two sublevels are
-identical, and the relative spin-orbit matrix elements are determined
-only by rotational factors.  Using formulas given by Stevens and
-Brand, the $K_T=1$ sublevel of the same vibration as the second
-doorway will have matrix elements about 5 times larger than those of
-the $K_t=2$ sublevel \cite{stevens73}.  Thus, the assignment of
-$K_T=2$ for the second doorway \emph{guarantees} the existence of
-another $5 \times$ stronger doorway level within a reasonable energy
-range below the singlet level.  Barring the existence of a
-\emph{third} strong doorway between the $K_a=1$ and $2$ sublevels of
-the second doorway vibration, we conclude that the first doorway is
-the $K_T=1$ sublevel of the same vibration.
+Furthermore, the vibrational overlap factors for the two sublevels of
+the same vibrational level are identical, and the relative spin-orbit
+matrix elements are determined only by rotational factors.  Using
+formulas given by Stevens and Brand, the $K_T=1$ sublevel of the same
+vibrational level as the second doorway will have matrix elements
+about 5 times larger than those of the $K_T=2$ sublevel
+\cite{stevens73}.  Thus, the assignment of $K_T=2$ for the second
+doorway \emph{guarantees} the existence of another doorway level with
+a $5 \times$ larger spin-orbit matrix element within a reasonable
+energy range below the singlet level.  Barring the existence of a
+\emph{third} strong doorway level lying between the $K_a=1$ and $2$
+sublevels of the second doorway vibrational level, we conclude that
+the first doorway is the $K_T=1$ sublevel of the same vibrational
+level.  \TODO{Re-write to improve clarity or summarize with another
+  sentence.}
 
-The analysis of LIF spectra at varying time delay has led to the
-detemination of relative energy and the $K$-assignment of two
+The analysis of LIF spectra vs. time delay has led to the
+determination of relative energy and $K$-assignment of two
 energetically distant $T_3$ doorway sublevels in the $2^13^2$ \Ka{1}
 $\leftarrow$ $0_0$ spectrum of acetylene \astate.  Such a conclusion
-is further supported by the appearance of the SEELEM spectrum of this
-vibronic transition, which shows striking similarity to the delayed
-fluorescence spectrum.  Peak positions in the delayed fluorescence
-spectrum are matched in SEELEM, even outside the main lines, for
-instance at 45675.9 \rcm\ and 45671.9 \rcm.  Agreement between the
-SEELEM spectrum and delayed fluorescence spectrum is evidence for a
-lack of $S_1 \sim T_3$ interference effects, which would manifest in a
-level crossing between the singlet level and a $T_3$ doorway
-\cite{altunata01}.
+is further supported by the general appearance of the SEELEM spectrum
+of this vibronic transition, which is strikingly similar to the
+delayed fluorescence spectrum.  Peak positions in the delayed
+fluorescence spectrum are matched in the SEELEM spectrum, even for
+weak lines, for instance at 45675.9 \rcm\ and 45671.9 \rcm.  Agreement
+between the SEELEM spectrum and delayed fluorescence spectrum is
+expected in the absence of a level crossing between the singlet level
+and a $T_3$ doorway \cite{altunata01}.
 
 
-\subsection{The $2^23^1$ \Ka{1} sublevel: a localized $T_3$
+\subsection{The $2^23^1$ \Ka{1} sublevel: a local $T_3$
   perturbation in the presence of small $S_1 \sim T_3$ matrix
   elements}
 
@@ -1221,7 +1223,7 @@ level crossing between the singlet level and a $T_3$ doorway
     regions: an early time window ($0.5\tau_s-2\tau_s$, solid trace)
     and a delayed time window ($8\tau_s-12\tau_s$, dashed trace).  The
     Q(1) and R(0) transitions, which have the same upper state quantum
-    number $J'=1$ but different parities, are shifted to opposite
+    number $J'=1$ but opposite parities, are shifted in opposite
     directions in the delayed fluorescence spectrum.}
   \label{fig:spectrum-2231}
   \centering
@@ -1231,13 +1233,12 @@ level crossing between the singlet level and a $T_3$ doorway
 
 \begin{figure}
   \caption{Dependence of the intensity-weighted center of gravity on
-    delay for a series of individually resolved transitions, Q(1$-$4)
-    (top), and R(0$-$3) (bottom), in the LIF spectrum of $2^23^1$
-    \Ka{1}.  The center of gravity for the Q(1) transition rapidly
-    increases to its final value, where it matches the peak of the
-    SEELEM distribution at 46007.87$+$0.03 \rcm.  For the R(0)
-    transition, the center of gravity decreases at a nearly linear
-    rate to 46010.35$-$0.3 \rcm.}
+    delay for a series of rovibronic transitions, Q(1$-$4) (top), and
+    R(0$-$3) (bottom), in the LIF spectrum of $2^23^1$ \Ka{1}.  The
+    center of gravity for the Q(1) transition rapidly increases to its
+    final value, where it matches the peak of the SEELEM distribution
+    at 46007.87$+$0.03 \rcm.  For the R(0) transition, the center of
+    gravity decreases at a nearly linear rate to 46010.35$-$0.3 \rcm.}
   \label{fig:2231-cog-delay}
   \centering
   \vspace{5mm}
@@ -1252,26 +1253,26 @@ level crossing between the singlet level and a $T_3$ doorway
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Although the $2^23^1$ \Ka{1} sublevel has the highest energy of the
-four sublevels in this study, it interacts most weakly with the local
-manifold of $T_{1,2}$ levels.  This results from having only one
-quantum of the $\nu_3$ vibration, which controls the overall magnitude
-of $S_1 \sim T_3$ doorway matrix elements.
+four sublevels discussed in this study, it interacts most weakly with
+the local manifold of $T_{1,2}$ levels.  This results from having only
+one quantum of the $\nu_3$ vibration, which controls the overall
+magnitude of $S_1 \sim T_3$ doorway matrix elements.
 
 The spectrum of the $2^23^1$ \Ka{1} $\leftarrow$ $0_0$ subband is
-shown in Figure \ref{fig:spectrum-2231}.  Besides the overall
+shown in Figure \ref{fig:spectrum-2231}.  In addition to the overall
 SEELEM:LIF intensity ratio, the small magnitude of $S_1 \sim T_3$
 doorway matrix elements is indicated by the width of the SEELEM
 intensity envelope surrounding each singlet transition.  This topic is
 discussed at length in Chapter 2.  Briefly, the width of the SEELEM
 spectrum is a measure of the energy range over which the singlet
 level, through interaction with $T_3$ doorways, is able to lend
-approximately 0.25\% fractional singlet character within the local
-manifold of $T_{1,2}$ levels.  In the case of $2^23^1$ \Ka{1}, the
-width of the SEELEM envelope surrounding each singlet transition is on
-the order of 0.4 \rcm, much less than the average spacing between
-rotational lines.  In the next section, we will contrast this with the
-observed width of SEELEM intensity envelopes in a strongly interacting
-subband.
+approximately 0.25\% fractional singlet character to eigenstates
+within the local manifold of $T_{1,2}$ levels.  In the case of
+$2^23^1$ \Ka{1}, the width of the SEELEM envelope surrounding each
+singlet transition is on the order of 0.4 \rcm, much less than the
+average spacing between rotational lines.  In the next section, we
+will contrast this with the observed width of SEELEM intensity
+envelopes in a strongly interacting subband.
 
 % Using a formula
 % derived in Chapter 2, the FWHM of the SEELEM spectrum can be related
@@ -1296,41 +1297,44 @@ subband.
 The dependence of the intensity-weighted center of gravity for each
 transition in $2^23^1$ \Ka{1} is shown in Figure
 \ref{fig:2231-cog-delay}.  With the exception of the Q(1) and R(0)
-transitions, the center of gravity does not deviate by more than 0.02
-\rcm\ from the initial position.  For a level having such a small
-matrix element, any small change in center of gravity which might arise
-from the effects of an energetically distant $T_3$ level is not
-expected to appear until delay times in excess of $15\tau_s$.
+transitions, the center of gravity does not shift by more than 0.02
+\rcm\ from its initial position.  For a singlet level with such a
+small spin-orbit matrix element with a doorway state, any small change
+in center of gravity, which might arise from the effects of an
+energetically distant $T_3$ level, is not expected to appear until
+delay times in excess of $15\tau_s$.
 
-The anamalous behavour of the center of gravity for the Q(1) and R(0)
-transitions is once again evidence of a weak, local $T_3$ perturbation
-at $J'=1$.  The upper states of the Q(1) and R(0) transitions have the
-same $J'$, but differ in parity (being of $f$- and $e$-symmetry,
-respectively).  The energy difference between the \emph{e}- and
-\emph{f}-symmetry components is $\Delta E_{e-f}=+0.13$ \rcm.  The
-perturbation in the \emph{e}-symmetry singlet transition R(1) is to
-lower energy, with a magnitude of approximately $-0.03$ \rcm, while
-the perturbation in the \emph{f}-symmetry singlet level is to lower
-energy, with a magnitude of approximately $+0.03$ \rcm.  The splitting
-between the asymmetry components of the $T_3$ perturber is therefore
-less than $0.13-0.03-0.03=0.07$ \rcm at $J'=1$.  An asymmetry
-splitting of this magnitude would be unusually small for a $T_3$ level
-with $K_T=1$.  As a result, we conclude that the perturber is likely a
-level with $K_T=2$.  Only one component of a $K_T=2$ level may
-interact with a singlet level at $J'=1$, and that is the $F_3$
-component, where $N_T=J+1$.  An interaction with the $F_1$ or $F_2$
-components would require $N_T$ to be $0$ or $1$; these levels are not
-present when $K_T=2$.  Because the interaction occurs via the $F_2$
-component of the triplet level at $J'=1$, the rotationless energy of
-the triplet level must be approximately $4B \simeq 4$ \rcm\ to the red
-of the singlet level.
+\NOTE{Bob suggests interference effects here, but the basis for this
+  is not clear to me.} The anomalous behavour of the center of gravity
+for the Q(1) and R(0) transitions is once again evidence of a weak,
+local $T_3$ perturbation at $J'=1$.  The upper states of the Q(1) and
+R(0) transitions have the same $J'$, but differ in parity (being of
+$f$- and $e$-symmetry, respectively).  The energy difference between
+the \emph{e}- and \emph{f}-symmetry components is $\Delta
+E_{e-f}=+0.13$ \rcm.  The perturbation in the \emph{e}-symmetry
+singlet transition R(1) results in a shift to lower energy, with a
+magnitude of approximately $-0.03$ \rcm, while the perturbation shifts the
+\emph{f}-symmetry singlet level to lower energy, with a magnitude
+of approximately $+0.03$ \rcm.  The splitting between the asymmetry
+components of the $T_3$ perturber is therefore less than
+$0.13-0.03-0.03=0.07$ \rcm at $J'=1$.  An asymmetry splitting of this
+magnitude would be unusually small for a $T_3$ level with $K_T=1$.  As
+a result, we conclude that the perturber is likely a level with
+$K_T=2$.  Only one component of a $K_T=2$ level may interact with a
+singlet level at $J'=1$, and that is the $F_3$ component, where
+$N_T=J+1$.  An interaction with the $F_1$ or $F_2$ components would
+require $N_T$ to be $0$ or $1$; these levels do not exist when
+$K_T=2$.  Because the interaction occurs via the $F_2$ component of
+the triplet level at $J'=1$, the rotationless energy of the triplet
+level must be approximately $4B \simeq 4$ \rcm\ to the red of the
+singlet level.
 
 Again, the assignment of the $K_a$ quantum number for a $T_3$ level
 observed in the spectrum has allowed us to infer its energy relative
 to the singlet.  At $J'=2$, the nearest component of this weak $T_3$
-perturber is $2B \simeq 2$ \rcm\ above the singlet level.  The
+perturber lies $2B \simeq 2$ \rcm\ above the singlet level.  The
 resultant increase in squared energy denominator makes the
-perturbation $(2.0/0.03)^2 \simeq 4500$ times weaker at $J'=2$, and it
+extra line $(2.0/0.03)^2 \simeq 4500$ times weaker at $J'=2$, and it
 is not observed.
 
 %
@@ -1365,14 +1369,14 @@ is not observed.
     of \ce{C2H2}.  The LIF spectrum is integrated in two time regions:
     an early time window ($0.5\tau_s-2\tau_s$, solid trace) and a
     delayed time window ($10\tau_s-18\tau_s$, dashed trace).  The
-    individual transitions are each split at least two strongly mixed
+    individual transitions each split into at least two strongly mixed
     components.  Although the energy splitting between the components
     is on the order of the experimental resolution, they are
-    discernable via changes in the fluorescence lineshape resulting
-    from their differing relative intenities in the early and delayed
-    fluorescence spectra.  One splitting in the R(4) transition is
-    just resolved in this spectrum.  \TODO{Determine the assignment
-      for the set of overlapping transitions.}}
+    discernable via their different relative intenities in the early
+    and delayed LIF spectra, which change the fluorescence lineshape.
+    One splitting in the R(4) transition is barely resolved in this
+    spectrum.  \TODO{Determine the assignment for the set of
+      overlapping transitions.}}
   \label{fig:spectrum-33k2}
   \centering
   \includegraphics[width=7in,angle=90]{acetylene-33k2-r1r7.png}
@@ -1382,9 +1386,9 @@ is not observed.
   \caption{Dependence of the intensity-weighted center of gravity on
     delay for a series of individually resolved transitions, R(1$-$7),
     in the LIF spectrum of the $3^3$ \Ka{2} sublevel.  The individual
-    transitions have an overall bias to lower energies at long delay
-    times, indicating an interaction with a $T_3$ doorway level at
-    lower energy.}
+    transitions have an overall bias toward lower energies at long
+    delay times, indicating an interaction with a $T_3$ doorway level
+    at lower energy.}
   \label{fig:33k2-cog-delay}
   \centering
   \includegraphics[width=6in]{33k2-r123456-cog-delay.pdf}
@@ -1397,13 +1401,13 @@ is not observed.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The $3^3$ \Ka{2} sublevel is the higher-energy sibling of $3^3$
-\Ka{1}, which has been studied in great detail due to a large
-perturbation from a $T_3$ doorway level with matrix element $\simeq
+\Ka{1}, which has been studied in great detail due to a
+perturbation by a $T_3$ doorway level with matrix element $\simeq
 0.1$ \rcm.  The $T_3$ pertuber observed in $3^3$ \Ka{1} has been
 assigned as the $F_2$ component of $K_T=1$, because 
 %\begin{inparaenum}[\itshape a\upshape)]
 %\item 
-it tunes slowly with energy,
+it tunes slowly with energy relative to $S_1$,
 %\item 
 it interacts with both parities of the singlet, and
 %\item 
@@ -1413,48 +1417,51 @@ the perturbation is present at $J'=1$
 this perturber is responsible for the large Zeeman anticrossing
 observed in $3^3$ \Ka{0} \cite{thom07, dupre93}.  To account for this,
 the $A$-rotational constant of the perturbing $T_3$ level would have
-to closely match the constant for the singlet level.  However, it is
-highly improbable that an energetic near match in the $K_a=0$ and $1$
-sublevels, separated by $1A \simeq 15$ \rcm, will extend to $K_a=2$,
+to closely match the $A$-rotational constant for the singlet level.  However, it is
+unlikely that an energetic near match in the $K=0$ and $1$
+sublevels, separated by $1A \simeq 15$ \rcm, will extend to $K=2$,
 which is $3A \simeq 45$ \rcm\ higher in energy.  In the absence of a
 local $T_3$ perturbation, the $3^3$ \Ka{2} sublevel provides an
 excellent opportunity to look examine a singlet sublevel which is
 known to be capable of large vibrational overlap with $T_3$ levels.
 
 The $3^3$ \Ka{2} sublevel is not accessible from the ground state of
-acetylene due to $\Delta K = \pm 1$ selection rules.  However, the
-spectrum of the $3^3$ \Ka{2} $\leftarrow$ $4_1$ ``hot band''
-transition could be taken with appreciable signal to noise in our
-apparatus without heating the nozzle.  The simultaneously recorded
-SEELEM and LIF spectrum the R-branch of this transition is shown in
-Figure \ref{fig:spectrum-33k2}.  Another interloping transition is
-present in the spectrum with low intensity, giving rise to the weak
-lines at 44740.3, 44742.2, and 44743.6 \rcm.  No intensity alternation
-is present in the rotational series, as expected in a band which
-originates from the $4^2$ vibrational level of the ground electronic
-state.
+acetylene due to $K' - \ell" = \pm 1$ selection rules.  However, the
+spectrum of the $3^3$ \Ka{2} $\leftarrow$ $4_1$ hot band transition
+was obtained in our apparatus without heating the nozzle.  The
+simultaneously recorded SEELEM/LIF spectrum of the R-branch of this
+transition is shown in Figure \ref{fig:spectrum-33k2}.  Another
+interloping band is present in the spectrum with low intensity,
+giving rise to the weak lines at 44740.3, 44742.2, and 44743.6 \rcm.
+No intensity alternation is present in the rotational series, as
+expected for a band that originates from the $4_1$ vibrational level
+of the ground electronic state.
 
 Evidence of strong mixing with the local manifold of $T_{1,2}$ levels
 is present in both the SEELEM and LIF detection channels.  The SEELEM
 intensity envelope surrounding each singlet transition exceeds the
 spacing between adjacent rotational lines, about 1.5 \rcm at low $J'$.
 This is at least 4 times the width observed for the transitions in
-$2^23^1$ \Ka{1}, which contains only quantum of excitation in $\nu_3$.
-The increased width of the local SEELEM intensity envelope has the
-effect of creating a cumulative intensity envelope extending across
-the entire spectrum.  This effect is also observed in the $3^3$ \Ka{1}
-$\leftarrow$ $0_0$ spectrum (see reference \cite{humphrey97}, for
-example).  However, in $3^3$ \Ka{2}, no interference effects are
-observed in SEELEM, which would indicate a $T_3$ doorway level
-crossing.
+$2^23^1$ \Ka{1}, which contains only one quantum of excitation in
+$\nu_3$.  The increased width of the local SEELEM intensity envelope
+has the effect of creating an envelope of SEELEM intensity that
+extends across the entire spectrum.  This effect is also observed in
+the $3^3$ \Ka{1} $\leftarrow$ $0_0$ spectrum (see reference
+\cite{humphrey97}, for example).  
+
+However, in $3^3$ \Ka{2}, no interference effects are observed in
+SEELEM, which would indicate a $T_3$ doorway level crossing.
+\TODO{Explain general appearance of the SEELEM spectrum. Doorway level
+  crossing at low $J$ would create different appearance.}
 
 Splittings are evident in the LIF spectrum of each transition, even in
-the early time-gated LIF spectrum.  Splittings which are slightly
-below the laser resolution can be seen due to the different relative
-intensities of long and short lifetime components in the early and
-delayed LIF spectra.  Two of three strong components are resolved in
-the early LIF spectrum of the R(4) transition.  No such splittings are
-present in the weakly interacting $2^23^1$ \Ka{1} sublevel.
+the early time-gated LIF spectrum.  Splittings that are slightly
+smaller than the laser resolution can be seen due to the different
+relative intensities of long and short lifetime components in the
+early and delayed LIF spectra.  Two of three strong components are
+resolved in the early LIF spectrum of the R(4) transition.  No such
+splittings are present in the weakly interacting $2^23^1$ \Ka{1}
+sublevel.
 
 % An estimation of the
 % effective, $T_3$-mediated $S_1 \sim T_{1,2}$ average matrix element
@@ -1466,36 +1473,37 @@ present in the weakly interacting $2^23^1$ \Ka{1} sublevel.
 
 The dependence of the intensity-weighted center of gravity for each
 transition in $3^3$ \Ka{2} is shown in Figure
-\ref{fig:33k2-cog-delay}.  The transitions display an overall bias to
-lower energy, indicating a $T_3$ doorway level to lower energy.  The
-$F_3$ components of such a doorway level would approach the singlet
-level from below at a rate of $2B$ per $J'$, while the $F_2$
-components would remain energetically distant and the $F_1$ components
-would rapidly tune away.  That no crossing is observed by at least
-$J'=6$ means that the doorway must be at least $6\times2B + 2B \simeq
-14$ \rcm\ lower in energy than the singlet level.
+\ref{fig:33k2-cog-delay}.  The transitions display an overall bias
+toward lower energy, indicating the presence of a $T_3$ doorway level
+to lower energy.  The $F_3$ components of such a doorway level would
+approach the singlet level from below at a rate of $2B$ per $J'$,
+while the $F_2$ components would remain energetically distant and the
+$F_1$ components would rapidly tune away.  That no crossing is
+observed by at least $J'=6$ means that the doorway must lie at least
+$6\times2B + 2B \simeq 14$ \rcm\ lower in energy than the singlet
+level.
 
-The center of gravity changes with the greatest magnitude for the
-$J'=2$ rotational level, and the magnitude of shift generally
-decreases with $J'$.  However, if the $F_3$ component of the doorway
-level is rapidly approaching the singlet, the overall coupling is
-expected to increase.  Why does the magnitude of the change in center
-of gravity not also increase?  This apparent paradox is explained by
-the great amount of fractional singlet character in nominal $T_{1,2}$
-levels, which is induced by strong coupling to the doorway.  As
-several components of nominal $T_{1,2}$ electronic character borrow
-more intensity, their lifetime decreases.  As the nominal singlet
-level lends out more fractional character, its lifetime increases.
-The result is a lack of contrast between the intensities of the
-nominal singlet and nominal triplet eigenstates as a function of delay
-time, resulting in a smaller changes in the intensity-weighted center
-of gravity.
+The center of gravity vs. gate delay changes with the greatest
+magnitude for the $J'=2$ rotational level, and the magnitude of shift
+generally decreases with $J'$.  However, if the $F_3$ component of the
+doorway level is rapidly approaching the singlet, the overall mixing
+angle is expected to increase in magnitude.  Why does the magnitude of
+the change in center of gravity not also increase?  This paradox is
+explained by the large fractional singlet character in nominal
+$T_{1,2}$ levels, which is induced by strong mixing with the doorway
+level.  As several components of nominal $T_{1,2}$ electronic
+character borrow more intensity, their lifetime decreases.  As the
+nominal singlet level lends out more fractional character, its
+lifetime increases.  The result is a lack of contrast between the
+intensities of the nominal singlet and nominal triplet eigenstates as
+a function of delay time, resulting in smaller changes in the
+intensity-weighted center of gravity.
 
-However, evidence for the approach of energetically distant $T_3$
-doorway levels is still available from the spectrum.  The most
-reliable indicator is a comparison of band-integrated center of
-gravity of the early LIF spectrum vs. the SEELEM spectrum.  We discuss
-this in the following section.
+However, evidence for the approach toward $S_1$ of energetically
+distant $T_3$ doorway levels is still available from the spectrum.
+The most reliable indicator is a comparison of band-integrated center
+of gravity of the early LIF spectrum vs. the SEELEM spectrum.  We
+discuss this in the following section.
 
 \subsection{Evidence for energetically distant $T_3$ doorway levels in
   band-integrated center-of-gravity}
@@ -1506,7 +1514,7 @@ this in the following section.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table}
+\begin{table}[p]
   \caption{Band-integrated center of gravity measurements from
     simultaneously recorded SEELEM/LIF spectra of \astate\ acetylene.
     The SEELEM$-$LIF center of gravity is offset to lower energy for

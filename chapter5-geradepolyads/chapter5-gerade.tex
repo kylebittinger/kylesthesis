@@ -58,143 +58,352 @@
 \chapter{SEELEM/LIF spectroscopy of acetylene: Spectral signatures of
   energetically distant doorway levels}
 
-% \section{Introduction}
+\section{Introduction}
 
-% What are the global characteristics of doorway-mediated intersystem
-% crossing in acetylene,\ce{C2H2}?  \TODO{Trash and rewrite the entire
-%   paragraph.}  The dynamics of singlet$\sim$triplet coupling in the
-% \AtoX \bigspace (\StoS) electronic spectrum of acetylene, \ce{C2H2},
-% have been extensively studied.  This body of work establishes a
-% heirarchical model for electronic coupling, which leads to the effects
-% of intersystem crossing and internal conversion: $S_1 \rightarrow T_3
-% \rightarrow T_{1,2} \rightarrow S_0$.  Top-tier interactions between
-% the relatively sparse levels of the $S_1$ and $T_3$ electronic states
-% are of particular interest because (1) they control coupling to the
-% remaining electronic states of the molecule and (2) they are primarily
-% determined by vibrational overlap factors and energy denominators, two
-% sensitive consequents of the molecule's electronic structure.
+What are the global characteristics of doorway-mediated intersystem
+crossing in acetylene,\ce{C2H2}?  \TODO{Trash and rewrite the entire
+  paragraph.}  The dynamics of singlet$\sim$triplet coupling in the
+\AtoX \bigspace (\StoS) electronic spectrum of acetylene, \ce{C2H2},
+have been extensively studied.  This body of work establishes a
+heirarchical model for electronic coupling, which leads to the effects
+of intersystem crossing and internal conversion: $S_1 \rightarrow T_3
+\rightarrow T_{1,2} \rightarrow S_0$.  Top-tier interactions between
+the relatively sparse levels of the $S_1$ and $T_3$ electronic states
+are of particular interest because (1) they control coupling to the
+remaining electronic states of the molecule and (2) they are primarily
+determined by vibrational overlap factors and energy denominators, two
+sensitive consequents of the molecule's electronic structure.
 
-% % Singlet~triplet coupling in the S_1 state of trans-acetylene is
-% % mediated by the relatively sparse (0.1 per cm-1) levels of the third
-% % triplet state, T_3.  When a mediating T_3 level is energetically
-% % distant from an interacting singlet level, traces of its influence
-% % appear in the patterns of coupling between the singlet level and the
-% % dense, local manifold of T_1,2 levels (10 per cm-1).  The method of
-% % SEELEM spectroscopy is tuned to detect molecules in such second-tier
-% % eigenstates, being most sensitive to states with about 0.1\% S_1
-% % character.  Conversely, LIF spectroscopy is sensitive to molecules in
-% % states with large amounts of S_1 character.
+% Singlet~triplet coupling in the S_1 state of trans-acetylene is
+% mediated by the relatively sparse (0.1 per cm-1) levels of the third
+% triplet state, T_3.  When a mediating T_3 level is energetically
+% distant from an interacting singlet level, traces of its influence
+% appear in the patterns of coupling between the singlet level and the
+% dense, local manifold of T_1,2 levels (10 per cm-1).  The method of
+% SEELEM spectroscopy is tuned to detect molecules in such second-tier
+% eigenstates, being most sensitive to states with about 0.1\% S_1
+% character.  Conversely, LIF spectroscopy is sensitive to molecules in
+% states with large amounts of S_1 character.
 
-% Surface Electron Ejection by Laser-Excited Metastables \cite{sneh89a,
-%   sneh89b, sneh91, humphrey97} (SEELEM) and LIF spectroscopy are
-% complementary techniques, which, when used together, can provide
-% information about $S_1 \sim T_3$ interactions \cite{humphrey97,
-%   mishra04, altunata00, altunata02}.  \TODO{Finish adapting from
-%   paper.}  LIF detection is limited to short-lived
-% ($\tau_{radiative}<$ 10 \microsec), strongly fluorescing states, while
-% SEELEM detection is sensitive only to long-lived ($\tau >$ 300
-% \microsec) states with vertical electronic excitation above a
-% threshold energy set by the work function of the metal used as the
-% SEELEM detector surface.  Therefore, SEELEM and LIF detection channels
-% observe mutually exclusive sets of eigenstates that arise from
-% spin-orbit mixed $S_1$ and $T_{3,2,1}$ zero-order basis states.
-% Because SEELEM detection is sensitive to the electronic character of
-% the molecule, a comparison of simultaneously recorded SEELEM and LIF
-% spectra reveals features of electronic structure and photochemical
-% pathways that are invisible via traditional, single-channel
-% spectroscopic probes such as LIF alone, REMPI, phosphorescence, or
-% phosphor surface \cite{shi98, campos01, burton72}.
+Surface Electron Ejection by Laser-Excited Metastables \cite{sneh89a,
+  sneh89b, sneh91, humphrey97} (SEELEM) and LIF spectroscopy are
+complementary techniques, which, when used together, can provide
+information about $S_1 \sim T_3$ interactions \cite{humphrey97,
+  mishra04, altunata00, altunata02}.  \TODO{Finish adapting from
+  paper.}  LIF detection is limited to short-lived
+($\tau_{radiative}<$ 10 \microsec), strongly fluorescing states, while
+SEELEM detection is sensitive only to long-lived ($\tau >$ 300
+\microsec) states with vertical electronic excitation above a
+threshold energy set by the work function of the metal used as the
+SEELEM detector surface.  Therefore, SEELEM and LIF detection channels
+observe mutually exclusive sets of eigenstates that arise from
+spin-orbit mixed $S_1$ and $T_{3,2,1}$ zero-order basis states.
+Because SEELEM detection is sensitive to the electronic character of
+the molecule, a comparison of simultaneously recorded SEELEM and LIF
+spectra reveals features of electronic structure and photochemical
+pathways that are invisible via traditional, single-channel
+spectroscopic probes such as LIF alone, REMPI, phosphorescence, or
+phosphor surface \cite{shi98, campos01, burton72}.
  
-% % Information gained from comparison of acetylene SEELEM
-% % and LIF spectra can yield a mechanistic description of
-% % singlet$\sim$triplet interaction, and holds promise for describing the
-% % structure and dynamics of other small polyatomic species \cite{jung07,
-% %   allen07}.
-% % SEELEM spectroscopy has
-% % been used in this effort as a tool to examine $S_1 \sim T_3$ coupling,
-% % by allowing detection of the local manifold of predominantly $T_{1,2}$
-% % eigenstates in the region surrounding an \StoS\ transition.
+% Information gained from comparison of acetylene SEELEM
+% and LIF spectra can yield a mechanistic description of
+% singlet$\sim$triplet interaction, and holds promise for describing the
+% structure and dynamics of other small polyatomic species \cite{jung07,
+%   allen07}.
+% SEELEM spectroscopy has
+% been used in this effort as a tool to examine $S_1 \sim T_3$ coupling,
+% by allowing detection of the local manifold of predominantly $T_{1,2}$
+% eigenstates in the region surrounding an \StoS\ transition.
 
-% The \emph{trans}-bending mode of $S_1$ acetylene, $\nu_3$, is known to
-% be an important promoter of singlet$\sim$triplet coupling.  In Zeeman
-% anticrossing experiments, Dupr\'{e} and coworkers observed a rapid
-% increase in the anticrossing density, as well as the product
-% $\rho_{\text{vib}} \braket{H_{st}}$, with energy in $\nu_3$
-% \cite{dupre91, dupre95b}.  They also observed an single large
-% singlet$\sim$triplet anticrossing in the $3 \nu_3$ $K_a=0$ level,
-% %with a zero-field matrix element of 0.29 \rcm,
-% which was in turn perturbed by many smaller couplings \cite{dupre93}.
-% These observations led the authors to propose that the
-% singlet$\sim$triplet dynamics of acetylene in the \astate\ state are
-% best described by a doorway-mediated mechanism, in which particular
-% triplet vibrational levels mediate intersystem crossing between the
-% initially excited $S_1$ bright state and the dense manifold of highly
-% mixed, dark $T_{1,2}$ states.  Subsequent theoretical and experimental
-% work confirmed that the coupling doorways were vibrational levels of
-% the $T_3$ electronic state \cite{vacek96, sherrill96, humphrey97,
-%   altunata00}.
+The \emph{trans}-bending mode of $S_1$ acetylene, $\nu_3$, is known to
+be an important promoter of singlet$\sim$triplet coupling.  In Zeeman
+anticrossing experiments, Dupr\'{e} and coworkers observed a rapid
+increase in the anticrossing density, as well as the product
+$\rho_{\text{vib}} \braket{H_{st}}$, with energy in $\nu_3$
+\cite{dupre91, dupre95b}.  They also observed an single large
+singlet$\sim$triplet anticrossing in the $3 \nu_3$ $K_a=0$ level,
+%with a zero-field matrix element of 0.29 \rcm,
+which was in turn perturbed by many smaller couplings \cite{dupre93}.
+These observations led the authors to propose that the
+singlet$\sim$triplet dynamics of acetylene in the \astate\ state are
+best described by a doorway-mediated mechanism, in which particular
+triplet vibrational levels mediate intersystem crossing between the
+initially excited $S_1$ bright state and the dense manifold of highly
+mixed, dark $T_{1,2}$ states.  Subsequent theoretical and experimental
+work confirmed that the coupling doorways were vibrational levels of
+the $T_3$ electronic state \cite{vacek96, sherrill96, humphrey97,
+  altunata00}.
 
-% The $S_1$ $3 \nu_3$ $K_a$=1 level has been heavily studied due to a
-% local $S_1 \sim T_3$ level crossing at $J \approx 3$.  Spectroscopic
-% patterns in SEELEM arising from the effects of the local $T_3$
-% perturber in have been discussed by several authors \cite{humphrey97,
-%   altunata00, altunata01, mishra04}.  Using vibrational overlap
-% integrals gained from \emph{ab initio} calculations of the $T_3$
-% electronic surface, Thom and coauthors were able to exclude all but
-% several candidate $T_3$ levels as the $3\nu_3$ local perturber
-% \cite{thom07}.
-% % \POINT{Overlap between $S_1$ and $T_3$ levels predicted by Bryan and
-% %   Ryan.  (See p.40 of 1/2007--3/2007 notebook.)}
-% However, recent observations of an increase in average $T_{1,2}$
-% electronic character at higher values of $J$ suggest that the local
-% $T_3$ perturber is not the sole, and perhaps not the primary, doorway
-% for $3 \nu_3$ \cite{degroot07}.
+The $S_1$ $3 \nu_3$ $K_a$=1 level has been heavily studied due to a
+local $S_1 \sim T_3$ level crossing at $J \approx 3$.  Spectroscopic
+patterns in SEELEM arising from the effects of the local $T_3$
+perturber in have been discussed by several authors \cite{humphrey97,
+  altunata00, altunata01, mishra04}.  Using vibrational overlap
+integrals gained from \emph{ab initio} calculations of the $T_3$
+electronic surface, Thom and coauthors were able to exclude all but
+several candidate $T_3$ levels as the $3\nu_3$ local perturber
+\cite{thom07}.
+% \POINT{Overlap between $S_1$ and $T_3$ levels predicted by Bryan and
+%   Ryan.  (See p.40 of 1/2007--3/2007 notebook.)}
+However, recent observations of an increase in average $T_{1,2}$
+electronic character at higher values of $J$ suggest that the local
+$T_3$ perturber is not the sole, and perhaps not the primary, doorway
+for $3 \nu_3$ \cite{degroot07}.
 
-% That an energetically distant doorway, which would be required to have
-% a correspondingly larger spin-orbit matrix element, may play a role in
-% coupling $S_1$ $3 \nu_3$ to the $T_{1,2}$ manifold is not altogether
-% surprising, given the energy region in question.  \emph{Ab initio}
-% calculations are in agreement that an electronic surface crossing
-% between the $S_1$ and $T_3$ states is energetically nearby
-% \cite{ventura03, thom07}.  Such a surface crossing would allow for
-% strong interactions with several $T_3$ levels in the same energy
-% region.  It should also play a role in promoting singlet$\sim$triplet
-% coupling within other $S_1$ levels in the same energy region.  The
-% $4\nu_3$ level, 1000 \rcm\ higher in energy, is also strongly coupled
-% to the $T_{1,2}$ manifold, although no obvious local $T_3$ doorway has
-% been observed \cite{drabbels93, ochi91}.
+That an energetically distant doorway, which would be required to have
+a correspondingly larger spin-orbit matrix element, may play a role in
+coupling $S_1$ $3 \nu_3$ to the $T_{1,2}$ manifold is not altogether
+surprising, given the energy region in question.  \emph{Ab initio}
+calculations are in agreement that an electronic surface crossing
+between the $S_1$ and $T_3$ states is energetically nearby
+\cite{ventura03, thom07}.  Such a surface crossing would allow for
+strong interactions with several $T_3$ levels in the same energy
+region.  It should also play a role in promoting singlet$\sim$triplet
+coupling within other $S_1$ levels in the same energy region.  The
+$4\nu_3$ level, 1000 \rcm\ higher in energy, is also strongly coupled
+to the $T_{1,2}$ manifold, although no obvious local $T_3$ doorway has
+been observed \cite{drabbels94, ochi91}.  The energies of the $3
+\nu_3$ and $4\nu_3$ levels can therefore be taken as conservative
+lower and upper bounds for an ``active'' $S_1 \sim T_3$ coupling
+region.
 
-% The energies of the $3 \nu_3$ and $4\nu_3$ levels can therefore be
-% taken as conservative lower and upper bounds for such an $S_1 \sim
-% T_3$ ``active'' coupling region.  We turn our attention to other
-% vibrational levels of $S_1$, which, while in this critical energy
-% region, are not near-degenerate with a mediating $T_3$ level at low
-% $J$.  The levels chosen for study all lie within 500 \rcm\ of $3
-% \nu_3$ $K_a$=1, and involve excitation in the Franck-Condon active
-% modes of $S_1$ acetlyene, $\nu_2$ (C-C stretch) and $\nu_3$
-% (\emph{trans} bend), with one exception.
+We turn our attention to other vibrational levels of $S_1$, which,
+while in this critical energy region, are not near-degenerate with a
+mediating $T_3$ level at low $J$.  In the absence of a local $T_3$
+perturber, coupling between $S_1$ levels and the local manifold of
+$T_{1,2}$ states is expected to be mediated by energetically distant
+$T_3$ levels.  Evidence for energetically distant, mediating $T_3$
+levels is obtained by comparing simultaneously recorded LIF and SEELEM
+spectra.  Additionally, a new technique for comparison is developed
+that is sensitive to the presence of distant $T_3$ doorway levels.
+This new technique takes into account shifting intensity patterns in
+the frequency-domain LIF spectrum as a function of delay time, due to
+the time development of an incoherent ensemble of eigenstates with
+different fluorescence lifetimes.  When used on a segment of spectrum
+that includes just one singlet rovibronic transition, the technique
+reveals a coupling-dependent shift in the statistical properties of
+the spectrum with delay time.  Comparison with other transitions in a
+rotational series can reveal local perturbations caused by weakly
+coupled $T_3$ levels.  When used on a spectrum containing several
+rovibronic transitions in series, the technique can give insight into
+the matrix element and relative energy of a $T_3$ doorway level.
 
-% In the absence of a local $T_3$ perturber, coupling between $S_1$
-% levels and the local manifold of $T_{1,2}$ states is expected to be
-% mediated by energetically distant $T_3$ levels.  Evidence for
-% energetically distant, mediating $T_3$ levels is obtained by comparing
-% simultaneously recorded LIF and SEELEM spectra.  Additionally, a new
-% technique for comparison is developed that is sensitive to the
-% presence of distant $T_3$ doorway levels.  This new technique takes
-% into account shifting intensity patterns in the frequency-domain LIF
-% spectrum as a function of delay time, due to the time development of
-% an incoherent ensemble of eigenstates with different fluorescence
-% lifetimes.  When used on a segment of spectrum that includes just one
-% singlet rovibronic transition, the technique reveals a
-% coupling-dependent shift in the statistical properties of the spectrum
-% with delay time.  Comparison with other transitions in a rotational
-% series can reveal local perturbations caused by weakly coupled $T_3$
-% levels.  When used on a spectrum containing several rovibronic
-% transitions in series, the technique can give insight into the matrix
-% element and relative energy of a $T_3$ doorway level.
+\section{Theory: $S_1 \sim T_3$ rotational energy level spacing and
+  spin-orbit matrix elements}
 
-\section{COMMUNICATION: Signatures of doorway-mediated intersystem
-  crossing in delayed, incoherent fluorescence measurements}
+In the $S_1$ (\astate) electronic state, acetylene is a near-symmetric
+prolate top.  Neglecting centrifugal and asymmetry terms, the
+rovibrational energies are approximately \cite{watson82}
+\begin{equation}
+  \label{eq:s1-energy-levels}
+  E_{S_1}(v,K,J) = T_v + [A_v - B_v] K^2 + B_v \, J(J+1),
+\end{equation}
+where $J$ is the total angular momentum, $K$ is the absolute value of
+the projection of the orbital angular momentum on the a-axis of the
+molecule, $T_v$ is the rotationless energy of the vibrational level
+$v$, and $A_v$, $B_v$, and $C_v$ ($\approx B_v$) are the rotational
+constants for the vibrational level.  The $T_3$ electronic state is
+best described in a Hund's case ($b$) basis, based on the magnitude of
+the carbon atomic spin-orbit matrix element \cite{field04}.  For
+$T_3$, the model of a near-symmetric prolate top is still appropriate
+in the non-planar \emph{trans}-bent equilibrium geometry predicted by
+\emph{ab initio} calculations \cite{ventura03, thom07}, due to the
+small mass of the hydrogen atoms relative to carbon.  The energy
+levels are approximately
+\begin{equation}
+  \label{eq:t3-energy-levels}
+  E_{T_3}(v,K,N) = T_v + [A_v - B_v] K^2 + B_v \, N(N+1),
+\end{equation}
+where the pattern-forming rotational quantum number, $N$, is the total
+angular momentum exclusive of spin.  At each energy $E_{T_3}(v,K,N)$,
+three near-degenerate spin components are present, due to the three
+possible values of the total angular momentum $J$.  The components are
+labeled $F_1$ ($J=N+1$), $F_2$ ($J=N$), and $F_3$ ($J=N-1$).  Figure
+\ref{fig:triplet-rot-structure} shows an example of the rotational
+energy level structure.
+% $K$=1 and 2 sublevels of a $T_3$ vibration having $a_g$ symmetry.
+% Triplet vibrational sublevels with $K \ge 2$ have the same structure
+% as $K=1$, except for the absence of any rotational levels with
+% $N<K$.
+Since $S=0$ for the $S_1$ electronic state, only one component $N=J$
+is present for all $S_1$ rotational levels.
+
+The $S_1$ and $T_3$ electronic states are mixed by spin-orbit
+interaction.  The total first-order spin-orbit matrix element between
+rovibrational states of $S_1$ and $T_3$ is given by the product of
+three factors: an electronic spin-orbit matrix element, a vibrational
+overlap factor, and a rotational factor arising from angular momentum
+coupling.  Spin-orbit matrix elements follow the rotational selection
+rules $\Delta J = 0$ and $\Delta P = 0$, where $P$ is the projection
+of $J$ on the a-axis of the molecule \cite{hougen64}.  In Hund's case
+($b$), the quantum number $P$ is mixed among several levels with
+different $K$, leading to the case ($b$) selection rule $\Delta K = 0,
+\pm 1$ \cite{hougen64, stevens73}.
+
+We consider the relative rotational energy differences between an
+$S_1$ vibrational sublevel $\ket{S}$ and a $T_3$ vibrational sublevel
+$\ket{T}$.  According to the selection rule $\Delta J = 0$, a level
+$\ket{S;J=J_S}$ may mix with three levels of $\ket{T}$:
+$\ket{T;N=J_S-1}$ (an $F_1$ component), $\ket{T;N=J_S}$ (an $F_2$
+component), and $\ket{T;N=J_S+1}$ (an $F_3$ component).  Since the
+three triplet components with nonzero matrix element differ in the
+rotational pattern-forming quantum number, $N$, they have different
+rotational energies.  Written in terms of $J$, these energies are
+\begin{equation}
+  E_T(J) = T_{0,T} + 
+  \begin{cases}
+    B_T \, (J+1)(J+2) & F_3 \:\: (\Delta N = +1), \\
+    B_T \, J(J+1)     & F_2 \:\: (\Delta N = 0), \\
+    B_T \, J(J-1)     & F_1 \:\: (\Delta N = -1),
+  \end{cases}
+\end{equation}
+where $T_{0,T}$ is the rotationless energy of $\ket{T}$.  Subtracting
+the rotational energies of $\ket{S}$,
+\begin{equation}
+  E_S(J) = T_{0,S} + B_S \, J(J+1),
+\end{equation}
+from $E_T(J)$ yields the rotational energy differences between
+$\ket{S}$ and $\ket{T}$.  In the approximation that the difference in
+rotational constants $\Delta B_{ST}$ is small compared to $B_T$, the
+rotational energy differences are
+\begin{equation}
+  \label{eq:components}
+  \Delta E_{ST}(J) = \Delta T_0 +
+  \begin{cases}
+    \:\: 2B_TJ + 2 B_T 
+    & F_3 \:\: (\Delta N = +1), \\
+    \:\: 0
+    & F_2 \:\: (\Delta N = 0), \\
+    \:\: - 2B_TJ
+    & F_1 \:\: (\Delta N = -1).
+  \end{cases}
+\end{equation}
+
+\begin{figure}
+  \caption{Reduced term value plot of the three singlet$\sim$triplet
+    roational components permitted by the spin-orbit operator in
+    Hund's case ($b$).  The $F_1$ component corresponds to...  }
+  \label{fig:rotational-energy-differences}
+  \centering
+  \includegraphics[width=6in]{rotational-energy-differences.pdf}
+\end{figure}
+
+The approximate energy differences $\Delta E_{ST}(J)$ are plotted as a
+function of $J$ in Figure \ref{fig:rotational-energy-differences}.  A
+value of $B_T=1.1$ \rcm\ was chosen for the figure based on the
+rotational assignment of a $T_3$ perturber in the $3^3$ \Ka{1}
+sublevel of $S_1$ \cite{mishra04}.  The relative energy of the $F_2$
+component has a slope of approximately zero, while the relative
+energies of the $F_1$ and $F_3$ components have slopes of
+approximately $-2B_T \approx -2$ \rcm\ and $+2B_T \approx +2$ \rcm\
+per $J$, respectively.  Also included on the plot is the average
+vibrational level spacing $\rho^{-1} \approx 10$ \rcm\ for both the
+$S_1$ and $T_3$ electronic states.  The relative energies of the $F_1$
+and $F_2$ components are 10 \rcm\ distant from their initial positions
+when $J \approx 4$.
+
+Because the $F_1$ and $F_3$ components of the triplet have large
+slopes in relative energy spearation from a singlet level, the
+component of a $T_3$ level with which an $S_1$ level interacts is
+determined by the rotationless energy difference.  The possibilites
+are as follows.
+\begin{itemize}
+\item When two vibrational sublevels of $S_1$ and $T_3$ are
+  near-degenerate, $-4 \lesssim (T_{0,T} - T_{0,S}) \lesssim 2$ \rcm,
+  the energy separation between the singlet and the $F_2$ component of
+  the triplet remains close to its initial value as $J$ increases,
+  while the relative energy separations of the $F_1$ and $F_2$
+  components increase at a rate of approximately $2B_T$ per $J$.
+  Energy denominators favor mixing between the singlet and the $F_2$
+  component of the triplet when $J \ge 1$.
+\item When a $T_3$ doorway level lies higher in rotationless energy
+  than the singlet level, $ (T_{0,T} - T_{0,S}) \gtrsim 2$ \rcm,
+  energy denominators favor mixing between the singlet and the $F_1$
+  component of the triplet.  The rotational energy separation between
+  the singlet and the $F_1$ component of the triplet decreases at a
+  rate of approximately $2B_T$ per $J$ until a level crossing occurs
+  at $J \approx (T_{0,T} - T_{0,S}) / 2 B_T$.
+\item When a $T_3$ doorway level lies below a singlet level in
+  rotationless energy, $(T_{0,T} - T_{0,S}) \lesssim 4$ \rcm, energy
+  denominators determine that the primary interaction is via the
+  triplet $F_3$ component.  The rotational energy separation between
+  the singlet level and the $F_3$ component of the triplet decreases
+  at a rate of $2B_T$ per $J$ until a crossing occurs at $J \approx
+  (T_{0,S} - T_{0,T}) / 2 B_T - 1$.
+\end{itemize}
+Taken together, these trends guarantee a level crossing at $J<8$ for
+any pair of $S_1$ and $T_3$ sublevels having a rotationless energy
+separation of less than 20 \rcm.  Regardless of the sign of the
+rotationless energy difference, one spin component of a $T_3$ level
+always approaches the singlet in rotational energy separation at a
+rate of $2B_T$ per $J$.  When a doorway is energetically distant, in
+other words not near-degenerate in rotationless energy, energy
+denominators determine that the interaction occurs via either the
+$F_1$ or $F_3$ component, depending on the sign of $T_{0,T} - T_{0,S}$.
+
+\begin{figure}
+  \caption{Rotational factors of spin-orbit matrix elements between
+    rovibrational levels of the $S_1$ and $T_3$ electronic states,
+    $K_s$=1.  The plot includes matrix elements for the $F_3$ ($\Delta
+    N = +1$) and $F_1$ ($\Delta N = -1$) components of a $T_3$
+    sublevel with $K_T=0,1,2$.  The rotational factors deviate in all
+    cases by less than a factor of 2 from their initial positions as a
+    function of $J$.}
+  \label{fig:rotational-factors-1}
+  \centering
+  \includegraphics[width=6in]{rotational-factors-k1.pdf}
+\end{figure}
+
+\begin{figure}
+  \caption{Rotational factors of spin-orbit matrix elements between
+    rovibrational levels of the $S_1$ and $T_3$ electronic states,
+    $K_s$=2.  The plot includes matrix elements for the $F_3$ ($\Delta
+    N = +1$) and $F_1$ ($\Delta N = -1$) components of a $T_3$
+    sublevel with $K_T=1,2,3$.  The rotational factors are essentially
+    the same as those for $K_S=1$.}
+  \label{fig:rotational-factors-2}
+  \centering
+  \includegraphics[width=6in]{rotational-factors-k2.pdf}
+\end{figure}
+
+To verify that the magnitude of the spin-orbit matrix elements does
+not dominate over energy denominator effects for the $F_1$ and $F_3$
+components of a triplet level, the rotational factors for spin-orbit
+matrix elements were calculated from general formulas given by Stevens
+and Brand \cite{stevens73}.  These factors are plotted as a function
+of $J$ in Figure \ref{fig:rotational-factors-1} for a singlet level
+with $K_S$=1.  The rotational factors quickly approach their
+asymptotic limits as $J$ is increased.  Even at low $J$, the
+rotational factor never differs from its asymptotic value by more than
+a factor of 2.  Figure \ref{fig:rotational-factors-2} shows the same
+factors for $K_S$=2, also considered in this study.  The plot is
+essentially the same.
+
+The overall magnitude of spin-orbit matrix elements between
+rovibrational levels of $S_1$ and $T_3$ is therefore not governed by
+rotational factors, but by vibrational overlap factors.  Franck-Condon
+overlap between relatively low-lying vibrational levels of $S_1$ and
+$T_3$ is calculated to vary over at least three orders of magnitude
+\cite{thom07}.  The wide variation in spin-orbit matrix element,
+arising from vibrational overlap factors, gives rise to two classes of
+level crossings between non-near-degenerate $S_1$ and $T_3$ levels:
+those where $H_{ST}^2 \ll 2B_T$, and those where $H_{ST}^2$ is on the
+order of $2B_T$.
+
+When $H_{ST}^2 \ll 2B_T$, energy denominator effects cause an $S_1
+\sim T_3$ level crossing to be observable at only one $J$ in the
+spectrum.  However, once a triplet level with small vibrational
+overlap is found at a particular $J$, its energy above or below the
+perturbed singlet level may be found according to Equation
+\ref{eq:components}. \TODO{Finish para.}
+
+When $H_{ST}^2$ is on the order of $2B_T$, mixing between the $S_1$
+and $T_3$ levels occurs at several values of $J$; these are the
+energetically distant $T_3$ doorway levels with which we are most
+concerned. \TODO{Finish para.  Lead in to next section.}
+
+\section{Theory: Signatures of doorway-mediated intersystem crossing
+  in delayed, incoherent fluorescence measurements}
 
 Intersystem crossing in the \astate\ ($S_1$) state of acetylene is
 well-described by a doorway-mediated coupling model.  The model is
@@ -218,12 +427,13 @@ excess of vibrational energy in the $T_{1,2}$ electronic states,
 accounts for the relative magnitude of the matrix elements according
 to the model.
 
-When a doorway vibrational level of $T_3$ is energetically distant
-from an $S_1$ level, its relative energy and affects the local
-$T_3$-induced mixing between $S_1$ and $T_{1,2}$ levels.  An
-energetically distant $T_3$ doorway level leaves traces of its
-presence in the LIF and SEELEM spectra of $S_1$ levels with which it
-interacts.  In this section, we derive the time dependence of the
+
+
+
+An energetically distant $T_3$ doorway level leaves traces of its
+presence in the LIF and SEELEM spectrum of $S_1$ levels with which it
+interacts.  We define an energetically distant doorway level as
+one which is more than 2 \rcm\ away fron  In this section, we derive the time dependence of the
 center-of-gravity and variance for an incoherent ensemble of mixed
 singlet$\sim$triplet eigenstates
 
@@ -295,6 +505,17 @@ probability for excitation of a $\ket{m}$ state.
 \subsection{An incoherent, high-resolution fluorescence spectrum after
   a time delay}
 
+\TODO{Move this to beginning.}  For the $S_1$ electronic state of
+acetylene, $\tau_s=270$ ns \cite{ochi91}.  The field-of-view of the
+fluorescence detection optics is about 5 mm, which amounts to a
+maximum viewing time of about 5 $\mu$s, about $18\tau_s$, for
+molecules in the molecular beam, which has an average velocity of
+$10^3$ m/s.  At times later than $10\tau_s$, no molecules remain
+within the fluorescence field of view.  This places an upper limit on
+the value of $R$ that can be selected in our fluorescence experiments.
+Figure \ref{fig:int-at-rc} shows the intensity equation for the long
+time limit of fluorescence detection, $18\tau_s$.
+
 We examine the fluorescence intensity after a time delay $t$,
 which we cast in units of the bright state lifetime:
 \begin{equation}
@@ -335,29 +556,7 @@ The detectable fluorescence intensity may thus be ``tuned'' to a
 chosen value of fractional bright state character merely by selecting
 a time delay $R$, according to Equation \ref{eq:am-max}.
 
-\POINT{Remove this paragraph?}  Note that the intensity expression
-used here does not account for molecules moving out of the field of
-view of the fluorescence detection optics.  We consider only the
-distribution of bright state character \emph{among molecules that
-  remain within the field of view at time $R$}.  However, since there
-is no momentum transfer from the excitation photon to the molecule,
-the rate of molecules exiting the field of view is independent of
-bright state character.  Thus, the statistical properties of the
-spectrum in the frequency domain, involving only fluorescence
-intensity ratios between molecules with differing fractional bright
-state character, are undistorted by molecules moving out of the field
-of view.
 
-\TODO{Move this to beginning.}  For the $S_1$ electronic state of
-acetylene, $\tau_s=270$ ns \cite{ochi91}.  The field-of-view of the
-fluorescence detection optics is about 5 mm, which amounts to a
-maximum viewing time of about 5 $\mu$s, about $18\tau_s$, for
-molecules in the molecular beam, which has an average velocity of
-$10^3$ m/s.  At times later than $10\tau_s$, no molecules remain
-within the fluorescence field of view.  This places an upper limit on
-the value of $R$ that can be selected in our fluorescence experiments.
-Figure \ref{fig:int-at-rc} shows the intensity equation for the long
-time limit of fluorescence detection, $18\tau_s$.
 
 The SEELEM detector used in our experiments detects metastable
 molecules after a 309 $\mu$s flight time.  If we set aside some
@@ -488,122 +687,7 @@ coefficients.
 % function of rotational quantum number.  \POINT{Continue explaining the
 % general idea.}
 
-% \POINT{Present energy level spacings.} For a near-symmetric prolate
-% top in Hund's case ($b$), the spin-orbit selection rules are
-% \cite{stevens73}
-% \begin{equation}
-%   \begin{split}
-%     \Delta J &= 0 \\
-%     \Delta N &= 0, \pm 1\\
-%     \Delta K_a &= 0, \pm 1.
-%   \end{split}
-% \end{equation}
-% \TODO{Rewrite this.}  Due to the $\Delta N$ selection rule, a singlet
-% level $\ket{s;N=J}$ may interact with three rotational components of a
-% dark triplet state: $F_1$, $\ket{\ell;N=J-1}$; $F_2$,
-% $\ket{\ell;N=J}$; and $F_3$, $\ket{\ell;N=J+1}$.  The relative
-% energies of the three components are, in terms of the singlet
-% rotational quantum number $J$, \TODO{use different notation for
-%   $\Delta B$?}
-% \begin{equation}
-%   \label{eq:components}
-%   \Delta E_{s\ell}(J) = (E_{s} - E_{\ell}) +
-%   \begin{cases}
-%     \Delta B_{s\ell}J(J+1) + 2B_{\ell}J           
-%     & F_1 \text{ component}\\
-%     \Delta B_{s\ell}J(J+1)                      
-%     & F_2 \text{ component}\\
-%     \Delta B_{s\ell}J(J+1) - 2B_{\ell}J - 2B_{\ell} 
-%     & F_3 \text{ component}.\\
-%   \end{cases}
-% \end{equation}
-% In the approximation that $B_s \approx B_{\ell}$, the relative
-% energies of the $F_{1,2,3}$ components change linearly when plotted
-% against $J$.  The energy of the $F_2$ component relative to the
-% singlet state has a slope of approximately zero, while the $F_1$ and
-% $F_3$ components have slopes of approximately $\pm2B$.  The relative
-% energy differences between $S_1$ and $T(F_1,F_2,F_3)$ are plotted in
-% Figure \ref{fig:components}.
-
-% \begin{figure}
-%   \caption{\TODO{Change xlabel to $J$.}  Reduced term value plot of
-%     the three singlet$\sim$triplet roational components permitted by
-%     the spin-orbit operator in Hund's case ($b$).  The $F_1$ component
-%     corresponds to...  }
-%   \label{fig:components}
-%   \centering
-%   \includegraphics[width=6in]{f-components.png}
-% \end{figure}
-
-% Based on the existing assignment of a local $T_3$ perturber in $S_1$
-% $3 \nu_3$ $K_a$=1, as well as $T_3$ geometries prediced by \emph{ab
-%   initio} calculations, we expect the product $\Delta B_{s\ell}J(J+1)$
-% to remain small compared to $2BJ$ for any combination of $S_1$ and
-% $T_3$ vibrational levels \cite{mishra04, ventura03, thom07} up to the
-% maximum $J$ values ($J<8$) observed in our experiment .  \POINT{The
-%   figure is a good approximation to what we expect from the molecule.}
-
-% The total first-order spin-orbit matrix element between two
-% rovibrational states is given by the product of three factors: an
-% electronic spin-orbit matrix element, a vibrational overlap factor,
-% and a rotational factor arising from angular momentum coupling.  The
-% rotational factors are given for the general case of polyatomic
-% molecule asymmetric tops by Stevens and Brand \cite{stevens73}.  Plots
-% of the spin-orbit rotational factors are presented in Figure
-% \ref{fig:rotational-factors-0} for singlet levels with $K$=0, $K$=1
-% (Figure \ref{fig:rotational-factors-1}), and $K$=2 (Figure
-% \ref{fig:rotational-factors-2}).  With the exception of $\Delta N =
-% \Delta K = 0$ interactions, the rotational factors quickly approach
-% their asymptotic limits, usually between 0.1 and 0.6.  Even at low
-% values of $J$, the variation of rotational factor with rotational
-% quantum number is always less than a factor of 2.  \POINT{These
-%   variations are trumped by energy denominator and vibrational overlap
-%   effects.}
-
-% \begin{figure}
-%   \caption{Rotational factors for spin-orbit coupling in polyatomic
-%     molecules, $K_s$=0}
-%   \label{fig:rotational-factors-0}
-%   \centering
-%   \includegraphics[width=6in]{rotational_factors_k0.png}
-% \end{figure}
-
-% \begin{figure}
-%   \caption{Rotational factors for spin-orbit coupling in polyatomic
-%     molecules, $K_s$=1}
-%   \label{fig:rotational-factors-1}
-%   \centering
-%   \includegraphics[width=6in]{rotational_factors_k1.png}
-% \end{figure}
-
-% \begin{figure}
-%   \caption{Rotational factors for spin-orbit coupling in polyatomic
-%     molecules, $K_s$=2}
-%   \label{fig:rotational-factors-2}
-%   \centering
-%   \includegraphics[width=6in]{rotational_factors_k2.png}
-% \end{figure}
-
-% \POINT{Expect vibrational factor to vary greatly.}  The effects of
-% widely varying vibrational overlap factors divide $S_1 \sim T_3$
-% perturbations into two classes: those where $H_{st}/\Delta E_{st} \ll
-% 2B$, and those where $H_{st} / \Delta E_{st}$ is on the order of $2B$.
-
-% \POINT{Explain pattern when $H_{st}/\Delta E_{st} \ll 2B$.}
-% Perturbations in the first class, observable as a level shift, will
-% occur only once in the spectrum.  However, once a triplet level with
-% small vibrational overlap is found at a particular $J$, its energy
-% above or below the perturbed singlet level may be found according to
-% Equation \ref{eq:components}.
 
-% \POINT{Explain pattern when $H_{st}/\Delta E_{st} \approx 2B$.}
-% Perturbations falling into the second class will affect the
-% singlet$\sim$triplet coupling at several values of $J$; these are the
-% distant $T_3$ doorways with which we are most concerned.  \TODO{Plot
-%   mixing coefficients of distant doorways as a fcn of rotational
-%   quantum number.  Trend will be: weakly coupled states turn on/off
-%   suddenly, strongly coupled states are visible for several values of
-%   $N$.}
 
 
 
@@ -625,69 +709,69 @@ coefficients.
 
 
 
-% \section{Experiment}
+\section{Experiment}
 
-% \TODO{Adapt this from paper.}  SEELEM is a versatile and sensitive
-% technique for investigating molecules in ``dark'' (weakly-fluorescing)
-% metastable states populated by laser excitation.1-6 In the SEELEM
-% experiment, a molecular beam of acetylene is excited by a $\sim$5 ns
-% FWHM pulsed tunable laser into spin-rotation-vibration eigenstates of
-% metastable electronic states via weak, nominally forbidden
-% transitions. After excitation, the long-lived species must travel 35
-% cm before colliding with an Au metal detector surface, where an
-% electron is ejected in a de-excitation process. Two criteria must be
-% met for electron ejection by a metastable species. First, the vertical
-% electronic energy of the metastable approaching the surface must
-% exceed the work function of the metal ($\Phi_{\text{Au}}$ = 5.1
-% eV). Second, the radiative lifetime of the detected metastable
-% eigenstate ($\tau_\text{rad}$) must exceed the flight time from the
-% point of laser excitation to the SEELEM surface ($\Delta$t=300
-% $\mu$s).
+\TODO{Adapt this from paper.}  SEELEM is a versatile and sensitive
+technique for investigating molecules in ``dark'' (weakly-fluorescing)
+metastable states populated by laser excitation.1-6 In the SEELEM
+experiment, a molecular beam of acetylene is excited by a $\sim$5 ns
+FWHM pulsed tunable laser into spin-rotation-vibration eigenstates of
+metastable electronic states via weak, nominally forbidden
+transitions. After excitation, the long-lived species must travel 35
+cm before colliding with an Au metal detector surface, where an
+electron is ejected in a de-excitation process. Two criteria must be
+met for electron ejection by a metastable species. First, the vertical
+electronic energy of the metastable approaching the surface must
+exceed the work function of the metal ($\Phi_{\text{Au}}$ = 5.1
+eV). Second, the radiative lifetime of the detected metastable
+eigenstate ($\tau_\text{rad}$) must exceed the flight time from the
+point of laser excitation to the SEELEM surface ($\Delta$t=300
+$\mu$s).
 
-% A sample of acetylene (BOC gases) at a backing pressure of one
-% atmosphere was pulsed through a 0.5 mm diameter nozzle (Jordan Valve)
-% operating at 10 Hz into a diffusion pumped vacuum chamber at
-% $\sim$5\e{-5} torr.  An Nd:YAG pumped, frequency-doubled dye laser
-% (220 nm) excited the acetylene molecules in the pulsed jet expansion 2
-% cm downstream from the nozzle orifice.  \TODO{Include laser details
-%   here.}
+A sample of acetylene (BOC gases) at a backing pressure of one
+atmosphere was pulsed through a 0.5 mm diameter nozzle (Jordan Valve)
+operating at 10 Hz into a diffusion pumped vacuum chamber at
+$\sim$5\e{-5} torr.  An Nd:YAG pumped, frequency-doubled dye laser
+(220 nm) excited the acetylene molecules in the pulsed jet expansion 2
+cm downstream from the nozzle orifice.  \TODO{Include laser details
+  here.}
 
-% UV-LIF was detected perpendicular to the plane defined by the
-% intersection of the pulsed molecular and laser beams using f/1.2
-% collection optics, a fluorescence filter (UG-11) to reduce scattered
-% laser light, and a PMT (Hamamatsu model R375).  The time-varying
-% UV-LIF signal was averaged on a digital oscilloscope (LeCroy \TODO{get
-%   model}) at each laser frequency.  The resulting oscilloscope trace,
-% containing 500 evenly spaced voltage levels over a 5 \microsec\
-% timespan ($dt$ = 10 ns), was transferred to a PC for analysis.
+UV-LIF was detected perpendicular to the plane defined by the
+intersection of the pulsed molecular and laser beams using f/1.2
+collection optics, a fluorescence filter (UG-11) to reduce scattered
+laser light, and a PMT (Hamamatsu model R375).  The time-varying
+UV-LIF signal was averaged on a digital oscilloscope (LeCroy \TODO{get
+  model}) at each laser frequency.  The resulting oscilloscope trace,
+containing 500 evenly spaced voltage levels over a 5 \microsec\
+timespan ($dt$ = 10 ns), was transferred to a PC for analysis.
 
-% Simultaneous SEELEM detection was performed in a separate,
-% differentially pumped vacuum chamber.  Following laser excitation,
-% molecules in the pulsed expansion passed through a conical skimmer
-% (3mm diameter), forming a collimated molecular beam in the SEELEM
-% detection chamber.  The detector chamber was diffusion pumped (Varian
-% 600) to maintain a pressure of $\sim$4\e{-7} torr during operation.
-% The SEELEM detector surface, a 2.5 cm diameter region of heated
-% (300\degrees\ C) Au foil, was located 35 cm downstream from the point
-% of laser excitation.  The SEELEM detector was identical to that used
-% in the previously described apparatus with Au foil ($\Phi_{\text{Au}}$
-% = 5.1 eV) as the detector surface.
+Simultaneous SEELEM detection was performed in a separate,
+differentially pumped vacuum chamber.  Following laser excitation,
+molecules in the pulsed expansion passed through a conical skimmer
+(3mm diameter), forming a collimated molecular beam in the SEELEM
+detection chamber.  The detector chamber was diffusion pumped (Varian
+600) to maintain a pressure of $\sim$4\e{-7} torr during operation.
+The SEELEM detector surface, a 2.5 cm diameter region of heated
+(300\degrees\ C) Au foil, was located 35 cm downstream from the point
+of laser excitation.  The SEELEM detector was identical to that used
+in the previously described apparatus with Au foil ($\Phi_{\text{Au}}$
+= 5.1 eV) as the detector surface.
 
-% Electron signals from the SEELEM detector were collected using pulse
-% counting techniques.  Electrons ejected from the metal surface were
-% detected by a nearby electron multiplier (ETP, SGE Instruments, Model
-% 14831H).  The collection plate of the multiplier was biased at +100V
-% to attract electrons.  The electron multiplier signal was sent to a
-% discriminator (EG\&G/Ortec Model 9301), and then to a PC-operated
-% multichannel scalar (Oxford Tennelec Nucleus Inc. MCS-II v2.091),
-% where the total number of electrons was summed.  The typical signal
-% level for SEELEM detection of acetylene was 2-20 counts per laser
-% pulse.
+Electron signals from the SEELEM detector were collected using pulse
+counting techniques.  Electrons ejected from the metal surface were
+detected by a nearby electron multiplier (ETP, SGE Instruments, Model
+14831H).  The collection plate of the multiplier was biased at +100V
+to attract electrons.  The electron multiplier signal was sent to a
+discriminator (EG\&G/Ortec Model 9301), and then to a PC-operated
+multichannel scalar (Oxford Tennelec Nucleus Inc. MCS-II v2.091),
+where the total number of electrons was summed.  The typical signal
+level for SEELEM detection of acetylene was 2-20 counts per laser
+pulse.
 
-% Both SEELEM and LIF signals were averaged over 100 laser shots at each
-% laser frequency.  The frequency increment was typically
-% $\sim$0.015 \rcm\ in the doubled output, although several detailed
-% spectra were recorded with a 4$\times$ smaller step size.  
+Both SEELEM and LIF signals were averaged over 100 laser shots at each
+laser frequency.  The frequency increment was typically
+$\sim$0.015 \rcm\ in the doubled output, although several detailed
+spectra were recorded with a 4$\times$ smaller step size.  
 
 
 
@@ -717,7 +801,7 @@ coefficients.
 
 
 
-\section{LIF/SEELEM spectroscopy of four $S_1$ vibrational levels
+\section{SEELEM/LIF spectroscopy of four $S_1$ vibrational levels
   above the minimum of the $S_1 \sim T_3$ seam of intersection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1498,62 +1582,62 @@ this in the following section.
 
 
 
-% \section{Conclusion}
+\section{Conclusion}
 
-% The mechanism of doorway-mediated coupling by an energetically distant
-% $T_3$ level skews the coupling to the local $T_{1,2}$ states that
-% appear in the SEELEM spectrum, resulting in a center-of-gravity shift
-% between the LIF and SEELEM spectra.  Additionally, when viewed in
-% successive time windows, the center of gravity of the LIF spectrum
-% exhibits evolution toward the limiting behavior exhibited in the
-% SEELEM spectrum.  A simple model can be used to show that strong
-% coupling between the singlet level and the mediating $T_3$ level
-% causes a gradual shift in the center of gravity, while weak coupling
-% to the mediating level induces a more delayed and rapid shift in the
-% center of gravity, with respect to the bright state lifetime.
+The mechanism of doorway-mediated coupling by an energetically distant
+$T_3$ level skews the coupling to the local $T_{1,2}$ states that
+appear in the SEELEM spectrum, resulting in a center-of-gravity shift
+between the LIF and SEELEM spectra.  Additionally, when viewed in
+successive time windows, the center of gravity of the LIF spectrum
+exhibits evolution toward the limiting behavior exhibited in the
+SEELEM spectrum.  A simple model can be used to show that strong
+coupling between the singlet level and the mediating $T_3$ level
+causes a gradual shift in the center of gravity, while weak coupling
+to the mediating level induces a more delayed and rapid shift in the
+center of gravity, with respect to the bright state lifetime.
 
-% Rotational selection rules for $S_1 \sim T_3$ spin-orbit coupling give
-% rise to $J$-dependent effects in the LIF/SEELEM spectrum.  As $J$
-% increases, the $\Delta N$= +1 or -1 components of any distant $T_3$
-% level approach the singlet at a rate $d\Delta E / dJ$ of approximately
-% $2B_T$ ($\sim$2 \rcm\ per $J$).  In the spectrum, the result is a
-% shift in the LIF-SEELEM center of gravity when integrated across an
-% entire branch of transitions.  The effect not only leads to strong
-% $J$-dependent changes in the patterns of $T_3$-mediated coupling, but
-% also ensures detection and assignment of $S_1 \sim T_3$ level
-% crossings at relatively low values of $J$.
+Rotational selection rules for $S_1 \sim T_3$ spin-orbit coupling give
+rise to $J$-dependent effects in the LIF/SEELEM spectrum.  As $J$
+increases, the $\Delta N$= +1 or -1 components of any distant $T_3$
+level approach the singlet at a rate $d\Delta E / dJ$ of approximately
+$2B_T$ ($\sim$2 \rcm\ per $J$).  In the spectrum, the result is a
+shift in the LIF-SEELEM center of gravity when integrated across an
+entire branch of transitions.  The effect not only leads to strong
+$J$-dependent changes in the patterns of $T_3$-mediated coupling, but
+also ensures detection and assignment of $S_1 \sim T_3$ level
+crossings at relatively low values of $J$.
 
-% % \POINT{The LIF/SEELEM spectra for the progression of $2^n3^m$ levels
-% %   shows the expected trends for strong coupling.}
+% \POINT{The LIF/SEELEM spectra for the progression of $2^n3^m$ levels
+%   shows the expected trends for strong coupling.}
 
-% \POINT{For every $S_1$ vibrational level, a $T_3$ doorway level is
-%   rapidly approaching with $J$.}  Because of this, further LIF/SEELEM
-% spectroscopy of the acetylene \AtoX\ transition will be fruitful and
-% informative.  We highlight some candidates for future investigation.
-% \begin{enumerate}
-% \item Levels which exhibit long lifetimes or quantum beats in the LIF
-%   spectrum
-% \item levels with unassigned perturbations or splittings,
-% \item other $3^2B^2$ polyad members
-% \item other $K$-sublevels of the Franck-Condon active levels studied
-%   here.  
-% \end{enumerate}
-% \TODO{Specify candidate bands specifically, give energies.}
+\POINT{For every $S_1$ vibrational level, a $T_3$ doorway level is
+  rapidly approaching with $J$.}  Because of this, further LIF/SEELEM
+spectroscopy of the acetylene \AtoX\ transition will be fruitful and
+informative.  We highlight some candidates for future investigation.
+\begin{enumerate}
+\item Levels which exhibit long lifetimes or quantum beats in the LIF
+  spectrum
+\item levels with unassigned perturbations or splittings,
+\item other $3^2B^2$ polyad members
+\item other $K$-sublevels of the Franck-Condon active levels studied
+  here.  
+\end{enumerate}
+\TODO{Specify candidate bands specifically, give energies.}
 
-% \POINT{Outline prospects for studying quantum beats in tandem with
-%   delayed fluorescence and SEELEM.}  The appearance of population
-% quantum beats in the spectrum indicates a splitting on the order of 80
-% MHz or less.  Quantum beat waveforms follow a well-defined form, and
-% an analysis of quantum beats determines both the matrix element and
-% zero-order energy spacing of the levels involved.  The matrix elements
-% gained from an analysis of zero-field quantum beats in the acetylene
-% spectrum can serve as a probe of the magnitude of
-% local matrix elements between the nominal $S_1$ bright state and
-% neighboring $T_{1,2}$ dark states.  Furthermore, the study of Zeeman
-% quantum beats at low magnetic fields can provide a method for
-% distinguishing between triplet perturbations and perturbations from
-% other singlet levels, such as $S_1$ levels which are localized in the
-% \emph{cis} geometry of the \astate\ state.
+\POINT{Outline prospects for studying quantum beats in tandem with
+  delayed fluorescence and SEELEM.}  The appearance of population
+quantum beats in the spectrum indicates a splitting on the order of 80
+MHz or less.  Quantum beat waveforms follow a well-defined form, and
+an analysis of quantum beats determines both the matrix element and
+zero-order energy spacing of the levels involved.  The matrix elements
+gained from an analysis of zero-field quantum beats in the acetylene
+spectrum can serve as a probe of the magnitude of
+local matrix elements between the nominal $S_1$ bright state and
+neighboring $T_{1,2}$ dark states.  Furthermore, the study of Zeeman
+quantum beats at low magnetic fields can provide a method for
+distinguishing between triplet perturbations and perturbations from
+other singlet levels, such as $S_1$ levels which are localized in the
+\emph{cis} geometry of the \astate\ state.
 
 \bibliography{master} 
 \bibliographystyle{plain}

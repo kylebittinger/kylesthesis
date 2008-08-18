@@ -339,7 +339,7 @@ other words not near-degenerate in rotationless energy, energy
 denominators determine that the interaction occurs via either the
 $F_1$ or $F_3$ component, depending on the sign of $T_{0,T} - T_{0,S}$.
 
-\begin{figure}
+\begin{figure}[p]
   \caption{Rotational factors of spin-orbit matrix elements between
     rovibrational levels of the $S_1$ and $T_3$ electronic states,
     $K_S$=1.  The plot includes matrix elements for the $F_3$ ($\Delta
@@ -352,7 +352,7 @@ $F_1$ or $F_3$ component, depending on the sign of $T_{0,T} - T_{0,S}$.
   \includegraphics[width=6in]{rotational-factors-k1.pdf}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[p]
   \caption{Rotational factors of spin-orbit matrix elements between
     rovibrational levels of the $S_1$ and $T_3$ electronic states,
     $K_S$=2.  The plot includes matrix elements for the $F_3$ ($\Delta
@@ -400,6 +400,32 @@ and $T_3$ levels occurs at several values of $J$; these are the
 energetically distant $T_3$ doorway levels with which we are most
 concerned. \TODO{Finish para.  Lead in to next section.}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Theory: Signatures of doorway-mediated intersystem crossing
   in delayed, incoherent fluorescence measurements}
 
@@ -425,15 +451,13 @@ excess of vibrational energy in the $T_{1,2}$ electronic states,
 accounts for the relative magnitude of the matrix elements according
 to the model.
 
-
-
-
 An energetically distant $T_3$ doorway level leaves traces of its
 presence in the LIF and SEELEM spectrum of $S_1$ levels with which it
-interacts.  We define an energetically distant doorway level as
-one which is more than 2 \rcm\ away fron  In this section, we derive the time dependence of the
-center-of-gravity and variance for an incoherent ensemble of mixed
-singlet$\sim$triplet eigenstates
+interacts.  We define an energetically distant doorway level as one
+which is more than 2 \rcm\ away from the $S_1$ level in rotationless
+energy.  In this section, we derive the dependence of the
+center-of-gravity on time delay for an incoherent ensemble of mixed
+singlet$\sim$triplet eigenstates.
 
 In Chapter 2, we derived the functional form of a SEELEM intensity
 distribution in the local vicinity of an $S_1$ rovibrational level
@@ -442,18 +466,26 @@ $T_3$ doorway level, we derived the center of gravity,
 \begin{equation}
   E_{\text{ave}} = \int E \times I(E) \; dE,
 \end{equation}
-and variance,
-\begin{equation}
-  \sigma^2 = \int (E - E_{\text{ave}})^2 \times I(E) \; dE,
-\end{equation}
 of a SEELEM intensity distribution $I(E)$.  It was shown that the
-center-of-gravity is biased in the direction of the doorway level, and
-that the variance of the SEELEM intensity distribution is proportional
-to the square of the $S_1 \sim T_3$ mixing angle.  We extend the idea
-of eigenstate intensity distributions to fluorescence measurements by
-considering intensities in the \emph{incoherent, frequency domain} LIF
-spectrum within a time window $t$ to $t+dt$ after excitation of the
-molecule.
+SEELEM center-of-gravity is biased in the direction of the doorway
+level relative to the LIF center of gravity, according to the formula
+\begin{equation}
+  \Delta E_{\text{ave}} \propto \alpha_{S_1T_3}
+  \left (
+    \frac{\braket{H_{T_3T_{1,2}}}}{\Delta E_{S_1T_3}}
+  \right ).
+\end{equation}
+We extend the idea of eigenstate intensity distributions to
+fluorescence measurements by considering intensities in the
+\emph{incoherent, frequency domain} LIF spectrum within a time window
+$t$ to $t+dt$ after excitation of the molecule.
+
+
+
+
+
+\subsection{Characteristics of an incoherent, high-resolution
+  fluorescence spectrum after a time delay}
 
 For a pure $S_1$ rovibrational level, $\ket{s}$, the time-dependent
 fluorescence intensity is
@@ -469,12 +501,12 @@ acetylene, this quantity is largely independent of vibrational and
 rotational levels within $S_1$, and is determined to be approximately
 270 ns \cite{ochi91, stephenson84}.
 
-We consider the case where $\ket{s}$ is admixed, through a $T_3$
-doorway, into $T_{1,2}$ triplet levels to create a set of
-singlet$\sim$triplet mixed states $\lbrace\ket{m}\rbrace$, each having
-some fractional $S_1$ character $a_m^2$.  If the lifetime of a pure
-triplet level is much longer than $\tau_s$, the lifetime of a mixed
-eigenstate $\ket{m}$ is
+We consider the case where $\ket{s}$ is admixed, through an
+energetically distant $T_3$ doorway, into $T_{1,2}$ triplet levels to
+create a set of singlet$\sim$triplet mixed eigenstates $\lbrace
+\ket{m} \rbrace$, each having some fractional $S_1$ character $a_m^2$.
+If the lifetime of a pure triplet level is much longer than $\tau_s$,
+the lifetime of a mixed eigenstate $\ket{m}$ is
 \begin{equation}
   \label{eq:tau-m}
   \tau_m = \tau_s / a_m^2,
@@ -489,45 +521,54 @@ and its time-dependent fluorescence intensity is
 \end{equation}
 The total integrated fluorescence intensity for a mixed state is
 $\int_0^{\infty} I_m(t) \, dt = a_m^2$, relative to unit intensity for
-a pure bright state.  This reflects the $a_m^2$ times smaller
-probability for excitation of a $\ket{m}$ state.
+a pure $S_1$ state.  This reflects the $a_m^2$ times smaller
+probability for excitation of a mixed eigenstate $\ket{m}$.
 
-% The normalization condition for bright state character $\sum_m a_m^2 =
-% 1$ leads to the relation
-% \begin{equation}
-%   \tau_s^{-1} = \sum_m \tau_m^{-1};
-% \end{equation}
-% in this way, $\tau_s$ can be derived from the set of mixed state
-% lifetimes $\lbrace \tau_m \rbrace$.
+We examine the relative fluorescence intensity among an incoherent
+ensemble of singlet$\sim$triplet mixed eigenstates after a time delay
+$t$.  The upper limit of time delay that can be selected in our LIF
+experiments is determined by the field-of-view of the fluorescence
+detection optics.  In this study, the field-of-view of the
+fluorescence detection optics is about 5 mm.  The maximum viewing time
+is therefore about about 5 \microsec\ $\approx 18\tau_s$, for
+molecules travelling in the molecular beam with average velocity
+$\approx 10^3$ m/s.  At a time delay greater than $18\tau_s$, no
+molecules remain to be seen within the fluorescence field of view.
 
-\subsection{An incoherent, high-resolution fluorescence spectrum after
-  a time delay}
+At a chosen value of time delay, the relative fluorescence intensity
+among an enemble of mixed states has a single maximum with respect to
+fractional $S_1$ character, $a_m^2$.  States having the
+greatest amount of fractional $S_1$ character fluoresce
+quickly.  Although they begin with the greatest intensity, their
+relative intensity decreases rapidly with respect to longer-lived
+states.  Eigenstates having the smallest amount of fractional bright
+state character, conversely, have lesser intensity at $t=0$.  However,
+they fluoresce slowly, and as a consequence their relative intensity
+increases with time delay, compared to other eigenstates in the
+ensemble.
 
-\TODO{Move this to beginning.}  For the $S_1$ electronic state of
-acetylene, $\tau_s=270$ ns \cite{ochi91}.  The field-of-view of the
-fluorescence detection optics is about 5 mm, which amounts to a
-maximum viewing time of about 5 $\mu$s, about $18\tau_s$, for
-molecules in the molecular beam, which has an average velocity of
-$10^3$ m/s.  At times later than $10\tau_s$, no molecules remain
-within the fluorescence field of view.  This places an upper limit on
-the value of $R$ that can be selected in our fluorescence experiments.
-Figure \ref{fig:int-at-rc} shows the intensity equation for the long
-time limit of fluorescence detection, $18\tau_s$.
-
-We examine the fluorescence intensity after a time delay $t$,
-which we cast in units of the bright state lifetime:
+The value of $S_1$ character with the maximum relative
+intensity is found by taking the derivative of eigenstate intensity
+(Equation \ref{eq:int-m}) with respect to fractional $S_1$
+character, $a_m^2$.  Doing this, we find
 \begin{equation}
-  R = t / \tau_s.
+ \frac{ \partial I_m }{ \partial a_m^2 } =
+   \frac{a_m^2}{\tau_s}
+   \exp \left[
+     -\frac{a_m^2 \, t}{\tau_s} 
+   \right]
+   \left (
+     2 - \frac{a_m^2 \, t}{\tau_s}
+   \right ).
 \end{equation}
-At a chosen value of $R$, the fluorescence intensity equation
-\ref{eq:int-m} has a single maximum with respect to fractional bright
-state character.  \TODO{Insert relevant minmax equation.}
-\TODO{Reword: when $R<2$, when $R<2$...} Within the range $0 \le a_m^2
-\le 1$, the fluorescence intensity equation is maximized when the
-mixing fraction is (Chapter 2, equation 31)
+When $t \leq 2\tau_s$, the fluorescence intensity equation increases
+monotonically with fractional $S_1$ character, and is maximized
+when the fractional $S_1$ character is 1.  When $t > 2 \tau_s$,
+the fluorescence intensity equation is at a maximum when the
+fractional $S_1$ character is
 \begin{equation}
   \label{eq:am-max}
-  a_m^2 = \frac{2}{R}.
+  a_m^2 = \frac{2 \tau_s}{t}.
 \end{equation}
 
 \begin{figure}
@@ -539,97 +580,142 @@ mixing fraction is (Chapter 2, equation 31)
   \includegraphics[width=7.5in,angle=90]{intensity-at-delay.pdf}
 \end{figure}
 
+
 Figure \ref{fig:int-at-rc} shows the dependence of fluorescence
-intensity on fractional bright state character at several selectable
-values of $R$.  At early fluorescence window times ($t \sim \tau_s$),
-the fluorescence intensity is greatest for states with large amounts
-of fractional bright state character ($2/R > 1$).  At a delay of $t =
-R \tau_s = 5 \tau_s$, the fluorescence intensity equation
-discriminates against states with large fractional bright state
-character, since molecules in such states have already fluoresced with
-high probability.  States with small fractional bright state character
-are also discriminated against.  Molecules in such states have a low
-probability of fluorescing in the time window under consideration.
-The detectable fluorescence intensity may thus be ``tuned'' to a
-chosen value of fractional bright state character merely by selecting
-a time delay $R$, according to Equation \ref{eq:am-max}.
+intensity on fractional $S_1$ character at several selectable
+values of time delay.  When $t = 0$, the fluorescence intensity is
+monotonic and greatest for eigenstates containing the greatest amount
+of fractional $S_1$ character.  At a delay of $t = 5 \tau_s$,
+the fluorescence intensity equation is ``tuned'' to states with a
+fractional $S_1$ character of 40\%.  Molecules in eigenstates
+containing too much fractional $S_1$ character are
+discriminated against, because they have already fluoresced with high
+probability by a time delay of $5 \tau_s$.  Molecules in eigenstates
+with fractional $S_1$ character $\ll$ 40\% have a low
+probability of fluorescing in the time window under consideration, and
+are also discriminated against at this delay time.  Figure
+\ref{fig:int-at-rc} also shows the dependence of fluorescence
+intensity on fractional $S_1$ character for $t=18\tau_s$, the
+maximum fluorescence time delay used in this study.  At this time
+delay, the fluorescence intensity is peaked at a fractional $S_1$
+character of approximately 22\%.
 
-
-
-The SEELEM detector used in our experiments detects metastable
-molecules after a 309 $\mu$s flight time.  If we set aside some
-aspects of SEELEM detectivity and consider only its detection
-sensitivity to bright state character, we arrive at the following
-equation for SEELEM detection probability (Chapter 2, equation 28):
+The SEELEM detector used in this study detects metastable acetylene
+molecules after a flight time of $\tau_f =$ 309
+\microsec.  Considering only the SEELEM electron ejection probability
+resulting from $S_1$ electronic character, the total SEELEM detection
+probability is (Chapter 2, equation 28):
 \begin{equation}
   \label{eq:seelem-prob-s}
-  P_{SEELEM}^{(s)} \propto a_m^4 \; \exp \left( -R_c \, a_m^2 \right).
+  P_{\text{SEELEM}} \propto 
+    a_m^4 \; 
+    \exp \left [ 
+      -\frac{a_m^2 \tau_f}{\tau_s} 
+    \right ].
 \end{equation}
-(This is a good approximation to the overall detection sensitivity of
+This is a good approximation to the overall detection probability of
 SEELEM, including electron ejection probability resulting from
-fractional $T_3$ electronic character, in the weak coupling limit.)
-The SEELEM detection probability equation above has the same
-functional form as Equation \ref{eq:int-m}.  Thus, the SEELEM detector
-may be viewed in this limited sense as an extreme discriminator for
-detecting states with small fractional bright state character.
+fractional $T_3$ electronic character, when a $T_3$ doorway state is
+energetically distant (see Chapter 2).  The SEELEM detection
+probability equation above has the same functional form as the delayed
+LIF intensity, Equation \ref{eq:int-m}.  The detection probability is
+at a maximum for eigenstates with 0.17\% fractional $S_1$ character.
+In this approximation, the SEELEM detector may be viewed as an extreme
+discriminator for detecting states with small fractional $S_1$
+character.  The dependence of SEELEM detection probability on
+fractional $S_1$ character is also included in Figure
+\ref{fig:int-at-rc}.
 
-Acetylene molecules in our apparatus are detected after an average
-flight time of 309 $\mu$s, yielding an $R_c$ value of $1144$ for the
-SEELEM detector.  This corresponds to a maximum detection probability
-for states with $0.17\%$ bright state character.
 
-\subsection{Delayed fluorescence of a model system}
 
-Our next step is to examine how the characteristics of a
-fluorescence intensity distribution change as we increase the time delay
-$R$.  We model the interaction between a bright state and an
-ensemble of dark states by generalizing from a two-level system.
-Consider a Hamiltonian with only one dark state.  Define the two mixed
-states $\ket{m=1,2}$ as
+
+\subsection{Dependence of the intensity-weighted center of gravity on
+  time delay}
+
+Our next step is to examine how the LIF intensity-weighted center of
+gravity metric,
+\begin{equation}
+  E_{\text{ave}} = \int E \times I(E) \; dE,
+\end{equation}
+changes as the time delay is increased.  We model the interaction
+between a rovibrational level of $S_1$ and the local ensemble of
+$T_{1,2}$ rovibrational levels by generalizing from a two-level
+system.  
+
+Consider a Hamiltonian containing one $S_1$ level $\ket{s}$ and one
+dark $T_{1,2}$ level $\ket{t}$.  Let us define the two mixed states
+$\ket{1}$ and $\ket{2}$ as
 \begin{equation}
   \begin{split}
     \ket{1} &=  (1 - \alpha^2)^{1/2} \ket{s} + \alpha \ket{t}\\
-    \ket{2} &= -\alpha \ket{s} + (1 - \alpha^2)^{1/2} \ket{t}.
+    \ket{2} &= -\alpha \ket{s} + (1 - \alpha^2)^{1/2} \ket{t},
   \end{split}
 \end{equation}
-The fluorescence intensity of both states, relative to a pure bright
-state, is
+where $\alpha$ is the mixing angle between $\ket{s}$ and $\ket{t}$, $0
+\leq \alpha \leq 0.5$.  The fluorescence intensity of the mixed
+states, relative to a pure $S_1$ state, is
 \begin{equation}
   \begin{split}
-    I_1 &= \frac{(1 - \alpha^2)^2}{\tau_s} \; \exp 
+    I_1(t) &= \frac{(1 - \alpha^2)^2}{\tau_s} \; \exp 
           \left[
-            - R \, (1 - \alpha^2)
+            - \frac{(1 - \alpha^2) t}{\tau_s}
           \right]\\
-    I_2 &= \frac{\alpha^4}{\tau_s} \; \exp 
+    I_2(t) &= \frac{\alpha^4}{\tau_s} \; \exp 
           \left[
-            - R \, \alpha^2
-          \right],
+            - \frac{\alpha^2 t}{\tau_s}
+          \right].
   \end{split}
 \end{equation}
-and the ratio of the fluorescence intensities changes with time,
-$t=R\tau_s$, as
+The ratio of the fluorescence intensities changes with time:
 \begin{equation}
-  I_{12} = I_1 / I_2 = 
+  I_{12}(t) = \frac{I_1(t)}{I_2(t)} = 
   \left(
     \frac{(1 - \alpha^2)}{\alpha^2}
   \right)^2
   \exp
   \left[
-    - R \, (1 - 2\alpha^2)
+    - \frac{(1 - 2\alpha^2) t}{\tau_s}
   \right].
-\end{equation}  \TODO{Explain behavior of this equation.  Prefactor
-  determines initial ratio.  Long time limit, always approaches zero.}
+\end{equation}  
+The initensity ratio at $t=0$ is determined by the prefactor $( (1 -
+\alpha^2)/\alpha^2 )^2$.  In the limit of long time delay, $I_{12}(t)$
+always approaches zero, because the lifetime of $\ket{2}$ is always
+longer than that of $\ket{1}$, by definition.  
 
-\TODO{Rwrite this -- frame center of gravity in terms of intensity
-  ratios.  Explain center of gravity.}  The fluorescence intensity
-ratio may be incorporated into an equation for the dependence of
-average detected intensity on $R$,
+The intensity ratio $I_{12}$ is plotted as a function of time in
+Figure \ref{fig:ratio-devel}, using several values of the mixing
+fraction, $\alpha^2$.  At small values of the mixing fraction, $0.001
+\leq \alpha^2 \leq 0.2$, the intensity ratio changes rapidly at a time
+delay between $5\tau_s$ and $15\tau_s$.  When the mixing fraction
+approaches its limiting value of 0.5, the prefactor $( (1 -
+\alpha^2)/\alpha^2 )^2$ causes the intensities $I_1$ and $I_2$ to be
+of comparable magnitude at $t=0$.  As the time delay is increased, the
+intensity ratio changes slowly, because the states $\ket{1}$ and
+$\ket{2}$ have similar lifetimes.
+
+\begin{figure}
+  \caption{Dependence of the intensity ratio $I_{12}$ on time delay
+    for a model two state system.}
+  \label{fig:ratio-devel}
+
+  \centering
+  \includegraphics[width=6in]{ratio-development.pdf}
+\end{figure}
+
+The intensity-weighted center of gravity of the model system may be
+written as a sum of two terms,
+\begin{equation}
+  E_{\text{ave}}(t) = E_1 \times I_1(t) \; + \; E_2 \times I_2(t),
+\end{equation}
+where $E_1$ and $E_2$ are the energies of $\ket{1}$ and $\ket{2}$,
+respectively.  The expression has a simple form when written in terms
+of the ratio of intensities:
 \begin{equation}
   \label{eq:ratio}
-  \braket{I_{LIF}} = 
+  E_{\text{ave}}(t) = 
   \frac{\Delta E_{12}}{2} \,
   \left(
-    \frac{I_{12}-1}{I_{12}+1}
+    \frac{I_{12}(t)-1}{I_{12}(t)+1}
   \right).
 \end{equation}
 Figure \ref{fig:ratio} shows the dependence of the intensity-weighted
@@ -668,12 +754,10 @@ interesting aspect of the center of gravity shift shown in Figure
 coefficients.
 
 \begin{figure}
-  \caption{(Top) Time development of the intensity ratio for
-    a two state system. (Bottom) Time development of the center of
-    gravity for a two state system.}
+  \caption{Time development of the center of gravity for a two state
+    system.}
   \label{fig:cog-devel}
   \centering
-  \includegraphics[width=6in]{ratio-development.pdf}
   \includegraphics[width=6in]{cog-development.pdf}
 \end{figure}
 
@@ -1603,7 +1687,7 @@ SEELEM spectrum.  A simple model can be used to show that strong
 coupling between the singlet level and the mediating $T_3$ level
 causes a gradual shift in the center of gravity, while weak coupling
 to the mediating level induces a more delayed and rapid shift in the
-center of gravity, with respect to the bright state lifetime.
+center of gravity, with respect to the $S_1$ lifetime.
 
 Rotational selection rules for $S_1 \sim T_3$ spin-orbit coupling give
 rise to $J$-dependent effects in the LIF/SEELEM spectrum.  As $J$

@@ -639,56 +639,73 @@ gravity metric,
 \end{equation}
 changes as the time delay is increased.  We model the interaction
 between a rovibrational level of $S_1$ and the local ensemble of
-$T_{1,2}$ rovibrational levels by generalizing from a two-level
-system.  
+$T_{1,2}$ rovibrational levels by first constructing a model system
+containing only one $T_{1,2}$ basis state.
+
+We make the assumption of a doorway-coupled model Hamiltonian, in
+which all matrix elements between the $S_1$ level and the local
+ensemble of $T_{1,2}$ rovibrational levels are zero.  The Hamiltonian
+contains nonzero matrix elements between the $S_1$ level and an
+energetically distant $T_3$ level, and also between the $T_3$ level
+and the local ensemble of $T_{1,2}$ levels.  In such a model
+Hamiltonian, no interference pathways exist between the $S_1$ level
+and the local manifold of $T_{1,2}$ levels.  By applying successive
+matrix rotations to the doorway-coupled model Hamiltonian, we can
+construct a direct-coupled model Hamiltonian (see Chapter 3).  This
+modified Hamiltonian has nonzero matrix elements between the $S_1$
+level and all $T_{1,2}$ levels.  These matrix elements
+\emph{implicitly} include the effects of the doorway level in the
+modified, direct-coupled Hamiltonian.  Our discussion below focuses on
+the local energy block of such a modified model Hamiltonian.
 
 Consider a Hamiltonian containing one $S_1$ level $\ket{s}$ and one
 dark $T_{1,2}$ level $\ket{t}$.  Let us define the two mixed states
 $\ket{1}$ and $\ket{2}$ as
 \begin{equation}
   \begin{split}
-    \ket{1} &=  (1 - \alpha^2)^{1/2} \ket{s} + \alpha \ket{t}\\
-    \ket{2} &= -\alpha \ket{s} + (1 - \alpha^2)^{1/2} \ket{t},
+    \ket{1} &=  (1 - a^2)^{1/2} \ket{s} + a \ket{t}\\
+    \ket{2} &= -a \ket{s} + (1 - a^2)^{1/2} \ket{t},
   \end{split}
 \end{equation}
-where $\alpha$ is the mixing angle between $\ket{s}$ and $\ket{t}$, $0
-\leq \alpha \leq 0.5$.  The fluorescence intensity of the mixed
-states, relative to a pure $S_1$ state, is
+where $a$ is the mixing angle between $\ket{s}$ and $\ket{t}$, $0 \leq
+a \leq 0.5$.  The fractional $S_1$ character of $\ket{2}$ is $a^2$.
+The normalized fluorescence intensities of the mixed states are
 \begin{equation}
   \begin{split}
-    I_1(t) &= \frac{(1 - \alpha^2)^2}{\tau_s} \; \exp 
+    I_1(t) &= \frac{(1 - a^2)^2}{\tau_s} \; \exp 
           \left[
-            - \frac{(1 - \alpha^2) t}{\tau_s}
+            - \frac{(1 - a^2) t}{\tau_s}
           \right]\\
-    I_2(t) &= \frac{\alpha^4}{\tau_s} \; \exp 
+    I_2(t) &= \frac{a^4}{\tau_s} \; \exp 
           \left[
-            - \frac{\alpha^2 t}{\tau_s}
+            - \frac{a^2 t}{\tau_s}
           \right].
   \end{split}
 \end{equation}
-The ratio of the fluorescence intensities changes with time:
+The ratio of the fluorescence intensities $I_{12}(t)$ has the
+following time dependence:
 \begin{equation}
   I_{12}(t) = \frac{I_1(t)}{I_2(t)} = 
   \left(
-    \frac{(1 - \alpha^2)}{\alpha^2}
+    \frac{(1 - a^2)}{a^2}
   \right)^2
   \exp
   \left[
-    - \frac{(1 - 2\alpha^2) t}{\tau_s}
+    - \frac{(1 - 2a^2) t}{\tau_s}
   \right].
 \end{equation}  
 The initensity ratio at $t=0$ is determined by the prefactor $( (1 -
-\alpha^2)/\alpha^2 )^2$.  In the limit of long time delay, $I_{12}(t)$
+a^2)/a^2 )^2$.  In the limit of long time delay, $I_{12}(t)$
 always approaches zero, because the lifetime of $\ket{2}$ is always
 longer than that of $\ket{1}$, by definition.  
 
 The intensity ratio $I_{12}$ is plotted as a function of time in
 Figure \ref{fig:ratio-devel}, using several values of the mixing
-fraction, $\alpha^2$.  At small values of the mixing fraction, $0.001
-\leq \alpha^2 \leq 0.2$, the intensity ratio changes rapidly at a time
+fraction, $a^2$.  At small values of the mixing fraction, $0.001
+\leq a^2 \leq 0.2$, the intensity ratio changes rapidly at a time
 delay between $5\tau_s$ and $15\tau_s$.  When the mixing fraction
 approaches its limiting value of 0.5, the prefactor $( (1 -
-\alpha^2)/\alpha^2 )^2$ causes the intensities $I_1$ and $I_2$ to be
+a^2)/a^2 )^2$ causes the intensities $I_1$ and $I_2$ to be
 of comparable magnitude at $t=0$.  As the time delay is increased, the
 intensity ratio changes slowly, because the states $\ket{1}$ and
 $\ket{2}$ have similar lifetimes.
@@ -708,50 +725,18 @@ written as a sum of two terms,
   E_{\text{ave}}(t) = E_1 \times I_1(t) \; + \; E_2 \times I_2(t),
 \end{equation}
 where $E_1$ and $E_2$ are the energies of $\ket{1}$ and $\ket{2}$,
-respectively.  The expression has a simple form when written in terms
-of the ratio of intensities:
-\begin{equation}
-  \label{eq:ratio}
-  E_{\text{ave}}(t) = 
-  \frac{\Delta E_{12}}{2} \,
-  \left(
-    \frac{I_{12}(t)-1}{I_{12}(t)+1}
-  \right).
-\end{equation}
-Figure \ref{fig:ratio} shows the dependence of the intensity-weighted
-center-of-gravity on the intensity ratio $I_{12}$.
-
-\begin{figure}
-  \caption{Center of gravity as a function of the intensity ratio
-    $I_1$:$I_2$ for a two-state system.  At $t=0$, the initial center
-    of gravity is a function of the mixing amplitude $\alpha$.  The
-    center of gravity then shifts with the changing intensity ratio as
-    delay time is increased, arriving at a limiting value of $-\Delta
-    E_{12}/2$.}
-  \label{fig:ratio}
-  \centering
-  \includegraphics[width=6in]{cog-from-ratio.pdf}
-\end{figure}
-
-The initial intensity ratio at time $R_c=0$ is
-\begin{equation}
-  I_{12} = 
-  \left(
-    \frac{(1 - \alpha^2)}{\alpha^2}
-  \right)^2.
-\end{equation}
-From this, the initial center of gravity can be found according to
-Equation \ref{eq:ratio} or Figure \ref{fig:ratio}.  At large values of
-$R_c$, the intensity ratio decreases to zero as $I_1 \ll I_2$, if the
-states are not 50:50 mixed.  As the ratio decreases toward zero, the
-intensity-weighted center of gravity approaches $-\Delta E_{12} / 2$.
-The R-dependence of intensity ratios and the consequent shift in
-center of gravity are shown in Figure \ref{fig:cog-devel}.  
-
-\TODO{Say this more clearly.  Explain weak and strong limits.} One
-interesting aspect of the center of gravity shift shown in Figure
-\ref{fig:cog-devel} is the sudden onset of the shift at small mixing
-coefficients.
+respectively.  The intensity-weighted center-of-gravity is plotted as
+a function of time delay in Figure \ref{fig:cog-devel}.  The main
+features of the plot are similar to Figure \ref{fig:ratio-devel}.  At
+small values of the mixing fraction, $0.001 \leq a^2 \leq 0.2$,
+the center of gravity changes rapidly from $E_1$ to $E_2$ at a time
+delay between $5\tau_s$ and $15\tau_s$.  When the mixing fraction is
+nearly 0.5, the initial center of gravity at $t=0$ is midway between
+$E_1$ and $E_2$, because $\ket{1}$ and $\ket{2}$ have similar
+intensities at $t=0$.  In this case, the center of gravity changes
+slowly as a function of time.  The total magnitude of change in center
+of gravity is also decreased, due to the decreased energy separation
+between the centers of gravity at $t=0$ and $t \rightarrow \infty$.
 
 \begin{figure}
   \caption{Time development of the center of gravity for a two state
@@ -761,14 +746,114 @@ coefficients.
   \includegraphics[width=6in]{cog-development.pdf}
 \end{figure}
 
-% \subsection{Delayed fluorescence of a series of rotational
-%   transitions}
+Having established the general properties for the time-dependence of
+the center of gravity, we expand our model to include many
+rovibrational levels of $T_{1,2}$.  The nominal $S_1$ eigenstate,
+$\ket{1}$, is defined to have a fractional $S_1$ character of
+$(1-a^2)$, as before.  The remaining fractional $S_1$ character,
+$a^2$, is distributed among a set of $N$ nominal $T_{1,2}$ eigenstates
+$\lbrace \ket{2} ... \ket{N+1}\rbrace$.  The set of nominal $T_{1,2}$
+eigenstates has an average fractional $S_1$ character of
+\begin{equation}
+  \braket{a_m^2} = \frac{a^2}{N},
+\end{equation}
+and a resultant time-dependent fluorescence intensity of
+\begin{equation}
+  \label{eq:int-N}
+  I_m(t) = \frac{a_m^4}{N^2 \tau_s} \;
+           \exp \left[
+             -\frac{a_m^2 \, t}{N \tau_s} 
+           \right].
+\end{equation}
+The intensity-weighted center of gravity for the set of $N$ nominal
+$T_{1,2}$ eigenstates is determined by the energy distribution of
+fractional $S_1$ character,
+\begin{equation}
+  E_{m} = \sum_{m=2}^{N+1} E_m \times a_m^2.
+\end{equation}
 
-% Information about the relative energy of a doorway level can be
-% recovered from the statistical properties of delayed fluorescence as a
-% function of rotational quantum number.  \POINT{Continue explaining the
-% general idea.}
+The energy distribution of fractional $S_1$ character is influenced by
+the matrix element and relative energy for the energetically distant
+doorway level.  As a result, the center of gravity $E_{t}$ is
+biased, relative to $E_1$, in the direction of the $T_3$ doorway
+level.  The magnitude of this energy offset is given by the product of
+the slope of average $S_1$ character with energy,
+\begin{equation}
+  \frac{\partial \braket{a_m^2}}{\partial E} 
+  \propto 
+  \frac{1}{\Delta E_{S_1T_3}},
+\end{equation}
+and the local $S_1 \sim T_{1,2}$ coupling width, 
+\begin{equation}
+  \sigma^2 \propto
+  \left(
+    \frac{ H_{S_1T_3} \braket{H_{T_3T_{1,2}}} }
+         { \Delta E_{S_1T_3} }
+  \right)^2,
+\end{equation}
+where $H_{S_1T_3}$ is the matrix element between the $S_1$ level and
+the doorway state, $\braket{H_{T_3T_{1,2}}}$ is the average $T_3 \sim
+T_{1,2}$ matrix element, and $\Delta E_{S_1T_3}$ is the energy
+difference between the $S_1$ level and the doorway state.  A
+derivation is given in Chapter 2.
 
+\TODO{Actually include the derivation explicitly in Chapter 2.
+  Implicitly, the two terms of the above formula follow from these two
+  results: 
+  \begin{enumerate}
+  \item The energy dependence of fractional bright state character is
+    given by the cross term/square term ratio from the mixed basis
+    formaulation.  The ratio depends only on the $S_1 \sim T_3$ energy
+    separation (Chapter 2, formula 1.5), thus its slope must depend
+    only on energy separation.  The slope must decrease with
+    increasing energy separation, so I surmised an inverse
+    proportionality.
+  \item Chapter 3, formula 1.13 gives the spectral variance for a
+    direct-coupled Hamiltonian as the sum of the matrix elements
+    squared.  The magnitude of the local matrix elements in the
+    embedded bright state formulation is given by the product of the
+    $S_1 \sim T_3$ mixing fraction and the average $T_3 \sim T_{12}$
+    matrix element (Chapter 2, formula 1.7).
+  \end{enumerate}
+}
+
+% The ratio of total intensity between the nominal $S_1$ eigenstate,
+% $\ket{1}$, and the set of nominal $T_{1,2}$ eigenstates is
+% \begin{equation}
+%   I_{1m}(t) = \frac{I_1(t)}{I_m(t)} = 
+%   \left(
+%     N \frac{(1 - a^2)}{a^2}
+%   \right)^2
+%   \exp
+%   \left[
+%     - \frac{(1 - 2a^2/N) t}{\tau_s}
+%   \right].
+% \end{equation}
+
+To examine the effect of increasing the effective number of states in
+the model system, the intensity-weighted center-of-gravity is plotted
+as a function of time delay in Figure \ref{fig:cog-devel-many}.  A
+value of $a_m^2=0.25$ is used for the figure, and four values of $N$
+are examined: $N=1,10,20,30$.  As the number of nominal $T_{1,2}$
+states is increased, the initial ($t=0$) center of gravity for the
+entire system moves closer to $E_1$.  The center of gravity then
+changes more rapidly from $E_1$ to $E_m$, the $T_{1,2}$ ensemble
+center of gravity.  The effect of increasing the number of local
+$T_{1,2}$ states in the system is to increase the effective lifetime
+of the nominal triplet eigenstates.  This, in turn, increases the
+contrast between the intensity of the nominal $S_1$ eigenstate and the
+rest of the ensemble, bringing about a more rapid shift in the center
+of gravity with time.
+
+\begin{figure}
+  \caption{Time development of the center of gravity for a system
+    containing $N$ levels of $T_{1,2}$ basis character.}
+  \label{fig:cog-devel-many}
+  \centering
+  \includegraphics[width=6in]{cog-development-many.pdf}
+\end{figure}
+
+\TODO{Summarize.}
 
 
 
@@ -1037,9 +1122,8 @@ approximately 0.08 \rcm.
 The intensity envelopes in the delayed LIF spectrum closely resemble
 those in the SEELEM spectrum.  As we established in the preceeding
 section, the SEELEM spectrum resembles the long-time-delay limit of
-the LIF spectrum, in the absence of a local level crossing with a
-$T_3$ doorway level.  \TODO{Elaborate after writing preceeding
-  section.}
+the LIF spectrum, in the absence of a local crossing with a $T_3$
+doorway level.  \TODO{Elaborate after writing preceeding section.}
 
 To more closely examine the dependence of the LIF spectrum on time
 delay, the intensity-weighted center of gravity (Formula (from last

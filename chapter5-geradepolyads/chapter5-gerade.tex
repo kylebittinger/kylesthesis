@@ -41,6 +41,7 @@
 % hyphenation
 \hyphenation{acetylene}
 \hyphenation{Hamiltonian}
+\hyphenation{nominal}
 
 \begin{document}
 
@@ -51,6 +52,18 @@
 \clearpage
 
 \subsubsection*{NOTES}
+The chapter is basically complete at this point, although I need to
+write a short subsection on band-integrated SEELEM/LIF center of
+gravity and revise the conclusion.  Another 6 small tasks are
+scattered throughout.
+
+I am looking especially for any suggestions to explain the important
+points more plainly and simply.  It would also help to have any
+confusing passages pointed out, so I can move more slowly through
+those points.  Also, if you find that I am way off on something,
+please let me know aboout that, too.
+
+Thank you, triplet readers!
 
 \clearpage
 
@@ -158,8 +171,8 @@ vibrational overlap integrals gained from \emph{ab initio}
 calculations of the $T_3$ electronic surface, Thom and coauthors were
 able to exclude all but several candidate $T_3$ levels as the $3\nu_3$
 local perturber \cite{thom07}.
-% \POINT{Overlap between $S_1$ and $T_3$ levels predicted by Bryan and
-%   Ryan.  (See p.40 of 1/2007--3/2007 notebook.)}
+% Overlap between $S_1$ and $T_3$ levels predicted by Bryan and Ryan.
+% (See p.40 of 1/2007--3/2007 notebook.)
 However, a recent observation of increased average $T_{1,2}$
 electronic character at $J'=8-12$ suggests that the local $T_3$
 perturber is not the sole, and perhaps not the primary, doorway for $3
@@ -179,27 +192,21 @@ $4\nu_3$ level, 1000 \rcm\ higher in energy, is also strongly coupled
 to the $T_{1,2}$ manifold, although no obvious local $T_3$ doorway has
 been observed \cite{drabbels94, ochi91}.  
 
-% The energies of the $3
-% \nu_3$ and $4\nu_3$ levels can therefore be taken as conservative
-% lower and upper bounds for an ``active'' $S_1 \sim T_3$ coupling
-% region.
-
 We turn our attention to other vibrational levels of $S_1$ in the same
 energy region that are not near-degenerate with a mediating $T_3$
 level at low $J$.  In the absence of a local $T_3$ perturber, coupling
 between $S_1$ levels and the local manifold of $T_{1,2}$ levels is
 expected to be mediated by energetically distant $T_3$ levels.
-
-% Evidence for energetically distant, mediating $T_3$ levels is obtained
-% by comparing simultaneously recorded LIF and SEELEM spectra.
+Evidence for such energetically distant, mediating $T_3$ levels is
+obtained by comparing simultaneously recorded LIF and SEELEM spectra.
 
 We begin by deriving the energy level spacings and spin-orbit matrix
-elements, in general, between vibrational levels of $S_1$ and $T_3$.
+elements, in general, between rovibrational levels of $S_1$ and $T_3$.
 Next, we develop a new analysis technique that is sensitive to the
 presence of distant $T_3$ doorway levels.  This new technique takes
 into account shifting relative intensities in the frequency-domain LIF
 spectrum as a function of delay time, which result from the time
-development of an incoherent ensemble of eigenstates with different
+development of an incoherent ensemble of eigenstates having different
 radiative lifetimes.  We then apply the new technique to the
 simultaneous LIF and SEELEM spectra of four $S_1$ vibrational
 sublevels, and discuss the properties of admixed, energetically
@@ -239,6 +246,18 @@ labeled $F_1$ ($J=N+1$), $F_2$ ($J=N$), and $F_3$ ($J=N-1$).  Figure
 \ref{fig:triplet-rot-structure} shows an example of the rotational
 energy level structure.  Since $S=0$ for the $S_1$ electronic state,
 only one component $N=J$ is present for all $S_1$ rotational levels.
+
+\begin{figure}
+  \caption{\TODO{Adapt energy level figure from sketch.  Combination
+      of Herzberg v.3 figs 27 and 31.}}
+  \label{fig:triplet-rot-structure}
+  \centering
+
+  \vspace{4in}
+  [DIAGRAM OF TRIPLET\\ 
+   ROTATIONAL ENERGY LEVELS]
+  \vspace{4in}
+\end{figure}
 
 The $S_1$ and $T_3$ electronic states are mixed by spin-orbit
 interaction.  The total first-order spin-orbit matrix element between
@@ -503,8 +522,9 @@ and \ref{eq:cog-def}:
     &= \text{OH NOES WHATS TEH INTEGRALS????!!!1!!11}.
   \end{split}
 \end{equation}
-We have thus derived the approximate center of gravity offset for an
-ensemble of nominal $T_{1,2}$ eigenstates.
+\TODO{Insert center of gravity integral in above equation. Delete
+  LOLspeak.}  We have thus derived the approximate center of gravity
+offset for an ensemble of nominal $T_{1,2}$ eigenstates.
 
 As we will demonstrate shortly, the lifetime of the nominal $S_1$
 eigenstate is shorter than that of any nominal $T_{1,2}$ eigenstate.
@@ -1082,7 +1102,9 @@ sublevel individually.
     (top), and R(0$-$3) (bottom), in the LIF spectrum of $3^24^2$
     \Ka{1}.  Local perturbations in the Q(2) and R(1) transitions
     cause the center of gravity to deviate from those of the other
-    transitions as the delay time is increased.}
+    transitions as the delay time is increased.  \TODO{Include, for
+      each delayed center of gravity plot, a table showing the
+      integration regions used.}}
   \label{fig:32b2-cog-delay}
   \centering
   \vspace{5mm}
@@ -1309,7 +1331,7 @@ second $T_3$ doorway level.
 
 For the $F_1$ component of a triplet level, the energy of the triplet
 relative to the singlet has a negative slope with respect to $J'$ (see
-Figure \ref{rotational-energy-differences}).  At $J'=3$, where the
+Figure \ref{fig:rotational-energy-differences}).  At $J'=3$, where the
 interaction with the second doorway level begins, the $F_1$ component
 is $6B \simeq 6$ \rcm\ lower in energy than the $F_2$ component.  As
 $J'$ increases, the relative energy of the $F_1$ component decreases
@@ -1333,6 +1355,20 @@ calculations, the $A_T$ rotational constants for $T_3$ vibrational
 levels vary between 10 and 30 \rcm \cite{thom07}.  This places the
 $K_T=1$ sublevel about 30$-$90 \rcm\ lower in energy than the second
 $K_T=2$ doorway level.
+
+\begin{figure}
+  \caption{\TODO:{Create figure from sketch.  It will basically just
+      show a singlet $K=1$ vibrational level between the $K=1$ and
+      $K=2$ sublevels of a triplet.}}
+  \label{fig:double-doorway-k-levels}
+
+
+  \vspace{4in}
+  [DIAGRAM OF RELATIVE\\ 
+   DOORWAY ENERGY LEVELS]
+  \vspace{4in}
+
+\end{figure}
 
 Spin-orbit matrix elements between $S_1$ and $T_3$ are limited by
 vibrational overlap factors to a magnitude of approximately 1 \rcm\.
@@ -1729,7 +1765,16 @@ discuss this in the following section.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NOTE{Just the table for now.}
+\TODO{Write this section.  The shift in integrated SEELEM center of
+  gravity, relative to LIF, is an effect of a $J$-dependent SEELEM:LIF
+  intensity ratio.  Since one component, either $F_1$ or $F_3$, of the
+  nearest doorway always approaches the singlet in energy as a
+  function of $J$, we expect the SEELEM:LIF intensity ratio to always
+  increase with $J$.  If the quantum number $J'$ is increasing with
+  energy (R-branches), the c.o.g. offset should be positive.  If the
+  quantum number $J'$ is decreasing with energy (Q-branches), the
+  c.o.g. offset should be negative.  This is shown in Table
+  \ref{table:integrated-cog-shifts}.}
 
 
 
@@ -1784,13 +1829,11 @@ $J$-dependent changes in the patterns of $T_3$-mediated coupling, but
 also ensures detection and assignment of $S_1 \sim T_3$ level
 crossings at relatively low values of $J$.
 
-% \POINT{The LIF/SEELEM spectra for the progression of $2^n3^m$ levels
-%   shows the expected trends for strong coupling.}
-
-\POINT{For every $S_1$ vibrational level, a $T_3$ doorway level is
-  rapidly approaching with $J$.}  Because of this, further LIF/SEELEM
-spectroscopy of the acetylene \AtoX\ transition will be fruitful and
-informative.  We highlight some candidates for future investigation.
+For every $S_1$ vibrational level, one spin component of a $T_3$
+doorway level is rapidly approaching with $J$.  Because of this,
+further LIF/SEELEM spectroscopy of the acetylene \AtoX\ transition
+will be fruitful and informative.  We highlight some candidates for
+future investigation.
 \begin{enumerate}
 \item Levels which exhibit long lifetimes or quantum beats in the LIF
   spectrum
@@ -1799,7 +1842,8 @@ informative.  We highlight some candidates for future investigation.
 \item other $K$-sublevels of the Franck-Condon active levels studied
   here.  
 \end{enumerate}
-\TODO{Specify candidate bands specifically, give energies.}
+\TODO{Specify candidate bands specifically, give energies.  This
+  section needs some work, overall.}
 
 The appearance of population quantum beats in the spectrum indicates a
 splitting on the order of 80 MHz or less.  Quantum beat waveforms

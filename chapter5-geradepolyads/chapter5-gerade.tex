@@ -74,16 +74,27 @@ remaining electronic states of the molecule and (2) they are primarily
 determined by vibrational overlap factors and energy denominators, two
 sensitive consequents of the molecule's electronic structure.
 
-% Singlet~triplet coupling in the S_1 state of trans-acetylene is
-% mediated by the relatively sparse (0.1 per cm-1) levels of the third
-% triplet state, T_3.  When a mediating T_3 level is energetically
-% distant from an interacting singlet level, traces of its influence
-% appear in the patterns of coupling between the singlet level and the
-% dense, local manifold of T_1,2 levels (10 per cm-1).  The method of
-% SEELEM spectroscopy is tuned to detect molecules in such second-tier
-% eigenstates, being most sensitive to states with about 0.1\% S_1
-% character.  Conversely, LIF spectroscopy is sensitive to molecules in
-% states with large amounts of S_1 character.
+Intersystem crossing in the \astate\ ($S_1$) state of acetylene is
+well-described by a doorway-mediated coupling model.  The model is
+supported by observations in Zeeman anticrossing spectroscopy
+\cite{dupre91, dupre95a, dupre95b}, Laser-Induced Fluorescence (LIF)
+Zeeman quantum beat spectroscopy \cite{ochi87, ochi91, dupre93},
+high-resolution LIF spectroscopy \cite{drabbels94, altunata01},
+simultaneous LIF and Surface Electron Ejection by Laser-Excited
+Metastables (SEELEM) spectroscopy \cite{humphrey97, altunata00,
+  mishra04}, and photodissociation plus H-atom action spectroscopy
+\cite{yamakita03, loffler98, mordaunt98}.  Briefly, the model states
+that matrix elements between vibrational levels of the $S_1$ and
+$T_{1,2}$ electronic states are very nearly zero, and that all mixing
+between $S_1$ and $T_{1,2}$ levels is induced indirectly by nonzero
+$S_1 \sim T_3$ and $T_3 \sim T_{1,2}$ matrix elements.  The results of
+\emph{ab initio} calculations indicate that the electronic spin-orbit
+matrix element is an order of magnitude larger for $S_1 \sim T_3$ than
+for $S_1 \sim T_1$.  This result, in combination with smaller
+vibrational overlap integrals resulting from a $\sim$ 10,000 \rcm\
+excess of vibrational energy in the $T_{1,2}$ electronic states,
+accounts for the relative magnitude of the matrix elements according
+to the model.
 
 Surface Electron Ejection by Laser-Excited Metastables \cite{sneh89a,
   sneh89b, sneh91, humphrey97} (SEELEM) and LIF spectroscopy are
@@ -202,14 +213,13 @@ where $J$ is the total angular momentum, $K$ is the absolute value of
 the projection of the orbital angular momentum on the a-axis of the
 molecule, $T_v$ is the rotationless energy of the vibrational level
 $v$, and $A_v$, $B_v$, and $C_v$ ($\approx B_v$) are the rotational
-constants for the vibrational level.  The $T_3$ electronic state is
-best described in a Hund's case ($b$) basis, based on the magnitude of
-the carbon atomic spin-orbit matrix element \cite{field04}.  For
-$T_3$, the model of a near-symmetric prolate top is still appropriate
-in the non-planar \emph{trans}-bent equilibrium geometry predicted by
-\emph{ab initio} calculations \cite{ventura03, thom07}, due to the
-small mass of the hydrogen atoms relative to carbon.  The energy
-levels are approximately
+constants for the vibrational level.  The model of a near-symmetric
+prolate top is also appropriate to describe the energy levels of the
+$T_3$ electronic state, although \emph{ab initio} calculations predict
+that the \emph{trans}-bent equilibrium geometry is non-planar and
+therefore slightly more asymmetric \cite{ventura03, thom07}.  Adopting
+a Hund's case ($b$) basis, the rovibrational energy levels of $T_3$
+are approximately
 \begin{equation}
   \label{eq:t3-energy-levels}
   E_{T_3}(v,K,N) = T_v + [A_v - B_v] K^2 + B_v \, N(N+1),
@@ -220,18 +230,13 @@ three near-degenerate spin components are present, due to the three
 possible values of the total angular momentum $J$.  The components are
 labeled $F_1$ ($J=N+1$), $F_2$ ($J=N$), and $F_3$ ($J=N-1$).  Figure
 \ref{fig:triplet-rot-structure} shows an example of the rotational
-energy level structure.
-% $K$=1 and 2 sublevels of a $T_3$ vibration having $a_g$ symmetry.
-% Triplet vibrational sublevels with $K \ge 2$ have the same structure
-% as $K=1$, except for the absence of any rotational levels with
-% $N<K$.
-Since $S=0$ for the $S_1$ electronic state, only one component $N=J$
-is present for all $S_1$ rotational levels.
+energy level structure.  Since $S=0$ for the $S_1$ electronic state,
+only one component $N=J$ is present for all $S_1$ rotational levels.
 
 The $S_1$ and $T_3$ electronic states are mixed by spin-orbit
 interaction.  The total first-order spin-orbit matrix element between
-rovibrational states of $S_1$ and $T_3$ is given by the product of
-three factors: an electronic spin-orbit matrix element, a vibrational
+rovibrational states of $S_1$ and $T_3$ is the product of three
+factors: an electronic spin-orbit matrix element, a vibrational
 overlap factor, and a rotational factor arising from angular momentum
 coupling.  Spin-orbit matrix elements follow the rotational selection
 rules $\Delta J = 0$ and $\Delta P = 0$, where $P$ is the projection
@@ -393,12 +398,27 @@ When $H_{ST}^2 \ll 2B_T$, energy denominator effects cause an $S_1
 spectrum.  However, once a triplet level with small vibrational
 overlap is found at a particular $J$, its energy above or below the
 perturbed singlet level may be found according to Equation
-\ref{eq:components}. \TODO{Finish para.}
+\ref{eq:components}.  If the rotationless energy of the triplet
+vibrational level is higher than that of the singlet, the triplet must
+have $T_{0,T} \approx T_{0,S} + 2B_TJ$.  If the rotationless energy of
+the triplet vibrational level is lower than that of the singlet, the
+triplet must have $T_{0,T} \approx T_{0,S} - 2B_TJ - 2B_T$.
 
-When $H_{ST}^2$ is on the order of $2B_T$, mixing between the $S_1$
-and $T_3$ levels occurs at several values of $J$; these are the
-energetically distant $T_3$ doorway levels with which we are most
-concerned. \TODO{Finish para.  Lead in to next section.}
+When $H_{ST}^2$ is on the order of $2B_T$, significant mixing between
+the $S_1$ and $T_3$ levels may occur at several consecutive values of
+$J$.  Such $T_3$ levels, having $H_{ST}^2$ on the order of $2B_T$, and
+lying more than $4B_T$ away in rotationless energy, are the
+energetically distant doorway states with which we are most concerned.
+By first mixing with the $T_3$ level, the $S_1$ level is permitted to
+mix with the local manifold of $T_{1,2}$ levels.  Although a level
+crossing with the mediating $T_3$ level may occur too high in $J$ to
+be observed, some $T_3$-mediated $S_1 \sim T_{1,2}$ mixing is
+observable in the spectrum of the $S_1$ level.  Mixing between the
+$S_1$ level and nearby $T_{1,2}$ levels is influenced by the relative
+energy of the doorway level: mixing is increased with $T_{1,2}$ levels
+that lie closer in energy to the doorway.  In the following section,
+we explain this effect and examine a method by which it may be
+observed.
 
 
 
@@ -429,56 +449,148 @@ concerned. \TODO{Finish para.  Lead in to next section.}
 \section{Theory: Signatures of doorway-mediated intersystem crossing
   in delayed, incoherent fluorescence measurements}
 
-Intersystem crossing in the \astate\ ($S_1$) state of acetylene is
-well-described by a doorway-mediated coupling model.  The model is
-supported by observations in Zeeman anticrossing spectroscopy
-\cite{dupre91, dupre95a, dupre95b}, Laser-Induced Fluorescence (LIF)
-Zeeman quantum beat spectroscopy \cite{ochi87, ochi91, dupre93},
-high-resolution LIF spectroscopy \cite{drabbels94, altunata01},
-simultaneous LIF and Surface Electron Ejection by Laser-Excited
-Metastables (SEELEM) spectroscopy \cite{humphrey97, altunata00,
-  mishra04}, and photodissociation plus H-atom action spectroscopy
-\cite{yamakita03, loffler98, mordaunt98}.  Briefly, the model states
-that matrix elements between vibrational levels of the $S_1$ and
-$T_{1,2}$ electronic states are very nearly zero, and that all mixing
-between $S_1$ and $T_{1,2}$ levels is induced indirectly by nonzero
-$S_1 \sim T_3$ and $T_3 \sim T_{1,2}$ matrix elements.  The results of
-\emph{ab initio} calculations indicate that the electronic spin-orbit
-matrix element is an order of magnitude larger for $S_1 \sim T_3$ than
-for $S_1 \sim T_1$.  This result, in combination with smaller
-vibrational overlap integrals resulting from a $\sim$ 10,000 \rcm\
-excess of vibrational energy in the $T_{1,2}$ electronic states,
-accounts for the relative magnitude of the matrix elements according
-to the model.
-
 An energetically distant $T_3$ doorway level leaves traces of its
 presence in the LIF and SEELEM spectrum of $S_1$ levels with which it
-interacts.  We define an energetically distant doorway level as one
-which is more than 2 \rcm\ away from the $S_1$ level in rotationless
-energy.  In this section, we derive the dependence of the
-center-of-gravity on time delay for an incoherent ensemble of mixed
-singlet$\sim$triplet eigenstates.
-
-In Chapter 2, we derived the functional form of a SEELEM intensity
-distribution in the local vicinity of an $S_1$ rovibrational level
-$\ket{s}$.  Using a model which incorporated an energetically distant
-$T_3$ doorway level, we derived the center of gravity,
+interacts.  When an $S_1$ level mixes with an energetically distant
+$T_3$ doorway level, the relative energy of the doorway has an
+influence on the local mixing between the $S_1$ level and nearby
+$T_{1,2}$ levels.  This leads to a local energy dependence of the
+average fractional $S_1$ character in nominal $T_{1,2}$ eigenstates.
+This quantity may be evaluated using perturbation theory, after first
+pre-diagonalizing the interaction between $S_1$ and $T_3$.  Following
+Chapter 2, Formula 2.4, we find the average fractional $S_1$
+character, $\braket{a_{S_1}}^2$, to be
 \begin{equation}
+  \label{eq:ave-s1-char}
+    \braket{a_{S_1}}^2(E) = 
+    \alpha^2 (1-\alpha^2) \braket{H_{T_3T_{1,2}}}^2
+    \biggl \lbrace 
+    \frac{1}{E - E_{S_1}} 
+    + \frac{1}{E - E_{T_3}} 
+    \biggr \rbrace^2,
+\end{equation}
+where $\alpha$ is the mixing angle between the $S_1$ level and the
+doorway state, $\braket{H_{T_3T_{1,2}}}$ is the average $T_3 \sim
+T_{1,2}$ matrix element, $E_{S_1}$ is the energy of the nominal $S_1$
+eigenstate and $E_{T_3}$ is the energy of the nominal $T_3$
+eigenstate.  
+
+The energy dependence of average fractional $S_1$ character in the
+ensemble of nominal $T_{1,2}$ eigenstates causes their
+intensity-weighted center of gravity,
+\begin{equation}
+  \label{eq:cog-def}
   E_{\text{ave}} = \int E \times I(E) \; dE,
 \end{equation}
-of a SEELEM intensity distribution $I(E)$.  It was shown that the
-SEELEM center-of-gravity is biased in the direction of the doorway
-level relative to the LIF center of gravity, according to the formula
+to be offset slightly relative to the energy of the nominal $S_1$
+eigenstate in the LIF spectrum.  Since the total fluorescence
+intensity of an eigenstate is relative to its fractional $S_1$
+character, the magnitude and direction of the center of gravity offset
+is found by combining Equations \ref{eq:ave-s1-char} and
+\ref{eq:cog-def}:
 \begin{equation}
-  \Delta E_{\text{ave}} \propto \alpha_{S_1T_3}
-  \left (
-    \frac{\braket{H_{T_3T_{1,2}}}}{\Delta E_{S_1T_3}}
-  \right ).
+  \begin{split}
+    E_{\text{ave}} 
+    &= \int E \times \braket{a_{S_1}}^2(E) \; dE,\\
+    &= \text{OH NOES WHATS TEH INTEGRALS????!!!1!!11}.
+  \end{split}
 \end{equation}
-We extend the idea of eigenstate intensity distributions to
-fluorescence measurements by considering intensities in the
-\emph{incoherent, frequency domain} LIF spectrum within a time window
-$t$ to $t+dt$ after excitation of the molecule.
+We have thus derived the approximate center of gravity offset for an
+ensemble of nominal $T_{1,2}$ eigenstates.
+
+By definition, we are guaranteed that the lifetime of the nominal
+$S_1$ eigenstate is shorter than that of any nominal $T_{1,2}$
+eigenstate.  The difference in lifetimes gives rise to changes in the
+relative intensity of the $S_1$ eigenstate relative to that of the
+nominal $T_{1,2}$ eigenstates as a function of time delay after
+excitation of the molecules.  Changes in the relative intensity lead
+to changes in the overall center of gravity, computed from the total
+fluorescence intensity within a delayed time window $t$ to $t+dt$
+after excitation.  In the remainder of this section, we examine the
+dependence of the intensity-weighted center-of-gravity on time delay
+for an incoherent ensemble of mixed $S_1 \sim T_3$ eigenstates.
+
+% We make the assumption of a doorway-coupled model Hamiltonian, in
+% which all matrix elements between the $S_1$ level and the local
+% ensemble of $T_{1,2}$ rovibrational levels are zero.  The Hamiltonian
+% contains nonzero matrix elements between the $S_1$ level and an
+% energetically distant $T_3$ level, and also between the $T_3$ level
+% and the local ensemble of $T_{1,2}$ levels.  In such a model
+% Hamiltonian, no interference pathways exist between the $S_1$ level
+% and the local manifold of $T_{1,2}$ levels.  By applying successive
+% matrix rotations to the doorway-coupled model Hamiltonian, we can
+% construct a direct-coupled model Hamiltonian (see Chapter 3).  This
+% modified Hamiltonian has nonzero matrix elements between the $S_1$
+% level and all $T_{1,2}$ levels.  These matrix elements
+% \emph{implicitly} include the effects of the doorway level in the
+% modified, direct-coupled Hamiltonian.  Our discussion below focuses on
+% the local energy block of such a modified model Hamiltonian.
+
+% The energy distribution of fractional $S_1$ character is influenced by
+% the matrix element and relative energy for the energetically distant
+% doorway level.  As a result, the center of gravity $E_{t}$ is
+% biased, relative to $E_1$, in the direction of the $T_3$ doorway
+% level.  The magnitude of this energy offset is given by the product of
+% the slope of average $S_1$ character with energy,
+% \begin{equation}
+%   \frac{\partial \braket{a_m^2}}{\partial E} 
+%   \propto 
+%   \frac{1}{\Delta E_{S_1T_3}},
+% \end{equation}
+% and the local $S_1 \sim T_{1,2}$ coupling width, 
+% \begin{equation}
+%   \sigma^2 \propto
+%   \left(
+%     \frac{ H_{S_1T_3} \braket{H_{T_3T_{1,2}}} }
+%          { \Delta E_{S_1T_3} }
+%   \right)^2,
+% \end{equation}
+% where $H_{S_1T_3}$ is the matrix element between the $S_1$ level and
+% the doorway state, $\braket{H_{T_3T_{1,2}}}$ is the average $T_3 \sim
+% T_{1,2}$ matrix element, and $\Delta E_{S_1T_3}$ is the energy
+% difference between the $S_1$ level and the doorway state.  A
+% derivation is given in Chapter 2.
+
+% \TODO{Actually include the derivation explicitly in Chapter 2.
+%   Implicitly, the two terms of the above formula follow from these two
+%   results: 
+%   \begin{enumerate}
+%   \item The energy dependence of fractional bright state character is
+%     given by the cross term/square term ratio from the mixed basis
+%     formaulation.  The ratio depends only on the $S_1 \sim T_3$ energy
+%     separation (Chapter 2, formula 1.5), thus its slope must depend
+%     only on energy separation.  The slope must decrease with
+%     increasing energy separation, so I surmised an inverse
+%     proportionality.
+%   \item Chapter 3, formula 1.13 gives the spectral variance for a
+%     direct-coupled Hamiltonian as the sum of the matrix elements
+%     squared.  The magnitude of the local matrix elements in the
+%     embedded bright state formulation is given by the product of the
+%     $S_1 \sim T_3$ mixing fraction and the average $T_3 \sim T_{12}$
+%     matrix element (Chapter 2, formula 1.7).
+%   \end{enumerate}
+% }
+
+% In Chapter 2, we derived the functional form of a SEELEM intensity
+% distribution in the local vicinity of an $S_1$ rovibrational level
+% $\ket{s}$.  Using a model which incorporated an energetically distant
+% $T_3$ doorway level, we derived the center of gravity,
+% \begin{equation}
+%   E_{\text{ave}} = \int E \times I(E) \; dE,
+% \end{equation}
+% of a SEELEM intensity distribution $I(E)$.  It was shown that the
+% SEELEM center-of-gravity is biased in the direction of the doorway
+% level relative to the LIF center of gravity, according to the formula
+% \begin{equation}
+%   \Delta E_{\text{ave}} \propto \alpha_{S_1T_3}
+%   \left (
+%     \frac{\braket{H_{T_3T_{1,2}}}}{\Delta E_{S_1T_3}}
+%   \right ).
+% \end{equation}
+% We extend the idea of eigenstate intensity distributions to
+% fluorescence measurements by considering intensities in the
+% \emph{incoherent, frequency domain} LIF spectrum within a time window
+% $t$ to $t+dt$ after excitation of the molecule.
 
 
 
@@ -524,8 +636,8 @@ $\int_0^{\infty} I_m(t) \, dt = a_m^2$, relative to unit intensity for
 a pure $S_1$ state.  This reflects the $a_m^2$ times smaller
 probability for excitation of a mixed eigenstate $\ket{m}$.
 
-We examine the relative fluorescence intensity among an incoherent
-ensemble of singlet$\sim$triplet mixed eigenstates after a time delay
+The relative fluorescence intensity among an incoherent ensemble of
+singlet$\sim$triplet mixed eigenstates is examined after a time delay
 $t$.  The upper limit of time delay that can be selected in our LIF
 experiments is determined by the field-of-view of the fluorescence
 detection optics.  In this study, the field-of-view of the
@@ -547,10 +659,10 @@ they fluoresce slowly, and as a consequence their relative intensity
 increases with time delay, compared to other eigenstates in the
 ensemble.
 
-The value of $S_1$ character with the maximum relative
-intensity is found by taking the derivative of eigenstate intensity
-(Equation \ref{eq:int-m}) with respect to fractional $S_1$
-character, $a_m^2$.  Doing this, we find
+At a given time delay, $t$, the fractional $S_1$ character having the
+greatest relative intensity is found by taking the derivative of
+eigenstate intensity (Equation \ref{eq:int-m}) with respect to
+fractional $S_1$ character, $a_m^2$.  Doing this, we find
 \begin{equation}
  \frac{ \partial I_m }{ \partial a_m^2 } =
    \frac{a_m^2}{\tau_s}
@@ -642,24 +754,9 @@ between a rovibrational level of $S_1$ and the local ensemble of
 $T_{1,2}$ rovibrational levels by first constructing a model system
 containing only one $T_{1,2}$ basis state.
 
-We make the assumption of a doorway-coupled model Hamiltonian, in
-which all matrix elements between the $S_1$ level and the local
-ensemble of $T_{1,2}$ rovibrational levels are zero.  The Hamiltonian
-contains nonzero matrix elements between the $S_1$ level and an
-energetically distant $T_3$ level, and also between the $T_3$ level
-and the local ensemble of $T_{1,2}$ levels.  In such a model
-Hamiltonian, no interference pathways exist between the $S_1$ level
-and the local manifold of $T_{1,2}$ levels.  By applying successive
-matrix rotations to the doorway-coupled model Hamiltonian, we can
-construct a direct-coupled model Hamiltonian (see Chapter 3).  This
-modified Hamiltonian has nonzero matrix elements between the $S_1$
-level and all $T_{1,2}$ levels.  These matrix elements
-\emph{implicitly} include the effects of the doorway level in the
-modified, direct-coupled Hamiltonian.  Our discussion below focuses on
-the local energy block of such a modified model Hamiltonian.
 
-Consider a Hamiltonian containing one $S_1$ level $\ket{s}$ and one
-dark $T_{1,2}$ level $\ket{t}$.  Let us define the two mixed states
+Consider a Hamiltonian containing one $S_1$ level, $\ket{s}$, and one
+$T_{1,2}$ level, $\ket{t}$.  Let us define the two mixed states
 $\ket{1}$ and $\ket{2}$ as
 \begin{equation}
   \begin{split}
@@ -668,8 +765,9 @@ $\ket{1}$ and $\ket{2}$ as
   \end{split}
 \end{equation}
 where $a$ is the mixing angle between $\ket{s}$ and $\ket{t}$, $0 \leq
-a \leq 0.5$.  The fractional $S_1$ character of $\ket{2}$ is $a^2$.
-The normalized fluorescence intensities of the mixed states are
+a \leq 0.5$.  The fractional $S_1$ character of $\ket{2}$ is $a^2$,
+and that of $\ket{1}$ is $(1 - a^2)$.  The normalized fluorescence
+intensities of the mixed states are
 \begin{equation}
   \begin{split}
     I_1(t) &= \frac{(1 - a^2)^2}{\tau_s} \; \exp 
@@ -687,7 +785,7 @@ following time dependence:
 \begin{equation}
   I_{12}(t) = \frac{I_1(t)}{I_2(t)} = 
   \left(
-    \frac{(1 - a^2)}{a^2}
+    \frac{1 - a^2}{a^2}
   \right)^2
   \exp
   \left[
@@ -725,7 +823,7 @@ written as a sum of two terms,
   E_{\text{ave}}(t) = E_1 \times I_1(t) \; + \; E_2 \times I_2(t),
 \end{equation}
 where $E_1$ and $E_2$ are the energies of $\ket{1}$ and $\ket{2}$,
-respectively.  The intensity-weighted center-of-gravity is plotted as
+respectively.  The intensity-weighted center of gravity is plotted as
 a function of time delay in Figure \ref{fig:cog-devel}.  The main
 features of the plot are similar to Figure \ref{fig:ratio-devel}.  At
 small values of the mixing fraction, $0.001 \leq a^2 \leq 0.2$,
@@ -735,8 +833,8 @@ nearly 0.5, the initial center of gravity at $t=0$ is midway between
 $E_1$ and $E_2$, because $\ket{1}$ and $\ket{2}$ have similar
 intensities at $t=0$.  In this case, the center of gravity changes
 slowly as a function of time.  The total magnitude of change in center
-of gravity is also decreased, due to the decreased energy separation
-between the centers of gravity at $t=0$ and $t \rightarrow \infty$.
+of gravity is also decreased, due to the greater relative intensity of
+$\ket{2}$ at $t=0$.
 
 \begin{figure}
   \caption{Time development of the center of gravity for a two state
@@ -746,114 +844,146 @@ between the centers of gravity at $t=0$ and $t \rightarrow \infty$.
   \includegraphics[width=6in]{cog-development.pdf}
 \end{figure}
 
-Having established the general properties for the time-dependence of
-the center of gravity, we expand our model to include many
-rovibrational levels of $T_{1,2}$.  The nominal $S_1$ eigenstate,
-$\ket{1}$, is defined to have a fractional $S_1$ character of
-$(1-a^2)$, as before.  The remaining fractional $S_1$ character,
-$a^2$, is distributed among a set of $N$ nominal $T_{1,2}$ eigenstates
-$\lbrace \ket{2} ... \ket{N+1}\rbrace$.  The set of nominal $T_{1,2}$
-eigenstates has an average fractional $S_1$ character of
-\begin{equation}
-  \braket{a_m^2} = \frac{a^2}{N},
-\end{equation}
-and a resultant time-dependent fluorescence intensity of
-\begin{equation}
-  \label{eq:int-N}
-  I_m(t) = \frac{a_m^4}{N^2 \tau_s} \;
-           \exp \left[
-             -\frac{a_m^2 \, t}{N \tau_s} 
-           \right].
-\end{equation}
-The intensity-weighted center of gravity for the set of $N$ nominal
-$T_{1,2}$ eigenstates is determined by the energy distribution of
-fractional $S_1$ character,
-\begin{equation}
-  E_{m} = \sum_{m=2}^{N+1} E_m \times a_m^2.
-\end{equation}
-
-The energy distribution of fractional $S_1$ character is influenced by
-the matrix element and relative energy for the energetically distant
-doorway level.  As a result, the center of gravity $E_{t}$ is
-biased, relative to $E_1$, in the direction of the $T_3$ doorway
-level.  The magnitude of this energy offset is given by the product of
-the slope of average $S_1$ character with energy,
-\begin{equation}
-  \frac{\partial \braket{a_m^2}}{\partial E} 
-  \propto 
-  \frac{1}{\Delta E_{S_1T_3}},
-\end{equation}
-and the local $S_1 \sim T_{1,2}$ coupling width, 
-\begin{equation}
-  \sigma^2 \propto
-  \left(
-    \frac{ H_{S_1T_3} \braket{H_{T_3T_{1,2}}} }
-         { \Delta E_{S_1T_3} }
-  \right)^2,
-\end{equation}
-where $H_{S_1T_3}$ is the matrix element between the $S_1$ level and
-the doorway state, $\braket{H_{T_3T_{1,2}}}$ is the average $T_3 \sim
-T_{1,2}$ matrix element, and $\Delta E_{S_1T_3}$ is the energy
-difference between the $S_1$ level and the doorway state.  A
-derivation is given in Chapter 2.
-
-\TODO{Actually include the derivation explicitly in Chapter 2.
-  Implicitly, the two terms of the above formula follow from these two
-  results: 
-  \begin{enumerate}
-  \item The energy dependence of fractional bright state character is
-    given by the cross term/square term ratio from the mixed basis
-    formaulation.  The ratio depends only on the $S_1 \sim T_3$ energy
-    separation (Chapter 2, formula 1.5), thus its slope must depend
-    only on energy separation.  The slope must decrease with
-    increasing energy separation, so I surmised an inverse
-    proportionality.
-  \item Chapter 3, formula 1.13 gives the spectral variance for a
-    direct-coupled Hamiltonian as the sum of the matrix elements
-    squared.  The magnitude of the local matrix elements in the
-    embedded bright state formulation is given by the product of the
-    $S_1 \sim T_3$ mixing fraction and the average $T_3 \sim T_{12}$
-    matrix element (Chapter 2, formula 1.7).
-  \end{enumerate}
-}
-
-% The ratio of total intensity between the nominal $S_1$ eigenstate,
-% $\ket{1}$, and the set of nominal $T_{1,2}$ eigenstates is
-% \begin{equation}
-%   I_{1m}(t) = \frac{I_1(t)}{I_m(t)} = 
-%   \left(
-%     N \frac{(1 - a^2)}{a^2}
-%   \right)^2
-%   \exp
-%   \left[
-%     - \frac{(1 - 2a^2/N) t}{\tau_s}
-%   \right].
-% \end{equation}
-
-To examine the effect of increasing the effective number of states in
-the model system, the intensity-weighted center-of-gravity is plotted
-as a function of time delay in Figure \ref{fig:cog-devel-many}.  A
-value of $a_m^2=0.25$ is used for the figure, and four values of $N$
-are examined: $N=1,10,20,30$.  As the number of nominal $T_{1,2}$
-states is increased, the initial ($t=0$) center of gravity for the
-entire system moves closer to $E_1$.  The center of gravity then
-changes more rapidly from $E_1$ to $E_m$, the $T_{1,2}$ ensemble
-center of gravity.  The effect of increasing the number of local
-$T_{1,2}$ states in the system is to increase the effective lifetime
-of the nominal triplet eigenstates.  This, in turn, increases the
-contrast between the intensity of the nominal $S_1$ eigenstate and the
-rest of the ensemble, bringing about a more rapid shift in the center
-of gravity with time.
+A characteristic feature in the plot center of gravity vs. time is the
+presence and location of a rapid (within several $\tau_s$) shift in
+center of gravity from $E_1$ to $E_2$.  If a rapid shift is observed,
+its location may be used to infer the mixing fraction, $a^2$.  The
+location of the shift is determined by the point of inflection for the
+center of gravity function, where $I_1=I_2$.  The dependence of mixing
+fraction on the location of a center of gravity shift is plotted in
+Figure \ref{fig:cog-inflection-point}.  Rapid center of gravity shifts
+located between $t=5.5\tau_s$ and $t=14\tau_s$ are the result of mixing
+fractions between 0.1 and 0.001, respectively.
 
 \begin{figure}
-  \caption{Time development of the center of gravity for a system
-    containing $N$ levels of $T_{1,2}$ basis character.}
-  \label{fig:cog-devel-many}
+  \caption{The location of a rapid shift in center of gravity (taking
+    place within several $\tau_s$) may be used to infer the $S_1 \sim
+    T_3$ mixing fraction.  The location of the shift is given by the
+    value of delay time where the relative intensities of the nominal
+    $S_1$ eigenstate and the nominal $T_{1,2}$ eigenstates are equal.
+    The mixing fraction is plotted here as a function of the location
+    of a rapid shift in center of gravity.}
+  \label{fig:cog-inflection-point}
+
   \centering
-  \includegraphics[width=6in]{cog-development-many.pdf}
+  \includegraphics[width=6in]{cog-inflection-point.pdf}
 \end{figure}
 
-\TODO{Summarize.}
+The presence of a rapid shift in center of gravity vs. time indicates
+that the intensity ratio $I_1/I_2$ changes rapidly.  For this to
+occur, the fluorescence decay rates of $\ket{1}$ and $\ket{2}$ must be
+appreciably different.  For a system containing many $T_{1,2}$ levels,
+the qualitative features of the center of gravity function will be
+determined by the subset of nominal $T_{1,2}$ eigenstates with the
+largest fractional $S_1$ character.  These states will have the
+greatest intensities, and therefore the greatest impact on the
+behavior of the center of gravity vs. time.  Therefore, the presence
+of a rapid shift in center of gravity vs. time indicates that no
+$T_{1,2}$ level is mixed to more than 20\% with the $S_1$ level.
+
+We have examined the dependence of the intensity-weighted center of
+gravity on time delay, in the LIF spectrum of an incoherent ensemble
+of singlet$\sim$triplet mixed molecular eigenstates.  A model system
+was constructed, containing one $S_1$ level and one $T_{1,2}$ level.
+The initial $t=0$ position of the center of gravity for the model
+system is influenced by the total $S_1 \sim T_{1,2}$ mixing fraction.
+As the time delay is increased, the center of gravity shifts from its
+initial $t=0$ position to a final position, which is determined solely
+by the energy and fractional $S_1$ character of nominal $T_{1,2}$
+eigenstates.  Small $S_1 \sim T_{1,2}$ mixing fractions lead to a
+rapid, characteristic shift in the center of gravity with time delay.
+Large mixing fractions lead to a gradual change in the center of
+gravity with time delay.  In this case, the change in center of
+gravity not only occurs more slowly, but the total magnitude of the
+shift is decreased, due to the greater relative intensity of nominal
+triplet states at $t=0$.
+
+The behavior of the LIF center of gravity with time delay will be used
+as a primary tool to examine the spectra of various vibrational
+sublevels in acetylene \astate.  To analyze the local $S_1 \sim
+T_{1,2}$ mixing around a single rotationally-resolved $S_1 \leftarrow
+S_0$ trasition, relative intensities are compared over a very small
+energy range, about 1 \rcm.  This has the effect of minimizing
+relative intensity errors, which arise mostly from slowly drifting
+laser power and baseline effects.  Unlike measurements of fluorescence
+lifetime, the center of gravity metric is not biased by molecules
+leaving the LIF detection area.  Since the center of gravity is
+determined by the relative fluorescence intensities of molecules which
+remain within the field-of-view of the LIF detection optics, the
+metric is unaltered as molecules exit the LIF detection region,
+although the total signal is decreased.
+
+
+% The change in the center of gravity with time delay is a function of
+% the amount of contrast between the relative intensities of the nominal
+% $S_1$ mixed state and the remaining nominal $T_{1,2}$ mixed states.
+% The relative intensity contrast, in turn, is determined by the
+% difference in lifetimes between the most strongly mixed components in
+% an ensemble.  For example, when the $S_1 \sim T_3$ matrix element is
+% small, the local manifold of $T_{1,2}$ levels may mix only weakly with
+% the $S_1$ level.  The quantity $(1-a^2)$ remains close to 1, and the
+% nominal $S_1$ mixed state has a lifetime close to $\tau_s$.  The
+% remaining fractional $S_1$ character, $a^2$, is distributed among all
+% nominal $T_{1,2}$ mixed states.  As a result, the lifetimes of the
+% nominal $T_{1,2}$ mixed states are much longer than that of the
+% nominal singlet state.  The large difference in lifetimes creates a
+% sharp contrast in relative intensity, when the intensity of the
+% nominal $S_1$
+
+% In cases where a $T_{1,2}$
+% level may mix efficiently with an $S_1$ level, the resulting
+% singlet$\sim$triplet mixed states have similar lifetimes, and
+
+% Having established the general properties for the time-dependence of
+% the center of gravity, we expand our model to include many
+% rovibrational levels of $T_{1,2}$.  The nominal $S_1$ eigenstate,
+% $\ket{1}$, is defined to have a fractional $S_1$ character of
+% $(1-a^2)$, as before.  The remaining fractional $S_1$ character,
+% $a^2$, is distributed among a set of $N$ nominal $T_{1,2}$ eigenstates
+% $\lbrace \ket{2} ... \ket{N+1}\rbrace$.  The set of nominal $T_{1,2}$
+% eigenstates has an average fractional $S_1$ character of
+% \begin{equation}
+%   \braket{a_m^2} = \frac{a^2}{N},
+% \end{equation}
+% and a resultant time-dependent fluorescence intensity of
+% \begin{equation}
+%   \label{eq:int-N}
+%   I_m(t) = \frac{a_m^4}{N^2 \tau_s} \;
+%            \exp \left[
+%              -\frac{a_m^2 \, t}{N \tau_s} 
+%            \right].
+% \end{equation}
+% The intensity-weighted center of gravity for the set of $N$ nominal
+% $T_{1,2}$ eigenstates is determined by the energy distribution of
+% fractional $S_1$ character,
+% \begin{equation}
+%   E_{m} = \sum_{m=2}^{N+1} E_m \times a_m^2.
+% \end{equation}
+
+% To examine the effect of increasing the effective number of states in
+% the model system, the intensity-weighted center of gravity is plotted
+% as a function of time delay in Figure \ref{fig:cog-devel-many}.  A
+% value of $a_m^2=0.25$ is used for the figure, and four values of $N$
+% are examined: $N=1,10,20,30$.  As the number of nominal $T_{1,2}$
+% states is increased, the initial ($t=0$) center of gravity for the
+% entire system moves closer to $E_1$.  The center of gravity then
+% changes more rapidly from $E_1$ to $E_m$, the $T_{1,2}$ ensemble
+% center of gravity.  The effect of increasing the number of local
+% $T_{1,2}$ states in the system is to increase the effective lifetime
+% of the nominal triplet eigenstates.  This, in turn, increases the
+% contrast between the intensity of the nominal $S_1$ eigenstate and the
+% rest of the ensemble, bringing about a more rapid shift in the center
+% of gravity with time.
+
+% \begin{figure}
+%   \caption{Time development of the center of gravity for a system
+%     containing $N$ levels of $T_{1,2}$ basis character.}
+%   \label{fig:cog-devel-many}
+%   \centering
+%   \includegraphics[width=6in]{cog-development-many.pdf}
+% \end{figure}
+
+
 
 
 
@@ -1036,9 +1166,11 @@ intensity ratio is determined by the number of quanta in mode 3.  This
 observation is in agreement with previous estimations of SEELEM:LIF
 intensity ratios in acetylene \astate\ \cite{humphrey97}.  Measurements
 of the Zeeman anticrossing density show the same exponential
-dependence on the number of quanta in $\nu_3$ \cite{dupre91}.  This
-effect is a telltale sign of the doorway-mediated model
-\TODO{Continue} ...
+dependence on the number of quanta in $\nu_3$ \cite{dupre91}.
+
+%   This
+% effect is a telltale sign of the doorway-mediated model
+% \TODO{Continue} ...
 
 We observe no systematic splittings at adjacent rotational levels in
 any of the spectra, which would indicate the presence of a local $T_3$
@@ -1675,11 +1807,11 @@ of gravity of the early LIF spectrum vs. the SEELEM spectrum.  We
 discuss this in the following section.
 
 \subsection{Evidence for energetically distant $T_3$ doorway levels in
-  band-integrated center-of-gravity}
+  band-integrated center of gravity}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%% INSERT CENTER-OF-GRAVITY TABLE HERE
+%% INSERT CENTER OF GRAVITY TABLE HERE
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1725,7 +1857,7 @@ discuss this in the following section.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%% END CENTER-OF-GRAVITY TABLE
+%% END CENTER OF GRAVITY TABLE
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1763,7 +1895,7 @@ discuss this in the following section.
 
 The mechanism of doorway-mediated coupling by an energetically distant
 $T_3$ level skews the coupling to the local $T_{1,2}$ states that
-appear in the SEELEM spectrum, resulting in a center-of-gravity shift
+appear in the SEELEM spectrum, resulting in a center of gravity shift
 between the LIF and SEELEM spectra.  Additionally, when viewed in
 successive time windows, the center of gravity of the LIF spectrum
 exhibits evolution toward the limiting behavior exhibited in the

@@ -485,46 +485,62 @@ $T_{1,2}$ levels.  This leads to a local energy dependence of the
 average fractional $S_1$ character in nominal $T_{1,2}$ eigenstates.
 This quantity may be evaluated using perturbation theory, after first
 pre-diagonalizing the interaction between $S_1$ and $T_3$.  Following
-Chapter 2, Formula 2.4, we find the average fractional $S_1$
-character, $\braket{a_{S_1}}^2$, to be
+Chapter 2, Formula 2.4, we find the fractional $S_1$
+character, $a_{S_1}^2$, of a nominal $T_{1,2}$ eigenstate to be
 \begin{equation}
   \label{eq:ave-s1-char}
-    \braket{a_{S_1}}^2(E) = 
-    \alpha^2 (1-\alpha^2) \braket{H_{T_3T_{1,2}}}^2
+    a_{S_1}^2 = 
+    \alpha^2 (1-\alpha^2) H_{T_3T_{1,2}}^2
     \biggl \lbrace 
     \frac{1}{E - E_{S_1}} 
     + \frac{1}{E - E_{T_3}} 
     \biggr \rbrace^2,
 \end{equation}
 where $\alpha$ is the mixing angle between the $S_1$ level and the
-doorway state, $\braket{H_{T_3T_{1,2}}}$ is the average $T_3 \sim
-T_{1,2}$ matrix element, $E_{S_1}$ is the energy of the nominal $S_1$
-eigenstate and $E_{T_3}$ is the energy of the nominal $T_3$
-eigenstate.  
+doorway state, $H_{T_3T_{1,2}}$ is the $T_3 \sim T_{1,2}$ matrix
+element, $E_{S_1}$ is the energy of the nominal $S_1$ eigenstate and
+$E_{T_3}$ is the energy of the nominal $T_3$ eigenstate.
 
 The energy dependence of average fractional $S_1$ character in the
 ensemble of nominal $T_{1,2}$ eigenstates causes their
-intensity-weighted center of gravity,
+intensity-weighted center of gravity to be offset
+slightly relative to the energy of the nominal $S_1$ eigenstate in the
+LIF spectrum.  The intensity-weighted center of gravity is defined as
 \begin{equation}
   \label{eq:cog-def}
   E_{\text{ave}} = \int E \times I(E) \; dE,
 \end{equation}
-to be offset slightly relative to the energy of the nominal $S_1$
-eigenstate in the LIF spectrum.  Since the total fluorescence
-intensity of an eigenstate is proportional to its fractional $S_1$
-character (see Chapter 3), the magnitude and direction of the center
-of gravity offset is found by combining Equations \ref{eq:ave-s1-char}
-and \ref{eq:cog-def}:
+where the intensity distribution, $I(E)$, is normalized to 1.  Since
+the total fluorescence intensity of an eigenstate is proportional to
+its fractional $S_1$ character (see Chapter 3), the direction of the
+center of gravity offset may be found by combining Equations
+\ref{eq:ave-s1-char} and \ref{eq:cog-def}.  Using an energy scale
+where $\alpha^2 (1-\alpha^2) H_{T_3T_{1,2}}^2 = 1$, and
+setting the zero of energy to $E_{S_1}$, we obtain
 \begin{equation}
+  \label{eq:ave-s1-cog}
   \begin{split}
-    E_{\text{ave}} 
-    &= \int E \times \braket{a_{S_1}}^2(E) \; dE,\\
-    &= \text{OH NOES WHATS TEH INTEGRALS????!!!1!!11}.
+    E_{\text{ave}} \: 
+    &\propto \: \int_{-1}^{+1} E \times a_{S_1}^2 \; dE,\\
+    &\propto \: \frac{2 E_{T_3}}{E_{T_3}^2 - 1} + \log
+    \left[
+      \frac{E_{T_3}+1}{E_{T_3}-1}
+    \right].
   \end{split}
 \end{equation}
-\TODO{Insert center of gravity integral in above equation. Delete
-  LOLspeak.}  We have thus derived the approximate center of gravity
-offset for an ensemble of nominal $T_{1,2}$ eigenstates.
+The above expression for center of gravity is correct only in its
+sign, since it cannot be normalized by integrating Equation
+\ref{eq:ave-s1-char} over an energy range that includes $E_{S_1}$.
+The sign of Equation \ref{eq:ave-s1-cog} is preserved because the
+normalization factor is always positive.  When the relative energy
+$E_{T_3} - E_{S_1}$ is positive, the center of gravity in Equation
+\ref{eq:ave-s1-cog} is positive, relative to $E_{S_1}$.  When the
+relative energy $E_{T_3} - E_{S_1}$ is negative, the center of gravity
+is negative.  We have thus established that the the center of gravity
+offset for an ensemble of nominal $T_{1,2}$ eigenstates is biased in
+the direction of a $T_3$ doorway state, relative to $E_{S_1}$.
+\TODO{Plot the center of gravity by diagonalizing a 3x3 Hamiltonian,
+  instead of using perturbation theory?}
 
 As we will demonstrate shortly, the lifetime of the nominal $S_1$
 eigenstate is shorter than that of any nominal $T_{1,2}$ eigenstate.

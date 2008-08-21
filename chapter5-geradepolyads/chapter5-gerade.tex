@@ -104,13 +104,6 @@ character.  As a result, simultaneously recorded LIF and SEELEM
 spectra display mutually exclusive sets of eigenstates that arise from
 spin-orbit mixed $S_1$ and $T_{3,2,1}$ zero-order basis states.
 
-% Because SEELEM detection is sensitive to the electronic
-% character of the molecule, a comparison of simultaneously recorded
-% SEELEM and LIF spectra reveals features of electronic structure and
-% photochemical pathways that are invisible via traditional,
-% single-channel spectroscopic probes such as LIF alone, REMPI,
-% phosphorescence, or phosphor surface \cite{shi98, campos01, burton72}.
- 
 Intersystem crossing in the \astate\ ($S_1$) state of acetylene is
 well-described by a doorway-mediated coupling model.  The model is
 supported by observations in Zeeman anticrossing spectroscopy
@@ -125,19 +118,13 @@ electronic states are very nearly zero, and that all mixing between
 $S_1$ and $T_{1,2}$ levels is induced indirectly by nonzero $S_1 \sim
 T_3$ and $T_3 \sim T_{1,2}$ matrix elements.
 
-% The
-% results of \emph{ab initio} calculations indicate that the electronic
-% spin-orbit matrix element is an order of magnitude larger for $S_1
-% \sim T_3$ than for $S_1 \sim T_1$.  This result, in combination with
-% smaller vibrational overlap integrals resulting from a $\sim$ 10,000
-% \rcm\ excess of vibrational energy in the $T_{1,2}$ electronic states,
-% accounts for the relative magnitude of the matrix elements according
-% to the model.
-
-% Theoretical and experimental
-% work confirmed that the coupling doorways were vibrational levels of
-% the $T_3$ electronic state \cite{vacek96, sherrill96, humphrey97,
-%   altunata00}.
+% The results of \emph{ab initio} calculations indicate that the
+% electronic spin-orbit matrix element is an order of magnitude larger
+% for $S_1 \sim T_3$ than for $S_1 \sim T_1$.  This result, in
+% combination with smaller vibrational overlap integrals resulting
+% from a $\sim$ 10,000 \rcm\ excess of vibrational energy in the
+% $T_{1,2}$ electronic states, accounts for the relative magnitude of
+% the matrix elements according to the model.
 
 The \emph{trans}-bending mode of $S_1$ acetylene, $\nu_3$, is known to
 be an important promoter of $S_1 \sim T_3$ mixing.  In Zeeman
@@ -155,11 +142,6 @@ overlap factors between $S_1$ levels and particular doorway
 vibrational levels.  Subsequent theoretical and experimental work
 identified the doorways as vibrational levels of the $T_3$ electronic
 state \cite{vacek96, sherrill96, humphrey97, altunata00}.
-
-% best described by a doorway-mediated mechanism, in which particular
-% triplet vibrational levels mediate intersystem crossing between the
-% initially excited $S_1$ bright state and the dense manifold of highly
-% mixed, dark $T_{1,2}$ states.
 
 The $S_1$ $3 \nu_3$ \Ka{1} level has been heavily studied due to the
 presence of a near-degenerate vibrational level of $T_3$, which gives
@@ -479,14 +461,14 @@ observed.
 An energetically distant $T_3$ doorway level leaves traces of its
 presence in the LIF and SEELEM spectra of $S_1$ levels with which it
 interacts.  When an $S_1$ level mixes with an energetically distant
-$T_3$ doorway level, the relative energy of the doorway has an
-influence on the local mixing between the $S_1$ level and nearby
-$T_{1,2}$ levels.  This leads to a local energy dependence of the
-average fractional $S_1$ character in nominal $T_{1,2}$ eigenstates.
-This quantity may be evaluated using perturbation theory, after first
-pre-diagonalizing the interaction between $S_1$ and $T_3$.  Following
-Chapter 2, Formula 2.4, we find the fractional $S_1$
-character, $a_{S_1}^2$, of a nominal $T_{1,2}$ eigenstate to be
+$T_3$ doorway level, the relative energy of the doorway influences the
+local mixing between the $S_1$ level and nearby $T_{1,2}$ levels.
+This leads to a local energy dependence of the average fractional
+$S_1$ character in nominal $T_{1,2}$ eigenstates.  This quantity may
+be evaluated using perturbation theory, after first pre-diagonalizing
+the interaction between $S_1$ and $T_3$.  Following Chapter 2, Formula
+2.4, we find the fractional $S_1$ character, $a_{S_1}^2$, of a nominal
+$T_{1,2}$ eigenstate to be
 \begin{equation}
   \label{eq:ave-s1-char}
     a_{S_1}^2 = 
@@ -503,20 +485,20 @@ $E_{T_3}$ is the energy of the nominal $T_3$ eigenstate.
 
 The energy dependence of average fractional $S_1$ character in the
 ensemble of nominal $T_{1,2}$ eigenstates causes their
-intensity-weighted center of gravity to be offset
-slightly relative to the energy of the nominal $S_1$ eigenstate in the
-LIF spectrum.  The intensity-weighted center of gravity is defined as
+intensity-weighted center of gravity to be slightly offset, relative
+to the energy of the nominal $S_1$ eigenstate in the LIF spectrum.
+The intensity-weighted center of gravity is defined as
 \begin{equation}
   \label{eq:cog-def}
   E_{\text{ave}} = \int E \times I(E) \; dE,
 \end{equation}
-where the intensity distribution, $I(E)$, is normalized to 1.  Since
-the total fluorescence intensity of an eigenstate is proportional to
-its fractional $S_1$ character (see Chapter 3), the direction of the
+where $I(E)$ is a unit-normalized intensity distribution.  Since the
+total fluorescence intensity of an eigenstate is proportional to its
+fractional $S_1$ character (see Chapter 3), the direction of the
 center of gravity offset may be found by combining Equations
 \ref{eq:ave-s1-char} and \ref{eq:cog-def}.  Using an energy scale
-where $\alpha^2 (1-\alpha^2) H_{T_3T_{1,2}}^2 = 1$, and
-setting the zero of energy to $E_{S_1}$, we obtain
+where $\alpha^2 (1-\alpha^2) H_{T_3T_{1,2}}^2 = 1$, and setting the
+zero of energy to $E_{S_1}$, we obtain
 \begin{equation}
   \label{eq:ave-s1-cog}
   \begin{split}
@@ -542,19 +524,20 @@ the direction of a $T_3$ doorway state, relative to $E_{S_1}$.
 \TODO{Plot the center of gravity by diagonalizing a 3x3 Hamiltonian,
   instead of using perturbation theory?}
 
-As we will demonstrate shortly, the lifetime of the nominal $S_1$
-eigenstate is shorter than that of any nominal $T_{1,2}$ eigenstate.
-The difference in lifetimes gives rise to changes in the relative
-intensity of the $S_1$ eigenstate relative to that of the nominal
-$T_{1,2}$ eigenstates as a function of time delay after excitation of
-the molecules.  Changes in the relative intensity lead to changes in
-the overall center of gravity, when the metric is computed from the
-total fluorescence intensity within a delayed time window $t$ to
-$t+dt$ after excitation.  In the remainder of this section, we examine
-the dependence of the intensity-weighted center-of-gravity on time
-delay for an incoherent ensemble of mixed $S_1 \sim T_3$ eigenstates.
-
-
+In the remainder of this section, we examine the dependence of the
+intensity-weighted center-of-gravity on time for an incoherent
+ensemble of mixed $S_1 \sim T_3$ eigenstates.  Because the different
+eigenstates in the ensemble have different fluorescence lifetimes,
+their relative intensities change as a function of time delay after
+excitation of the molecules.  Of particular concern is the relative
+intensity of the nominal $S_1$ eigenstate relative to that of the
+remaining, nominal $T_{1,2}$ eigenstates.  Changes in relative
+intensity lead to changes in the overall center of gravity, when the
+metric is computed from the total fluorescence intensity within a
+delayed time window $t$ to $t+dt$ after excitation.  Using a simple
+model, we show how the dependence of center of gravity on time delay
+reveals the energy of the doorway state, relative to the nominal $S_1$
+eigenstate.
 
 
 
@@ -599,12 +582,12 @@ a pure $S_1$ state.  This reflects the $a_m^2$ times smaller
 probability for excitation of a mixed eigenstate $\ket{m}$.
 
 The relative fluorescence intensity among an incoherent ensemble of
-singlet$\sim$triplet mixed eigenstates is examined after a time delay
-$t$.  The upper limit of time delay that can be selected in our LIF
-experiments is determined by the field-of-view of the fluorescence
-detection optics.  In this study, the field-of-view of the
-fluorescence detection optics is about 5 mm.  The maximum viewing time
-is therefore about about 5 \microsec\ $\approx 18\tau_s$, for
+singlet$\sim$triplet mixed eigenstates is examined after a selectable
+time delay $t$.  The upper limit of time delay that can be selected in
+our LIF experiments is determined by the field-of-view of the
+fluorescence detection optics.  In this study, the field-of-view of
+the fluorescence detection optics is about 5 mm.  The maximum viewing
+time is therefore about about 5 \microsec\ $\approx 18\tau_s$, for
 molecules travelling in the molecular beam with average velocity
 $\approx 10^3$ m/s.  At a time delay greater than $18\tau_s$, no
 molecules remain to be seen within the fluorescence field of view.
@@ -1377,7 +1360,7 @@ $K_T=2$ doorway level.
       show a singlet $K=1$ vibrational level between the $K=1$ and
       $K=2$ sublevels of a triplet.}}
   \label{fig:double-doorway-k-levels}
-
+  \centering
 
   \vspace{4in}
   [DIAGRAM OF RELATIVE\\ 

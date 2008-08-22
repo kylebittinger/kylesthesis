@@ -1,2 +1,64 @@
 \ProvidesPackage{kylesthesis}
 
+%
+% imports
+%
+
+\usepackage{
+  lgrind, 
+  braket, 
+  amsmath, 
+  paralist, 
+  amssymb, 
+  bbm, 
+  booktabs,
+  subfig, 
+  color
+}
+
+\usepackage[version=3]{mhchem}
+\usepackage[pdftex]{graphicx}
+\graphicspath{{figures/}}
+
+%
+% notes
+%
+
+\newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
+\newcommand{\NOTE} [1]{\textcolor{magenta}{[\emph{#1}]}}
+\newcommand{\POINT}[1]{\textcolor{magenta}{\textbf{POINT:} #1}}
+
+% formatting
+
+\newcommand{\bigspace}{$
+  \;
+  $}
+
+% spectroscopic notation
+
+\newcommand{\astate}{$
+  \tilde{A} \: ^1\!A_u
+  $}
+\newcommand{\AtoX}{$
+  \tilde{A} \: ^1\!A_u 
+  \leftarrow 
+  \tilde{X} \: ^1\Sigma_g^+
+  $}
+\newcommand{\StoS}{$S_1 \leftarrow S_0$}
+\newcommand{\Ka}[1]{$K_a\!\!=\!#1$}
+
+% units
+
+\newcommand{\microsec}{$\mu$s}
+\newcommand{\rcm}{cm$^{-1}$}
+
+% scientific notation
+\newcommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+% temperatures
+\newcommand{\degrees}{\ensuremath{^\circ}}
+
+% hyphenation
+\hyphenation{acetylene}
+\hyphenation{Hamiltonian}
+\hyphenation{nominal}

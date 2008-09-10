@@ -119,7 +119,18 @@ of an injection-seeded Nd:YAG (MODEL) to a dye laser containing LDS
 
 
 \begin{figure}
-  \caption{Double resonance methods used in this study.}
+  \caption{Schematic diagram of the IR-UV double resonance methods
+    used in this study.  In the survey method, the Q(1)-Q(5)
+    transitions terminating in the $\nu_3''+\nu_4''$ level of the
+    ground state are pumped at a single IR laser energy.  From the
+    resulting $f$-symmetry rotational levels, Q-branch transitions in
+    the UV are permitted to the $3^34^1$ \Ka{0} sublevel, and P or
+    R-branch transitions are permitted to the $3^36^1$ \Ka{0}
+    sublevel.  In the individual method, a single P or R-branch
+    transition is excited in the ground state.  In this case,
+    $e$-symmetry levels of $\nu_3''+\nu_4''$ are excited by the IR
+    laser, and the selection rules for P, R vs. Q branches in the UV
+    are reversed.}
   \label{fig:levels-iruvdr}
   \centering
 
@@ -155,48 +166,78 @@ transitions in polyatomic molecules originally discussed by Hougen
 
 \TODO{Show character tables and axis labels for \emph{trans}
   acetylene.  Discuss the correspondence between the ($a,b,c$) axis
-  system and the ($x,y,z$).  See p.9, 18--19 in 4/2007--8/2007 notebook.}
+  system and the ($x,y,z$).  See p.9, 18--19 in 4/2007--8/2007
+  notebook.}
 
 \begin{table}
+  \caption{Spin-orbit selection rules between the $S_1$ $3^34^1$,
+    $3^36^1$ vibrational levels and vibrational levels of the $T_3$
+    electronic state.  When $\Delta K=0$, the singlet levels may only
+    interact with $T_3$ vibrational levels of the same symmetry.  The
+    restriction is lifted when $\Delta K=1$.
+  }
+  \label{table:delta-k}
   \centering
-
   \begin{tabular}{llllrl}
     Vib.
     & $^{v}\Gamma_S$ & $^{ev}\Gamma_S$ & $\Gamma_\sigma$ & $\Delta K$ & $^{v}\Gamma_T$ \\
     \toprule
-
+    
     $3^3 4^1$ 
     & $a$ & $^{1}A$ & $B$ & $0$ & \textcolor{red}{$a$} \\
     & & & $A, B$ & $\pm1$ & $a, b$ \\[10pt]
-
+    
     $3^3 6^1$ 
     & $b$ & $^{1}B$ & $B$ & $0$ & \textcolor{red}{$b$} \\
     & & & $A, B$ & $\pm1$ & $a, b$ \\
-
+    
   \end{tabular}\\[5mm]
-
+  
   $C_{2}$ symmetry, $^{e}\Gamma_T =$ $^{3}B$
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% INSERT MATRIX ELEMENT FIGURE HERE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
   \caption{Rotational factors of spin-orbit matrix elements between
     rovibrational levels of the $S_1$ and $T_3$ electronic states,
-    $K_S$=0.  The plot includes all nonzero matrix elements for each
-    spin component of a $T_3$ sublevel with $K_T=0,1$.  Transitions
-    having $\Delta K = \Delta N = 0$ are forbidden according to
-    parity.}
+    where $K_S$=0.  A $K_S$=0 level may mix with $T_3$ levels having
+    $K_T=0,1$.  Transitions having $\Delta K = \Delta N = 0$ are
+    forbidden according to parity.}
   \centering
   \includegraphics[width=6in]{rotational-factors-k0.pdf}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% END MATRIX ELEMENT FIGURE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Because the $3^34^1$ and $3^36^1$ \Ka{0} sublevels are of opposite
 parity, they may not mix with the same triplet sublevels having
 $K_T=0$.
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% INSERT SINGLET-TRIPLET FIGURES HERE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{figure}
-  \caption{Nonzero matrix elements between the $S_1$ $3^34^1$,
-    $3^36^1$ \Ka{0} sublevels and $T_3$ sublevels having $K_T=0$.}
+  \caption{Diagram of spin-orbit rotational selection rules between
+    the $S_1$ $3^34^1$, $3^36^1$ \Ka{0} sublevels and $T_3$ sublevels
+    having $K_T=0$.  When $K_T=K_S=0$, each singlet sublevel may only
+    mix with zero-order triplet sublevels of the same vibrational
+    symmetry.}
   \label{fig:levels-k0}
   \centering
 
@@ -205,13 +246,23 @@ $K_T=0$.
 \end{figure}
 
 \begin{figure}
-  \caption{Nonzero matrix elements between the $S_1$ $3^34^1$,
-    $3^36^1$ \Ka{0} sublevels and $T_3$ sublevels having $K_T=1$.}
+  \caption{Diagram of spin-orbit rotational selection rules between
+    the $S_1$ $3^34^1$, $3^36^1$ \Ka{0} sublevels and $T_3$ sublevels
+    having $K_T=1$.  In this case, mixing is not restricted by
+    vibrational symmetry, and the singlet sublevels are permitted to
+    mix with the same zero-order triplet sublevel.}
   \label{fig:levels-k1}
   \centering
 
   \includegraphics[width=8in,angle=90]{levels-k1}
 \end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% END SINGLET-TRIPLET FIGURES
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -348,7 +399,11 @@ state, the IR laser was tuned to
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% INSERT 3^3 6^1 POLARIZATION FIGURES HERE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
   \caption{Simultaneously recorded SEELEM (upper trace) and LIF (lower
@@ -382,6 +437,31 @@ state, the IR laser was tuned to
   \centering
   \includegraphics[width=7.3in,angle=90]{spectrum-3361-p1-split.pdf}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% END OF 3^3 6^1 POLARIZATION FIGURES
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% INSERT 3^3 4^1 FIGURES HERE
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
   \caption{Simultaneously recorded SEELEM (upper trace) and LIF (lower
@@ -417,6 +497,13 @@ state, the IR laser was tuned to
   \centering
   \includegraphics[width=6in]{spectrum-3341-p2-split.pdf}
 \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% END OF 3^3 4^1 FIGURES
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \POINT{Present polarization spectrum for rotationless level of
   $3^36^1$.}

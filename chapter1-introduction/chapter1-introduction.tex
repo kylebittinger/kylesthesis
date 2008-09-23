@@ -15,23 +15,38 @@
 \clearpage
 
 \chapter{Introduction}
+\label{chapter:intro}
 
 \section{The importance of studying triplet states and intersystem
   crossing}
 
-\POINT{Introduce triplet states and motivate research. Metastable
-  energy carriers, easy to populate collisionally, hard to study.}
+The lowest electronically excited state of many organic molecules is
+triplet.  From a singlet ground state, optical transitions to triplet
+states are nominally forbidden.  Triplet electronic states are easy to
+poulate collisionally, and their long lifetimes make them important
+chemical reaction intermediates.
 
-\POINT{Introduce ISC as the dynamical manifestation of mixing between
-  states of different multiplicities \cite{kommandeur87, robinson67,
-    tramer05}.}
+Intersystem Crossing (ISC) is the dynamical manifestation of mixing
+between singlet and triplet excited states \cite{kommandeur87,
+  robinson67, tramer05}.
 
-\POINT{Introduce ISC parameter $\gamma = \langle H_{sd} \rangle /
-  \rho_d$}
+The general properties ISC are determined by the parameter $\gamma$,
+which is the product of the average singlet-triplet matrix element and
+the density of triplet states,
+\begin{equation}
+\gamma = \langle H_{sd} \rangle \; \rho_d.
+\end{equation}
 
 \TODO{Go through talks, proposals and gather motivation points.}
 
+\section{Spectroscopic investigations of singlet and
+  triplet electronic states in acetylene}
+
+\TODO{Summary: change of geometry upon electronic excitation.}
+
 \TODO{Overview of acetylene spectrum \cite{watson82}.}
+
+\TODO{Review early experimental work on triplet acetylene.}
 
 \section{The low-lying triplet electronic states of acetylene:
   molecular orbital theory and \emph{ab initio} calculations}
@@ -168,11 +183,12 @@ discussion.
 \section{A heirichy of electronic coupling in acetylene: evidence from
   Zeeman anticrossing experiments}
 
-In a Zeeman anticrossing experiment, the laser is locked on an optical
-transition in the molecule (we'll call this ``the singlet level'').
-As the magnetic field is tuned, triplet-mixed levels tune through
-resonance with the singlet.  Relative to the singlet level at
-$E=0$, the energy of a mixed triplet level is (linear Zeeman effect)
+In a Zeeman anticrossing experiment, the laser is positioned on an
+optical transition terminating in a nominally singlet rovibronic level
+of the molecule.  As the magnetic field is increased, triplet-mixed
+levels tune through resonance with the singlet.  Relative to the
+singlet level at $E=0$, the energy of a mixed triplet level is (linear
+Zeeman effect)
 \begin{equation}
 E = g \, M_s \, \mu_B \, (B-B_0),
 \end{equation}
@@ -180,11 +196,11 @@ where $g$ is the mixed-triplet level's $g$-factor, $M_s$ is the
 lab-fixed projection of spin, $B_0$ is the field required to bring the
 level's energy to 0, and $\mu_B$ is the Bohr magneton (constant).  An
 excited electron which is not coupled to the molecular axis (Hund's
-case \emph{b}) has a $g$-factor of $2.0023$.
+case (\emph{b}) limit) has a $g$-factor of $2.0023$.
 
 When the singlet level and one of the weakly interacting background
-levels are at exactly the same energy, they become 50:50 mixed.  When
-this happens under the experimental conditions, half the molecules
+levels are at exactly the same energy, they become 50:50 mixed.  Under
+these circumstances, half the molecules excited in the experiment
 decay by collision instead of fluorescence, and the fluorescence
 intensity decreases by half.  The \emph{width} of the resonance is
 proportional to the matrix element between the bright state and the
@@ -192,8 +208,6 @@ interacting level:
 \begin{equation}
 \Delta B = \frac{4\,V}{g\,\mu_B}
 \end{equation}
-
-What were the results and conclusions of these experiments?
 
 \subsection{Paper 1: Anomalous behavior of the anticrossing density}
 
@@ -314,9 +328,6 @@ Fourier xform of anticrossing spectra for $\nu_3=0-4$.
   matrix element.
 \end{description}
 
-\section{Doorway-mediated intersystem crossing in acetylene: evidence
-  from laser-induced fluorescence and quantum beats}
-
 \POINT{Summarize and explain the results of the Zeeman anticrossing
   experiments.} 
 
@@ -345,8 +356,10 @@ interactions between the electronic states of acetylene:
   T_1 \sim T_2 \gg S_1 \sim T \gg S_0 \sim T \gg S_1 \sim S_0
 \end{equation}
 
-\POINT{Talk about the ZQB experiments of Tsuchiya.}
+\section{Doorway-mediated intersystem crossing in acetylene: evidence
+  from laser-induced fluorescence and quantum beats}
 
+\POINT{Talk about the ZQB experiments of Tsuchiya.}
 
 \POINT{Discuss observation of triplet perturbations by HB/AHS/AM in
   their investigation of bending polyads.}
@@ -355,10 +368,35 @@ interactions between the electronic states of acetylene:
 \section{Detection of laser-excited metastables by surface electron
   ejection}
 
-\POINT{Introduce method and cite papers by Chesnovsky.}
+The experimental technique of Surface Electron Ejection by
+Laser-Excited Metastables (SEELEM) was developed by Ofer Sheh and Ori
+Cheshnovsky to study intermediate-case ISC in organic molecules such
+as aniline and isoquiniline \cite{sneh86, sneh88, sneh89a, sneh89b,
+  sneh91}.  The use of laser excitation to populate metastable states
+is curious, because optical transitions to such states are nominally
+forbidden.  The nature of SEELEM detection, however, sidesteps this
+problem by maintaining a low level of background electron counts.
 
-\POINT{Talk about earlier SEELEM experiments on acetylene.}
+To eject an electron from the grounded metal surface of the SEELEM
+detector, a molecule must possess a vertical excitation energy in
+excess of the work function, $\Phi$, of the metal.  A gold surface was
+used in all the experiments described in this thesis, $\Phi = 5.1$ eV.
+Sneh and coworkers have shown that excess vibrational energy in the
+molecule does not affect the SEELEM sensitivity \cite{sneh86}.  The
+exception that proves the rule is the \ce{NO} molecule, where
+vibrations in the excited state have a drastic impact on the dipole
+moment \cite{white05}.
 
+The SEELEM technique was applied to the study of small molecules and
+diatomics by Wodke and coworkers.  The SEELEM apparatus at MIT was
+designed and built by Kevin Cunningham and Selen Altunata, first as a
+single-chamber experiment, and later as a differentially-pumped
+two-chamber experiment \cite{cunningham-thesis, altunata-thesis}.  The
+apparatus was refined by subsequent workers, such as Ryan Thom, who
+re-engineered the mounting and electrical connections for the detector
+itself \cite{thom-thesis}.
+
+\TODO{Describe apparatus in detail and provide a picture.}
 
 \section{Summary}
 
@@ -379,12 +417,15 @@ includes two doorway states: one distant doorway state with a large
 matrix element controls the overall coupling strength, while another
 local doorway with a smaller matrix element is responsible for
 splittings at low values of the rotational quantum number $J$.
+
 Several other vibrational levels of $S_1$ acetylene are investigated
 in Chapter 5.  The complex interplay between bending vibrations and
 Singlet$\sim$Triplet coupling is apparent from the drastically
 different LIF/SEELEM spectra obtained.  We discuss the ubiquitous role
 of $T_3$ in mediating $S_1 \sim T_{1,2}$ coupling in light of these
-results.  Chapter 6 presents the results of IR-UV double resonance
+results.  
+
+Chapter 6 presents the results of IR-UV double resonance
 SEELEM experiments, which reveal similar Singlet-Triplet coupling
 characteristics for the torsion and antisymmetric in-plane bending
 motions.
@@ -393,7 +434,9 @@ We depart from our study of the acetylene molecule in Chapter 7, where
 a new method is considered for the manufacture of metastable molecules
 in a molecular beam.  The basis of this method is two-photon optical
 pumping of metastable atoms followed by collisional excitation
-transfer.  Chapter 8 concludes and discusses the prospects for future
+transfer.  
+
+Chapter 8 concludes and discusses the prospects for future
 research.
 
 \bibliography{master}

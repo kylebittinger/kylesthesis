@@ -1,16 +1,6 @@
 \documentclass[12pt]{mitthesis} 
-
-\usepackage{lgrind, braket, amsmath,
-  amssymb, bbm, booktabs, subfig, color} 
 \usepackage[pdftex]{graphicx}
-\usepackage[version=3]{mhchem}
-
-\newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
-\newcommand{\POINT}[1]{\textcolor{magenta}{\emph{#1}}}
-
-\hyphenation{acetylene}
-\hyphenation{Hamiltonian}
-
+\usepackage{kylesthesis}
 \begin{document}
 
 \tableofcontents
@@ -24,18 +14,266 @@
 
 \section{Introduction}
 
-\section{Theory: two-photon selection rules and transition probabilities}
 
-\POINT{Introduce theory of two-photon transitions and give formulas.}
+Although molecular triplet states are hard to populate optically, they
+are easily generated in electronic-energy exchanging collisions.  In
+fact, this property is one of the primary resons for studying triplets
+in the first place.  We should be able to generate large numbers of
+triplet molecules by first creating large numbers of metastable atoms,
+and then letting collisions do the work.
+
+The process of mercury photosentization is well-known in organic
+chemistry \cite{brown89, brown88, crabtree92, cvetanovic64,
+  phillips74, strausz70}.  The common technique is to place mercury
+and reactants in a heated reaction vessel, and irradiate with 257 nm
+light from a mercury resonance lamp \cite{brown87}.
+
+The first experimental detection of acetylene triplet states was
+accomplished using the process of mercury photosensitization.  Later,
+Kanamori and coworkers have used mercury photosensitization to study
+the \emph{cis}-$T_2$ $\leftarrow$ \emph{cis}-$T_1$ absorption spectrum
+of acetylene.
+
+The main drawback to using a traditional mercury photosensitization
+technique with acetylene is polymer formation.  This process is well
+known to photochemists \cite{shida58, leroy44}, and to any unfortunate
+spectroscopists who have used the technique.
+
+The rate of polymer formation could be kept to a minimum if the number
+density of mercury atoms could be carefully controlled.  In addition,
+it would be nice if the particular atomic metastable state could be
+selected based on the desired electronic energy.  In addition, we
+would like to carry out experiments in a molecular beam, so that
+rotational and vibrational cooling could concentrate the population of
+triplet molecules to a relatively small number of rovibronic states.
+
+We have developed, using a technique of optical pumping via two-photon
+transitions, a method for generating large numbers of metastable atoms
+in the early stages of a supersonic expansion, without polymer
+formation.  We demonstrate the general principles of the technique for
+the \ce{Xe}* + \ce{N2} system, and then report progress on
+\ce{Hg}* + \ce{C2H2}.  We first discuss the details of two-photon
+transitions in atoms, and weigh the various options for optical
+pumping.
+
+\section{Theory: Optical pumping of atomic metastables via two-photon
+  transitions}
+
+Our goal is to populate metastable excited states of mercury and xenon
+atoms.  The lowest-energy excited state term of both atoms is
+$^{1,3}P$, arising from a $6s6p$ configuration in mercury and a
+$5p^56s$ configuration in xenon.  The $^{1,3}P$ term contains two
+metastable levels, $^3P_0$ and $ ^3P_1$.
+
+We examine the level structure of mercury first.  Excitation of one
+electron into a $6p$ orbital gives rise to four energy levels: $^3P_0$,
+$^3P_1$, $^3P_2$, and $^1P_1$.  The matrix of spin-orbit interaction
+among these low-lying levels is
+\begin{equation}
+  \text{TODO: Insert condon and Shortley s.o. matrix here. Get Condon
+    book from MIT.}
+\end{equation}
+The $^3P_1$ level is contaminated with singlet character to first
+order; the $^3P_0$ acquires a small amount of singlet character to
+second order.  The $^3P_2$ level has no spin-orbit interaction pathway
+to the singlet, and is essentailly a pure triplet state.  The
+lifetimes of the $^3P_0$ and $^3P_2$ levels are so excessively long
+that experimental measurement is difficult.  Theoretical predictions
+for the lifetimes of the $^3P_0$ and $^3P_2$ levels are on the order
+of 1.0 and 0.5 s, respectively \cite{mishra01}.
+
+The metastable triplet levels may be populated by radiative decay from
+from singlet$\sim$triplet mixed levels at higher energy.  We examine a
+series of potential two-photon excitation schemes, which result in
+population of either $^3P_0$ and $^3P_1$, or both.  Many of the
+high-lying atomic levels which radiate directly to $^3P_0$ and $^3P_1$
+have been carefully studied, and accurate branching ratios are
+available \cite{benck89}.  \TODO{Get Hg* folder from MIT.}  Two
+especially promising candidates are $6 \; ^3D_2$ and $7 \; ^3S_1$.
+The $6 \; ^3D_2$ level has a natural lifetime of 9 ns and a branching
+ratio of 61:17:22 among the $^3P_1$, $^3P_2$, and $^1P_1$ levels
+\cite{benck89}.  Thus, it is suitable to populate the higher-energy
+metastable level, $^3P_2$.  The $7 \; ^3S_1$ level radiates only
+within the $6 \; ^3P$ manifold, with a branching ratio of 17:45:39
+among the $^3P_0$, $^3P_1$, and $^3P_2$ levels \cite{benck89}.  Both
+metastable levels may be populated via radiative decay from $7 \;
+^3S_1$.
+
+Since we will consider some two-photon absorption (TPA) schemes that
+include photons of unequal frequency, we must use a general formula
+for two-photon transition probability.  Starting from the atomic
+ground state, $\ket{i}$, the two-photon transition probability to a
+final state $\ket{f}$ is given by
+\begin{equation}
+  \label{eq:tpa-prob}
+  \begin{split}
+    P_{f \leftarrow i} = &\: \: \frac{2 \pi}{\hbar^4}
+    \left \lvert
+      \sum_a
+      \frac{
+        \braket{f|\hat{\epsilon}_1 \cdot \bar{D}|a}\braket{a|\hat{\epsilon}_2 \cdot \bar{D}|f}
+      }{
+        \omega_{ai} - \omega_2 + i \Gamma_a / 2
+      } + \frac{
+        \braket{f|\hat{\epsilon}_2 \cdot \bar{D}|a}\braket{a|\hat{\epsilon}_1 \cdot \bar{D}|f}
+      }{
+        \omega_{ai} - \omega_1 + i \Gamma_a / 2
+      }
+    \right \rvert ^2\\[2mm]
+    & \: \: \: \: \: \: \times 
+      \frac{1}{\pi} 
+      \frac{
+        \Gamma_f / 2
+      }{
+        (\omega_1 + \omega_2 - \omega_{fi})^2+(\Gamma_f/2)^2
+      } \frac{
+        \omega_1 \omega_2
+      }{
+        4 \epsilon_0^2 c^4 k_1 k_2
+      } \bar{I}_1 \bar{I}_2,\\
+  \end{split}
+\end{equation}
+where the index $a$ runs over all intermediate states \cite{bonin84,
+  grynberg77}.  In the formula above, $\omega_n = E_n / \hbar$ is the
+energy of $\ket{n}$ in units of s$^{-1}$, $\omega_{nm} = (E_n -
+E_m)/\hbar$ is the energy difference between $\ket{n}$ and $\ket{m}$
+in units of s$^{-1}$, $\Gamma_n$ is the natural width of $\ket{n}$,
+$\hat{\epsilon}_{1,2}$ is the unit polarization vector for each
+photon, $k_{1,2}$ is the wave-vector magnitude of each photon, and
+$\bar{I}_{1,2}$ is the intensity of each beam.
+
+The following two-photon optical pumping schemes were investigated: 
+\renewcommand{\theenumi}{(\alph{enumi})}
+\renewcommand{\labelenumi}{\theenumi}
+\begin{enumerate}
+  \item one color TPA to $7 \; ^3S_1$,
+  \item two color TPA to $7 \; ^3S_1$, with one laser tuned to the
+    $7 \; ^3S_1 \rightarrow 6 \; ^3P_0$ downward transition,
+  \item two color TPA to $7 \; ^3S_1$, using the  3nd harmonic Nd:YAG
+    laser output at 355 nm,
+  \item one color TPA to $6 \; ^3D_2$, and
+  \item two color TPA to $6 \; ^3D_2$, with one laser tuned to the
+    $6 \; ^3D_2 \rightarrow 6 \; ^3P_2$ downward transition.
+\end{enumerate}
+Figure \TODO{fig:hg-tpa-levels} shows the various optical pumping
+schemes on an energy level diagram for the mercury atom.  For each
+scheme, the total transition probability for TPA was calculated using
+formula \ref{eq:tpa-prob}, yielding a final transition probability in
+units of $\text{s}^{-1}(\text{W cm}^2)^{-2}$.  The calculated
+transition probabilites for each scheme are displayed in Figure
+\TODO{fig:hg-tpa-prob}.
+
+\begin{figure}
+  \caption{Diagram of possible two-photon excitation schemes for
+    population of the $6 \; ^3P_0$ and $6 \; ^3P_2$ metastable excited
+    states of Hg.  Excitation to the $7 \; ^3S_1$ level is followed by
+    spontaneous decay to both metastable levels, while excitation to
+    the $6 \; ^3D_2$ is followed spontaneous decay to only one of the
+    metastable levels, $6 \; ^3P_2$.  The various schemes, labeled
+    (a)-(e), are described in the text.  A dashed arrow is used to
+    indicate two-photon excitation schemes that utilize photons of two
+    different frequencies.}
+  \label{fig:tpa-levels}
+  \centering
+  \includegraphics[height=8in,trim=4mm 0 0 0]{Hg-opticalpumpingschemes.pdf}
+\end{figure}
+
+% \begin{figure}
+%   \caption{...}
+%   \label{fig:tpa-prob}
+% \end{figure}
+
+
+One color TPA to $7 \; ^3S_1$, is rigorously forbidden, due to
+interference between the quantum mechanical pathways leading from the
+initial to final state.  Figure \TODO{fig:hg-forbidden} shows the
+possible pathways, and their phases according to Formula
+\ref{eq:tpa-prob}.
+
+\POINT{Discuss selection rule against $J=1 \leftarrow 0$ for equal
+  frequency photons.}
+
 
 \POINT{Show relative transition probabilities for various one- and
   two-color pumping schemes}
 
-\section{Experiment: TOF-SEELEM}
+\section{Theory: A collision model for electronic excitation transfer}
+
+\section{Experiments: \ce{Xe}* + \ce{N2}}
+
+\begin{figure}
+  \caption{Laser-Induced Fluorescence (LIF) spectrum of the one color,
+    two photon transition \ce{Xe} $6\;^3D_2 \leftarrow \leftarrow
+    6\;^1S_0$, recorded under static cell conditions.  The LIF signal
+    results from spontaneous emission to the metastable $6\;^3P_2$
+    state at 823 nm.}
+  \label{fig:xe3d2-cell}
+  \centering
+  \includegraphics[width=6in]{Xe3D2-cell.pdf}
+\end{figure}
+
+\begin{figure}
+  \caption{Time dependence of \ce{N2} $B \rightarrow A$ emission,
+    induced by collisions with metastable Xe* ($^3P_2$).  The static
+    cell contained a 50:50 mixture of Xe and \ce{N2}, at a total
+    pressure of ???  mTorr.  Metastable Xe* ($^3P_2$) was populated by
+    spontaneous emission, following the $6\;^3D_2 \leftarrow
+    \leftarrow 6\;^1S_0$ two-photon transition.}
+  \label{fig:xen2-firstlight}
+  \centering
+  \includegraphics[width=7in,trim=2cm 0 1in 0]{XeN2-firstlight.pdf}
+\end{figure}
+
+\begin{figure}
+  \caption{(Top) Laser-Induced Fluorescence (LIF) spectrum of the one
+    color, two photon transition \ce{Xe} $6\;^3D_2 \leftarrow
+    \leftarrow 6\;^1S_0$, recorded in a supersonic expansion.
+    (Bottom) Time dependence of \ce{Xe} $6\;^3D_2 \rightarrow
+    6\;^3P_2$ emission (solid trace), compared to a magnified signal
+    resulting from scattered laser light (dashed trace). The
+    fluorescence signal results from spontaneous emission to the
+    metastable $6\;^3P_2$ state at 823 nm ($\tau = 28$ ns).
+    \TODO{Change top plot to LIF intensity.}}
+  \label{fig:xe-beam}
+  \centering
+  \includegraphics[width=6in]{Xe-beamlif-060406.pdf}
+  \includegraphics[width=6in]{Xe-beamtrc-060406.pdf}
+\end{figure}
+
+\begin{figure}
+  \caption{Time dependence of \ce{Xe} $6\;^3D_2 \rightarrow 6\;^3P_2$
+    (top plot) and \ce{N2} $B \rightarrow A$ (bottom plot) emission,
+    following the two-photon excitation of Xe ($^3D_2$) in a
+    supersonic expansion.  The xenon and nitrogen emission signals
+    occur on vastly different timescales.  Xenon fluorescence (823 nm,
+    $\tau=28$ ns) is emitted when the optically excited state decays
+    spontaneously to the metastable $6\;^3P_2$ state.  Nitrogen
+    molecules are electronically excited during the expansion process
+    in collisions with metastable xenon atoms.  Near-resonant
+    vibrational levels of the nitrogen $B$ state decay spontaneously
+    to the metastable $A$ state ($\tau=20$ \microsec), accompanied by
+    fluorescence in the visible region of the spectrum.}
+  \label{fig:xen2-traces}
+  \centering
+  \includegraphics[width=7.7in,angle=90,trim=0 0 1in 1cm ]{XeN2-traces.pdf}
+\end{figure}
+
+
 
 \section{Experiments: \ce{Hg}* + \ce{C2H2}}
 
 \POINT{Discuss direct excitation to Hg*($^3P_2$).}
+
+\begin{figure}
+  \caption{Laser-Induced Fluorescence (LIF) spectrum of the one color,
+    two photon transition \ce{Hg} $6\;^3D_2 \leftarrow \leftarrow
+    6\;^1S_0$, recorded under static cell conditions.  The LIF signal
+    results from spontaneous emission to the metastable $6\;^3P_2$
+    state at 365 nm.}
+  \label{fig:hg3d2-cell}
+  \centering
+  \includegraphics[width=6in]{Hg3D2-cell.pdf}
+\end{figure}
 
 \TODO{Figure: Direct excitation to Hg*($^3P_2$). (See p.47 of
   11/2007--1/2008 notebook.)}
@@ -44,4 +282,6 @@
 
 \section{Conclusions}
 
+\bibliography{master} 
+\bibliographystyle{plain}
 \end{document}

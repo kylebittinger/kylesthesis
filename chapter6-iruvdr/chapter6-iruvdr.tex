@@ -725,8 +725,8 @@ mediated by specific vibrational levels of the $T_3$ electronic state
 The average vibrational level spacing of $T_3$ is on the order of 10
 \rcm, similar to that of $S_1$ \cite{thom07}.  In the majority of
 cases, the $T_3$ levels, which mediate $S_1 \sim T_{1,2}$ mixing, do
-not appear in the spectrum of an $S_1$ transition.  However, the
-spectrum contains evidence of the presence of remote $T_3$ doorway
+not appear in the spectrum of an $S_1$ transition.  However, a
+spectrum may still contain signatures of remote $T_3$ doorway
 levels ($S_1 \sim T_3$ energy separation greater than 2 \rcm),
 primarily as a result of the $J'$-dependence of $S_1 \sim T_3$ energy
 denominators.  Four examples of this behavior are discussed in Chapter
@@ -734,20 +734,20 @@ denominators.  Four examples of this behavior are discussed in Chapter
 
 An analysis of the early vs. delayed LIF spectrum is our primary tool
 for characterizing such distant doorway states.  In Chapter 4.3, it was
-shown that a non-local $T_3$ doorway level gives rise to a shift in
+shown that a remote $T_3$ doorway level may give rise to a dependence of
 the LIF center of gravity,
 \begin{equation}
-  E_{\text{ave}} = \int E \times I(E) \; dE,
+  E_{\text{ave}} = \int E \times I_t(E) \; dE,
 \end{equation}
-when studied as a function of time delay.  The effect results from
-drastically shorter fluorescence lifetime for the nominal $S_1$
-eigenstate relative to nearby, nominally triplet eigenstates.  The
-contrast in fluorescence liftimes leads to changes in relative
-eigenstate intensity as a function of time: at early times, the center
-of gravity is dominated by the nominal $S_1$ state, while at longer
-delay times, the center of gravity is dominated by nominally triplet
-eigenstates.  However, if the nominal $S_1$ eigenstate acquires more
-triplet character, the contrast in fluorescence lifetimes is reduced,
+on time delay, $t$.  The effect results from drastically shorter
+fluorescence lifetime for the nominal $S_1$ eigenstate relative to the
+cluster of nearby, nominally triplet eigenstates.  The contrast in
+fluorescence liftimes leads to changes in relative eigenstate
+intensity as a function of time: at early times, the center of gravity
+is dominated by the nominal $S_1$ state, while at longer delay times,
+the center of gravity is dominated by nominally triplet eigenstates.
+However, if the nominal $S_1$ eigenstate acquires more triplet
+character, the contrast in fluorescence lifetimes is reduced,
 deceasing the rate of change in center of gravity vs. time delay.
 
 The relatively large line splittings observed in the spectrum of
@@ -781,10 +781,10 @@ evaluated by working in a mixed $S_1 \sim T_3$ basis, described in
 Chapter 2.2.1.  In the mixed basis, the $S_1 \sim T_3$ spin-orbit
 interaction is prediagonalized, resulting in a doorway-mixed $S_1$
 state, $\ket{\tilde{s}}$, and an $S_1$-mixed doorway state,
-$\ket{\tilde{\ell}}$.  The ratio of $S_1$ and $T_3$ amplitudes in
-$\ket{\tilde{s}}$ is determined by the mixing angle $\alpha$ between
-the pure $S_1$ basis state, $\ket{s}$, and the $T_3$ doorway,
-$\ket{\ell}$:
+$\ket{\tilde{\ell}}$.  Following Chapter 2, the ratio of $S_1$ and
+$T_3$ amplitudes in $\ket{\tilde{s}}$ is determined by the mixing
+angle $\alpha$ between the pure $S_1$ basis state, $\ket{s}$, and the
+$T_3$ doorway, $\ket{\ell}$:
 \begin{equation}
   \ket{\ts} = (1-\alpha^2)^{1/2} \ket{s} + \alpha \ket{\ell}.
 \end{equation}
@@ -806,13 +806,16 @@ $\ket{m}$ may be evaluated using perturbation theory:
 \end{equation}
 The approximate expression applies to remote doorway states, where the
 energy separation $\Delta E_{m \ts}$ is much smaller than the energy
-separation $\Delta E_{m \tl}$.  Both triplet components observed in
-the vicinity of the Q(3) transition interact with the same mixed-$S_1$
-basis state, so the $s,\ell$ mixing angle $\alpha$ is constant for
-both components, $\lvert \braket{m|s} \rvert^2 \propto H_{\ell m}^2 /
-\Delta E_{m \ts}$.  In Chapter 3 we showed that the phases of all
-$H_{\ell m}$ may be taken to be real and positive in a
-doorway-mediated effective Hamiltonian.  Therefore, the relative
+separation $\Delta E_{m \tl}$.  
+
+Both triplet components observed in the vicinity of the Q(3)
+transition interact with the same mixed-$S_1$ basis state, so the
+$s,\ell$ mixing angle $\alpha$ is identical for both components, and
+$\lvert \braket{m|s} \rvert^2 \propto H_{\ell m}^2 / \Delta E_{m
+  \ts}^2$.  In Chapter 3 we showed that a doorway-mediated effective
+Hamiltonian with one doorway state contains no interference pathways,
+and as a result, the phases of all matrix elements may be taken to be
+real and positive.  According to this property, the relative
 magnitudes of the matrix elements $H_{\ell m}$ for two triplet levels
 appearing in the delayed LIF spectrum of the same $S_1$ transition may
 be determined using the expression
@@ -820,9 +823,9 @@ be determined using the expression
   \label{eq:approx-hlm}
   H_{\ell m} \propto \sqrt{ \Delta E_{m \ts}^2 \lvert \braket{m|s} \rvert^2 }
 \end{equation}
-For the Q(3) transition of $3^34^1$ \Ka{0}, the state appearing at
+For the Q(3) transition of $3^34^1$ \Ka{0}, the component appearing at
 lower frequency must have approximately twice the matrix element with
-the doorway state as the state appearing at higher frequency.
+the doorway state as the component appearing at higher frequency.
 
 The pattern of line splittings is reversed in the delayed LIF spectrum
 of $3^36^1$ \Ka{0}, shown in Figures
@@ -869,35 +872,42 @@ under the condition that all LIF intensity supplied by the bright
 state is observed in the spectrum.  When the doorway level is not
 observed in the spectrum, this condition is not met, but the variance
 of the LIF spectrum will certainly be smaller than the variance with
-the doorway level included.  Therefore, in the event that the doorway
-is not observed in the spectrum, the variance of the LIF spectrum may
-be used as a lower bound estimate for $H_{s \ell}^2$.  
+the doorway level included.  \TODO{Estimate total variance from
+  $\alpha, \Delta E$ when doorway is not observed.}  Therefore, in the
+event that the doorway is not observed in the spectrum, the variance
+of the LIF spectrum may be used as a lower bound estimate for $H_{s
+  \ell}^2$.
 
 The approximate lower bound for the matrix element $H_{s \ell}$ was
 determined from the variance of each LIF transition, calculated from
 the integrated ($0.5\tau_s-18\tau_s$) LIF spectrum.  Our results are
 summarized in Table \ref{table:lif-variances}.  The average lower
 bound values of $H_{s \ell}$ for the $3^36^1$ \Ka{0} and $3^34^1$
-\Ka{0} sublevels are on the order of 0.1 \rcm.  The matrix element for
-the local $T_3$ doorway level ($\\Delta E_{s\ell} < 0.3$ \rcm)
-observed in $S_1$ $3^3$ \Ka{1} was determined to be approximately 0.1
-\rcm\ \cite{mishra04}.  However, no local doorway state is observed in
-the $3^36^1$ \Ka{0} and $3^34^1$ \Ka{0} sublevels, so $\Delta
-E_{s\ell} > 2$ \rcm.  This indicates that the $S_1 \sim T_3$ matrix
-elements for the $3^36^1$ \Ka{0} and $3^34^1$ \Ka{0} sublevels must be
-far larger than that observed for the $3^3$ \Ka{1} sublevel.
+\Ka{0} sublevels are on the order of 0.1 \rcm.  To make a comparison,
+the matrix element for the local $T_3$ doorway level ($\Delta
+E_{s\ell} < 0.3$ \rcm) observed in $S_1$ $3^3$ \Ka{1} was determined
+to be approximately 0.1 \rcm\ \cite{mishra04}.  However, no local
+doorway state is observed in the $3^36^1$ \Ka{0} and $3^34^1$ \Ka{0}
+sublevels, so $\Delta E_{s\ell} > 2$ \rcm.  This indicates that the
+$S_1 \sim T_3$ matrix elements for the $3^36^1$ \Ka{0} and $3^34^1$
+\Ka{0} sublevels must be larger than that observed for the $3^3$
+\Ka{1} sublevel.
 
 
 
 \begin{table}
   \caption{Variance of the integrated LIF spectrum for each transition
     observed in the $S_1$ $3^34^1$ \Ka{0} and $3^36^1$ \Ka{0}
-    sublevels.}
+    sublevels.  The quantity $\sqrt{\sigma^2_{LIF}}$ is a lower bound
+    for the $S_1 \sim T_3$ doorway matrix element, $H_{s\ell}$.  Also
+    shown is the time-integrated center of gravity for each
+    transition, $E_{ave}$, as well as the integration region used 
+    in the analysis.}
   \label{table:lif-variances}
   \centering
   \vspace{5mm}
   \begin{tabular}{llll}
-    & $E_{ave}$ & $\sqrt{\sigma^2}$ & Integration region \\
+    & $E_{ave}$ & $\sqrt{\sigma^2_{LIF}}$ & Integration region \\
     \midrule
     \\
     $3^36^1$ \Ka{0} \\
@@ -927,8 +937,13 @@ sublevel.  This places both $T_3$ doorway states at a total energy
 between 45937.8 \rcm\ and 46017.57 \rcm.  Since the $3^34^1$ \Ka{0}
 and $3^36^1$ \Ka{0} sublevels are separated by about 80 \rcm\ in total
 energy, it is unlikely that they mix primarily with the same doorway
-state.  A brief discussion of spin-orbit selection rules lends some
-insight as to the possible identity of candidate $T_3$ doorway levels.
+state.  
+
+
+
+
+
+
 
 
 %These follow a subset of the general rules for singlet$\sim$triplet
@@ -946,19 +961,21 @@ insight as to the possible identity of candidate $T_3$ doorway levels.
 % % system and the ($x,y,z$).  See p.9, 18--19 in 4/2007--8/2007
 % % notebook.
 
-Selection rules for spin-orbit perturbations in polyatomic molecules
-are given by Stevens and Brand, and have been reformulated by other
-authors \cite{stevens73, howard78, dupre84}.  The total first-order
-spin-orbit matrix element between rovibrational states of $S_1$ and
-$T_3$ is the product of three factors: an electronic spin-orbit matrix
-element, a vibrational overlap factor, and a rotational factor arising
-from angular momentum coupling.  Spin-orbit matrix elements follow the
-rotational selection rules $\Delta J = 0$ and $\Delta P = 0$, where
-$P$ is the projection of $J$ on the top axis ($a$-axis) of the
-molecule \cite{hougen64}.  In Hund's case ($b$), the quantum number
-$P$ is mixed among several levels with different values of $K$,
-leading to the case ($b$) selection rule $\Delta K = 0, \pm 1$
-\cite{hougen64, stevens73}.
+A brief discussion of selection rules for spin-orbit perturbations
+lends some insight as to the possible identity of candidate $T_3$
+doorway levels.  Selection rules for spin-orbit perturbations in
+polyatomic molecules are given by Stevens and Brand, and have been
+reformulated by other authors \cite{stevens73, howard78, dupre84}.
+The total first-order spin-orbit matrix element between rovibrational
+states of $S_1$ and $T_3$ is the product of three factors: an
+electronic spin-orbit matrix element, a vibrational overlap factor,
+and a rotational factor arising from angular momentum coupling.
+Spin-orbit matrix elements follow the rotational selection rules
+$\Delta J = 0$ and $\Delta P = 0$, where $P$ is the projection of $J$
+on the top axis ($a$-axis) of the molecule \cite{hougen64}.  In Hund's
+case ($b$), the quantum number $P$ is mixed among several levels with
+different values of $K$, leading to the case ($b$) selection rule
+$\Delta K = 0, \pm 1$ \cite{hougen64, stevens73}.
 
 We express selection rules for spin-orbit perturbations in the
 molecular symmetry group of the $T_3$ state, $C_2$, rather than the
@@ -969,15 +986,15 @@ complication arises, due to a possible reversal of the $b$ and $c$
 inertial axes of a near-prolate top in $C_2$ symmetry.  However, the
 vibration-rotation spin-orbit matrix elements are the same for both
 cases, because the symmetry axis of twofold rotation remains
-perpendicular to the inertial $a$-axis regardless of the relative
+perpendicular to the inertial $a$-axis, regardless of the relative
 orientation of the $b$ and $c$ axes \cite{hougen64}.
 
 The three molecule-fixed spin functions, $\Gamma_{\sigma}$, transform
 as rotations in the molecular symmetry group \cite{hougen64,
-  stevens73}.  It is the symmetry of these functions,
+  stevens73}.  The symmetry of these functions,
 $\Gamma_{\sigma}(J_a)$, $\Gamma_{\sigma}(J_b)$, and
-$\Gamma_{\sigma}(J_c)$ that determines the selection rules for $\Delta
-K$.  Mixing according to $\Delta K =0$ is permitted when the vibronic
+$\Gamma_{\sigma}(J_c)$, determines the selection rules for $\Delta K$.
+Mixing according to $\Delta K =0$ is permitted when the vibronic
 symmetry of the $S_1$ and $T_3$ levels transforms as a rotation about
 the top axis ($a$-axis), $^{ev}\Gamma_S \times ^{ev}\Gamma_T =
 \Gamma_{\sigma}( J_a)$ \cite{stevens73}.  In the $C_2$ molecular
@@ -999,9 +1016,9 @@ sublevel may mix with either $3^36^1$ and $3^34^1$ $K_S=0$, but not
 both.  Mixing according to $\Delta K =0$ is permitted when the
 vibronic symmetry of the $S_1$ and $T_3$ levels transforms as a
 rotation about the $b$ or $c$ axes, $^{ev}\Gamma_S \times
-^{ev}\Gamma_T \supset J_b, J_c$ \cite{stevens73}.  Thus, a $K_T=1$
-vibrational sublevel of any symmetry may mix with a $K_S=0$ sublevel
-of any symmetry.
+^{ev}\Gamma_T \supset \Gamma_{\sigma}(J_b)$ \emph{or} $\Gamma_{\sigma}(J_c)$
+\cite{stevens73}.  Thus, a $K_T=1$ vibrational sublevel of any
+symmetry may mix with a $K_S=0$ sublevel of any symmetry.
 
 \begin{table}
   \caption{Spin-orbit perturbation selection rules between the $S_1$ $3^34^1$, 
@@ -1019,7 +1036,7 @@ of any symmetry.
     \\
     $S_1$ Level
     & $^{v}\Gamma_S$ & $^{ev}\Gamma_S$ & $\Gamma_\sigma$ & $\Delta K$ & $^{v}\Gamma_T$ \\
-    \toprule
+    \midrule
     
     $3^3 6^1$ 
     & $b$ & $^{1}B$ & $B$ & $0$ & $b$ \\
@@ -1041,7 +1058,7 @@ same vibrational level may lead to interference effects.  Figure
 \ref{fig:rotational-factors} shows the magnitudes and relative phases of
 the rotational factors for spin-orbit matrix elements.  The energy
 separation between $K_T=0$ and $K_T=1$ sublevels of the same $T_3$
-vibrational level is on the order of 15-20 \rcm \cite{thom07}.  The total
+vibrational level is on the order of 15$-$20 \rcm\ \cite{thom07}.  The total
 spin-orbit matrix element between vibrational levels of $S_1$ and
 $T_3$ may be as large as approximately 1 \rcm\ \cite{thom07}.  To mix
 appreciably with both $K_T=0$ and $1$ sublevels of the same $T_3$
@@ -1071,8 +1088,6 @@ midway between the triplet sublevels.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The spin-orbit perturbation selection rules between $S_1$ and $T_3$
-sublevels are perhaps best understood in terms of rotational parity.
 The nonzero rotational factors for spin-orbit matrix elements are
 illustrated on energy level diagrams in Figure \ref{fig:levels-k0} for
 $K_T=0$ sublevels, and in Figure \ref{fig:levels-k1} for $K_T=1$
@@ -1124,6 +1139,195 @@ rotational level.
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Having surveyed the vibronic symmetry restrictions and rotational
+selection rules for spin-orbit perturbations, we investigate the
+propensities of vibrational overlap integrals between vibrational
+levels of $S_1$ and $T_3$.  Harmonic frequencies for the $T_3$
+electronic surface have been reported by Bryan Wong, who carried out a
+high-level \emph{ab initio} calculation of the $S_1$ and $T_3$
+electronic surfaces \cite{wong07}.  A significant challenge in this
+work was the diabatization of the $T_2$ and $T_3$ electronic surfaces
+along two strongly coupled modes, the antisymmetric CH stretch and the
+\emph{cis}-bend \cite{thom07}.  The vibrational modes of $S_1$ and
+$T_3$ are numbered differently, since the equilibrium geometry of the
+$T_3$ electronic state has $C_2$ symmetry.  The vibrations of both
+electronic states are identified in Table \ref{table:vibration-ids}.
+The frequency of the $T_3$ torsional vibration, $\nu_2$, is twice as
+large as the corresponding $S_1$ vibration, $\nu_4$.  Conversely, the
+frequencies of the $T_3$ \emph{trans} and \emph{cis}-bending
+vibrations, $\nu_4$ and $\nu_6$, are significantly smaller than those
+in $S_1$.
+
+\begin{table}
+  \caption{The vibrational normal modes of the $S_1$ and $T_3$
+    electronic states. The
+    position of the torsional mode is changed in $T_3$ relative to
+    $S_1$, because $g/u$ symmetry operations are not present in the 
+    $C_2$ molecular symmetry group of $T_3$.
+  }
+  \label{table:vibration-ids}
+  \centering
+  \vspace{5mm}
+  \begin{tabular}{llc}
+    \toprule
+    $S_1$\\
+    $\nu_1$ ($a_g$) & symmetric CH stretch \\
+    $\nu_2$ ($a_g$) & CC stretch \\
+    $\nu_3$ ($a_g$) & \emph{trans}-bend \\
+    $\nu_4$ ($a_u$) & torsion \\
+    $\nu_5$ ($b_u$) & antisymmetric CH stretch \\
+    $\nu_6$ ($b_u$) & \emph{cis}-bend \\
+    \\
+    $T_3$\\
+    $\nu_1$ ($a$) & symmetric CH stretch \\
+    $\nu_2$ ($a$) & torsion \\
+    $\nu_3$ ($a$) & CC stretch \\
+    $\nu_4$ ($a$) & \emph{trans}-bend \\
+    $\nu_5$ ($b$) & antisymmetric CH stretch \\
+    $\nu_6$ ($b$) & \emph{cis}-bend \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Using the results of this \emph{ab initio} calculation, Thom and
+coworkers reported vibrational overlap integrals between $S_1 \:\;
+3\nu_3$ and nearby levels of $T_3$ \cite{thom07}.  The harmonic
+approximation of Sharp and Rosenstock was used to calculate the
+overlap integrals, which is accuate enough to give a general idea of
+the relative energy and magnitude of the vibrational overlap
+\cite{sharp64}.  Using the programs published by Bryan Wong in his
+thesis, we have carried out an identical calculation for the $S_1$
+$3\nu_3+\nu_4$ and $3\nu_3+\nu_6$ levels \cite{wong07}.  Our results
+are summarized in Tables \ref{table:overlap-4} and
+\ref{table:overlap-6}.
+
+For both $S_1$ levels, we find at least one vibrational level of $T_3$
+within 300 \rcm\ that has an extremely large ($\sim 0.1$) overlap
+integral.  When levels with the largest absolute overlap integrals
+are considered, we observe that the $T_3$ \emph{trans}-bending
+vibration ($\nu_4$) and torsional vibration ($\nu_2$) are observed to
+promote vibrational overlap with $S_1$ $3\nu_3+\nu_4$.  For $S_1$
+$3\nu_3+\nu_6$, the $T_3$ levels with the five largest absolute
+vibrational overlap integrals contain quanta in both the \emph{trans}
+and \emph{cis}-bending vibrations ($\nu_4$ and $\nu_6$).
+
+
+
+\begin{table}
+  \caption{Calculated vibrational overlap integrals between $S_1 \:\; 
+    3\nu_3+\nu_4$ and levels of $T_3$ within an energy separation of 
+    300 \rcm.  The energies and vibrational overlap integrals are 
+    calculated in the harmonic approximation, according to the methods
+    outlined by Thom and coworkers \cite{thom07}.  Integrals with an 
+    absolute magnitude of less than $1\times 10^{-6}$ are not shown, 
+    including those that are zero by symmetry.  The five vibrational levels 
+    of $T_3$ with the largest absolute vibrational overlap integrals 
+    are marked with a ($\triangleright$).  One $T_3$ level, 
+    containing 6 quanta of the \emph{trans}-bending vibration ($\nu_4$), 
+    is calculated to have an extremely large vibrational overlap integral 
+    ($\sim$ 0.1) with $S_1 \:\; 3\nu_3+\nu_4$.  Overall, the $T_3$ 
+    \emph{trans}-bending vibration and torsional vibration ($\nu_2$) are 
+    observed to promote vibrational overlap.  The mean and median of the 
+    absolute values of the $T_3$ vibrational overlap integrals for $S_1 \:\; 
+    3\nu_3+\nu_4$ are shown below the table.}
+  \label{table:overlap-4}
+\centering
+\vspace{5mm}
+  \begin{tabular}{llcc}
+\toprule
+& $T_3$ vibrational level & $E - E(S_1 \:\; 3\nu_3+\nu_4)$ (\rcm) & Overlap integral \\
+\midrule
+                 & $\nu_1 + \nu_4$                               &  -294 &  0.0022 \\
+$\triangleright$ & $ 2 \nu_2 + \nu_4$                            &  -267 &  0.037 \\
+$\triangleright$ & $ 6 \nu_4$                                    &  -255 &  0.12 \\
+                 & $10 \nu_6$                                    &  -198 & -0.0002 \\
+                 & $\nu_2 +  6 \nu_6$                            &  -161 & -0.0002 \\
+                 & $\nu_1 +  2 \nu_6$                            &  -152 &  0.0002 \\
+                 & $\nu_3 +  4 \nu_4$                            &  -149 & -0.027 \\
+                 & $ 2 \nu_2 +  2 \nu_6$                         &  -124 &  0.0032 \\
+                 & $ 5 \nu_4 +  2 \nu_6$                         &  -113 &  0.011 \\
+                 & $\nu_4 + \nu_5 + \nu_6$                       &   -86 & -0.014 \\
+                 & $ 2 \nu_3 +  2 \nu_4$                         &   -43 & -0.025 \\
+                 & $\nu_3 +  3 \nu_4 +  2 \nu_6$                 &    -7 &  0.0081 \\
+$\triangleright$ & $ 4 \nu_4 +  4 \nu_6$                         &    29 & -0.028 \\
+                 & $\nu_5 +  3 \nu_6$                            &    56 & -0.0021 \\
+                 & $ 3 \nu_3$                                    &    62 & -0.0013 \\
+$\triangleright$ & $\nu_2 +  4 \nu_4$                            &    66 &  0.080 \\
+                 & $ 2 \nu_3 + \nu_4 +  2 \nu_6$                 &    99 & -0.0047 \\
+                 & $\nu_3 +  2 \nu_4 +  4 \nu_6$                 &   135 & -0.0025 \\
+                 & $ 3 \nu_4 +  6 \nu_6$                         &   171 &  0.0059 \\
+$\triangleright$ & $\nu_2 + \nu_3 +  2 \nu_4$                    &   172 &  0.056 \\
+                 & $\nu_2 +  3 \nu_4 +  2 \nu_6$                 &   208 & -0.023 \\
+                 & $ 2 \nu_3 +  4 \nu_6$                         &   241 & -0.0004 \\
+                 & $\nu_3 + \nu_4 +  6 \nu_6$                    &   277 & -0.0004 \\
+                 & $\nu_2 +  2 \nu_3$                            &   277 &  0.0047 \\
+\midrule
+& & Mean overlap integral (abs. val.): & 0.019 \\
+& & Median overlap integral (abs. val.): & 0.0053 \\
+  \end{tabular}\\[3mm]
+
+\end{table}
+
+\begin{table}
+  \caption{Calculated vibrational overlap integrals between $S_1 \:\; 
+    3\nu_3+\nu_6$ and levels of $T_3$ within an energy separation of 
+    300 \rcm.  The energies and vibrational overlap integrals are 
+    calculated in the harmonic approximation, according to the methods
+    outlined by Thom and coworkers \cite{thom07}.  Integrals with an 
+    absolute magnitude of less than $1\times 10^{-6}$ are not shown, 
+    including those that are zero by symmetry.  The five vibrational levels 
+    of $T_3$ with the largest absolute vibrational overlap integrals 
+    are marked with a ($\triangleright$).  One $T_3$ level, 
+    containing 3 quanta of the \emph{trans}-bending vibration ($\nu_4$) 
+    and one quantum of the \emph{cis}-bending vibration ($\nu_6$), is 
+    calculated to have an extremely large vibrational overlap integral 
+    ($\sim$ 0.2) with $S_1 \:\; 3\nu_3+\nu_6$.  All five $T_3$ levels
+    with the largest absolute vibrational overlap factors contain a combination
+    of the $T_3$ \emph{trans} and \emph{cis}-bending vibrations
+    ($\nu_4$ and $\nu_6$).  The mean and median of the absolute values 
+    of the vibrational overlap integrals for $S_1 \:\; 3\nu_3+\nu_6$ 
+    are larger than those for $S_1 \:\; 3\nu_3+\nu_4$ by less than a 
+    factor of two.
+  }
+  \label{table:overlap-6}
+  \centering
+  \vspace{6mm}
+  \begin{tabular}{llcc}
+\toprule
+& $T_3$ vibrational level & $E - E(S_1 \:\; 3\nu_3+\nu_6)$ (\rcm) & Overlap integral \\
+\midrule
+$\triangleright$ & $\nu_2 +  3 \nu_4 + \nu_6$                    &  -281 & -0.21 \\
+                 & $ 2 \nu_3 +  3 \nu_6$                         &  -248 &  0.0007 \\
+                 & $\nu_3 + \nu_4 +  5 \nu_6$                    &  -212 &  0.0085 \\
+                 & $ 2 \nu_4 +  7 \nu_6$                         &  -175 &  0.010 \\
+                 & $\nu_2 + \nu_3 + \nu_4 + \nu_6$               &  -175 & -0.040 \\
+                 & $\nu_2 +  2 \nu_4 +  3 \nu_6$                 &  -139 & -0.039 \\
+                 & $\nu_3 +  7 \nu_6$                            &   -69 &  0.0007 \\
+                 & $\nu_4 +  9 \nu_6$                            &   -33 &  0.0039 \\
+                 & $\nu_2 + \nu_3 +  3 \nu_6$                    &   -33 & -0.0025 \\
+                 & $\nu_2 + \nu_4 +  5 \nu_6$                    &     3 & -0.017 \\
+                 & $\nu_1 + \nu_4 + \nu_6$                       &    12 & -0.0039 \\
+$\triangleright$ & $ 2 \nu_2 + \nu_4 + \nu_6$                    &    40 &  0.057 \\
+$\triangleright$ & $ 6 \nu_4 + \nu_6$                            &    52 & -0.084 \\
+                 & $ 2 \nu_4 + \nu_5$                            &    78 & -0.027 \\
+                 & $11 \nu_6$                                    &   109 &  0.0005 \\
+                 & $\nu_2 +  7 \nu_6$                            &   146 & -0.0015 \\
+                 & $\nu_1 +  3 \nu_6$                            &   154 & -0.0006 \\
+$\triangleright$ & $\nu_3 +  4 \nu_4 + \nu_6$                    &   157 &  0.090 \\
+                 & $ 2 \nu_2 +  3 \nu_6$                         &   182 &  0.0040 \\
+                 & $\nu_3 + \nu_5$                               &   184 & -0.0018 \\
+                 & $ 5 \nu_4 +  3 \nu_6$                         &   194 &  0.0095 \\
+                 & $\nu_4 + \nu_5 +  2 \nu_6$                    &   220 &  0.0085 \\
+                 & $ 2 \nu_3 +  2 \nu_4 + \nu_6$                 &   263 & -0.0061 \\
+$\triangleright$ & $\nu_3 +  3 \nu_4 +  3 \nu_6$                 &   299 & -0.051 \\
+\midrule
+& & Mean overlap integral (abs. val.): & 0.028 \\
+& & Median overlap integral (abs. val.): & 0.0085 \\
+  \end{tabular}\\[3mm]
+\end{table}
+
+
+
 Although specific $T_3$ doorway levels cannot be identified from our
 spectra, the relative energy of $T_3$ doorways is determined from line
 splittings that appear in the delayed LIF spectra of $S_1$ $3^36^1$
@@ -1131,7 +1335,15 @@ splittings that appear in the delayed LIF spectra of $S_1$ $3^36^1$
 element between the $S_1$ level and the doorway level are estimated
 from the variance of the LIF spectrum.  Additionally, the allowed
 vibrational symmetries of $T_3$ doorway states are discussed above in
-terms of spin-orbit selection rules for $\Delta K$.
+terms of spin-orbit selection rules for $\Delta K$.  To investigate
+the possible identity of $T_3$ doorway levels, we use the previously
+reported programs of Bryan Wong to calculate vibrational overlap
+integrals.  The vibrational overlap integral calculations indicate
+that the $T_3$ \emph{trans}-bending vibration ($\nu_4$) and torsional
+vibration ($\nu_2$) have a propensity to increase vibrational overlap
+with $S_1 \:\; 3\nu_3 + \nu_4$, while a combination of the $T_3$
+\emph{trans} and \emph{cis}-bending ($\nu_6$) vibrations is observed
+to increase vibrational overlap with $S_1 \:\; 3\nu_3 + \nu_6$.
 
 
 
@@ -1185,37 +1397,40 @@ varying $g$-factors.  Such mixing would cause the average $g$-factor
 to be approximately zero as discussed in Section 5.1 of
 \cite{dupre95a}.)
 
-We adopt a simple model, first proposed by Bixon and Jortner, to
-address $T_3 \sim T_{1,2}$ mixing \cite{bixon68}.  Mixing between a
-bright state and an ensemble of equally spaced dark states with
-identical matrix elements results in a Lorentzian distribution of
+We adopt a simple model, based on the classic work of Bixon and
+Jortner, to address $T_3 \sim T_{1,2}$ mixing \cite{bixon68}.  Mixing
+between a bright state and an ensemble of equally spaced dark states
+with identical matrix elements results in a Lorentzian distribution of
 fractional bright state character, $a^2$.  The full width at half
-maximum of the function is
+maximum of the distribution is
 \begin{equation}
   \label{eq:bixon-model}
   \Gamma = 2 \pi v^2 \rho_m,
 \end{equation}
-where $v^2$ is the bright$\sim$dark matrix element, and $\rho_m$ is
-the density of dark states.  According to the doorway model, the $S_1$
+where $v$ is the bright$\sim$dark matrix element (held constant in the
+model), and $\rho_m$ is the density of dark states.  Since the $S_1$
 level is only indirectly coupled to the manifold of $T_{1,2}$ levels,
-so $v$ in equation \ref{eq:bixon-model} must be related to the
-parameters of a doorway-mediated effective Hamiltonian.  In equation
-\ref{eq:s-char}, it can be seen that the effective squared matrix
-element between a $T_{1,2}$ level and the $S_1$ level is $\alpha^2 (1
-- \alpha^2) H_{\ell m}^2$.  When $\alpha < 0.25$, the product
-$\alpha^2 (1 - \alpha^2) \approx \alpha^2$.  The Lorentzian parameter
-$v$ is thus related to the doorway-mediated Hamiltonian model as $v^2
-\approx \alpha^2 H_{\ell m}^2$.
+the parameter $v$ in equation \ref{eq:bixon-model} must be related to
+the matrix elements of a doorway-mediated effective Hamiltonian.  In
+equation \ref{eq:s-char}, it can be seen that the effective squared
+matrix element between a $T_{1,2}$ level and the $S_1$ level is
+$\alpha^2 (1 - \alpha^2) H_{\ell m}^2$.  When $\alpha < 0.25$, the
+product $\alpha^2 (1 - \alpha^2) \approx \alpha^2$.  The Lorentzian
+parameter $v$ is thus related to the doorway-mediated Hamiltonian
+model as $v^2 \approx \alpha^2 H_{\ell m}^2$.
 
 Another challenge is that the SEELEM signal is not proportional to
-fractional bright state character.  In Chapter 2, we showed that if
-the doorway state is remote ($\Delta E_{s\ell} > 2$ \rcm), the
+fractional bright state character.  The SEELEM detection probability
+is a function of fractional $S_1$ and $T_3$ character, and includes
+factors for laser excitation, survival probability, and electron
+ejection probability \cite{humphrey97}.  In Chapter 2, we showed that
+if the doorway state is remote ($\Delta E_{s\ell} > 2$ \rcm), the
 fractional $T_3$ character follows an approximate proportionality to
 the fractional $S_1$ character.  Under these circumstances, the SEELEM
 intensity equation simplifies to
 \begin{equation}
   \label{eq:simple-lem}
-  P_{\text{SEELEM}} \propto a^4 \times \exp(-R a^2),
+  P_{\text{SEELEM}} \propto a^4 \times \exp(-R \; a^2),
 \end{equation}
 where $R$ is the ratio of the SEELEM detector flight time (309
 \microsec) to the fluorescence lifetime of the $S_1$ electronic state
@@ -1226,33 +1441,32 @@ that a molecule will not fluoresce before arriving at the SEELEM
 detector surface.  The combination of the two factors results in a
 maximum of SEELEM detection probability when the fractional $S_1$
 character is approximately $2/R_m \approx 0.0017$, less than one
-percent.  On the outer edge of the SEELEM intensity distribution, we
-assume that the fractional $S_1$ character of the SEELEM-detectable
-eigenstates approaches zero.  In this limit, the SEELEM detection
-probability is dominated by the polynomial factor, and is proportional
-to the fractional bright state character squared.  Surprisingly, the
-causes a \emph{narrowing} effect on the outer edge of the SEELEM
-intensity distribution.  The full width of a squared Lorentzian
-distribution is approximately 0.64 times the full width of a standard
-Lorentzian.  
+percent.  
 
-\NOTE{I am including the prev. paragraph for now, although the
-  argument here is a bit tenuous.  The surprising result here is that
-  the SEELEM envelope appears so narrow in our measurements.  I am
-  arguing, in effect, that the intensities for the majority of the
-  eigenstates in our SEELEM spectrum have a quasi-polynomial
-  dependence on bright state character.  This means that, among the
-  ensemble of SEELEM-active states, the survival probability factor is
-  constant (squeezed Lorentzian) or varies linearly (true Lorentzian)
-  with bright state character.  Such an argument may seem to conflict
-  with Kevin Cunningham's measurements of SEELEM lifetimes as
-  relatively uniform and universally less than 280 \microsec.
-  However, an upper limit on fluorescence lifetime of 280 \microsec\
-  means that the survival probability is approximately constant for
-  SEELEM-detectable states.  The quasi-polynomial relationship between
-  SEELEM detection probability and fractional bright state character
-  follows.}
+On the outer edge of the SEELEM intensity distribution, we assume that
+the fractional $S_1$ character of the SEELEM-detectable eigenstates
+approaches zero.  In this limit, the SEELEM detection probability is
+dominated by the polynomial factor, and is proportional to the
+fractional bright state character squared.  Surprisingly, this causes
+a \emph{narrowing} effect on the outer edge of the SEELEM intensity
+distribution, relative to the Lorentzian distribution of fractional
+bright state character.  The fundamental cause of this effect is the
+sampling of a non-time-integrated intensity.  Because the SEELEM
+detector samples the population of metastable molecules only at a
+particular time, the normalization conditions for conservation of
+fractional bright state character result in a squared Lorentzian
+distribution.  The full width of a squared Lorentzian distribution is
+approximately 0.64 times the full width of a standard Lorentzian.
 
+Such an argument may seem to conflict with Kevin Cunningham's
+measurements of SEELEM lifetimes in acetylene as relatively uniform
+and universally less than 280 \microsec\ \cite{cunningham-thesis}.
+However, an upper limit on fluorescence lifetime of 280 \microsec\
+means that the survival probability is approximately constant for all
+SEELEM-detectable states.  It follows that the SEELEM detection
+probability depends primarily on the product of laser exitation and
+electron ejection factors, leading to a Lorentzian-type distribution
+of intensity in the SEELEM spectrum.
 
 The SEELEM spectra recorded with the individual line method were fit to
 Lorentzian envelopes.  To carry out the fit, the SEELEM spectrum was
@@ -1284,10 +1498,19 @@ co-workers reported density of states measurements for the $3^3$
 range, exceed our observation by 1 to 4 times.
 
 \begin{table}
-  \caption{\TODO{Write caption.}}
+  \caption{Estimation of the product $\alpha H_{\ell m}$ from the
+    SEELEM spectra of five transitions in $S_1$ $3^36^1$ \Ka{0}.  The
+    quantity $\alpha$ represents the $S_1 \sim T_3$ mixing angle in a
+    single doorway-mediated effective Hamiltonian, and the $H_{\ell
+      m}$ represents the doorway $\sim T_{1,2}$ matrix element (held 
+    constant) in a simple statistical coupling model. The fitted
+    Lorentzian width for the SEELEM spectrum, $\Gamma_{SEELEM}$, and 
+    the directly-counted density of $T_{1,2}$ states, $\rho_m$, are
+    used to determine $\alpha H_{\ell m}$.}
   \label{table:seelem-params}
   
   \centering
+  \vspace{5mm}
   \begin{tabular}{llll}
     \toprule
     Transition & $\Gamma_{\text{SEELEM}}$ (\rcm) & $\rho_m$ (states /
@@ -1318,7 +1541,10 @@ underestimation of the state density would cause the estimate of
 $\alpha H_{\ell m}$ to be higher than the true value.  Potential
 narrowing effects caused by the sampling a non-time-integrated
 spectrum would cause the estimate of $\alpha H_{\ell m}$ to be
-slightly lower than its true value.
+slightly lower than its true value.  Our estimates of $\alpha H_{\ell
+  m}$ are shown in Table \ref{table:seelem-params}, for the five
+transitions in $3^36^1$ \Ka{1} recorded via the individual line
+method.
 
 % The full width at half maximum (FWHM) of the SEELEM distribution is
 % derived in Chapter 2, in terms of the $S_1 \sim T_3$ mixing angle,
@@ -1390,7 +1616,7 @@ conclusions drawn from such a figure should be treated with caution,
 however, because nominal $T_{1,2}$ states with small matrix elements
 may be obscured by others with strong intensity in the SEELEM
 spectrum.  Without a better idea of the intrinsic $T_3 \sim T_{1,2}$
-dynamics, we have no way of knowing what lurks beneath the surface of
+dynamics, we have no way of knowing what lurks beneath the lines in
 our SEELEM spectra.
 
 Three dotted lines are superimposed on the figure to serve as guides
@@ -1495,7 +1721,8 @@ involving torsional motion, $3^34^1$ \Ka{0}, is found to have an
 integrated SEELEM:LIF intensity ratio on the same order of magnitude
 as the sublevel involving the antisymmetric in-plane bending motion,
 $3^36^1$ \Ka{0}.  This result is in contrast to other experimental
-observations involving the two motions.  
+observations involving the two motions, which have found perturbations
+only in levels involving $\nu_6$.
 
 A measurement of the spectral variance is used to place a lower bound
 on the $S_1 \sim T_3$ doorway state matrix element.  A lower bound of

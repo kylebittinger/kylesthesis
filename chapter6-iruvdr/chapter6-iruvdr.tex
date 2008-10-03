@@ -549,11 +549,11 @@ frequency.
     the upper state, according to Figure \ref{fig:levels-iruvdr}.  The
     P(1) transition to the upper state is forbidden in a parallel
     IR-UV laser polarization geometry.  A spectrum recorded with this
-    laser geometry is shown as a dashed line. \TODO{Label SEELEM peaks
-      in P(1)}}
+    laser geometry is shown as a dashed line. \TODO{Import Labeled
+      SEELEM peaks in P(1)}}
   \label{fig:3361-p1-polarization}
   \centering
-  \includegraphics[width=7.3in,angle=90]{spectrum-3361-p1.pdf}
+  \includegraphics[width=7.3in,angle=90]{spectrum-3361-p1-polpeaks.pdf}
 \end{figure}
 
 
@@ -572,7 +572,7 @@ frequency.
     energy.}
   \label{fig:3361-p1}
   \centering
-  \includegraphics[width=5.8in]{spectrum-3361-p1-split}
+  \includegraphics[width=5.8in]{spectrum-3361-p1-primed}
   \includegraphics[width=6in]{spectrum-3361-p1-zoom}
 \end{figure}
 
@@ -634,10 +634,10 @@ component in Q(1) (Figure \ref{fig:survey-3341}).
     0.06 to 0.3 \rcm\ are observed in the delayed LIF spectrum of all
     rotational lines.  With one exception, the longer-lifetime
     (nominally triplet) components are located at lower energy than
-    the shortest-lifetime (nominally singlet) component. \TODO{prime K in figure}}
+    the shortest-lifetime (nominally singlet) component.}
   \label{fig:survey-3341}
   \centering
-  \includegraphics[width=7in,angle=90]{spectrum-3341-q5q1-split.pdf}
+  \includegraphics[width=7in,angle=90]{spectrum-3341-q5q1-primed.pdf}
 \end{figure}
 
 \begin{figure}
@@ -651,10 +651,10 @@ component in Q(1) (Figure \ref{fig:survey-3341}).
     trace) and a delayed time window ($10\tau_s-18\tau_s$, dashed
     trace).  A large line splitting of -0.25 \rcm\ is observed in the
     delayed fluorescence, confirming the assignment of the low-energy
-    component as $J'=1$.  \TODO{Calibration, prime K in figure.}}
+    component as $J'=1$.  \TODO{Calibration}}
   \label{fig:3341-p2}
   \centering
-  \includegraphics[width=6in]{spectrum-3341-p2-split.pdf}
+  \includegraphics[width=6in]{spectrum-3341-p2-primed.pdf}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -872,11 +872,12 @@ under the condition that all LIF intensity supplied by the bright
 state is observed in the spectrum.  When the doorway level is not
 observed in the spectrum, this condition is not met, but the variance
 of the LIF spectrum will certainly be smaller than the variance with
-the doorway level included.  \TODO{Estimate total variance from
-  $\alpha, \Delta E$ when doorway is not observed.}  Therefore, in the
-event that the doorway is not observed in the spectrum, the variance
-of the LIF spectrum may be used as a lower bound estimate for $H_{s
-  \ell}^2$.
+the doorway level included.  
+%\TODO{Estimate total variance from
+%  $\alpha, \Delta E$ when doorway is not observed.}  
+Therefore, in the event that the doorway is not observed in the
+spectrum, the variance of the LIF spectrum may be used as a lower
+bound estimate for $H_{s \ell}^2$.
 
 The approximate lower bound for the matrix element $H_{s \ell}$ was
 determined from the variance of each LIF transition, calculated from
@@ -1717,50 +1718,84 @@ The SEELEM and LIF spectra of two acetylene $S_1$ sublevels, $3^36^1$
 \Ka{0} and $3^34^1$ \Ka{0}, are compared in order to address the
 effects of the non-symmetric bending vibrations, $\nu_4$ and $\nu_6$,
 on $S_1 \sim T_3$ vibrational overlap integrals.  The sublevel
-involving torsional motion, $3^34^1$ \Ka{0}, is found to have an
-integrated SEELEM:LIF intensity ratio on the same order of magnitude
-as the sublevel involving the antisymmetric in-plane bending motion,
-$3^36^1$ \Ka{0}.  This result is in contrast to other experimental
-observations involving the two motions, which have found perturbations
-only in levels involving $\nu_6$.
-
-A measurement of the spectral variance is used to place a lower bound
-on the $S_1 \sim T_3$ doorway state matrix element.  A lower bound of
+involving torsional motion, $3^34^1$ \Ka{0}, is found to have
+triplet-induced line splittings on same order of magnitude as the
+sublevel involving the antisymmetric in-plane bending motion, $3^36^1$
+\Ka{0}.  This result is in contrast to other experimental observations
+involving the two motions, which have found perturbations only in
+levels involving $\nu_6$ \cite{mizoguchi00, yamakita01}.  A
+measurement of the spectral variance is used to place a lower bound on
+the $S_1 \sim T_3$ doorway state matrix element.  A lower bound of
 approximately 0.1 \rcm\ is obtained for both sublevels.  To be
 consistent with the required energy separation of a distant doorway
 level from the singlet, the actual $S_1 \sim T_3$ matrix element must
-be at least 4 times larger than this lower bound.
+be larger than this lower bound.
 
+To address the identity of $T_3$ vibrational sublevels responsible for
+mediating the $S_1 \sim T_{1,2}$ mixing, we thoroughly considered the
+vibronic and rotational selection rules for spin-orbit perturbations
+in acteylene.  A calculation of vibrational overlap integrals between
+$S_1$ and $T_3$, based on recent \emph{ab initio} calculations of the
+potential energy surfaces, reveals a propensity for particular
+vibrational modes of $T_3$ to promote overlap with $S_1 \:\; 3\nu_3 +
+\nu_4$ and $3\nu_3 + \nu_6$.  The $T_3$ \emph{trans}-bending
+vibration ($\nu_4$) and torsional vibration ($\nu_2$) are found to
+increase vibrational overlap with $S_1 \:\; 3\nu_3 + \nu_4$, while a
+combination of the $T_3$ \emph{trans} and \emph{cis}-bending ($\nu_6$)
+vibrations is observed to increase vibrational overlap with $S_1 \:\;
+3\nu_3 + \nu_6$.
 
 In terms of vibrational overlap and spin-orbit mixing, two questions
-must be addressed: where are the relevant stationary phase points
-at which the vibrational overlap integrals accumulate, and are the
-electronic seams of intersection accessible at these points?  
+must be addressed: where are the relevant stationary phase points at
+which the vibrational overlap integrals accumulate, and are the
+electronic seams of intersection accessible at these points?  We first
+consider the $S_1 \:\; 3\nu_3 + \nu_6$ level.  It has been suggested
+in the literature that $S_1 \sim T_3$ vibrational overlap may
+accumulate at a half-linear turning point geometry \cite{mizoguchi00}.
+Recent calculations carried out by Josh Baraban indicate that the $S_1
+\;\; 3\nu_3 + \nu_6$ level has appreciable amplitude in this region of
+phase space, particularly in comparison to the $S_1 \;\; 3\nu_3$ level
+\cite{baraban08}.  The calculation of vibrational overlap integrals
+indicates a similar picture for the $T_3$ surface, where the critical
+half-linear geometry is accessible a combination of the $T_3$
+\emph{trans} ($\nu_4$) and \emph{cis}-bending ($\nu_6$) vibrations.
+The region of $S_1 \sim T_3$ electronic intersection is also
+accessible to wavefunctions with amplitude in a half-linear geometry.
+The calculations of Ventura and coworkers indicate that the seam of
+$S_1 \sim T_3$ intersection passes through the half-linear region of
+phase space at a CCH bending angle of approximately 140\degrees\ (see
+their figure 5b) \cite{ventura03}.  We conclude that our explanation
+for the $T_3$ perturbations in $S_1 \;\; 3^36^1$ \Ka{0} is in accord
+with previous research.
 
-The Franck-Condon principle predicts that vibrational overlap
-integrals will be greatest for those vibrations that bend and stretch
-the molecule in the direction of the $T_3$ equilibrium geometry.
-Vibrational levels containing several quanta of the torsional
-vibration, $\nu_4$, should have large vibrational overlap integrals
-with $T_3$ levels, according to the simple argument.  However, the
-experimental observations and ab initio predictions predict a
-stationary phase point close to the seam of intersection in the
-half-linear geometry, accessed by a combination of modes 3 and 6.  The
-ab initio calculations also predict that the $S_1 \sim T_3$ seam of
-intersection in the torsional coordinate occurs on the WRONG SIDE of
-the torsional well (see Figure 6 in Ventura JCP 118, 1712 (2003)).
+The characterization of stationary phase points for the $S_1 \:\;
+3\nu_3 + \nu_4$ level is more of a challenge.  Calculated
+wavefunctions for $S_1$ are not available along the torsional
+coordinate.  However, our calculations of $T_3$ vibrational overlap
+integrals supports the general Franck-Condon argument that excitation
+in the $T_3$ \emph{trans}-bending vibration ($\nu_4$) and torsional
+vibration ($\nu_2$) increase the magnitude of vibrational overlap.
+However, the seam of $S_1 \sim T_3$ intersection is generally
+inaccessible along the torsional coordinate.  The \emph{ab initio}
+calculations of Ventura and coworkers predict that the $S_1 \sim T_3$
+seam of intersection in the torsional coordinate occurs on the
+\textbf{opposite side} of the torsional well from $S_1$ (see their
+Figure 6), at angles between 90 and 140 \degrees\ \cite{ventura03}.
+The seam of intersection is most accessible along the torsional
+coordinate at near-linear geometries.  It should also be noted
+that the seam of intersection is located at lower energies along the
+torsional coordinate.
 
-Why, then, do we observe a comparable degree of $S_1 \sim T_3$ mixing
-in $3^34^1$ \Ka{0}?  This is a surprising result.  One possible
-explanation is that $3^34^1$ \Ka{0} gains $T_3$ character through
-$b$-axis Coriolis coupling with the \Ka{1} sublevel of $3^36^1$
-\Ka{1}.  The $3^36^1$ \Ka{1} is known to be strongly perturbed by a
-level of $T_3$.  The matrix element for $b$-axis Coriolis interaction
-between $3^34^1$ \Ka{0} and $3^36^1$ \Ka{1} is approximately 1.4 \rcm.
-The energy separation between the $3^34^1$ \Ka{0} level and the
-$3^36^1$ \Ka{1} sublevel is approximately 42 \rcm.  This leads to a
-mixing angle of about 0.03.  The observed splitting in $3^36^1$ \Ka{1}
-is approximately 1 \rcm, indicating what is probably a local $T_3$
+One possible explanation for the observed mixing in $3^34^1$ \Ka{0}
+is that this sublevel gains $T_3$ character through $b$-axis Coriolis
+coupling with the \Ka{1} sublevel of $3^36^1$ \Ka{1}.  The $3^36^1$
+\Ka{1} is known to be strongly perturbed by a level of $T_3$.  The
+matrix element for $b$-axis Coriolis interaction between $3^34^1$
+\Ka{0} and $3^36^1$ \Ka{1} is approximately 1.4 \rcm.  The energy
+separation between the $3^34^1$ \Ka{0} level and the $3^36^1$ \Ka{1}
+sublevel is approximately 42 \rcm.  This leads to a mixing angle of
+about 0.03.  The observed splitting in $3^36^1$ \Ka{1} is
+approximately 1 \rcm, indicating what is probably a local $T_3$
 perturber with a matrix element of 0.5 \rcm.  Coriolis mixing with
 $3^36^1$ \Ka{1} would lead to a second-order spin-orbit interaction
 with the $T_3$ perturber on the order of $0.5 \times 0.03 = 0.015$
@@ -1800,17 +1835,34 @@ intensity envelope surrounding each rovibronic transition in an $S_1$
 sublevel.  The cluster of nominal $T_{1,2}$ eigenstates appearing in
 the spectrum is fit to a Lorentzian distribution, following a simple
 statistical coupling model.  The product $\alpha H_{\ell m}$ is
-determined by the fit results to be on the order of 0.1 \rcm.  Since
-the mixing amplitude $\alpha$ is certainly less than 0.7, the $T_3 \sim
-T_{1,2}$ matrix element must be at least 0.14
+determined by the fit results to be on the order of 0.1 \rcm.  
+
+% Since
+% the mixing amplitude $\alpha$ is certainly less than 0.7, the $T_3 \sim
+% T_{1,2}$ matrix element must be at least 0.14
 
 One may ask: do we observe \emph{too many} doorway states in the
 spectrum of \ce{C2H2}?  The answer lies in the definition of a doorway
 state, and is inherent to the doorway model.  The doorway model is
-based on the more general tier model of energy levels.  In the zeroth
-tier is the bright state, the $S_1$ level assigned in the LIF
-spectrum.  The first and second
-
+based on the more general tier model of energy levels
+\cite{stuchebrukhov93a, stuchebrukhov93b}.  In the zeroth tier is the
+bright state, the $S_1$ sublevel assigned in the LIF spectrum.  The
+first tier contains the vibrational sublevels of $T_3$, and the second
+contains sublevels of $T_{1,2}$.  The tier model simplifies to the
+doorway model in the limit of small level density in the first tier.
+In this limit, the effect of energy denominators is to select, in most
+cases, one state of $T_3$ with the largest matrix element at the
+nearest energy to dominate the mixing.  However, there is nothing
+inherent to the model that prevents more than one doorway from being
+active for a particular $S_1$ vibrational level.  Our zero-order
+assumption of a single doorway is based only on a propensity that
+results from the effects of energy denominators and the local density
+of $T_3$ levels.  The nature of the doorway model also ``guarantees''
+a doorway state for any $S_1$ level for which weak $S_1 \sim T_{1,2}$
+mixing is observed.  The $S_1 \sim T_3$ matrix element may be small in
+comparison to other $S_1$ levels, but $S_1 \sim T_{1,2}$ is still
+mediated by level of $T_3$ with the largest ratio
+$H_{s\ell}/\Delta E_{s\ell}$.
 
 It is the stated goal of this research project to observe an acetylene
 $T_3$ level ``in the wild,'' that is, at an energy separation of more

@@ -1,5 +1,5 @@
 # Compiled output
-*.pdf
+chapter*.pdf
 *.dvi
 
 # Intermediate files

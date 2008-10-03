@@ -1,15 +1,6 @@
 \documentclass[12pt]{mitthesis}
-\usepackage{lgrind, braket, amsmath, amssymb, bbm, booktabs, color}
 \usepackage[pdftex]{graphicx}
-\usepackage[version=3]{mhchem}
-\pagestyle{plain}
-
-\newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
-\newcommand{\POINT}[1]{\textcolor{magenta}{\emph{#1}}}
-
-\hyphenation{acetylene}
-\hyphenation{Hamiltonian}
-
+\usepackage{kylesthesis}
 \begin{document}
 \tableofcontents
 \clearpage
@@ -19,6 +10,9 @@
 
 \section{The importance of studying triplet states and intersystem
   crossing}
+
+Intersystem crossing is understood primarily as a statistical process,
+where an electronically excited state decays into a bath of triplet states.
 
 The lowest electronically excited state of many organic molecules is
 triplet.  From a singlet ground state, optical transitions to triplet
@@ -36,6 +30,19 @@ the density of triplet states,
 \begin{equation}
 \gamma = \langle H_{sd} \rangle \; \rho_d.
 \end{equation}
+When $\gamma \ll 1$, the system is said to be in the ``small-molecule
+limit,'' where the triplet states may be treated individually.  When
+$\gamma \gg 1$, the system approaches the ``large molecule limit.''
+In this case, the density of triplet states is so large that the
+natural width of singlet-mixed eigenstates exceeds the average energy
+spacing, and it is impossible to excite a eigenstates individually.
+When $\gamma \approx 1$, the system is in the ``intermediate case,''
+where eigenstates may be resolved, but the system is typically treated
+in a statistical manner.
+
+The process of spectral deconvolution was developed for intermediate
+case molecules, to evaluate the matrix elements among a bath of
+triplet states which mix directly with the singlet ``bright'' state.
 
 \TODO{Go through talks, proposals and gather motivation points.}
 
@@ -359,10 +366,19 @@ interactions between the electronic states of acetylene:
 \section{Doorway-mediated intersystem crossing in acetylene: evidence
   from laser-induced fluorescence and quantum beats}
 
-\POINT{Talk about the ZQB experiments of Tsuchiya.}
+Soji Tsuchiya and coworkers recorded LIF spectrum of the $3^2$ \Ka{1},
+$3^3$ \Ka{1}, and $3^4$ \Ka{1} sublevels of $S_1$ acetylene, measuring
+fluorescence lifetimes and the magnetic field dependence of quantum
+beats for each observed line.
 
-\POINT{Discuss observation of triplet perturbations by HB/AHS/AM in
-  their investigation of bending polyads.}
+The 1994 study of Drabbels and coworkers is perhaps the only
+experiment, aside from ZAC measurements, to record a fully
+resolved spectrum of the $3^3$ \Ka{1} and $3^4$ \Ka{1} sublevels.
+
+Recent investigations in our laboratory have led to the observation of
+more triplet-perturbed levels, as a fortunate side effect in the
+deperturbation of the non-symmetric bending polyads.
+
 
 
 \section{Detection of laser-excited metastables by surface electron
@@ -374,18 +390,20 @@ Cheshnovsky to study intermediate-case ISC in organic molecules such
 as aniline and isoquiniline \cite{sneh86, sneh88, sneh89a, sneh89b,
   sneh91}.  The use of laser excitation to populate metastable states
 is curious, because optical transitions to such states are nominally
-forbidden.  The nature of SEELEM detection, however, sidesteps this
-problem by maintaining a low level of background electron counts.
+forbidden.  The SEELEM detector, however, sidesteps the problem of
+weak optical transitions by maintaining a low level of background
+electron counts.
 
-To eject an electron from the grounded metal surface of the SEELEM
-detector, a molecule must possess a vertical excitation energy in
-excess of the work function, $\Phi$, of the metal.  A gold surface was
-used in all the experiments described in this thesis, $\Phi = 5.1$ eV.
-Sneh and coworkers have shown that excess vibrational energy in the
-molecule does not affect the SEELEM sensitivity \cite{sneh86}.  The
-exception that proves the rule is the \ce{NO} molecule, where
-vibrations in the excited state have a drastic impact on the dipole
-moment \cite{white05}.
+In essence, the SEELEM detector consists of a grounded metal surface
+and an electron multiplier.  To eject an electron from the grounded
+metal surface of the SEELEM detector, a molecule must possess a
+vertical excitation energy in excess of the work function, $\Phi$, of
+the metal.  A gold surface was used in all the experiments described
+in this thesis, $\Phi = 5.1$ eV.  Sneh and coworkers have shown that
+excess vibrational energy in the molecule does not affect the SEELEM
+sensitivity \cite{sneh86}.  The exception that proves the rule is the
+\ce{NO} molecule, where vibrations in the excited state have a drastic
+impact on the dipole moment \cite{white05}.
 
 The SEELEM technique was applied to the study of small molecules and
 diatomics by Wodke and coworkers.  The SEELEM apparatus at MIT was
@@ -396,7 +414,26 @@ apparatus was refined by subsequent workers, such as Ryan Thom, who
 re-engineered the mounting and electrical connections for the detector
 itself \cite{thom-thesis}.
 
-\TODO{Describe apparatus in detail and provide a picture.}
+\begin{figure}
+  \caption{Diagram of the LIF/SEELEM apparatus.  Laser radiation in
+    the UV is provided by the frequency doubled output of an
+    Nd:YAG-pumped dye laser.  The laser radiation enters the vacuum
+    chamber (not shown), and crosses the path of the molecular beam,
+    indicated by a dashed line, approximately 2.5 cm downstream from a
+    pulsed nozzle.  Fluorescence is gathered by $f$/4 optics at the
+    point of laser excitation, passes through a UG-11 filter, and is
+    collected by a photomultiplier tube (PMT).  Laser-excited
+    metastable molecules travel through a 3 mm diameter skimmer and
+    into a second, differentially pumped vacuum chamber.
+    Approximately 34 cm from the point of laser excitation, the
+    metastables collide with the metal surface of the SEELEM detector,
+    and ejected electrons are collected by an electron multiplier,
+    located immediately below the metal surface.}
+  \label{fig:apparatus}
+
+  \centering
+  \includegraphics[width=7in,trim=1cm 0 0 0]{apparatus-bw}
+\end{figure}
 
 \section{Summary}
 
@@ -430,11 +467,19 @@ SEELEM experiments, which reveal similar Singlet-Triplet coupling
 characteristics for the torsion and antisymmetric in-plane bending
 motions.
 
-We depart from our study of the acetylene molecule in Chapter 7, where
-a new method is considered for the manufacture of metastable molecules
-in a molecular beam.  The basis of this method is two-photon optical
-pumping of metastable atoms followed by collisional excitation
-transfer.  
+We depart from our study of acetylene in Chapter 7, where a new method
+for the manufacture of metastable molecules in a molecular beam is
+considered.  The basis of this method is two-photon optical pumping of
+metastable atoms followed by electronic excitation transfer in
+collisions.  The selection rules and transition probabilities for
+two-photon excitation of the atoms are discussed in detail, for
+mercury and xenon.  The model for collisional exitation transfer is
+based on a curve-crossing model developed by Ottinger and coworkers
+for the reaction of metastable \ce{Xe}* with \ce{N2}.  It is with the
+\ce{Xe}* + \ce{N2} system that we begin our work; high metastable
+energies and relatively simple dynamics make this an attractive
+starting point. Our progress on the \ce{Hg}* + \ce{C2H2} system, our
+target for the study of triplet states of acetylene, is also detailed.
 
 Chapter 8 concludes and discusses the prospects for future
 research.

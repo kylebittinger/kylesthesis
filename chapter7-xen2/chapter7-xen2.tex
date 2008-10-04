@@ -37,7 +37,10 @@ of acetylene \cite{kanamori07}.
 The main drawback to using a traditional mercury photosensitization
 technique with acetylene is polymer formation.  This process is well
 known to photochemists \cite{shida58, leroy44}, and to any unfortunate
-spectroscopists who have used the technique.
+spectroscopists who have used the technique.  Another problem is the
+complicated dynamics of radiation trapping and energy pooling in
+mercury following 254 nm resonance excitation \cite{menningen00,
+  herd05, majetich89, majetich91}.
 
 The rate of polymer formation could be kept to a minimum if the number
 density of mercury atoms could be carefully controlled.  In addition,
@@ -209,10 +212,49 @@ initial to final state.  Figure \TODO{fig:hg-forbidden} shows the
 possible pathways, and their phases according to Formula
 \ref{eq:tpa-prob}.
 
+The 
 
 \section{Theory: A collision model for electronic excitation transfer}
 
+Interest in the process of mercury photosensitization has led to the
+study of the reaction of Hg $6 \; ^3P_1$ with many species
+\cite{duval91, ohmori96}.
+
+We base or mercury model on a collisional energy transfer model
+originally developed for the Xe + \ce{N2} system by Ottinger and
+Aquilanti \cite{aquilanti90, aquilanti94}.
+
+Metastable xenon in the $^3P_2$ state transfers selectively into the
+v'=5 level of \ce{N2}*($B\; ^3\Pi_g$) \cite{krumpelmann87,
+  krumpelmann88, ottinger95b, aardema94}.  The process proceeds with
+an absolute cross section of 6.5 $\AA$ \cite{bohle89}.
+
+The angular momentum coupling rules for $P$-state atom collisions are
+detailed by Aquilanti and coworkers \cite{aquilanti80a, aquilanti80b}.
+The formalism is based on the idea of collisional Hund's cases,
+explained by Nikitin and Zare \cite{nikitin94}.
+
+The interaction potentials for $6 \; ^3P_0$ and $6 \; ^3P_2$ may be
+estimated from those of the $6 \; ^3P_1$ state.  Having potential
+surfaces in the collisional Hund's case (c) basis, the isotropic and
+anisotropic parts of the interaction potentials may be determined
+\cite{aquilanti89}.
+
+
 \section{Experiments: \ce{Xe}* + \ce{N2}}
+
+Two-photon excitation of xenon atoms followed by spontaneous
+fluorescence is more commonly used to populate excited states \cite{alekseev96}.
+
+The velocity distribution in a molecular beam is
+\begin{equation}
+  P(v) = v^3 \exp 
+  \left [
+    -\frac{m(v-u(x))^2}{2RT(x)}
+  \right ],
+\end{equation}
+where $T(x)$ and $u(x)$ are the instantaneous temperature and flow
+velocity in the beam \cite{morse96}.
 
 \begin{figure}
   \caption{Potential energy curves and vibrational levels of the three
@@ -226,7 +268,7 @@ possible pathways, and their phases according to Formula
     metastable \ce{N2}.  Also shown in the figure is the energy of the
     xenon $^3P_2$ state, which is known to populate the v'=5 level of
     the nitrogen $B$ state in gas-phase collisions
-    \cite{ottinger7890}.  Less is known about electronic energy
+    \cite{krumpelmann87}.  Less is known about electronic energy
     transfer from Xe into the $W$ state of nitrogen, however, the
     ultimate decay route is unchanged in any case.  The figure is
     adapted from Reference \cite{krumpelmann-thesis}.}
@@ -297,7 +339,22 @@ possible pathways, and their phases according to Formula
 
 \section{Experiments: \ce{Hg}* + \ce{C2H2}}
 
-\POINT{Discuss direct excitation to Hg*($^3P_2$).}
+Continuous beam sources of mercury $6 \; ^3P_0$ are reported in the
+literature \cite{haberman75, obi83}.  Nitrogen backing gas is first
+bubbled through a mercury oven before expanding from a nozzle with an
+embedded resonance lamp.
+
+We also attempted to populate the $^3P_0$ level of mercury by
+collisional relaxation with \ce{N2} molecules.  Nitrogen is known to
+efficiently quench Hg*($6 \; ^3P_1$) to Hg*($6 \; ^3P_0$), because the
+intramultiplet energy difference is about the same as the vibrational
+level spacing in \ce{N2} \cite{callear70, horiguchi71}.  Bras and
+coworkers meaured the energy transfer dynamics of mercury in \ce{N2}
+buffer gas, and determined that Hg($^3P_0$) may be efficiently
+produced by the decay process Hg($7 \; ^1S_0$) $\rightarrow$ Hg($6 \;
+^3P_1$) $\rightarrow$ Hg($6 \; ^3P_0$) \cite{bras93}.
+
+
 
 \begin{figure}
   \caption{Laser-Induced Fluorescence (LIF) spectrum of the one color,
@@ -310,12 +367,79 @@ possible pathways, and their phases according to Formula
   \includegraphics[width=6in]{Hg3D2-cell.pdf}
 \end{figure}
 
-\TODO{Figure: Direct excitation to Hg*($^3P_2$). (See p.47 of
-  11/2007--1/2008 notebook.)}
+A new pulsed valve was designed by Wilton Virgo to meet our demands
+for heated mercury.  A diagram of the ``Bern Valve'' is shown in
+Figure \ref{fig:bern-diagram}.
 
-\section{Results}
+\begin{figure}
+  \caption{Diagram of the heated pulsed valve developed for
+    experiments with mercury.  The ``Bern Valve'' can be safely heated
+    to 250\degrees\ C.  A small vial of mercury is housed in the
+    heated region on the right of the diagram, close to the nozzle
+    orifice (far right).}
+  \label{fig:bern-diagram}
+  \centering
+  \includegraphics[width=6in]{bern-diagram.pdf}
+\end{figure}
+
+
+
+% \TODO{Figure: Direct excitation to Hg*($^3P_2$). (See p.47 of
+%   11/2007--1/2008 notebook.)}  
+Direct excitation to the $6 \; ^3P_2$ was attempted as a method for
+triplet formation.  This transition, while forbidden in the solitary
+molecule, is made allowed in collision complexes with a variety of
+gases \cite{kurosawa98, amano98}.  Also, we note that weak Hg*($6 \; ^3P_2$)
+$\rightarrow$ Hg($6 \; ^1S_0$) emission was observed in pre-laser
+experiments \cite{mrozowski45}.  Figure \ref{fig:hg-3p2-direct} shows
+the TOF:SEELEM spectrum of mercury excited to directly to the $6 \;
+^3P_2$ level.  The signal level is sufficiently low that it is checked
+against a repeated experiment with the pulsed valve turned off, shown
+for comparison in Figure \ref{fig:hg-3p2-direct-bg}.  While it is
+clear that we do register a SEELEM signal from the direct excitation
+of Hg*($6 \; ^3P_2$), we were not able to increase the gas density
+enough at the excitation point to make this an efficient process for
+the population of acetylene metastables.
+
+\begin{figure}
+  \caption{SEELEM time of flight (TOF) detection of metastable mercury
+    produced via the direct excitation Hg*($6 \; ^3P_2$) $\leftarrow$
+    Hg($6 \; ^1S_0$) at 44042.98 \rcm.  The pulsed valve was heated to
+    250\degrees\ C to increase the number density of mercury.  The two
+    traces are recorded in repeated experiments.}
+\label{fig:hg-3p2-direct}
+\centering
+\includegraphics[width=8in,angle=90]{hg-3p2-direct.pdf}
+\end{figure}
+
+\begin{figure}
+  \caption{Comparison of signal to background in the SEELEM time of
+    flight (TOF) detection of metastable mercury produced via the
+    direct excitation Hg*($6 \; ^3P_2$) $\leftarrow$ Hg($6 \; ^1S_0$)
+    at 44042.98 \rcm.  The lighter trace is recorded with the pulsed
+    valve on, and the black trace is recorded with the valve off.}
+\label{fig:hg-3p2-direct-bg}
+\centering
+\includegraphics[width=8in,angle=90]{hg-3p2-direct-bg.pdf}
+\end{figure}
+
+The most efficient method we found for the population of mercury $6 \;
+^3P_2$ was a simple, two step excitation to $7 \; ^3S_1$ via the $6 \;
+^3P_1$ level.  Figure ??? shows the LIF spectrum of the $6 \; ^3P_1
+\leftarrow 6\;^1S_0$ transition.  The hyperfine structure of the ???
+and ??? isotope are apparent in the lineshape of the transition.
+
+Methods are available to optically filter mercury resonance radiation
+using mercury itself as the absorber \cite{vanzee89, senitzky74}.
 
 \section{Conclusions}
+
+An exciting experiment for the xenon-nitrogen system would be to study
+the rotational and vibrational depenence of collision-induced reverse
+intersystem crossing from the $a' \; ^1\Sigma_u^-$ state to the $B \;
+^3\Pi_g$ state.  Xenon has been observed to facilitate this process,
+although the rotational and vibrational dependence are uncertain
+\cite{umemoto03a}.
 
 \bibliography{master} 
 \bibliographystyle{plain}

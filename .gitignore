@@ -1,6 +1,11 @@
 # Compiled output
 chapter*.pdf
 *.dvi
+extra-*/*.pdf
+
+# big pictures
+chapter7-xen2/*.png
+chapter7-xen2/*.svg
 
 # Intermediate files
 *.aux

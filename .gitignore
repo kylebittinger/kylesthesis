@@ -4,6 +4,7 @@ chapter*.pdf
 extra-*/*.pdf
 
 # big pictures
+*.gif
 chapter7-xen2/*.png
 chapter7-xen2/*.svg
 

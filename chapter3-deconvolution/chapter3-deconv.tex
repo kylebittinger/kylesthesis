@@ -1,16 +1,6 @@
 \documentclass[12pt]{mitthesis} 
-
-\usepackage{lgrind, braket, amsmath,
-  amssymb, bbm, booktabs, subfig, color} 
 \usepackage[pdftex]{graphicx}
-\usepackage[version=3]{mhchem}
-
-\newcommand{\TODO} [1]{\textcolor{magenta}{\textbf{TODO:} #1}}
-\newcommand{\POINT}[1]{\textcolor{magenta}{\emph{#1}}}
-
-\hyphenation{acetylene}
-\hyphenation{Hamiltonian}
-
+\usepackage{kylesthesis}
 \begin{document}
 
 \tableofcontents
@@ -63,10 +53,11 @@ density function for coupling to the bright state.
 
 Spectral deconvolution has been used to study Intramolecular
 Vibrational Redistribution (IVR) in many small molecules, including
-\ce{NO2}, allene, and several substituted propynes.  It was originally
-developed in the study of intersystem crossing, where it has been used
-on the spectra of intermediate case molecules such as acetylene,
-napthalene, and pyrazine. \TODO{Citations}
+\ce{NO2}, allene, and several substituted propynes \cite{cable80,
+  timmermans95, andrews98, hudspeth98}.  It was originally developed
+in the study of intersystem crossing, where it has been used on the
+spectra of intermediate case molecules such as acetylene, napthalene,
+and pyrazine \cite{drabbels94, cable80, lawrance85}.
 
 The technique for deconvolution of continuous spectra was described by
 Berg and independently, in a more general form, by Ziv and Rhodes
@@ -937,9 +928,9 @@ $E_{\ell} \times H_{s\ell}^2$.
 
 
 
-\bibliographystyle{deconv}
-\bibliography{deconv}
-
+%\bibliography{deconv}
+\bibliography{master}
+\bibliographystyle{plain}
 \end{document}
 % LocalWords:  deperturbation Intramolecular IVR intersystem deperturb occurrs
 % LocalWords:  rovibronic Hamiltonians Lorentzian eigenvectors vibronic

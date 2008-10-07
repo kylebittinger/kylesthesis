@@ -66,7 +66,8 @@ and then report progress on \ce{Hg}* + \ce{C2H2}.
 
 Our initial goal is to populate metastable excited states of mercury
 and xenon atoms.  The lowest-energy excited state term of both atoms
-is $^{1,3}P$.  %  arising from a $6s6p$ configuration in mercury and a
+is $^{1,3}P$.  
+%  arising from a $6s6p$ configuration in mercury and a
 % $5p^56s$ configuration in xenon.
 The $^{1,3}P$ term contains two metastable levels, $^3P_0$ and
 $^3P_2$.  In this section, we examine the level structure of mercury,
@@ -122,17 +123,15 @@ especially promising candidates are $6 \; ^3D_2$ and $7 \; ^3S_1$.
 The $6 \; ^3D_2$ level has a branching ratio of approximately 3:1:1
 among the $^3P_1$, $^3P_2$, and $^1P_1$ levels \cite{benck89}.  Thus,
 it is suitable to populate the higher-energy metastable level,
-$^3P_2$.  The $7 \; ^3S_1$ level radiates only within the $6 \; ^3P$
-multiplet, with a branching ratio of 1:2:2 among the $^3P_0$, $^3P_1$,
-and $^3P_2$ levels \cite{benck89}.  Both metastable levels may be
-populated via radiative decay from $7 \; ^3S_1$.
+$^3P_2$.  The $7 \; ^3S_1$ level radiates only to levels within the
+$^3P$ multiplet, with a branching ratio of 1:2:2 among the $^3P_0$,
+$^3P_1$, and $^3P_2$ levels \cite{benck89}.  Both metastable levels
+may be populated via radiative decay from $7 \; ^3S_1$.
 
-Since we will consider some two-photon absorption (TPA) schemes that
-include photons of unequal frequency, we use a general formula for
-two-photon transition probability derived by Bonin and McIlrath
-\cite{bonin84}.  Starting from the atomic ground state, $\ket{i}$, the
-two-photon transition probability to a final state $\ket{f}$ is given
-by
+A general formula for the calculation of two-photon transition
+probabilities is derived by Bonin and McIlrath \cite{bonin84}.
+Starting from the atomic ground state, $\ket{i}$, the two-photon
+transition probability to a final state $\ket{f}$ is given by
 \begin{equation}
   \label{eq:tpa-prob}
   \begin{split}
@@ -210,7 +209,7 @@ probabilities in units of (W/m$^2$)$^{-2}$s$^{-1}$.
   \caption{Calculated two-photon transition probabilities for the five
     possible excitation schemes discussed in the text.  Total
     probabilities depend on the square of laser intensity; quantities
-    given in the figure are in units of s$^{-1}$W$^{-2}$.  The
+    given in the figure are in units of (W/m$^2$)$^{-2}$s$^{-1}$.  The
     calculation indicates that the one color TPA to Hg*($7 \; ^3S_1$)
     is exactly zero.  Transition probabilities for excitation to the
     Hg*($6 \; ^3D_2$) level are two order of magnitude higher than the
@@ -225,10 +224,10 @@ The calculated transition probabilites for each scheme are displayed
 in Figure \ref{fig:tpa-prob}.  The one color, two-photon transition to
 the $6 \; ^3D_2$ level, item (d), has the greatest transition
 probability among all the two-photon schemes considered.  The
-two-color transition to $6 \; ^3D_2$, item (e), is slightly weaker.
-The two color two-photon excitation schemes to the $7 \; ^3S_1$ level,
+two color transition to $6 \; ^3D_2$, item (e), is slightly weaker.
+The two color, two-photon excitation schemes to the $7 \; ^3S_1$ level,
 items (b) and (c), are an order of magnitude weaker yet, and the
-one-color two-photon excitation to $7 \; ^3S_1$, item (a), is
+one color, two-photon excitation to $7 \; ^3S_1$, item (a), is
 forbidden entirely.
 
 The Hg*($7 \; ^3S_1$) $\leftarrow\leftarrow$ Hg($6 \; ^1S_0$)
@@ -266,126 +265,140 @@ some fundamental principles of quantum field theory \cite{hilborn02}.
   \includegraphics[width=2.7in]{hg-forbidden-perppol.pdf}
 \end{figure}
 
-\section{Theory: A collision model for electronic excitation transfer}
+% \section{Theory: A collision model for electronic excitation transfer}
 
-We base or mercury model on a collisional energy transfer model
-originally developed for the Xe + \ce{N2} system by Ottinger and
-Aquilanti \cite{aquilanti90, aquilanti94}.  
+% We base or mercury model on a collisional energy transfer model
+% originally developed for the Xe + \ce{N2} system by Ottinger and
+% Aquilanti \cite{aquilanti90, aquilanti94}.  
 
-Polyatomic molecules are typically outside the harpooning limit, due
-to large ionization energies relative to electron affinity.  The first
-ionization limit of acetylene, 11.4 eV, and the electron affinity, ???
-eV, determine that the harpooning radius is ??? $\AA$ in the energy
-region of Hg*($^3P_2$) \cite{ono82}.
+% Polyatomic molecules are typically outside the harpooning limit, due
+% to large ionization energies relative to electron affinity.  The first
+% ionization limit of acetylene, 11.4 eV, and the electron affinity, ???
+% eV, determine that the harpooning radius is ??? $\AA$ in the energy
+% region of Hg*($^3P_2$) \cite{ono82}.
 
-Metastable xenon in the $^3P_2$ state transfers selectively into the
-v'=5 level of \ce{N2}*($B\; ^3\Pi_g$) \cite{krumpelmann87,
-  krumpelmann88, ottinger95b, aardema94}.  The process proceeds with
-an absolute cross section of 6.5 $\AA^2$ \cite{bohle89}.
+
+
+% The angular momentum coupling rules for $P$-state atom collisions are
+% described by Aquilanti and coworkers \cite{aquilanti80a,
+%   aquilanti80b}.  Their formalism is based on the idea of dynamical
+% Hund's cases, developed by Nikitin to treat dissociation processes of
+% open-shell atoms and molecules \cite{nikitin65}.
+% Collisional Hund's cases are classified based on an ordering of the
+% magniudes of spin-orbit, rotational, and electrostatic interactions
+% between the colliding molecules \cite{nikitin94}.
+
+% The interaction potentials for $^3P_0$ and $^3P_2$ may be estimated
+% from those of the $^3P_1$ state \cite{zagrebin95}.  Experiments on HgX
+% van der Waals molecules have determined accurate potential surfaces
+% for the mercury-excimer states correlated with Hg*($6\;^3P_1$).  The
+% potentials derived from such experiments are accurately described in a
+% collisional Hund's case (c) basis, based on an ordering of the
+% magniudes of spin-orbit, rotational, and electrostatic interactions.
+
+% Interest in the process of mercury photosensitization has led to the
+% study of the reaction of Hg $6 \; ^3P_1$ with many species
+% \cite{duval91, ohmori96}.  Total cross sections are available for
+% acetylene, but electrostatic potential parameters are not available
+% from the study of van der Waals molecules \TODO{cite Hg + HCCH cross
+%   section paper}.  The interaction between Hg* and acetylene was
+% estimated from Hg* + \ce{N2} potentials obtained from the LIF spectrum
+% of the \ce{HgN2} van der Waals complex \cite{yamanouchi88}.
+
+% \begin{figure}
+%   \caption{Potential energy curves for Hg*($^3P_{2,1,0}$) + \ce{N2}
+%     are calculated from the potential parameters for the \ce{HgN2} van
+%     der Waals molecule.  The assumption is made that the
+%     intermolecular interaction is in the limit of collisional Hund's
+%     case ($c$).  This approximation is valid when the intramultiplet
+%     splitting in the Hg atom is much larger than the electrostatic
+%     interaction.  The quantum number $\Omega$ is the projection of the
+%     total electronic angular momentum of the atom, $J$, on the
+%     collision axis.  The morse parameters $D_e$ and $r_e$ are given in
+%     units of \rcm\ and $\AA$, respectively.  The case ($c$) potentials
+%     V$_{J \Omega}$ for $^3P_1$ may be rewritten in terms of case ($a$)
+%     potentials, V$_\Sigma$ and V$_\Pi$, from which the case ($c$)
+%     potentials for $^3P_{0,2}$ are inferred.}
+%   \label{fig:hgn2}
+%   \centering
+%   \vspace{3mm}
+%   \includegraphics[width=6in]{hgn2.pdf}
+% \end{figure}
+
+\section{Experiments: \ce{Xe}* + \ce{N2}}
+
+We investigate the \ce{Xe}* + \ce{N2} system as a precursor to our
+experiments with mercury and acetylene.  The xenon-nitrogen system has
+the advantage of high excitation energies.  The lowest excited state
+of xenon, $^3P_2$, lies 8.3 eV above the ground state
+\cite{saloman04}.  The lowest triplet state of nitrogen, $A \;
+^3\Sigma_u^+$, while far below Xe*($^3P_2$), lies 6.2 eV above the
+ground state \cite{lofthus77}.  (Triplet electronic states of nitrogen
+are labeled with uppercase letters for historical reasons.)  The
+energies of Xe*($^3P_2$) and \ce{N2}*($A \; ^3\Sigma_u^+$) far exceed
+the work function of gold, and both species are extremely metastable
+\cite{mishra01, lofthus77}.
+
+Metastable xenon in the $^3P_2$ state transfers electronic energy
+selectively into the v'=5 level of \ce{N2}*($B \; ^3\Pi_g$)
+\cite{krumpelmann87, krumpelmann88, ottinger95b, aardema94}.  The
+fluorescence lifetime of $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$
+emission is on the order of 10 \microsec\ \cite{lofthus77}.  The $A \;
+^3\Sigma_u^+$ state is metastable, with a fluorescence lifetime on the
+order of 1 s \cite{lofthus77}.  Thus, visible fluorescence (400$-$500
+nm) may be measured to observe the preparation of metastable \ce{N2}.
+
+The potential energy curves and vibrational levels of the three
+``lowest'' energy triplet electronic states of nitrogen are shown in
+Figure \ref{fig:n2curves} (adapted from \cite{krumpelmann87}).  The $W
+\; ^3\Delta_u$ electronic state is near-degenerate with the $B \;
+^3\Pi_g$ state.  Less is known about electronic energy transfer from
+Xe into the $W \; ^3\Delta_u$ state of nitrogen, however, the ultimate
+decay route is unchanged.  Molecules in the $W \; ^3\Delta_u$ state
+decay slowly to the near-degenerate $B \; ^3\Pi_g$ electronic state
+via the emission of IR fluorescence.  Shown in the figure for
+reference is the energy of the xenon $^3P_2$ state.  Open and closed
+circles indicate possible channels for electronic energy transfer, and
+arrows indicate the principal fluorescence components
+\cite{krumpelmann87}.
+% The process proceeds with
+% an absolute cross section of 6.5 $\AA^2$ \cite{bohle89}.
 
 \begin{figure}
   \caption{Potential energy curves and vibrational levels of the three
     ``lowest'' energy triplet electronic states of nitrogen, \ce{N2}.
-    The $A$ state is metastable, with a fluorescence lifetime in the
-    hundreds of microseconds.  Molecules in the $W$ state decay slowly
-    to the near-degenerate $B$ electronic state via the emission of IR
-    fluorescence.  The fluorescence lifetime for $B \rightarrow A$
-    emission is several \microsec. It is this 400$-$500 nm
-    fluorescence that we measure to observe the preparation of
+    The $A \; ^3\Sigma_u^+$ state is metastable, with a fluorescence
+    lifetime in the hundreds of microseconds.  Molecules in the $W \;
+    ^3\Delta_u$ state decay slowly to the near-degenerate $B \;
+    ^3\Pi_g$ electronic state via the emission of IR fluorescence.
+    The fluorescence lifetime for $B \; ^3\Pi_g \rightarrow A \;
+    ^3\Sigma_u^+$ emission is several \microsec. It is this 400$-$500
+    nm fluorescence that we measure to observe the preparation of
     metastable \ce{N2}.  Also shown in the figure is the energy of the
     xenon $^3P_2$ state, which is known to populate the v'=5 level of
-    the nitrogen $B$ state in gas-phase collisions
+    the nitrogen $B \; ^3\Pi_g$ state in gas-phase collisions
     \cite{krumpelmann87}.  Less is known about electronic energy
-    transfer from Xe into the $W$ state of nitrogen, however, the
-    ultimate decay route is unchanged in any case.  The figure is
-    adapted from Reference \cite{krumpelmann-thesis}.}
+    transfer from Xe into the $W \; ^3\Delta_u$ state of nitrogen,
+    however, the ultimate decay route is unchanged in any case.  The
+    figure is adapted from Reference \cite{krumpelmann-thesis}.}
   \label{fig:n2curves}
   \centering
   \includegraphics[width=5in]{n2curves.pdf}
 \end{figure}
 
-The angular momentum coupling rules for $P$-state atom collisions are
-described by Aquilanti and coworkers \cite{aquilanti80a,
-  aquilanti80b}.  Their formalism is based on the idea of dynamical
-Hund's cases, developed by Nikitin to treat dissociation processes of
-open-shell atoms and molecules \cite{nikitin65}.
-Collisional Hund's cases are classified based on an ordering of the
-magniudes of spin-orbit, rotational, and electrostatic interactions
-between the colliding molecules \cite{nikitin94}.
-
-The interaction potentials for $^3P_0$ and $^3P_2$ may be estimated
-from those of the $^3P_1$ state \cite{zagrebin95}.  Experiments on HgX
-van der Waals molecules have determined accurate potential surfaces
-for the mercury-excimer states correlated with Hg*($6\;^3P_1$).  The
-potentials derived from such experiments are accurately described in a
-collisional Hund's case (c) basis, based on an ordering of the
-magniudes of spin-orbit, rotational, and electrostatic interactions.
-
-Interest in the process of mercury photosensitization has led to the
-study of the reaction of Hg $6 \; ^3P_1$ with many species
-\cite{duval91, ohmori96}.  Total cross sections are available for
-acetylene, but electrostatic potential parameters are not available
-from the study of van der Waals molecules \TODO{cite Hg + HCCH cross
-  section paper}.  The interaction between Hg* and acetylene was
-estimated from Hg* + \ce{N2} potentials obtained from the LIF spectrum
-of the \ce{HgN2} van der Waals complex \cite{yamanouchi88}.
-
-
-\begin{figure}
-  \caption{Potential energy curves for Hg*($^3P_{2,1,0}$) + \ce{N2}
-    are calculated from the potential parameters for the \ce{HgN2} van
-    der Waals molecule.  The assumption is made that the
-    intermolecular interaction is in the limit of collisional Hund's
-    case ($c$).  This approximation is valid when the intramultiplet
-    splitting in the Hg atom is much larger than the electrostatic
-    interaction.  The quantum number $\Omega$ is the projection of the
-    total electronic angular momentum of the atom, $J$, on the
-    collision axis.  The morse parameters $D_e$ and $r_e$ are given in
-    units of \rcm\ and $\AA$, respectively.  The case ($c$) potentials
-    V$_{J \Omega}$ for $^3P_1$ may be rewritten in terms of case ($a$)
-    potentials, V$_\Sigma$ and V$_\Pi$, from which the case ($c$)
-    potentials for $^3P_{0,2}$ are inferred.}
-  \label{fig:hgn2}
-  \centering
-  \vspace{3mm}
-  \includegraphics[width=6in]{hgn2.pdf}
-\end{figure}
-
-
-
-
-
-
-
-
-\section{Experiments: \ce{Xe}* + \ce{N2}}
-
-We investigate the \ce{Xe}* + \ce{N2} system as a precursor to our
-experiments with mercury and acetylene.  Besides its status as a
-well-studied reaction and the foundation of our adopted curve crossing
-model, the xenon-nitrogen system has the advantage of high excitation
-energies.  The lowest excited state of xenon, $^3P_2$, lies 8.3 eV
-above the ground state \cite{saloman04}.  The lowest triplet state of
-nitrogen, $A \; ^3\Sigma_u^+$, while far below Xe*($^3P_2$), lies 6.2
-eV above the ground state \cite{lofthus77}.  (Triplet electronic
-states of nitrogen are labeled with uppercase letters for historical
-reasons.)  The energies of Xe*($^3P_2$) and \ce{N2}($A \;
-^3\Sigma_u^+$) far exceed the work function of gold, and both species
-are extremely metastable \cite{mishra01, lofthus77}.
-
 % Two-photon excitation of xenon atoms is fairly common among atomic
 % physicists \cite{alekseev96}. 
-One color TPA to the $^3D_2$ state is used to populate Xe*($^3P_2$).
-The $^3D_2$ state decays spontaneously to $^3P_1$ and $^3P_2$ with a
-branching ratio of 1:2 \cite{cabrera81}.  The two-photon transition
-probability for Xe $^3D_2$ $\leftarrow\leftarrow$ $^1S_0$ is
-calculated in the same manner as the Hg transitions.  A total
-transition probability of 3.35$\times$10$^{-14}$
+One color TPA to the $^3D_2$ state is used to populate metastable
+xenon ($^3P_2$).  The $^3D_2$ state decays spontaneously to $^3P_1$
+and $^3P_2$ with a branching ratio of 1:2 \cite{cabrera81}.  The
+two-photon transition probability for Xe $^3D_2$ $\leftarrow
+\leftarrow$ $^1S_0$ is calculated in the same manner as the Hg
+transitions.  A total transition probability of 3.35$\times$10$^{-14}$
 (W/m$^2$)$^{-2}$s$^{-1}$ is obtained for the one color TPA.  The
 magnitude of the xenon two-photon transition probability is
 approximately 1/10th that of the analagous transition in Hg.
 
-The LIF spectrum of the xenon $^3D_2$ $\leftarrow\leftarrow$ $^1S_0$
+The LIF spectrum of the xenon $^3D_2$ $\leftarrow \leftarrow$ $^1S_0$
 two-photon transition was recorded first in a static cell (Figure
 \ref{fig:xe3d2-cell}) and then in a molecular beam (Figure
 \ref{fig:xe-beam}).  The $^3D_2$ $\rightarrow$ $^3P_2$ fluorescence
@@ -429,14 +442,14 @@ under static cell conditions.  The excitation chamber of the SEELEM
 apparatus was sealed and filled with 210 mTorr of a 50:50 Xe/\ce{N2}
 gas mixture.  The laser was held fixed on the \ce{Xe} $^3D_2
 \leftarrow \leftarrow ^1S_0$ two-photon transition.  Collision-induced
-\ce{N2} $B \rightarrow A$ emission in the visible region of the
-spectrum is plotted in Figure \ref{fig:xen2-firstlight}.  Our
-observation is consistent with the reported fluorescence lifetime of
-\ce{N2} $B \rightarrow A$ emission, which is on the order of 10
-\microsec.
+\ce{N2} $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$ emission in the visible
+region of the spectrum is plotted in Figure \ref{fig:xen2-firstlight}.
+Our observation is consistent with the reported fluorescence lifetime
+of \ce{N2} $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$ emission, which is on the
+order of 10 \microsec.
 
 \begin{figure}
-  \caption{Time dependence of \ce{N2} $B \rightarrow A$ emission,
+  \caption{Time dependence of \ce{N2} $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$ emission,
     induced by collisions with metastable Xe* ($^3P_2$).  The
     excitation chamber of the SEELEM apparatus was sealed and filled
     with a 50:50 mixture of Xe and \ce{N2}, to a total pressure of 210
@@ -461,42 +474,44 @@ pressure region immediately in front of the nozzle orifice.
 The two-photon excitation to Xe ($^3D_2$) was carried out in the
 high-pressure region of a supersonic expansion with a 50:50 gas
 mixture of Xe and \ce{N2}.  The time dependence of \ce{Xe} $6\;^3D_2
-\rightarrow 6\;^3P_2$ and \ce{N2} $B \rightarrow A$ emission is
-plotted in Figure \ref{fig:xen2-traces}.  Xenon fluorescence (823 nm,
-$\tau=28$ ns) is emitted when the optically excited state decays
-spontaneously to the metastable $6\;^3P_2$ state.  Nitrogen molecules
-are electronically excited during the expansion process in collisions
-with metastable xenon atoms.  Near-resonant vibrational levels of the
-nitrogen $B$ state decay spontaneously to the metastable $A$ state
-($\tau=20$ \microsec), accompanied by fluorescence in the visible
-region of the spectrum.  Since the xenon and nitrogen fluorescence
-decays occur on vastly different timescales, the time constant of the
-oscilloscope must be adjusted separately for each measurement.
+\rightarrow 6\;^3P_2$ and \ce{N2} $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$
+emission is plotted in Figure \ref{fig:xen2-traces}.  Xenon
+fluorescence (823 nm, $\tau=28$ ns) is emitted when the optically
+excited state decays spontaneously to the metastable $6\;^3P_2$ state.
+Nitrogen molecules are electronically excited during the expansion
+process in collisions with metastable xenon atoms.  Near-resonant
+vibrational levels of the nitrogen $B \; ^3\Pi_g$ state decay
+spontaneously to the metastable $A \; ^3\Sigma_u^+$ state ($\tau=20$
+\microsec), accompanied by fluorescence in the visible region of the
+spectrum.  Since the xenon and nitrogen fluorescence decays occur on
+vastly different timescales, the time constant of the oscilloscope
+must be adjusted separately for each measurement.
 
 \begin{figure}
   \caption{Time dependence of \ce{Xe} $6\;^3D_2 \rightarrow 6\;^3P_2$
-    (top plot) and \ce{N2} $B \rightarrow A$ (bottom plot) emission,
-    following the two-photon excitation of Xe ($^3D_2$) in a
-    supersonic expansion.  The xenon and nitrogen emission signals
-    occur on vastly different timescales.  Xenon fluorescence (823 nm,
-    $\tau=28$ ns) is emitted when the optically excited state decays
-    spontaneously to the metastable $6\;^3P_2$ state.  Nitrogen
-    molecules are electronically excited during the expansion process
-    in collisions with metastable xenon atoms.  Near-resonant
-    vibrational levels of the nitrogen $B$ state decay spontaneously
-    to the metastable $A$ state ($\tau \approx 10$ \microsec),
-    accompanied by fluorescence in the visible region of the
-    spectrum. \TODO{Change voltage to current.}}
+    (top plot) and \ce{N2} $B \; ^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$ (bottom
+    plot) emission, following the two-photon excitation of Xe
+    ($^3D_2$) in a supersonic expansion.  The xenon and nitrogen
+    emission signals occur on vastly different timescales.  Xenon
+    fluorescence (823 nm, $\tau=28$ ns) is emitted when the optically
+    excited state decays spontaneously to the metastable $6\;^3P_2$
+    state.  Nitrogen molecules are electronically excited during the
+    expansion process in collisions with metastable xenon atoms.
+    Near-resonant vibrational levels of the nitrogen $B \; ^3\Pi_g$
+    state decay spontaneously to the metastable $A \; ^3\Sigma_u^+$
+    state ($\tau \approx 10$ \microsec), accompanied by fluorescence
+    in the visible region of the spectrum. \TODO{Change voltage to
+      current.}}
   \label{fig:xen2-traces}
   \centering
   \includegraphics[width=7.7in,angle=90,trim=0 0 1in 1cm ]{XeN2-traces.pdf}
 \end{figure}
 
-\TODO{Xe seelem spectrum}
+% \TODO{Xe seelem spectrum}
 
-\TODO{Xe seelem tof}
+% \TODO{Xe seelem tof}
 
-\TODO{One N2 + Xe TOF spectrum}
+% \TODO{One N2 + Xe TOF spectrum}
 
 % The SEELEM-TOF spectrum of metastable xenon is shown in Figure
 % \ref{fig:xe-seelem}.  The limiting velocity of Xe in a molecular beam
@@ -525,23 +540,25 @@ oscilloscope must be adjusted separately for each measurement.
 
 \section{Experiments: \ce{Hg}* + \ce{C2H2}}
 
-The production of metastable molecules in a molecular beam using
-collisional excitation by mercury is more of a challenge than xenon.
-Firstly, the lowest metastable state of Hg, $^3P_0$, is too low in
-energy to be detectable on a gold surface.  Secondly, the only allowed
+The production of Hg*-sensitized metastable molecules in a molecular
+beam is more of a challenge than sensitization by Xe*.  Firstly, the
+lowest metastable state of Hg, $^3P_0$, is too low in energy to eject
+an electron from a gold surface.  Secondly, the only allowed
 triplet-triplet transition in acetylene is in the infrared, and the
-product of the transition $T_1$ is not detectable even on a
+upper state of the transition, $T_1$, is not detectable even on a
 medium-work function metal such as Yttrium.
 
-Yet another challenge is generating the required number densities of
-mercury in the pulsed nozzle.  The Jordan valve normally used for
-SEELEM experiments may only be heated to 120\degrees\ C.  Another
-nozzle design, capable of higher temperatures, was needed for our
-experiments.  Heated continuous beam sources of mercury $6 \; ^3P_0$
-are reported in the literature \cite{haberman75, obi83}.  Nitrogen
-backing gas is first bubbled through a mercury oven before expanding
-from a nozzle with an embedded resonance lamp.  However, we required a
-pulsed design due to pump speed limitations.  
+Another challenge is the generation of large number densities of
+mercury in the pulsed nozzle.  The Jordan valve, normally used for
+SEELEM experiments, may only be heated to 100\degrees\ C,
+corresponding to a mercury vapor pressure of 281 mTorr.  Another
+nozzle design, capable of higher temperatures, was needed to achieve
+larger partial pressures of Hg inside the nozzle.  Heated continuous
+beam sources of Hg*($^3P_0$) are reported in the literature
+\cite{haberman75, obi83}.  Nitrogen backing gas is first bubbled
+through a mercury oven, and the resulting gas mixture is expanded
+through a heated nozzle, next to an embedded Hg resonance lamp.
+However, we require a pulsed design, due to pump speed limitations.
 
 A new pulsed valve was designed by Wilton Virgo in 2007 to meet our
 demands for heated mercury.  The design is based on a pulsed valve
@@ -577,16 +594,17 @@ $^3P_1$ $\rightarrow$ $6 \; ^3P_0$ quenching \cite{bras93}.
 The relatively strong one color, two-photon transition Hg $7 \; ^1S_0$
 $\leftarrow\leftarrow$ $6 \; ^1S_0$ was recorded under static cell
 conditions.  However, the excitation energy of Hg*($^3P_0$) is below
-the work function of gold.  A Yttrium surface was tested in an effort
+the work function of gold.  A yttrium surface was tested in an effort
 to develop a lower work function SEELEM detector.  In a collaborative
-project with Trevor Sears, we installed a Yttrium surface on our
-SEELEM detector and measured the SEELEM-TOF spectra of metastable
-phenylacetylene molecules \cite{hofstein08}.  SEELEM-TOF spectra were
-recorded for several vibrational bands of the phenylacetylene
-$\tilde{A}$ state.  Most of the bands, labeled here according to their
-approximate frequency above the $\tilde{A}$ state origin, have
-assigned by Powers and coworkers \cite{powers81}.  The SEELEM-TOF
-spectra of phenylacetylene levels are plotted together in Figure
+project with Trevor Sears, we installed a commercially available
+sample (Alfa Aesar) of yttrium foil on our SEELEM detector, and
+measured the SEELEM-TOF spectra of metastable phenylacetylene
+molecules \cite{hofstein08}.  SEELEM-TOF spectra were recorded for
+several vibrational bands of the phenylacetylene $\tilde{A}$ state.
+Most of the bands, labeled here according to their approximate
+frequency above the $\tilde{A}$ state origin, have assigned by Powers
+and coworkers \cite{powers81}.  The SEELEM-TOF spectra of
+phenylacetylene levels are plotted together in Figure
 \ref{fig:phenylacetylene-tofs}.  Unfortunately, we were not able to
 maintain the detector in a reliable state of operation with a yttrium
 surface.  We turned to methods for creating Hg($^3P_2$).
@@ -606,12 +624,13 @@ surface.  We turned to methods for creating Hg($^3P_2$).
 Following our success with xenon, we attempted to use the $6\;^3D_2
 \leftarrow \leftarrow 6\;^1S_0$ one color, two-photon transition to
 create mercury atoms in the $^3P_2$ state.  The LIF spectrum of this
-transition is plotted in Figure \ref{fig:hg3d2-cell}.  An interference
-filter was used to record only the $6 \; ^3D_2 \rightarrow ^3P_2$
-fluorescence at 365 nm.  The experiment was attempted in a supersonic
-expansion, prior to the time that the Bern valve was manufactured.  We
-were unable to achieve a sufficient number density of Hg atoms to
-measure a signal in the free jet.
+transition, recorded in a static cell, is plotted in Figure
+\ref{fig:hg3d2-cell}.  An interference filter was used to record only
+the $6 \; ^3D_2 \rightarrow ^3P_2$ fluorescence at 365 nm.  The
+experiment was attempted in a supersonic expansion, prior to the time
+that the Bern valve was manufactured.  We were unable to achieve a
+sufficient number density of Hg atoms to measure a signal in the free
+jet.
 
 \begin{figure}
   \caption{Laser-Induced Fluorescence (LIF) spectrum of the one color,
@@ -629,8 +648,8 @@ measure a signal in the free jet.
 Direct excitation to the $^3P_2$ was also attempted as a method for
 triplet formation.  This transition, while forbidden in the solitary
 molecule, is made allowed in collision complexes with a variety of
-gases \cite{kurosawa98, amano98}.  Also, we note that weak Hg*($6 \; ^3P_2$)
-$\rightarrow$ Hg($6 \; ^1S_0$) emission was observed in pre-laser
+gases \cite{kurosawa98, amano98}.  Also, we note that weak $^3P_2$
+$\rightarrow$ $6 \; ^1S_0$ emission was observed in pre-laser
 experiments \cite{mrozowski45}.  Figure \ref{fig:hg-3p2-direct} shows
 the SEELEM-TOF spectrum of mercury excited to directly to the $6 \;
 ^3P_2$ level.  The signal level is sufficiently low that it is checked
@@ -638,8 +657,8 @@ against a repeated experiment with the pulsed valve turned off, shown
 for comparison in Figure \ref{fig:hg-3p2-direct-bg}.  While it is
 clear that we do register a SEELEM signal from the direct excitation
 of Hg*($6 \; ^3P_2$), we were not able to increase the gas density
-enough at the excitation point to make this an efficient process for
-the population of acetylene metastables.
+enough at the point of excitation to make this an efficient process
+for the population of acetylene metastables.
 
 \begin{figure}
   \caption{SEELEM time of flight (TOF) detection of metastable mercury
@@ -694,15 +713,14 @@ spectrum.
 \end{figure}
 
 After the observation of metastable Hg*($^3P_2$) formed in the
-two-step excitation, \TODO{Finish}
-
-The SEELEM spectrum of the two-color, stepwise excitation of
-Hg($^3S_1$) via the $^3P_1$ level is plotted in Figure
-\ref{fig:hg-twostep-c2h2}.  The lower-intensity spectrum shows mercury
-seeded in Xe gas, while the upper spectrum shows mercury seeded in
-acetylene.  We attribute the larger overall signal level for the
-mercury/acetylene mixture to electronic excitation transfer between
-Hg($^3P_2$) and \ce{C2H2}($T_3$).
+two-step excitation, the measurement was repeated, using acetylene as
+the buffer gas.  The resulting SEELEM spectrum of the two-color,
+stepwise excitation of Hg($^3S_1$) via the $^3P_1$ level is plotted in
+Figure \ref{fig:hg-twostep-c2h2}.  The lower-intensity spectrum shows
+mercury seeded in Xe gas, while the upper spectrum shows mercury
+seeded in acetylene.  We attribute the larger overall signal level for
+the mercury/acetylene mixture to electronic excitation transfer
+between Hg($^3P_2$) and \ce{C2H2}($T_3$).
 
 \begin{figure}
   \caption{SEELEM spectrum of the two-color, stepwise excitation of
@@ -721,17 +739,45 @@ Hg($^3P_2$) and \ce{C2H2}($T_3$).
 
 \section{Future Work}
 
-Two types of new experiments are proposed, looking at energy transfer
-from atom to molecule, and vice versa.
+We propose a new experiment, building on the success of our previous
+work with the Xe* + \ce{N2} system.  The experiment would study the
+rotational and vibrational depenence of collision-induced intersystem
+crossing from the $a' \; ^1\Sigma_u^-$ and $a \; ^1\Pi_g$ states to
+the $B \; ^3\Pi_g$ state of nitrogen.  Nitrogen may be excited to the
+$a \; ^1\Pi_g$ state via two-photon transitions \cite{vanveen82}.
+Collisions between \ce{N2} molecules facitilate energy transfer
+between the $a \; ^1\Pi_g$ and $a' \; ^1\Sigma_u^-$ electronic states
+\cite{marinelli88}.  The $a \; ^1\Pi_g$ $\leftrightarrow$ $a' \;
+^1\Sigma_u^-$ processes may be studied using ``traditional''
+LIF/SEELEM spectroscopy, perhaps with a longer pathlength for the
+detector.  The fluorescence lifetime of the $a \; ^1\Pi_g$ state is on
+the order of $10^{-4}$ s, while the lifetime of $a' \; ^1\Sigma_u^-$
+is on the order of $10^{-2}$ s.
 
+Xenon-nitrogen collisions are observed to facilitate the process of
+collisional $a' \; ^1\Sigma_u^-$ $\rightarrow$ $B \; ^3\Pi_g$
+intersystem crossing, although the rotational and vibrational
+dependence of this process are uncertain \cite{umemoto03a}.  The
+intersystem crossing process would be readily observable via $B \;
+^3\Pi_g \rightarrow A \; ^3\Sigma_u^+$ fluorescence in the visible
+region of the spectrum.
 
+In separate experiments, Ottinger has observed collision-induced
+``gateway'' intersystem crossing, which is attributed to an accidental
+near-degeneracy between $a' \; ^1\Sigma_u^-, v=16, J=14$ and $C \;
+^3\Pi_u, v=0, J=14$ \cite{ottinger98}.  The gateway process is
+\emph{quenched} in collisions with Xe atoms.  Ottinger proposes that
+the energy of $a' \; ^1\Sigma_u^-, v=16$ is high enough that the
+reaction proceeds according to a harpooning mechanism, which
+efficiently produces Xe* \cite{ottinger98}.
 
-An exciting experiment for the xenon-nitrogen system would be to study
-the rotational and vibrational depenence of collision-induced reverse
-intersystem crossing from the $a' \; ^1\Sigma_u^-$ state to the $B \;
-^3\Pi_g$ state.  Xenon has been observed to facilitate this process,
-although the rotational and vibrational dependence are uncertain
-\cite{umemoto03a}.
+A rapid change in the chemistry of Xe + \ce{N2}($a' \; ^1\Sigma_u^-$)
+collisions as the vibrational level is changed from $v=0$ to $v=14$
+makes this experiment an exciting proposition.  Two-photon laser
+excitation of \ce{N2} will allow rotational and vibrational effects in
+nitrogen to be studied selectively.  Furthermore, a range of detection
+options are available in the current apparatus for the reaction
+products Xe* and \ce{N2}*.
 
 \section{Conclusions}
 
@@ -742,9 +788,8 @@ followed by spontaneous emission, are used as collision partners.  A
 study of the SEELEM-TOF spectrum reveals translationally exothermic
 energy transfer in the Xe*($6 \; ^3P_2$) + \ce{N2} system.  An
 increased sensitivity to \ce{C2H2}* relative to Hg*($^3P_2$) is
-indicated by an overall increase in SEELEM signal for gas mixtures
+indicated by an overall increase in SEELEM signal for a gas mixture
 containing both species.
-
 
 \bibliography{master} 
 \bibliographystyle{plain}

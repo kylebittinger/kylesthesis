@@ -43,7 +43,10 @@ small molecule limit, experimental results may often be deperturbed
 explicitly due to the small number of interacting states. In the large
 molecule limit, many states are involved in the interaction, and
 analysis focuses on properties of the \emph{ensemble} of dark states
-rather than the deperturbation of individual states.
+rather than the deperturbation of individual states.  As experimental
+techniques evolve, the dividing line between small and large molecules
+is pushed back, expanding the domain of complete deperturbation and
+determinism.
 
 In the intermediate case between the large and small molecule limits,
 a few dark states may mediate the coupling between a bright state and
@@ -125,9 +128,9 @@ which we refer to as the mixed basis.  From the mixed basis, we use
 perturbaion theory to evaluate intensity lending among the dark
 states.  
 % Does this even make sense? Am I ruining this section?
-Due to this use of perturbation theory in the second step, we
-consider the mixed basis using a working assumption of a system in the
-strong coupling limit.
+Due to this use of perturbation theory in the second step, we consider
+the mixed basis using a working assumption of a system in the strong
+coupling limit, defined below.
 
 The strong coupling limit of DMISC is characterized by a strong
 doorway$\sim$bright state interaction compared to the average
@@ -179,12 +182,12 @@ written in terms of the zero-order matrix element $H_{\ell m}$ and the
 $\ket{s}$, $\ket{\ell}$ mixing amplitude $\alpha$:
 \begin{equation}
   \begin{split}
-    H_{\ts m} &= \alpha H_{\ell m}\\
-    H_{\tl m} &= (1-\alpha^2)^{1/2} H_{\ell m}.
+    H_{\ts m} &= + \alpha H_{\ell m}\\
+    H_{\tl m} &= + (1-\alpha^2)^{1/2} H_{\ell m}.
   \end{split}
 \end{equation}
 More patterns in bright state coupling through $\ket{\ts}$ and
-$\ket{\tl}$ are apparrent in the distribution of fractional
+$\ket{\tl}$ are apparent in the distribution of fractional
 bright state character among the eigenstates of the system.
 
 The fractional bright state character of any nominal dark state that
@@ -235,21 +238,23 @@ $\Delta E_{m \tl}$. The cross term, with its ($-$) sign included, is
   primary and secondary mixed states}, and negative outside this
 range.
 
-The cross term diverges at the energies $E_{\ts}$ and $E_{\tl}$ of the
-mixed basis states, and always has a local minimum at their energy
-midpoint, $\bar{E}_{s \ell} = (E_{\ts} + E_{\tl})/2$. The fractional
-intensity increase for dark states due to the cross term, in other
-words its ratio with respect to the sum of the square terms, takes an
-especially simple form on an energy scale with zero chosen at
-$\bar{E}_{s \ell}$:
+% The cross term diverges at the energies $E_{\ts}$ and $E_{\tl}$ of the
+% mixed basis states, 
+The cross term has a local minimum at the energy midpoint of the mixed
+basis states, $\bar{E}_{s \ell} = (E_{\ts} + E_{\tl})/2$. The
+fractional intensity increase for dark states due to the cross term,
+in other words its ratio with respect to the sum of the square terms,
+takes an especially simple form on an energy scale with zero chosen at
+$\bar{E}_{s \ell}$,
 \begin{equation}
   \label{eq:mixed-basis-ratio}
   \biggl( - \frac{2}{\Delta E_{m \ts} \Delta E_{m \tl}} \biggr) / 
   \biggl( \frac{1}{\Delta E_{m \ts}^2} +\frac{1}{\Delta E_{m \tl}^2} \biggr)
-  \; = \; \frac{\Delta E_{\ts \tl} - \bar{E}_m}{\Delta E_{\ts \tl} + \bar{E}_m}.
+  \; = \; \frac{\Delta E_{\ts \tl} - \bar{E}_m}{\Delta E_{\ts \tl} + \bar{E}_m},
 \end{equation}
-This quantity depends only on the energy difference $\Delta
-E_{\ts\tl}$ between the mixed basis states $\ket{\ts}$ and
+where $\bar{E}_m = E_m - \bar{E}_{s \ell}$.  This ratio in Equation
+\ref{eq:mixed-basis-ratio} depends only on the energy difference
+$\Delta E_{\ts\tl}$ between the mixed basis states $\ket{\ts}$ and
 $\ket{\tl}$, and is independent of both the bright$\sim$doorway mixing
 coefficient and the doorway$\sim$dark matrix element.  The cross term
 ratio from equation~\ref{eq:mixed-basis-ratio} is plotted in
@@ -266,19 +271,19 @@ expression for fractional bright state character, equation
     cross term to the square terms, exhibiting a maximum at the energy
     midpoint between $E_{\ts}$ and $E_{\tl}$.}
   \label{fig:local-cross-term}
-  \includegraphics[width=6.4in]{local-doorway-terms.png}
+  \includegraphics[width=8in, angle=90]{local-doorway-terms.png}
 \end{figure}
 
 The equation for fractional bright state character of a dark state in
 the $\ket{s}$, $\ket{\ell}$ mixed basis contains two classes of terms:
 square terms and a cross term. The square terms are equivalent in the
-vicinity of each mixed state, and can be considered as two separate,
-equal-magnitude, direct-coupled systems of dark states. These
-quasi-direct systems interact via the cross term, which always skews
-the intensities of the dark states toward the energy midpoint of the
-mixed basis states. Moreover, the fractional contribution of the cross
-term to the fractional bright state character is independent of the
-matrix elements of the system.
+vicinity of each mixed state, and can be considered as appropriate for
+two separate, equal-magnitude, direct-coupled systems of dark
+states. These quasi-direct systems interact via the cross term, which
+\emph{always} skews the intensities of the dark states toward the
+energy midpoint of the mixed basis states. Moreover, the fractional
+contribution of the cross term to the fractional bright state
+character is independent of the matrix elements of the system.
 
 \subsection{The embedded bright state arrangement}
 \label{sec:ebsa}
@@ -315,7 +320,7 @@ diagram of this arrangement is shown in figure~\ref{fig:matrix-ebsa}.
 \end{figure}
 
 To derive equations for the fractional bright state character of a
-nominally dark eigenstate, we adopt separate stategies in the vicinity
+nominally dark eigenstate, we adopt separate strategies in the vicinity
 of the bright state $\ket{s}$ and doorway state $\ket{\ell}$.  In the
 vicinity of $\ket{s}$, contamination of dark states by the bright
 state may be evaluated by making a second-order correction to the dark
@@ -328,9 +333,10 @@ of
 
 To compare this expression with the mixed basis results, one
 adjustment must be made. Since we are evaluating dark state
-intensities in the vicinity of $E_s$, $\Delta E_{ms} \ll \Delta
-E_{s\ell}$, and $\Delta E_{m\ell} \approx \Delta E_{s\ell}$. In light
-of this approximation, the fractional bright state character becomes
+intensities in the vicinity of $E_s$, $\lvert \Delta E_{ms} \rvert \ll
+\lvert \Delta E_{s\ell} \rvert$, and $\lvert \Delta E_{m\ell} \rvert
+\approx \lvert \Delta E_{s\ell} \rvert$. In light of this
+approximation, the fractional bright state character becomes
 \begin{equation}\label{eq:ebsa-bright-int-approx}
   \frac{H_{s\ell}^2 H_{\ell m}^2}{\Delta E_{ms}^2 \Delta E_{s\ell}^2} \approx 
   \alpha^2 H_{\ell m}^2 \frac{1}{\Delta E_{ms}^2},
@@ -370,7 +376,7 @@ borrowing from the bright state in the mixed basis.
 
 We now turn to deriving an expression for fractional bright state
 character in the vicinity of the doorway state $\ket{\ell}$.  Since
-the doorway-dark interactions are strong, the effective Hamiltonian is
+the doorway$\sim$dark interactions are strong, the effective Hamiltonian is
 diagonalized in the vicinity of the doorway state, forming a set of
 prediagonalized states $\lbrace \ket{\tm} \rbrace$.  Each state in
 this doorway block $\ket{\tm}$ is a linear combination of dark and
@@ -415,7 +421,7 @@ state in the earlier formulation.
 
 The effective Hamiltonian for doorway mediated intersystem crossing in
 the weak bright-doorway coupling limit has been rearranged to account
-for relatively strong doorway-dark interactions. This is called the
+for relatively strong doorway$\sim$dark interactions. This is called the
 embedded bright state arrangement, because the bright state has
 ``switched places'' with one of the dark states in the traditional
 direct-coupling Hamiltonian. After using a combination of
@@ -456,7 +462,7 @@ written as
     V_{s\ell} & \epsilon_{\ell} - i \Gamma_{\ell} / 2 \\
   \end{bmatrix}.
 \end{equation}
-The width of the doorway state is related to the average doorway-dark
+The width of the doorway state is related to the average doorway$\sim$dark
 matrix element by the golden rule relation $\Gamma_{\ell} = 2 \pi \langle
 V_{\ell m}^2 \rangle \rho_{m}$.
 
@@ -495,7 +501,7 @@ a doorway-mediated Hamiltonian, $\Gamma_s = 0$, and
   \caption{Widths of the nominal bright and doorway eigenstates in a
     complex-energy doorway Hamiltonian. To demonstrate the weak
     coupling regime (left), the coupling matrix element $V_{s\ell}$ is
-    set to 0.25 times the magnitude of the doorway with
+    set to 0.25 times the magnitude of the doorway width
     $\Gamma_{\ell}$. For the intermediate coupling regime (center),
     $V_{s\ell}=\Gamma_{\ell}$; for the strong coupling regime (right),
     $V_{s\ell}=4\Gamma_{\ell}$.}
@@ -570,7 +576,7 @@ Green's function $G(E) = \lim_{\gamma \rightarrow 0} \left [
 \begin{equation}
 \sigma(E) \propto Im(\braket{g|\mu G(E) \mu|g}).
 \end{equation}
-When the Green's fuction is evaluated over the eigenvectors of
+When the Green's function is evaluated over the eigenvectors of
 $\mathbf{H}$, only two diagonal elements remain:
 \begin{equation}
   \label{eq:greens-func}
@@ -635,7 +641,7 @@ Figure~\ref{fig:complex-overlaps} shows the terms of equation
 to show details of the intensity distribution for each regime, the
 scale of the axes was adjusted for each subplot. Although the scales
 were chosen carefully to show the general trends in the distributions,
-the plots cannot not simultaneously and clearly communicate the
+the plots cannot simultaneously and clearly communicate the
 dramatic changes in $\delta \epsilon_{SL}$ and $\Gamma_S$ as the
 magnitude of $V_{s\ell}$ changes. For this reason, these quantities
 are listed in table~\ref{table:complex-int-params}.
@@ -680,7 +686,7 @@ the bright and doorway states.  In the bottom plot of
 figure~\ref{fig:complex-overlaps}, it can be seen that the system is
 approaching this limit.  A more extreme example is shown in
 figure~\ref{fig:complex-compare-strong}, where the zero-order (real)
-energy spacing $\delta \epsilon_{s\ell}$ has been lowered to $0.01 \,
+energy spacing $\delta \epsilon_{s\ell}$ has been decreased to $0.01 \,
 \delta \Gamma_{s\ell}$. In this case, the mixing between $\ket{S}$ and
 $\ket{L}$ is complete in both intensity (real part) and width
 (imaginary part).
@@ -708,7 +714,7 @@ consider the local doorway plus direct coupling model.
 In a molecular beam experiment, detection by surface electron ejection
 by laser-excited metastables (SEELEM) produces a spectrum that is
 sensitive to eigenstates with only a small amount of fractional bright
-state character.  This detection channel is complimentary to
+state character.  This detection channel is complementary to
 laser-induced fluorescence, which is sensitive to eigenstates
 containing a large amount of fractional bright state character.  The
 intensity information in a SEELEM spectrum, in conjunction with LIF,
@@ -729,15 +735,15 @@ dark states:
 The SEELEM detection probability for a molecule in eigenstate
 $\ket{M}$ is modeled as the product of three factors: excitation
 probability, survival probability, and electron ejection
-probability. The excitation probability is porportional to the
+probability. The excitation probability is proportional to the
 fractional bright state character:
 \begin{equation}
   P_{ex} = A_{ex} C_s^2
 \end{equation}
 where $A_{ex}$ is a constant factor for the bright state in question.
 
-Following \TODO{cite Selen's paper}, we write the survival probability
-in terms of the bright state character:
+Following Altunata, we write the survival probability
+in terms of the bright state character \cite{altunata00}:
 \begin{equation}
   P_{surv} = exp \left( -R_m C_s^2 \right).
 \end{equation}
@@ -799,9 +805,9 @@ R_m$:
   \label{eq:seelem-prob-chisq}
   P_{SEELEM}^{(s)} \propto x^{6/2 - 1} \; exp \left( - \frac{x}{2} \right).
 \end{equation}
-An example of this distribution is shown in figure ????.
+%An example of this distribution is shown in figure ????.
 
-\TODO{Figure: SEELEM intensity distribution, bright state term.}
+%\TODO{Figure: SEELEM intensity distribution, bright state term.}
 
 To gain insight into the energy dependence of the SEELEM detection
 probability for an ensemble of dark states with average doorway state
@@ -813,7 +819,7 @@ bright state character, $C_s^2$.
 
 The maximum of the SEELEM intensity distribution is found by taking
 the derivative of the SEELEM detection probability with respect to
-enery:
+energy:
 \begin{equation}
     \frac{\partial P_{SEELEM}^{(s)}}{\partial E} = 
        A^{(s)} \, P_{surv} \, C_s^2 \; \frac{\partial C_s^2}{\partial E} 
@@ -861,7 +867,7 @@ Solving for $\Delta E_{ms}$, the FWHM of the distribution
 is determined to be
 \begin{equation}
   \label{eq:seelem-weak-fwhm}
-  2 \lvert \alpha H_{\ell m} \mathcal{C}_{\frac{1}{2}}\rvert,
+  \text{FWHM} = 2 \lvert \alpha H_{\ell m} \mathcal{C}_{\frac{1}{2}}\rvert,
 \end{equation}
 where $\mathcal{C}_{\frac{1}{2}}^2$ is the fractional bright state
 character at the SEELEM half-maximum, determined in
@@ -897,7 +903,7 @@ by rewriting the equation using the energy difference $\Delta E_{\ts
 The FWHM of the distribution around either $E_{\ts}$ or $E_{\tl}$ is
 given by the solutions to a quadratic equation:
 \begin{equation}
-  \left \lbrace
+  \text{FWHM} = \left \lbrace
     4 \left \lvert
       \alpha (1-\alpha^2)^{1/2}H_{\ell m} \Delta E_{\ts \tl} 
       \mathcal{C}_{\frac{1}{2}}
@@ -906,7 +912,7 @@ given by the solutions to a quadratic equation:
 \end{equation}
 
 We have derived the widths of the bright state term of the SEELEM
-intensity distribuion in both the weak and strong coupling limits.
+intensity distribution in both the weak and strong coupling limits.
 Along the way, a maximum of the distribution was found that depends
 only on the quantity $R_m$, which is a constant of the experiment and
 the molecule being studied.  A value of fractional bright state
@@ -915,13 +921,15 @@ which also depends only on $R_m$.  Since our use of perturbation
 theory was limited to the final steps of the derivation, most of the
 properties determined above depend only on the functional form of
 $P_{SEELEM}^{(s)}$.  We turn next to the doorway term for SEELEM
-detection probability, and compare its properties to the bright state
+detection probability, and compare its properties to those of the bright state
 term.
 
 \subsection{The doorway term}
 
-If the doorway state has sufficient Franck-Condon overlap with
-low-lying vibrational levels of the ground state, it may contribute
+If the doorway state has sufficient vertical excitation energy,
+%  Franck-Condon overlap with
+% low-lying vibrational levels of the ground state, 
+it may contribute
 to the electron ejection probability. We turn now to derive an
 intensity distribution for the doorway term
 \begin{equation}
@@ -933,7 +941,7 @@ Because the amplitudes of the bright and doorway states are squared in
 this equation, the relative phase of the bright vs. doorway
 contributions cannot lead to interference in this term. Going further, the
 fact that the system is doorway-mediated suggests that the doorway
-character be parameterized as a function of the bright state
+character be parametrized as a function of the bright state
 character:
 \begin{equation}
   C_{\ell}^2 = f(C_s^2).
@@ -959,7 +967,7 @@ state term,
     &= \frac{\Delta E_{s\ell}^2}{H_{s\ell}^2} \; P_{SEELEM}^{(s)},
   \end{split}
 \end{equation}
-the properties of which are discussed in the preceeding section.
+the properties of which are discussed in the preceding section.
 
 In the strong coupling regime, we begin by using the mixed basis to
 derive the fractional doorway state character in a nominally dark
@@ -971,7 +979,7 @@ eigenstate $\ket{M}$:
     \frac{(1-\alpha^2)}{\Delta E_{m \tl}}
   \right \rbrace^2.
 \end{equation}
-The function $f_{strong}$ does not collapse into a simple form like it
+The function $f_{strong}$ does not collapse into a simple form as it
 does for the weak coupling regime.  We write the function instead in
 terms of $\lvert \braket{M|s} \rvert^2$ and $\lvert \braket{M|\ell}
 \rvert^2$,
@@ -994,12 +1002,14 @@ the numerator and a $(+)$ sign in the denominator, so they have the
 effect of decreasing the SEELEM detection probability.  The
 bright$\sim$doorway mixing amplitude $\alpha$ appears only to even
 powers in $f_{strong}$, so interference effects do not arise from the
-phase of this mixing amplitude.  Figure ???? shows the bright state
-and doorway state SEELEM intensity terms in the strong coupling limit,
-for comparison.
+phase of this mixing amplitude.  
 
-\TODO{Figure: bright state and doorway state SEELEM intensity terms in
-  the strong coupling limit.}
+% Figure ???? shows the bright state
+% and doorway state SEELEM intensity terms in the strong coupling limit,
+% for comparison.
+
+% \TODO{Figure: bright state and doorway state SEELEM intensity terms in
+%   the strong coupling limit.}
 
 We have derived the form of the doorway term for SEELEM detection
 probability for the weak and strong coupling limits.  In the weak
@@ -1022,24 +1032,24 @@ intensity distribution. The form of the cross term
 \end{equation}
 contains odd powers of $C_s$ and $C_{\ell}$, and according to their
 relative phase, may add or subtract from the square terms.
-
 Interference effects arising from the cross term in the SEELEM
-detection probability are discussed at length in references [Selen's
-``stats'' paper], [Selen's ``mechanisms'' paper], and [Selen's thesis].
+detection probability are discussed in detail by Selen Altunata
+\cite{altunata00, altunata02, altunata-thesis}.  Since we observe no
+such effects in the experiments described in this thesis, we do not
+give the cross term further consideration.
 
-% If the doorway-dark matrix elements are assumed to have random
+% If the doorway$\sim$dark matrix elements are assumed to have random
 % phase, the relative phase of $C_s$ and $C_{\ell}$ is determined only
 % by the energy of the dark state relative to the zero order primary
 % and secondary mixed basis states. TODO: PROVE THIS FOR STRONG AND
 % WEAK COUPLING
 % % TODO!!!!!!!
-
-The highly lopsided SEELEM intensity distributions observerved in the
-$V^3_0K^1_0$ vibrational subband of $S_1$ acetylene were originally
-attributed to effects of the electron ejection cross term; however, in
-a later chapter we show that the inferred matrix element between the
-bright state and the local doorway state is not sufficient to produce
-such effects without the presence of a larger, distant doorway.
+% The highly lopsided SEELEM intensity distributions observed in the
+% $V^3_0K^1_0$ vibrational subband of $S_1$ acetylene were originally
+% attributed to effects of the electron ejection cross term; however, in
+% a later chapter we show that the inferred matrix element between the
+% bright state and the local doorway state is not sufficient to produce
+% such effects without the presence of a stronger, distant doorway.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1071,9 +1081,9 @@ nominally dark eigenstates $\lbrace \ket{M} \rbrace$, as well as two
 ``special'' eigenstates $\ket{S}$ and $\ket{L}$.  The state $\ket{S}$
 contains the greatest fractional bright state character, and likewise
 the state $\ket{L}$ contains the single greatest fractional doorway
-basis character.  A cursory look at the spectrum will reveal $\ket{S}$
-immediately, because it carries the greatest amount of oscillator
-strength.
+basis character.  A cursory look at the LIF spectrum will reveal
+$\ket{S}$ immediately, because it carries the greatest amount of
+oscillator strength.
 
 The final defining criterion for a local doorway model is that the
 eigenstate $\ket{L}$ is observed in the spectrum.  This model does not
@@ -1113,7 +1123,7 @@ will provide some indication of the relative coupling magnitudes and
 the energy of the nominal doorway state.
 
 Since $\ket{\ell}$ is well separated from the bright state in energy,
-some approximations to the dark state intsnsity distributions can be
+some approximations to the dark state intensity distributions can be
 made.  For a distant doorway, the bright state energy denominator
 dominates the intensity formula (equation \ref{eq:mixed-basis-int}),
 and
@@ -1143,12 +1153,12 @@ bright state do not yield the energy of $\ket{L}$ directly.  However,
 the product $\lvert \alpha \langle H_{\ell m} \rangle_{rms} \rvert$
 can be estimated from the width of the SEELEM spectrum, using
 equation~\ref{eq:seelem-weak-fwhm}.  From this quantity, we
-parameterize $\alpha$ in terms of $\Delta E_{s\ell}$ and predict the
+parametrize $\alpha$ in terms of $\Delta E_{s\ell}$ and predict the
 LIF/SEELEM intensity of $\ket{L}$ as a function of energy separation
 from the bright state.
 
 An expression for $\alpha$ in terms of $\Delta E_{s\ell}$ and the matrix
-element $H_{s\ell}$ comes from the analytical soltion to the $2 \times
+element $H_{s\ell}$ comes from the analytical solution to the $2 \times
 2$ Hamiltonian in the mixed basis:
 \begin{equation}
   \begin{split}
@@ -1185,7 +1195,7 @@ of $\alpha^2$, the doorway state will be detectable in SEELEM but not
 in LIF.  We evaluate the SEELEM detection probability in the weak
 coupling regime, recalling that, under these circumstances, any doorway
 contribution to the SEELEM intensity has the same form as the bright
-state contribution.  The SEELEM detection pobability scales as
+state contribution.  The SEELEM detection probability scales as
 \begin{equation}
   \alpha^4 \, exp(-R_m \alpha^2),
 \end{equation}
@@ -1199,24 +1209,24 @@ or when the energy difference $\Delta E_{s\ell}$ is
   \lvert H_{s\ell} \rvert \sqrt{\frac{2}{R_m}}.
 \end{equation}
 
-Since the quanity $\alpha^2$ is a function of $H_{s\ell}$, known
-properties of the molecule can place limits on the
-appearance of the nominal doorway state in LIF or SEELEM spetra within
-a certain energy range.  Thus, a distant doorway hypothesis may be
-tested by scanning the spectrum of a molecule within a known range.
-In practice, SEELEM spectra are dfficult to collect over a large
-energy window due to time constraints, and LIF spectra provide a
-somewhat easier way to place an upper limit on the quantity $\alpha^2$
-fo a particular bright state.  In a later chapter, we will use the
-formulas above to apply the distant doorway model to several SEELEM
-and LIF spectra of the acetylene molecule.
+Since the quantity $\alpha^2$ is a function of $H_{s\ell}$, known
+properties of the molecule can place limits on whether the nominal
+doorway state appears in LIF or SEELEM spectra within a certain energy
+range.  Thus, a distant doorway hypothesis may be tested by scanning
+the spectrum of a molecule within a known range.  In practice, SEELEM
+spectra are difficult to collect over a large energy window due to
+time constraints, and LIF spectra provide a somewhat easier way to
+place an upper limit on the quantity $\alpha^2$ for a particular
+bright state.  In a later chapter, we will use the formulas above to
+apply the distant doorway model to several SEELEM and LIF spectra of
+the acetylene molecule.
 
 \section{The local doorway plus direct coupling model}
 \label{sec:model-local-plus-direct}
 
-In this section, we examine the conseqences of allowing the bright
+In this section, we examine the consequences of allowing the bright
 state to couple weakly to the dark states in the local doorway model.
-We begin again by evluating the LIF and SEELEM intensity distributions
+We begin again by evaluating the LIF and SEELEM intensity distributions
 in the mixed basis. In the presence of two coupling pathways to the
 bright state, we separate the bright state amplitude of a nominal dark
 eigenstate $\ket{M}$ into a doorway term and a direct term:
@@ -1264,7 +1274,7 @@ dark state includes a cross term between direct and doorway coupling:
 \end{equation}
 
 Our primary concern is to evaluate possible interference patterns in
-the intensity distribution.  To this end, focus on factors controlling
+the intensity distribution.  To this end, we focus on factors that control
 the relative phase of each term.  The term $\lvert
 \braket{M|s}_{direct} \rvert^2$ is always positive, regardless of the
 relative signs of $\alpha$ and $H_{sm}$.  However, the last term in
@@ -1274,7 +1284,7 @@ term is determined by the product of these three quantities.
 
 The quantity $\alpha$ is determined by only the zero-order bright and
 doorway basis states; its phase and magnitude are the same
-irregardless of the identity of the dark state of interest $\ket{m}$.
+regardless of the identity of the dark state of interest, $\ket{m}$.
 The matrix elements $H_{s m}$ and $H_{\ell m}$ are different for
 each dark state, thus the sign of the final term in
 equation~\ref{eq:lddm-total-int} for one dark state compared to
@@ -1284,10 +1294,11 @@ The question becomes: are the phases of the matrix elements $H_{s m}$
 and $H_{\ell m}$ correlated?  To address this question, we consider
 the nature of the matrix elements in the context of spin-orbit
 coupling.  A spin-orbit matrix element $H^{SO}$ between two rovibronic
-states can be witten as a factor of an electronic matrix element and a
-Franck-Condon factor.  Since the states $\ket{s}$ and $\ket{\ell}$
-belong to different electronic surfaces their electronic factors are
-different.  The spin-orbit matrix elements may be written as
+states can be written as a factor of an electronic matrix element and
+a vibrational overlap integral.  Since the states $\ket{s}$ and
+$\ket{\ell}$ belong to different electronic surfaces their electronic
+factors are different.  The spin-orbit matrix elements may be written
+as
 \begin{subequations}
   \label{eq:spinorbit-factors}
   \begin{align}
@@ -1297,18 +1308,18 @@ different.  The spin-orbit matrix elements may be written as
 \end{subequations}
 Since the phase of the electronic factor in $H^{SO}$ is the same for
 all dark states in the Hamiltonian, the phase of the spin-orbit matrix
-element is controlled by the Franck-Condon factor alone.
+element is controlled by the vibrational overlap factor alone.
 
-Narrowing our question, are the phases of Franck-Condon factors
+Narrowing our question, are the phases of vibrational overlap factors
 $\braket{\ell|m}$ and $\braket{s|m}$ correlated for any dark state
 $\ket{m}$?  The answer depends on the location of the stationary phase
 points of the wavefunctions $\ket{\ell}$ and $\ket{s}$ where the
-overlap with $\ket{m}$ occurrs.  Since $\ket{\ell}$ and $\ket{s}$ lie
+overlap with $\ket{m}$ occurs.  Since $\ket{\ell}$ and $\ket{s}$ lie
 on different electronic surfaces, their points of overlap with dark
 state wavefunctions $\ket{m}$ are likely to occur at different
 geometries.  The phase of a wavefunction in a highly vibrationally
 excited manifold will not be correlated at two disparate geometries,
-thus the two Franck-Condon factors $\lbrace \braket{\ell|m}
+thus the two vibrational overlap factors $\lbrace \braket{\ell|m}
 \rbrace$ and $\lbrace \braket{s|m} \rbrace$ are not expected to be
 correlated in phase.
 
@@ -1317,8 +1328,8 @@ a complex energy formulation.  The complex energy description of dark
 state coupling implies a random phase approximation -- the lack of
 correlation in the phases of $H_{sm}$ and $H_{\ell m}$ is ``built
 into'' the formalism.  The discussion of a complex-energy doorway
-system presented above is modified here by alowing the zero-order
-bright state $\ket{s}$ to have a nonvanishing width.  The width of
+system presented above is modified here by allowing the zero-order
+bright state $\ket{s}$ to have a non-vanishing width.  The width of
 $\ket{s}$ arising from direct coupling is $2 \pi \lvert H_{sm}
 \rvert^2 \rho_m$.  When $\Gamma_s$ is nonzero,
 equation~\ref{eq:gamma-defs} is no longer valid, and $\delta \Gamma <
@@ -1326,7 +1337,7 @@ equation~\ref{eq:gamma-defs} is no longer valid, and $\delta \Gamma <
 will be more similar for a system that includes some direct coupling,
 compared to a strictly doorway-mediated system.  The effective
 decrease of the difference in coupling widths $\delta \epsilon_{SL}$
-pushes the system towards the strong coupling regime, defined by the
+pushes the system toward the strong coupling regime, defined by the
 inequality $V_{s\ell} \gg \Gamma_\ell$.
 
 % Write a section summary
@@ -1339,7 +1350,7 @@ of dark states are connected simultaneously through a local doorway
 $\ket{\ell}$ and a distant doorway $\ket{\ell'}$. We combine the
 methods of sections \ref{sec:model-local} and \ref{sec:model-distant}
 to evaluate the intensity terms, operating principally in a mixed
-bright-local doorway basis.  A schematic of the double doorway
+bright$\sim$local doorway basis.  A schematic of the double doorway
 Hamiltonian is shown in figure \ref{fig:matrix-double}.
 
 \begin{figure}
@@ -1375,7 +1386,7 @@ corrections for the bright state and dark states:
 \end{align}
 Since the local and distant doorway states are defined to be
 noninteracting, $\braket{\ell|\mathbf{H}_1|\ell'} = 0$, there are no
-diagonal or off-diagonal corrections ivolving the local doorway
+diagonal or off-diagonal corrections involving the local doorway
 state.  Off-diagonal corrections arise between the bright state and
 the dark states
 \begin{equation}
@@ -1482,9 +1493,11 @@ wavefunctions can determine the relative phase of $H_{\ell m}$ and
 $H_{\ell' m}$ at various turning points if the identity of the local
 and distant doorway states is known or can be guessed.
 
-We apply the double doorway model to the LIF, SEELEM, and
-photoelectron spectra of the $V^3_0K^1_0$ vibrational subband of $S_1$
-acetylene in a later chapter, and further discuss the consequences of
-this model for a real molecular system.
+% We apply the double doorway model to the LIF, SEELEM, and
+% photoelectron spectra of the $V^3_0K^1_0$ vibrational subband of $S_1$
+% acetylene in a later chapter, and further discuss the consequences of
+% this model for a real molecular system.
 
+\bibliography{master} 
+\bibliographystyle{plain}
 \end{document}

@@ -43,20 +43,21 @@ to take deconvolution beyond the direct-coupling model.\\
 --Kyle
 
 \clearpage
-
+\setcounter{chapter}{2}
 \chapter{Deconvolution of spectral data to produce a doorway-coupling
   model Hamiltonian}
 
 \section{Introduction}
 
-Spectral deconvolution is a method of local depertubation for
-high-resolution spectroscopy, used to derive a model Hamiltonian from
-an absorption spectrum.  The model Hamiltonian determined by spectral
-deconvolution contains a single zero-order bright state, which
-interacts with a set of pre-diagonalized dark basis states.  Such a
-direct-coupling Hamiltonian is shown in Figure \ref{fig:matrix}a.  In
-its discrete formulation, spectral deconvolution returns a set of dark
-state energies and squared bright$\sim$dark matrix elements.  In its
+Spectral deconvolution is a method of local deperturbation for
+high-resolution spectroscopy, used to determine the parameters that
+define a model Hamiltonian from an absorption spectrum.  The model
+Hamiltonian determined by spectral deconvolution contains a single
+zero-order bright state, which interacts with a set of
+pre-diagonalized dark basis states.  Such a direct-coupling
+Hamiltonian is shown in Figure \ref{fig:matrix}a.  In its discrete
+formulation, spectral deconvolution returns a set of dark state
+energies and squared bright$\sim$dark matrix elements.  In its
 continuous formulation, the procedure returns a zero-order spectral
 density function for coupling to the bright state.
 
@@ -67,11 +68,11 @@ developed in the study of intersystem crossing, where it has been used
 on the spectra of intermediate case molecules such as acetylene,
 napthalene, and pyrazine. \TODO{Citations}
 
-The technique for decovolution of continuous spectra was described by
+The technique for deconvolution of continuous spectra was described by
 Berg and independently, in a more general form, by Ziv and Rhodes
 \cite{berg76, ziv76}.  Both methods make use of a Green's function
 formalism.  The discrete formulation of spectral deconvolution was
-presented by Lawrance and Knight, and afterwards simplified by Lehmann
+presented by Lawrance and Knight, and afterward simplified by Lehmann
 \cite{lawrance85, lehmann91}.  Lehmann's refinement of the technique
 obviates the need to compute any Green's function from the spectrum --
 we refer to this method as Lawrance-Knight-Lehmann (LKL)
@@ -81,23 +82,23 @@ Brand and Hoy to deperturb portions of the \ce{NO2} spectrum
 artificially re-broadened the same spectrum to demonstrate their
 continuous deconvolution technique \cite{cable80}.
 
-The ultimate purpose of spectral deconvolution is to transform
-experimental information, the energies and spectral intensities of
-eigenstates, into an appropriate zero-order basis.  Although the
-zero-order states obtained from deconvolution may not be equivalent to
-the conventional Born-Oppenheimer basis states of the molecule,
-through a clever choice of ``brightness'' they may be diagonal in some
-quantum number of interest, and may facilitate interpretation in terms
-of selection rules for that quantum number.  For example, consider the
-case of ISC between a lone singlet rovibronic level and several
-triplet levels.  The spin selection rule $\Delta S=0$ for optical
-transitions ensures the unique ``brightness'' of the singlet level in
-transitions from a singlet ground state.  Upon deconvolution of the
-spectrum, the spin selection rule provides a natural separation in the
-resulting basis set according to the spin quantum number ($S=0$ for
-the bright state and $S=1$ for all dark states).  However, triplet
-sublevels belonging to different electronic states remain mixed (are
-not distinguished) in the basis provided by deconvolution.
+% The ultimate purpose of spectral deconvolution is to transform
+% experimental information, the energies and spectral intensities of
+% eigenstates, into an appropriate zero-order basis.  Although the
+% zero-order states obtained from deconvolution may not be equivalent to
+% the conventional Born-Oppenheimer basis states of the molecule,
+% through a clever choice of ``brightness'' they may be diagonal in some
+% quantum number of interest, and may facilitate interpretation in terms
+% of selection rules for that quantum number.  For example, consider the
+% case of ISC between a lone singlet rovibronic level and several
+% triplet levels.  The spin selection rule $\Delta S=0$ for optical
+% transitions ensures the unique ``brightness'' of the singlet level in
+% transitions from a singlet ground state.  Upon deconvolution of the
+% spectrum, the spin selection rule provides a natural separation in the
+% resulting basis set according to the spin quantum number ($S=0$ for
+% the bright state and $S=1$ for all dark states).  However, triplet
+% sublevels belonging to different electronic states remain mixed (are
+% not distinguished) in the basis provided by deconvolution.
 
 The set of dark states available from LKL deconvolution loses its
 lustre when an interaction of interest occurrs within the set of dark
@@ -219,8 +220,8 @@ consistent with other investigations of the system.
 \section{Lawrance-Knight-Lehmann deconvolution: \\
   Formation of a direct-coupling model Hamiltonian}
 
-Using the standard spectral deconvolution method, a direct-coupling
-Hamiltonian is constructed from an absorption spectrum.  The basis for
+Using the standard spectral deconvolution method, the parameters that define a direct-coupling
+Hamiltonian are extracted from an absorption spectrum.  The basis for
 this Hamiltonian consists of a single bright basis state $\ket{s}$,
 which is coupled to a set of $N$ prediagonalized dark states $\lbrace
 \ket{m} \rbrace$ through a set of bright$\sim$dark matrix elements
@@ -233,12 +234,11 @@ $\lbrace H_{sm} \rbrace$:
     \ket{s}\bra{m} + \ket{m}\bra{s}
   \right ).
 \end{equation}
-An illustration of this Hamiltonian is shown in Figure
-\ref{fig:matrix-direct}.  The technique of spectral deconvolution
-requires a single bright state to provide all oscillator strength from
-the initial state for the spectrum in question, otherwise interference
-effects may arise between bright states which are not uniquely
-determined.
+This Hamiltonian is illustrated in Figure \ref{fig:matrix-direct}.
+The technique of spectral deconvolution requires a single bright state
+to provide all oscillator strength from the initial state for the
+spectrum in question, otherwise interference effects, which are not
+uniquely determined, may arise between bright states.
 
 We briefly review the continuous formulation of spectral
 deconvolution, following the notation of Ziv, Cable, and Rhodes
@@ -271,8 +271,8 @@ transformation to $Im[\mathcal{G}_s(E)]$,
 where the symbol $\mathcal{P}$ indicates the principal value of the
 integral.  
 
-Using projection operators, another Green's function
-$\mathcal{F}_s(E)$ may be defined for the subspace of dark states in
+Using projection operators, another Green's function,
+$\mathcal{F}_s(E)$, may be defined for the subspace of dark states in
 the Hamiltonian \cite{ziv76, cable80}.  It is related to the Green's
 function for the full Hamiltonian by
 \begin{equation}
@@ -291,7 +291,7 @@ state.  This is called the ``interaction density spectrum'' by Ziv and
 Rhodes, and the ``weighted density function'' by Berg and others
 \cite{ziv76, berg76}.  The magnitude of this function is related to
 the local bright$\sim$dark matrix element $H_{sm}^2(E)$ and the
-density of dark states $\rho_m(E)$ \cite{berg76}:
+density of dark states $\rho_m(E)$ by the Golden Rule relation \cite{berg76}:
 \begin{equation}
   Im[\mathcal{F}_s(E)] = \pi \; H_{sm}^2(E) \; \rho_m(E).
 \end{equation}
@@ -305,12 +305,12 @@ spectral intensity (the ``center of gravity'' of the spectrum),
 a result of expanding the eigenstate absorption intensities in the
 direct-coupling basis.
 
-We add in passing that the principal values in the Kramers-Kr\"{o}nig
-integrals of equation \ref{eq:hilbert} need not be calculated
-explicitly.  Instead, the real part of the Green's function may be
-computed by a method of convolution using standard signal processing
-algorithms for Hilbert transformation of a non-recurring
-waveform. \TODO{Cite signal processing books}
+% We add in passing that the principal values in the %Kramers-Kr\"{o}nig
+% integrals of equation \ref{eq:hilbert} need not be calculated
+% explicitly.  Instead, the real part of the Green's function may be
+% computed by a method of convolution using standard signal processing
+% algorithms for Hilbert transformation of a non-recurring
+% waveform. \TODO{Cite signal processing books}
 
 If all transitions in the spectrum are fully resolved, the procedure
 for deconvolution is simplified greatly.  A method for deconvolution
@@ -329,14 +329,14 @@ connects each dark state to the bright state.
 We briefly review the deconvolution formulas for a discrete spectrum
 of transitions at frequencies $\lbrace \nu_i \rbrace$ with normalized
 intensities $\lbrace I_i \rbrace$, following Lehmann \cite{lehmann91}.
-The bright state energy $E_s$ coincides with the first moment of
+The bright state energy, $E_s$, coincides with the first moment of
 spectral intensity,
 \begin{equation}
   \label{eq:bse-discrete}
   E_s = \sum_i I_i \times \nu_i,
 \end{equation}
-as for the continuous formulation.  The dark state energies $\left
-  \lbrace E_m \right \rbrace$ in the direct-coupling basis are the
+as for the continuous formulation.  The dark state energies, $\left
+  \lbrace E_m \right \rbrace$, in the direct-coupling basis are the
 roots of the function
 \begin{equation}
   f_s(E) = \sum_i \frac{I_i}{\nu_i - E},
@@ -345,7 +345,7 @@ which may be found numerically.  After the set of dark state energies
 $\left \lbrace E_m \right \rbrace$ is obtained, the set of squared
 bright$\sim$dark matrix elements $\left \lbrace H_{sm}^2 \right
 \rbrace$ is determined by successive substitution of each dark state
-energy $E_m$ into the equation
+energy, $E_m$, into the equation
 \begin{equation}
   H_{sm}^2 = 
   \left [
@@ -371,22 +371,24 @@ nearest-neighbor level spacings among a set of dark states
 \cite{coy87}.  Conversely, the phenomenon of level trapping can be
 considered as bright$\sim$dark basis state couplings are ``turned on''
 upon diagonalization.  As a result of level repulsion with the bright
-state, the energies of the eigenstates are pushed apart, compared with
+state, the energies of the eigenstates are pushed apart, relative to
 the zero-order dark state energies.  Within the available window
 between consecutive dark states, the level shift experienced by an
 eigenstate upon diagonalization is reflected in its bright state
-character.  A general form of this relationship between level shift
-and bright state character holds for any effective Hamiltonian with a
-single bright state.  It makes it possible to compute, for the general
-case, spectral intensities without computation of full eigenvectors.
-\TODO{Cite Gruebele}
+character.  
+
+% A general form of this relationship between level shift
+% and bright state character holds for any effective Hamiltonian with a
+% single bright state.  It makes it possible to compute, for the general
+% case, spectral intensities without computation of full eigenvectors.
+% \TODO{Cite Gruebele}
 
 \section{Extended deconvolution: \\
   Formation of a doorway-coupling model Hamiltonian}
 
 We wish to go a step beyond the LKL deconvolution procedure and
 construct a Hamiltonian in which only a single dark basis state,
-$\ket{\ell}$, is coupled to the bright state.  The doorway state
+$\ket{\ell}$, is coupled to the bright state.  This doorway state
 mediates all coupling between the bright state and the set of
 remaining dark states $\lbrace \ket{n} \rbrace$:
 \begin{equation}
@@ -488,7 +490,7 @@ the direct-coupling Hamiltonian,
   \label{eq:dse-discrete}
   E_{\ell} = \sum_m H_{sm}^2 \times E_m.
 \end{equation}
-The new set of dark state energies $\lbrace E_n \rbrace$ for the
+The new set of dark state energies, $\lbrace E_n \rbrace$, for the
 doorway-coupling Hamiltonian is given by the roots of
 \begin{equation}
   f_{\ell}(E) = \sum_m \frac{H_{sm}^2}{E_m - E},
@@ -496,7 +498,7 @@ doorway-coupling Hamiltonian is given by the roots of
 which places a single $E_n$ between each consecutive pair of dark
 state energies in the direct-coupling Hamiltonian.  The new set of
 doorway$\sim$dark matrix elements is found from the dark state
-energies $\lbrace E_n \rbrace$ by substitution into
+energies, $\lbrace E_n \rbrace$, by substitution into
 \begin{equation}
   H_{sn}^2 = 
   \left [
@@ -595,7 +597,7 @@ the eigenstates of the spectrum.
 
 \begin{figure}
   \caption{Thick vertical lines: Dark basis state energies and matrix
-    elements obtained by disrete LKL deconvolution of a portion of the
+    elements obtained by discrete LKL deconvolution of a portion of the
     \ce{NO2} spectrum reported by Smalley \emph{et. al.}
     \cite{smalley75}.  The bright state energy obtained from
     deconvolution is displayed as a vertical line in the negative
@@ -615,7 +617,7 @@ the eigenstates of the spectrum.
     the positive direction, scaled to the bright$\sim$doorway matrix
     element.  The energy of the doorway state is displayed as a
     vertical line in the negative direction.  The original absorption
-    spectrum is shown as a set of gaussian lineshapes superimposed on
+    spectrum is shown as a set of Gaussian lineshapes superimposed on
     the deconvolution results.  Note that the energies for the
     combined set of bright and dark states in the doorway-coupled
     basis satisfy the usual level trapping rules for dark states in a
@@ -636,7 +638,7 @@ it is clear that the distribution of doorway amplitude among the dark
 states is equivalent to the distribution of bright state amplitude in
 a direct-coupling model.  As a consequence, the phenomenon of level
 trapping still applies to a doorway-coupled system, though the bright
-state and doorway state have swapped places.  In the doorway-coupling
+state and doorway state have swapped roles.  In the doorway-coupling
 Hamiltonian, the zero-order bright state and the $N-1$ zero-order dark
 states are trapped between the eigenstate energies, in the same manner
 as the $N$ dark states of the direct-coupling Hamiltonian.
@@ -682,7 +684,7 @@ the Green's function derived from the absorption spectrum.
   \caption{Comparison of discrete and continuous extended
     deconvolution results for the same spectrum.  The dark state
     energies and squared matrix elements in the discrete formulation
-    correspond to the peak of the interaction density spectrum in the
+    correspond to the peaks of the interaction density spectrum in the
     continuous formulation.}
   \label{fig:compare-dark}
   \centering
@@ -712,7 +714,7 @@ nonzero tails of the Lorentzian peaks, which cause the inverse of the
 Green's function to accumulate at the edges of the computed spectrum.
 
 \begin{figure}
-  \caption{Continuous deconvolution carried out for lorentzian
+  \caption{Continuous deconvolution carried out for Lorentzian
     broadened lineshapes of 6 cm$^{-1}$ fwhm, corresponding to $1/2$
     the average level spacing of the spectrum.  The continuous
     deconvolution result is consistent with the discrete result to a
@@ -733,7 +735,7 @@ and intensities.  In this situation, the experimentalist is faced with
 two choices: discretize the spectrum and miss dark state$\sim$dark
 state spacings smaller than the resolution, or convolve the spectrum
 with a Lorentzian lineshape to obtain an unresolved but functionally
-correct interaction density spectrum.  The parameters $E_s$,
+correct interaction density spectrum.  The parameters, $E_s$,
 $H_{s\ell}^2$, and $E_{\ell}$, because they are related to moments of
 the spectrum, will remain correct for any symmetric lineshape in the
 spectrum.
@@ -778,7 +780,7 @@ fluorescence (LIF) spectrum of the $3^3_0K^1_0$ vibronic subband of
 $S_1$ acetylene at a resolution of 18 MHz \cite{drabbels94}.  The
 authors used the LKL method to generate a set of direct-coupling
 matrix elements from the spectral data.  However, several subsequent
-investigations of the this band have found strong evidence that a
+investigations of this band have found strong evidence that a
 single vibrational level of the $T_3$ electronic state mediates coupling
 between the $S_1$ level and the remaining levels, which are classified
 as high-lying vibrational levels of the $T_1$ and $T_2$ electronic
@@ -791,14 +793,14 @@ shown in Table \ref{table:drabbels-deconv}.  Note the near-linear
 change in bright state - doorway state energy difference with
 increasing $J$.  This result is consistent with the observation of a
 local $T_3$ vibrational level with a rotational constant slightly
-different from the singlet.
+different that of the singlet.
 
 \begin{table}
   \caption{Extended deconvolution results for the $3^3_0K^1_0$
     vibrational subband of $S_1$ acetylene.  The energies of 
-    the zero-order bright state $E_s$ and doorway state $E_{\ell}$ 
-    are given, as well as the zero-order energy difference $\Delta
-    E_{s\ell}$ and bright$\sim$doorway matrix element $H_{s\ell}$.
+    the zero-order bright state, $E_s$, and doorway state, $E_{\ell}$, 
+    are given, as well as the zero-order energy difference, $\Delta
+    E_{s\ell}$, and bright$\sim$doorway matrix element, $H_{s\ell}$.
     All values are in units of cm$^{-1}$.}
   \label{table:drabbels-deconv}
   \centering
@@ -870,7 +872,7 @@ The most complete description of the doorway level in $3^3_0K^1_0$ is
 given by Mishra \emph{et. al.}, who used the complimentary
 spectroscopic techniques of LIF and SEELEM to record the spectrum of
 long-lived states coupled weakly to $S_1$ \cite{mishra04}.  To analyze
-this local $T_3$ pertuber, they constructed reduced term value plots
+this local $T_3$ perturber, they constructed reduced term value plots
 and fit the experimental energies to a model Hamiltonian.
 
 The results of the Hamiltonian fit by Mishra \emph{et. al.} yielded a
@@ -908,9 +910,10 @@ absorption intensities rests on the assumption that only the bright
 state character of an eigenstate contributes to the fluorescence
 intensity.  This is indeed the case for the low-lying triplet basis
 states of acetylene, from which transitions to the ground state are
-spin-forbidden.  (If the assumption of no fluorescence from dark basis
-states not hold completely, errors arising from dark state ``leakage''
-are described in the appendix of reference \cite{delon95}.)
+spin-forbidden.  
+% (If the assumption of no fluorescence from dark basis
+% states not hold completely, errors arising from dark state ``leakage''
+% are described in the appendix of reference \cite{delon95}.)
 
 \section{Conclusion}
 
@@ -921,11 +924,11 @@ of the effective Hamiltonian, the doorway state energy and
 bright$\sim$doorway matrix element, were related to simple moments of
 the spectral intensity distribution.  By making a correspondence to
 the work of Ziv and Rhodes on continuous deconvolution, we have shown
-how an effective Hamiltonian could be derived for any number of
-sequential doorway states.
+how the parameters that define an effective Hamiltonian can be derived
+for any number of sequential doorway states.
 
 This technique was applied to the spectrum of the $3\nu_3$ $K=1$
-vibrational level of $S_1$ acetylene, where a single, local $T_3$
+vibrational level of $S_1$ acetylene, where a single, local, $T_3$
 doorway level mediates coupling to the $T_{1,2}$ manifold.  The
 deperturbed $T_3$ energies and matrix elements were shown to be
 consistent with past studies.  A comparison was made to the $S$
@@ -938,3 +941,6 @@ $E_{\ell} \times H_{s\ell}^2$.
 \bibliography{deconv}
 
 \end{document}
+% LocalWords:  deperturbation Intramolecular IVR intersystem deperturb occurrs
+% LocalWords:  rovibronic Hamiltonians Lorentzian eigenvectors vibronic
+% LocalWords:  perturber

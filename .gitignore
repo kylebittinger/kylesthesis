@@ -1,5 +1,6 @@
 # Compiled output
 chapter*.pdf
+main.pdf
 *.dvi
 extra-*/*.pdf
 

@@ -1,13 +1,13 @@
-\documentclass[12pt]{mitthesis} 
-\usepackage[pdftex]{graphicx}
-\usepackage{kylesthesis}
-\begin{document}
+% \documentclass[12pt]{mitthesis} 
+% \usepackage[pdftex]{graphicx}
+% \usepackage{kylesthesis}
+% \begin{document}
 
-\tableofcontents
-\clearpage
+% \tableofcontents
+% \clearpage
 
-\subsubsection*{NOTES}
-\clearpage
+% \subsubsection*{NOTES}
+% \clearpage
 
 \chapter{A pulsed supersonic jet source of molecules in long-lived,
   electronically excited states
@@ -205,30 +205,46 @@ probabilities in units of (W/m$^2$)$^{-2}$s$^{-1}$.
   \includegraphics[height=8in,trim=4mm 0 0 0]{Hg-opticalpumpingschemes.pdf}
 \end{figure}
 
-\begin{figure}
+\begin{table}
   \caption{Calculated two-photon transition probabilities for the five
     possible excitation schemes discussed in the text.  Total
-    probabilities depend on the square of laser intensity; quantities
-    given in the figure are in units of (W/m$^2$)$^{-2}$s$^{-1}$.  The
+    probabilities depend on the square of laser intensity.  The
     calculation indicates that the one color TPA to Hg*($7 \; ^3S_1$)
     is exactly zero.  Transition probabilities for excitation to the
     Hg*($6 \; ^3D_2$) level are two order of magnitude higher than the
     weakly allowed two color, two-photon transition probabilities to
     Hg*($7 \; ^3S_1$).}
-  \label{fig:tpa-prob}
+  \label{table:tpa-prob}
   \centering
-  \includegraphics[width=7in,angle=90]{tpt-probs.pdf}
-\end{figure}
+  \vspace{1cm}
+  \begin{tabular}{lc}
+    \toprule
+    Hg transition & Two-photon transition probability, $10^{-15}$ (W/m$^2$)$^{-2}$s$^{-1}$\\
+    \midrule
+    $7 \; ^3S_1 \leftarrow \leftarrow 6 \; ^1S_0$ & 0 \\
+    one color\\
+    $7 \; ^3S_1 \leftarrow \leftarrow 6 \; ^1S_0$ & 3.19 \\ 
+    two color, tuned to $^3P_0$\\
+    $7 \; ^3S_1 \leftarrow \leftarrow 6 \; ^1S_0$ & 2.29 \\
+    two color (355 + 292 nm)\\
+    $6 \; ^3D_2 \leftarrow \leftarrow 6 \; ^1S_0$ & 466 \\
+    one color\\
+    $6 \; ^3D_2 \leftarrow \leftarrow 6 \; ^1S_0$ & 106 \\
+    two color, tuned to $^3P_2$\\
+    \bottomrule
+  \end{tabular}
+%  \includegraphics[width=7in,angle=90]{tpt-probs.pdf}
+\end{table}
 
 The calculated transition probabilites for each scheme are displayed
-in Figure \ref{fig:tpa-prob}.  The one color, two-photon transition to
-the $6 \; ^3D_2$ level, item (d), has the greatest transition
-probability among all the two-photon schemes considered.  The
-two color transition to $6 \; ^3D_2$, item (e), is slightly weaker.
-The two color, two-photon excitation schemes to the $7 \; ^3S_1$ level,
-items (b) and (c), are an order of magnitude weaker yet, and the
-one color, two-photon excitation to $7 \; ^3S_1$, item (a), is
-forbidden entirely.
+in Table \ref{table:tpa-prob}.  The one color, two-photon transition
+to the $6 \; ^3D_2$ level, item (d), has the greatest transition
+probability among all the two-photon schemes considered.  The two
+color transition to $6 \; ^3D_2$, item (e), is slightly weaker.  The
+two color, two-photon excitation schemes to the $7 \; ^3S_1$ level,
+items (b) and (c), are an order of magnitude weaker yet, and the one
+color, two-photon excitation to $7 \; ^3S_1$, item (a), is forbidden
+entirely.
 
 The Hg*($7 \; ^3S_1$) $\leftarrow\leftarrow$ Hg($6 \; ^1S_0$)
 two-photon transition is rigorously forbidden according to the
@@ -788,6 +804,6 @@ increased sensitivity to \ce{C2H2}* relative to Hg*($^3P_2$) is
 indicated by an overall increase in SEELEM signal for a gas mixture
 containing both species.
 
-\bibliography{master} 
-\bibliographystyle{plain}
-\end{document}
+% \bibliography{master} 
+% \bibliographystyle{plain}
+% \end{document}

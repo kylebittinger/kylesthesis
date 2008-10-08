@@ -1,9 +1,9 @@
-\documentclass[12pt]{mitthesis}
-\usepackage[pdftex]{graphicx}
-\usepackage{kylesthesis}
-\begin{document}
-\tableofcontents
-\clearpage
+% \documentclass[12pt]{mitthesis}
+% \usepackage[pdftex]{graphicx}
+% \usepackage{kylesthesis}
+% \begin{document}
+% \tableofcontents
+% \clearpage
 
 \chapter{Introduction}
 \label{chapter:intro}
@@ -70,15 +70,16 @@ non-degenerate with a perturbed singlet level.
 
 The first experimental detection of acetylene in the triplet state was
 reported by Burton and Hunziker in 1972 \cite{burton72}.  They
-produced triplet acetylene molecules in collisions with excited mercury
-atoms, the latter produced by absorption of 254 nm radiation from a
-mercury resonance lamp.  This process is called mercury
-photosensitization, and has been known to photochemists since the
-1920's \cite{calvert66, cairo22}.  Triplet acetylene was detected in
-the experiments by collisional excitation of biacetyl, which emits
-phosphorescence in the visible region of the spectrum \cite{burton72}.
-The energy of triplet acetylene was estimated to be roughly 2.6-4.7
-eV.
+produced triplet acetylene molecules by the process of mercury
+photosensitization.  Mercury photosensitization is the electronic
+excitation of molecules in collisions with excited mercury atoms.  The
+excited atoms are produced by absorption of 254 nm radiation from a
+mercury resonance lamp.  The process has been known to photochemists
+since the 1920's \cite{calvert66, cairo22}.  Triplet acetylene was
+detected in the experiments by collisional excitation of biacetyl,
+which emits phosphorescence in the visible region of the spectrum
+\cite{burton72}.  The energy of triplet acetylene was estimated to be
+roughly 2.6-4.7 eV.
 
 Subsequent experiments investigated the geometry of triplet acetylene.
 The spectrum of a triplet-triplet transition in the near
@@ -301,10 +302,10 @@ in some detail.
 
 In a Zeeman anticrossing experiment, the excitation laser is fixed on
 an optical transition terminating in a nominally singlet rovibronic
-level of the molecule.  As a magnetic field is increased,
-triplet-mixed levels tune through resonance with the singlet.
-Relative to the singlet level at $E=0$, the energy of a mixed triplet
-level is (by the linear Zeeman effect)
+level of the molecule, and a magnetic field is tuned.  As the magnetic
+field is increased, the energies of triplet-mixed levels tune through
+resonance with the singlet.  Relative to the singlet level at $E=0$,
+the energy of a mixed triplet level is (by the linear Zeeman effect)
 \begin{equation}
   E = g \, M_s \, \mu_B \, (B-B_0),
 \end{equation}
@@ -326,18 +327,18 @@ between the bright state and the interacting level:
 
 Dupr\'{e} and coworkers measured the $0-8$ T anticrossing spectra of
 the $J'=0$, $K'=0$ rovibronic levels in $S_1$ $\nu_3'=0-3$
-\cite{dupre91}.  They observed a rapid increase in the density of
-mixed-triplet levels with excitation in $\nu_3$.  Because the observed
-density of states is larger than number of $T_{1,2}$ levels, they
-conclude that the triplet levels must mix with and contaminate the
-denser manifold of $S_0$ levels.  However, increased $T_{1,2} \sim
-S_0$ coupling does not by itself make more mixed-triplet levels
-accessible to cross with the $S_1$ level.  The $S_1$ level can only
-undergo triplet-mediated mixing with $S_0$ levels over an energy range
-on the order of the $S_1 \sim T$ matrix element.  Therefore, they
-conclude that coupling between $S_1$ and a subset of the triplet
-levels $T$ must increase to make the dense manifold of mixed $T_{1,2}
-\sim S_0$ levels observable in the experiment.
+\cite{dupre91}.  The density of mixed-triplet levels was observed to
+increase rapidly with excitation in $\nu_3$.  Because density of
+states is larger than the number of $T_{1,2}$ levels, they concluded
+that the triplet levels must mix with and contaminate the denser
+manifold of $S_0$ levels.  However, increased $T_{1,2} \sim S_0$
+coupling does not by itself make more mixed-triplet levels accessible
+to cross with the $S_1$ level.  The $S_1$ level can only undergo
+triplet-mediated mixing with $S_0$ levels over an energy range on the
+order of the $S_1 \sim T$ matrix element.  Therefore, they concluded
+that coupling between $S_1$ and a subset of the triplet levels $T$
+must increase to make the dense manifold of mixed $T_{1,2} \sim S_0$
+levels observable in the experiment.
 
 A rapid increase in anticrossing linewidth with excitation in $\nu_3$
 was observed in the same study \cite{dupre91}.  Since the linewidth is
@@ -346,32 +347,39 @@ conclusion that the $S_1 \sim T$ coupling is increasing with
 excitation in $\nu_3$.  Accounting for both observations, the authors
 are able to exclude several possible mechanisms for the increase in
 anticrossing density.  Direct $S_1 \sim S_0$ internal conversion is
-ruled out because it cannot account for a sudden increase in
-vibrational overlap integrals between relatively unmixed $S_1$ levels
-and essentially fully mixed $S_0$ levels, over the energy range of the
-study.  The possibility that $S_0$ dissociation limit may increase the
-total density of states is ruled out because the increase in state
-density would be accompanied by a decrease in vibrational overlap
-integrals.
+ruled out because there is nothing to account for a sudden increase
+in $S_1 \sim S_0$ vibrational overlap integrals.  The possibility that
+the $S_0$ dissociation limit may increase the total density of states
+is ruled out because any increase in state density would be
+accompanied by a decrease in vibrational overlap integrals.
+
+Dupr\'{e} and Green characterized a wide anticrossing in the $3\nu_3'$
+$J'=0$ $K'=0$ level, attributed to a triplet level with relative
+energy $\Delta E = \pm 6.67$ cm$^{-1}$ \cite{dupre93}.  Thom and
+coworkers provide a useful summary of this experiment in their recent
+article \cite{thom07}.  Many weak anticrossings with nominal $S_0$
+levels can be seen perturbing the strong $S_1 \sim T$ anticrossing.
+The zero-field matrix element is $0.29$ cm$^{-1}$ if $K_{T}=0$, or
+$0.58$ if $K_{T}=1$ \cite{thom07}.
 
 In further studies, Dupr\'{e} and coworkers undertook the individual
 analysis of approximately 60 anticrossings from the $\nu_3'=0-2$
 spectra \cite{dupre95a}.  The analysis reveals a large variation in
 measured $g$ factors, which implies that the $T_{1,2}$ levels are
-highly mixed.  Mixing between triplet states according to the
-selection rule $\Delta M_S = \pm 1$ causes the $g$ factors to vary
+highly mixed.  Mixing between triplet states, according to the
+selection rule $\Delta M_S = \pm 1$, causes the $g$ factors to vary
 from the expected value of $2$.  Strong $S_0 \sim T_{1,2}$ mixing is
-ruled out, because it would cause the $g$ factors to be close to zero.
+ruled out because it would cause the $g$ factors to be close to zero.
 The authors also observed that all quantum beat frequencies vary as a
 function of field strength \cite{dupre95a}.  Direct mixing (``internal
-conversion'') between $S_1$ and $S_0$ is therefore ruled out, because
+conversion'') between $S_1$ and $S_0$ is therefore ruled out, since
 it would cause the frequencies of quantum beats to be approximately
 constant as a function of magnetic field strength ($M_S=0$ for all
 singlet levels).
 
 In the final paper of the series, Dupr\'{e} derives the product
 $\rho_{vib} \cdot \langle V \rangle$ from the Fourier transform of
-anticrossing spectra for $\nu_3=0-4$ \cite{dupre95b}.  They determined
+anticrossing spectra for $\nu_3=0-4$ \cite{dupre95b}.  He determines
 that the product $\rho_{vib} \cdot \langle V \rangle$ increases
 exponentially from $0\nu_3$ to $4\nu_3$.  The density of states does
 not increase appreciably over this energy range, so the effect must
@@ -379,39 +387,31 @@ arise from an increasing matrix element.
 
 The authors proposed an order of interaction strengths: $T_1 \sim T_2
 \gg S_1 \sim T \gg S_1 \sim T_{1,2} \gg S_0 \sim T_{1,2} \gg S_1 \sim
-S_0$.\footnote{The authors do not explicitly state the inequality $S_1
+S_0$\footnote{The authors do not explicitly state the inequality $S_1
   \sim T \gg S_1 \sim T_{1,2}$, but it is implied by the rapid
-  increase in anticrossing density with excitation in $\nu_3'$.}  The
-first inequality is supported by the large variation in measured $g$
-factors \cite{dupre95a}.  The inequality $S_1 \sim T_{1,2} \gg S_0
-\sim T_{1,2}$ allows for the large number of $S_0$ levels detected in
-the ZAC experiments \cite{dupre91}.  The third inequality, $S_0 \sim
-T_{1,2} \gg S_1 \sim S_0$, states that the internal conversion process
-from $S_1$ to $S_0$ is triplet-mediated, as supported by the variation
-in quantum beat frequencies with magnetic field \cite{dupre95a}.
+  increase in anticrossing density with excitation in $\nu_3'$.}
+\cite{dupre95b} The first inequality is supported by the large
+variation in measured $g$ factors \cite{dupre95a}.  The inequality
+$S_1 \sim T_{1,2} \gg S_0 \sim T_{1,2}$ allows for the large number of
+$S_0$ levels detected in the ZAC experiments \cite{dupre91}.  The
+third inequality, $S_0 \sim T_{1,2} \gg S_1 \sim S_0$, states that the
+internal conversion process from $S_1$ to $S_0$ is triplet-mediated,
+as supported by the variation in quantum beat frequencies with
+magnetic field \cite{dupre95a}.
 
-Dupr\'{e} and Green characterized a wide anticrossing in the $3\nu_3'$
-$J'=0$ $K'=0$ level, attributed to a $T_3$ level with relative energy
-$\Delta E = \pm 6.67$ cm$^{-1}$ \cite{dupre93}.  Thom and coworkers
-provide a useful summary of this experiment in their recent article
-\cite{thom07}.  Many weak anticrossings with nominal $S_0$ levels can
-be seen perturbing the strong $S_1 \sim T_3$ anticrossing.  The
-zero-field $S_1 \sim T_3$ matrix element is $0.29$ cm$^{-1}$ if
-$K_{T_3}=0$, or $0.58$ if $K_{T_3}=1$.
-
-The authors propose two mechanisms to explain the rapid increase in
-anticrossing density with excitation in $\nu_3'$: a $S_1 \sim T_3$
-curve crossing, and a $T_2$ linear isomerization barrier.  Under the
-first mechanism, the observed $S_1 \sim T$ coupling is induced by a
-sparse collection $T_3$ levels, most of which are located outside the
-tuning range of the magnetic field.  Under the second proposed
-mechanism, the $T_2$ linear isomerization barrier causes the
-vibrational overlap between $T_2$ levels in the \emph{cis}-well and
-$S_1$ levels in the \emph{trans}-well to increase in the region of the
-linear turning point.  Although the second mechanism is energetically
-possible, subsequent \emph{ab initio} calculations rule out the linear
-$T_2$ barrier in favor of the first mechanism \cite{vacek96,
-  sherrill96, cui96, cui97, ventura03}.
+Two mechanisms are put forward to explain the rapid increase in
+anticrossing density with excitation in $\nu_3'$: an $S_1 \sim T_3$
+curve crossing and a $T_2$ linear isomerization barrier \cite{dupre91,
+  dupre95b}.  Under the first mechanism, the observed $S_1 \sim T$
+coupling is induced by a sparse manifold of $T_3$ levels, most of
+which are located outside the tuning range of the magnetic field.
+Under the second proposed mechanism, the $T_2$ linear isomerization
+barrier causes the vibrational overlap between $T_2$ levels in the
+\emph{cis}-well and $S_1$ levels in the \emph{trans}-well to increase
+in the region of the linear turning point.  Although the second
+mechanism is energetically possible, subsequent \emph{ab initio}
+calculations rule out the linear $T_2$ barrier in favor of the first
+mechanism \cite{vacek96, sherrill96, cui96, cui97, ventura03}.
 
 % The main conclusions are summarized as follows.
 % \begin{inparaenum}
@@ -465,7 +465,7 @@ Recent investigations in our laboratory have led to the observation of
 more triplet-perturbed levels in $S_1$ acetylene, as a fortunate side
 effect in the deperturbation of the non-symmetric bending polyads
 \cite{merer08, steeves08}.  Levels with excitation in the
-non-symmetric bending modes are of particular interest, because motion
+non-symmetric bending modes are of particular interest because motion
 along these coordinates may promote or reduce $S_1 \sim T_3$
 vibrational overlap integrals.  Further information about the
 non-symmetric bending modes, $\nu_4$ and $\nu_6$, would shed new light
@@ -481,7 +481,7 @@ as aniline and isoquiniline \cite{sneh86, sneh88, sneh89a, sneh89b,
   sneh91}.  It is based on the well-established, more general
 technique of metastable detection by electron ejection from surfaces
 \cite{hotop96}.  The use of laser excitation to populate metastable
-states in SEELEM is somewhat paradoxical, because by definition,
+states in SEELEM is somewhat paradoxical because, by definition,
 direct optical transitions to such states are strongly forbidden.  The
 method of SEELEM detection sidesteps the problem of weak optical
 transitions by maintaining a low level of background electron signal.
@@ -533,9 +533,9 @@ filter, and is collected by a photomultiplier tube (PMT).
 Laser-excited metastable molecules travel through a 3 mm diameter
 skimmer and into a second, differentially pumped vacuum chamber.
 Approximately 34 cm from the point of laser excitation, the
-metastables collide with the metal surface of the SEELEM detector, and
-ejected electrons are collected by an electron multiplier, located
-immediately below the metal surface.
+metastables collide with the metal surface of the SEELEM detector.
+Ejected electrons are collected by an electron multiplier that is
+located immediately below the metal surface.
 
 \begin{figure}
   \caption{Diagram of the LIF/SEELEM apparatus.  Laser radiation in
@@ -616,9 +616,9 @@ reaction of metastable \ce{Xe}* with \ce{N2}.
 
 Chapter 7 concludes and reviews the prospects for future research.
 
-\bibliography{master}
-\bibliographystyle{plain}
-\end{document}
+% \bibliography{master}
+% \bibliographystyle{plain}
+% \end{document}
 % LocalWords:  Hunziker photosensitization photochemists nm biacetyl Hemminger
 % LocalWords:  Wendt cis Lisy Klemperer vibronically detectivity Intramolecular
 % LocalWords:  spectroscopists Intersystem ISC deperturbation eV initio CCH ZAC

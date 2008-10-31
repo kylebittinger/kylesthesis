@@ -41,21 +41,21 @@
 
 Spectral deconvolution is a method of local deperturbation for
 high-resolution spectroscopy, used to determine the parameters that
-define a model Hamiltonian from an absorption spectrum.  The model
-Hamiltonian determined by spectral deconvolution contains a single
-zero-order bright state, which interacts with a set of
-pre-diagonalized dark basis states.  Such a direct-coupling
-Hamiltonian is shown in Figure \ref{fig:matrix}a.  In its discrete
-formulation, spectral deconvolution returns a set of dark state
-energies and squared bright$\sim$dark matrix elements.  In its
-continuous formulation, the procedure returns a zero-order spectral
-density function for coupling to the bright state.
+define a model Hamiltonian from a spectrum.  The model Hamiltonian
+determined by spectral deconvolution contains a single zero-order
+bright state, which interacts with a set of pre-diagonalized dark
+basis states.  Such a direct-coupling Hamiltonian is shown in Figure
+\ref{fig:matrix}a.  In its discrete formulation, spectral
+deconvolution returns a set of dark state energies and squared
+bright$\sim$dark matrix elements.  In its continuous formulation, the
+procedure returns a zero-order spectral density function for coupling
+to the bright state.
 
 Spectral deconvolution has been used to study Intramolecular
 Vibrational Redistribution (IVR) in many small molecules, including
 \ce{NO2}, allene, and several substituted propynes \cite{cable80,
   timmermans95, andrews98, hudspeth98}.  It was originally developed
-in the study of intersystem crossing, where it has been used on the
+in the study of intersystem crossing, where it has been applied to the
 spectra of intermediate case molecules such as acetylene, napthalene,
 and pyrazine \cite{drabbels94, cable80, lawrance85}.
 
@@ -92,7 +92,7 @@ continuous deconvolution technique \cite{cable80}.
 % not distinguished) in the basis provided by deconvolution.
 
 The set of dark states available from LKL deconvolution loses its
-lustre when an interaction of interest occurrs within the set of dark
+lustre when an interaction of interest occurs within the set of dark
 states.  This is the case for sequential coupling among tiers of dark
 states, a common situation in small polyatomic molecules
 \cite{tramer05}.  Although dark state$\sim$dark state interactions
@@ -146,8 +146,8 @@ and Rhodes.  We provide formulas to simplify the computation of
 doorway state energy and matrix element, using moments of the spectral
 intensity.  By comparison with the discrete method, we show that the
 continuous method produces exact results for the zero-order density
-function, within the spectral resolution, when used with Lorentzian
-line shapes.  
+function %, within the spectral resolution,
+when used with Lorentzian line shapes.
 %To investigate errors in the deconvolution results, we
 %apply the process to a set of simulated spectra.  
 The usefulness of
@@ -157,12 +157,12 @@ consistent with other investigations of the system.
 
 \begin{figure}
   \caption{Top: Diagram of a direct-coupling model Hamiltonian.  One
-    vector of matrix elements connects a single bright state $\ket{s}$
-    to a prediagonalized set of dark basis states $\lbrace \ket{m}
+    vector of matrix elements connects a single bright state, $\ket{s}$,
+    to a prediagonalized set of dark basis states, $\lbrace \ket{m}
     \rbrace$.  Middle: Diagram of a doorway-coupling Hamiltonian.  A
-    single bright basis state $\ket{s}$ is connected to a single
+    single bright basis state, $\ket{s}$, is connected to a single
     doorway basis state $\ket{\ell}$, which is connected in turn to a
-    pre-diagonalized block of dark states $\lbrace \ket{m} \rbrace$.
+    pre-diagonalized block of dark states, $\lbrace \ket{m} \rbrace$.
     Bottom: Diagram of a doorway-coupling Hamiltonian in the embedded
     bright state arrangement. The form of the matrix is equivalent to
     the direct-coupling model, without the need for a matrix
@@ -209,14 +209,14 @@ consistent with other investigations of the system.
 \end{figure}
 
 \section{Lawrance-Knight-Lehmann deconvolution: \\
-  Formation of a direct-coupling model Hamiltonian}
+  Construction of a direct-coupling model \\Hamiltonian}
 
-Using the standard spectral deconvolution method, the parameters that define a direct-coupling
-Hamiltonian are extracted from an absorption spectrum.  The basis for
-this Hamiltonian consists of a single bright basis state $\ket{s}$,
-which is coupled to a set of $N$ prediagonalized dark states $\lbrace
-\ket{m} \rbrace$ through a set of bright$\sim$dark matrix elements
-$\lbrace H_{sm} \rbrace$:
+Using the standard spectral deconvolution method, the parameters that
+define a direct-coupling Hamiltonian are extracted from an absorption
+spectrum.  The basis for this Hamiltonian consists of a single bright
+basis state, $\ket{s}$, which is coupled to a set of $N$
+prediagonalized dark states, $\lbrace \ket{m} \rbrace$, through a set
+of bright$\sim$dark matrix elements, $\lbrace H_{sm} \rbrace$:
 \begin{equation}
   \mathbf{H}_{direct} = 
   E_s\ket{s}\bra{s} 
@@ -228,7 +228,7 @@ $\lbrace H_{sm} \rbrace$:
 This Hamiltonian is illustrated in Figure \ref{fig:matrix-direct}.
 The technique of spectral deconvolution requires a single bright state
 to provide all oscillator strength from the initial state for the
-spectrum in question, otherwise interference effects, which are not
+spectrum in question, otherwise interference effects, which cannot be
 uniquely determined, may arise between bright states.
 
 We briefly review the continuous formulation of spectral
@@ -281,8 +281,9 @@ is the desired zero-order density function for coupling to the bright
 state.  This is called the ``interaction density spectrum'' by Ziv and
 Rhodes, and the ``weighted density function'' by Berg and others
 \cite{ziv76, berg76}.  The magnitude of this function is related to
-the local bright$\sim$dark matrix element $H_{sm}^2(E)$ and the
-density of dark states $\rho_m(E)$ by the Golden Rule relation \cite{berg76}:
+the local bright$\sim$dark squared matrix element $H_{sm}^2(E)$ and
+the density of dark states $\rho_m(E)$ by the Golden Rule
+\cite{berg76}:
 \begin{equation}
   Im[\mathcal{F}_s(E)] = \pi \; H_{sm}^2(E) \; \rho_m(E).
 \end{equation}
@@ -375,7 +376,7 @@ character.
 % \TODO{Cite Gruebele}
 
 \section{Extended deconvolution: \\
-  Formation of a doorway-coupling model Hamiltonian}
+  Construction of a doorway-coupling model \\Hamiltonian}
 
 We wish to go a step beyond the LKL deconvolution procedure and
 construct a Hamiltonian in which only a single dark basis state,
@@ -395,34 +396,35 @@ remaining dark states $\lbrace \ket{n} \rbrace$:
 A diagram of a doorway-coupling Hamiltonian is shown in Figure
 \ref{fig:matrix}b.
 
-A continuous formulation for creating a doorway-coupling Hamiltonian
-from the spectrum was presented by Ziv and Rhodes \cite{ziv76}.  They
-begin with the Green's function for the subspace of dark states in the
-direct coupling Hamiltonian $\mathcal{F}_s(E)$.  This diagonal block
-of states is partitioned into a single doorway state $\ket{\ell}$ and
-a new subspace of dark states, creating the doorway-coupling
-Hamiltonian.  The Green's function $\mathcal{G}_{\ell}(E)$ for the
-doorway$\sim$dark block is determined by $\mathcal{F}_s(E)$:
+A continuous formulation for constructing a doorway-coupling
+Hamiltonian from the spectrum was presented by Ziv and Rhodes
+\cite{ziv76}.  They begin with the Green's function for the subspace
+of dark states in the direct coupling Hamiltonian, $\mathcal{F}_s(E)$.
+This diagonal block of states is partitioned into a single doorway
+state, $\ket{\ell}$, and a new subspace of dark states, which
+determine the doorway-coupling Hamiltonian.  The Green's function,
+$\mathcal{G}_{\ell}(E)$, for the doorway$\sim$dark block is determined
+by $\mathcal{F}_s(E)$:
 \begin{equation}
   \label{eq:green-doorway}
   \mathcal{F}_s(E) = V_{s\ell}^2 \; \mathcal{G}_{\ell}(E) - i \, \Gamma_s / 2,
 \end{equation}
-where $i \, \Gamma_s / 2$ is an energy-independent term arising from
-the width of the bright state, and $V_{s\ell}$ is the
-bright$\sim$doorway matrix element.  The bright state is not
-involved in the transformation from direct to doorway-coupling
-Hamiltonians, thus it is identical in both models. 
+where $i \, \Gamma_s / 2$ is the width of the bright state, and
+$V_{s\ell}$ is the bright$\sim$doorway matrix element.  The bright
+state is not involved in the transformation from direct to
+doorway-coupling Hamiltonians, thus the bright basis state is
+identical in both models.
 
-Aside from a constant offset, the function $Im[\mathcal{G}_{\ell}(E)]$
-is proportional to the interaction density spectrum
-$Im[\mathcal{F}_s(E)]$, just as the function $Im[\mathcal{G}_s(E)]$ is
-proportional to the absorption spectrum.  This illustrates clearly
-that \emph{the problem of deriving a doorway-coupling Hamiltonian from
-  a direct-coupling Hamiltonian is, in essence, identical to the
-  problem of deriving a direct-coupling Hamiltonian from the
-  spectrum}.  In both cases, our task is to create, from a diagonal
-set of states, a new basis in which a single state carries all
-oscillator strength.
+Aside from a constant offset, the function,
+$Im[\mathcal{G}_{\ell}(E)]$, is proportional to the interaction
+density spectrum, $Im[\mathcal{F}_s(E)]$, just as the function,
+$Im[\mathcal{G}_s(E)]$, is proportional to the absorption spectrum.
+This illustrates clearly that \emph{the problem of deriving a
+  doorway-coupling Hamiltonian from a direct-coupling Hamiltonian is,
+  in essence, identical to the problem of deriving a direct-coupling
+  Hamiltonian from the spectrum}.  In both cases, our task is to
+create, from a diagonal set of states, a new basis in which a single
+state carries all oscillator strength.
 
 Following Cable and Rhodes, we proceed by rewriting equations
 \ref{eq:green-subspace} to \ref{eq:bse-continuous} for the
@@ -463,17 +465,17 @@ density spectrum for coupling to the bright state.  Using equation
 We have derived all desired properties of the doorway-coupling
 Hamiltonian for the continuous case.  At this point, it is clear that
 one could, in principle, solve the system for a second or third
-consecutive doorway.  However, we choose to focus only on the single
+tier doorway.  However, we choose to focus only on the single
 doorway-coupled Hamiltonian because that model is most readily
 applicable to several experimental spectra.
 
 In the discrete case, a doorway-coupling Hamiltonian may be derived
 from the direct-coupling Hamiltonian by applying the LKL deconvolution
-procedure recursively to the diagonal block of dark states.  The
-deconvolution algorithm de-diagonalizes this block by projecting out a
-single state that contains all coupling to the bright state.  Dark
-state energies and squared bright$\sim$dark matrix elements from the
-direct-coupling Hamiltonian replace spectral frequencies and
+procedure recursively to the pre-diagonalized block of dark states.
+The deconvolution algorithm de-diagonalizes this block by projecting
+out a single state that contains all coupling to the bright state.
+Dark state energies and squared bright$\sim$dark matrix elements from
+the direct-coupling Hamiltonian replace spectral frequencies and
 intensities as input to the algorithm.  The doorway state energy is
 the first moment of the distribution of $\lbrace H_{sm}^2 \rbrace$ in
 the direct-coupling Hamiltonian,
@@ -497,20 +499,21 @@ energies, $\lbrace E_n \rbrace$, by substitution into
   \right ]^{-1}.
 \end{equation}
 The bright$\sim$doorway matrix element may be determined by
-considering the properties of the direct-coupling Hamiltonian.  Since
-the quantity $\sum_m H_{sm}^2$ is invariant to the choice of basis,
-and since the bright state is coupled exclusively to the doorway state
-in this model Hamiltonian, it follows that
+considering the properties of the direct-coupling Hamiltonian.  The
+quantity $\sum_m H_{sm}^2$ is invariant matrix rotations, and thus is
+conserved for any basis set that includes a single bright state
+\cite{lehmann91}.  Since the bright state is coupled exclusively to
+the doorway state in this model Hamiltonian, it follows that
 \begin{equation}
   \label{eq:doorway-me}
   H_{s\ell}^2 = \sum H_{sm}^2.
 \end{equation}
-The four equations above allow the calculation of all parameters in
+The four equations above allow calculation of all parameters in
 the doorway-coupling Hamiltonian.
 
 The key parameters of the doorway-coupling model Hamiltonian ($E_s$,
 $H_{s\ell}$, and $E_{\ell}$) may be written directly in terms of the
-moments of the absorption spectrum.  This allows them to be calculated
+moments of the absorption spectrum.  This allows them to be derived
 directly from the absorption spectrum without deconvolution.  Equation
 \ref{eq:bse-discrete} equates the bright state energy and the first
 moment (center of gravity) of the absorption spectrum.  The second
@@ -529,9 +532,8 @@ absorption spectrum.  In the discrete formulation, this is
                 {{\displaystyle \sum_i I_i \times (\nu_i - E_s)^2}}.
 \end{equation}
 Table \ref{table:moments} summarizes the relationship between the
-moments of the absorption spectrum and the parameters of the
-doorway-coupling Hamiltonian for both the continuous and discrete
-formulations.
+moments of the spectrum and the parameters of the doorway-coupling
+Hamiltonian for both the continuous and discrete formulations.
 
 \begin{table}
   \caption{Key parameters of the doorway-coupling model Hamiltonian 
@@ -579,18 +581,18 @@ deconvolution to form a direct-coupling Hamiltonian.  We include the
 original spectrum along with the zero-order energies to illustrate the
 level trapping phenomenon.  Two eigenstates in the spectrum are nearly
 degenerate at about 15,000 cm$^{-1}$, trapping one of the zero-order
-dark states in the narrow energy range between them.  The results of
-an extended deconvolution to form a doorway-coupling Hamiltonian are
-shown in Figure \ref{fig:smalley-doorway}.  This figure illustrates
-that, in the doorway-coupling model Hamiltonian, the combined set of
-zero-order energies plus the bright state energy are trapped between
-the eigenstates of the spectrum.  
+dark states in the narrow energy range between these two eigenstates.
+The results of an extended deconvolution to form a doorway-coupling
+Hamiltonian are shown in Figure \ref{fig:smalley-doorway}.  This
+figure illustrates that, in the doorway-coupling model Hamiltonian,
+the combined set of zero-order energies plus the bright state energy
+are trapped between the eigenstates of the spectrum.
 
 \begin{figure}
   \caption{Thick vertical lines: Dark basis state energies and matrix
-    elements obtained by discrete LKL deconvolution of a portion of the
-    \ce{NO2} spectrum reported by Smalley \emph{et. al.}
-    \cite{smalley75}.  The bright state energy obtained from
+    elements obtained by discrete LKL deconvolution of a portion of
+    the \ce{NO2} spectrum reported by Smalley \emph{et. al.}
+    \cite{smalley75}.  The single bright state energy obtained from
     deconvolution is displayed as a vertical line in the negative
     direction.  The original absorption spectrum is shown as a set of
     gaussian lineshapes superimposed on the deconvolution results.}
@@ -606,7 +608,7 @@ the eigenstates of the spectrum.
     \cite{smalley75}.  The bright state energy obtained from the first
     stage of deconvolution is displayed as a dashed vertical line in
     the positive direction, scaled to the bright$\sim$doorway matrix
-    element.  The energy of the doorway state is displayed as a
+    element.  The energy of the single doorway state is displayed as a
     vertical line in the negative direction.  The original absorption
     spectrum is shown as a set of Gaussian lineshapes superimposed on
     the deconvolution results.  Note that the energies for the
@@ -636,11 +638,11 @@ as the $N$ dark states of the direct-coupling Hamiltonian.
 
 We note in passing that doorway-coupling models with two or more
 successive doorway states do not share this property.  They require a
-change of basis to bring them into the ``arrowhead'' form of the
-direct-coupling Hamiltonian.  In this respect, the doorway-coupling
-Hamiltonian with a single doorway state is unique among the set of
-doorway-coupling Hamiltonians in the spectroscopic channel basis of
-Ziv and Rhodes.
+change of basis to bring them into the %``arrowhead''
+form of the direct-coupling Hamiltonian.  In this respect, the
+doorway-coupling Hamiltonian with a single doorway state is unique
+among the set of doorway-coupling Hamiltonians in the spectroscopic
+channel basis of Ziv and Rhodes.
 
 To compare the discrete and continuous formulations, we have used the
 methods detailed by Cable and Rhodes to re-evaluate the interaction
@@ -654,8 +656,9 @@ of principal value integrals.
   \caption{Interaction density spectrum for coupling to the doorway
     state, computed from a portion of the \ce{NO2} spectrum reported
     by Smalley \emph{et. al.}  \cite{smalley75}.  These results are in
-    agreement with those of Cable and Rhodes to a factor of
-    proportionality (compare to their Figure 11) \cite{cable80}. }
+    agreement with those of Cable and Rhodes 
+    % to a factor of proportionality 
+    (compare to their Figure 11) \cite{cable80}. }
   \label{fig:ids}
   \centering
   %\includegraphics[width=6in]{smalley-absorption.png}
@@ -676,7 +679,10 @@ the Green's function derived from the absorption spectrum.
     deconvolution results for the same spectrum.  The dark state
     energies and squared matrix elements in the discrete formulation
     correspond to the peaks of the interaction density spectrum in the
-    continuous formulation.}
+    continuous formulation. The rising wings of the interaction
+    density spectrum arise from the nonzero tails of the Lorentzian
+    peaks, which cause the inverse of the Green's function to
+    accumulate at the edges of the computed spectrum.}
   \label{fig:compare-dark}
   \centering
   \includegraphics[width=6in]{smalley-compare-fwhm1.png}
@@ -687,7 +693,7 @@ a continuous deconvolution of unresolved, homogeneously broadened
 spectral lines will have the correct functional form, although some
 peaks may remain unresolved in the resulting interaction density
 spectrum.  Thus, for a spectrum with homogeneous width $\gamma$, the
-interaction density spectrum $\mathcal{F}(E)$ for the doorway state is
+interaction density spectrum, $\mathcal{F}(E)$, for the doorway state is
 equal to
 \begin{equation}
   \mathcal{F}_{\ell}(E) = 
@@ -709,13 +715,16 @@ Green's function to accumulate at the edges of the computed spectrum.
     broadened lineshapes of 6 cm$^{-1}$ fwhm, corresponding to $1/2$
     the average level spacing of the spectrum.  The continuous
     deconvolution result is consistent with the discrete result to a
-    resolution of 6 cm$^{-1}$.  }
+    resolution of 6 cm$^{-1}$.  The rising wings of the interaction
+    density spectrum arise from the nonzero tails of the Lorentzian
+    peaks, which cause the inverse of the Green's function to
+    accumulate at the edges of the computed spectrum.}
   \label{fig:broadened}
   \centering
   \includegraphics[width=6in]{smalley-compare-fwhm6.png}
 \end{figure}
 
-In the limit of heterogeneous broadening, the continuous form of the
+In the limit of inhomogeneous broadening, the continuous form of the
 deconvolution fails.  Gaussian lineshapes do not have the correct
 functional form for solutions to the Green's function of equation
 \ref{eq:greens-function}, and a Hilbert transformation of the spectrum
@@ -860,7 +869,7 @@ presumably result from integration of the interaction density spectrum
 \end{figure}
 
 The most complete description of the doorway level in $3^3_0K^1_0$ is
-given by Mishra \emph{et. al.}, who used the complimentary
+given by Mishra \emph{et. al.}, who used the complementary
 spectroscopic techniques of LIF and SEELEM to record the spectrum of
 long-lived states coupled weakly to $S_1$ \cite{mishra04}.  To analyze
 this local $T_3$ perturber, they constructed reduced term value plots
@@ -889,7 +898,7 @@ energies inferred from the spectrum.
     transitions.  Bottom: $f$-symmetry basis state energies obtained
     from Q-branch transitions. The deperturbed energies from
     deconvolution lie between the nominal $S_1$ and $T_3$ eigenstate
-    energies inferred from the spectrum.}
+    energies inferred from the spectrum, as they must.}
   \label{fig:ryan-comparison}
   \centering
   \includegraphics[width=6.5in]{ryan-comparison-r.png}

@@ -33,23 +33,23 @@
 
 \section{Introduction}
 
-The traditional basis set for intersystem crossing is diagonal in
-``brightness.'' For the first excited state of closed-shell molecules,
-it typically consists of a singlet bright state coupled directly to
-many triplet dark states. This type of basis reflects the response of
-the system to excitation by a photon, and is useful for understanding
-systems in both the large molecule and small molecule limit. In the
-small molecule limit, experimental results may often be deperturbed
-explicitly due to the small number of interacting states. In the large
-molecule limit, many states are involved in the interaction, and
-analysis focuses on properties of the \emph{ensemble} of dark states
-rather than the deperturbation of individual states.  As experimental
-techniques evolve, the dividing line between small and large molecules
-is pushed back, expanding the domain of complete deperturbation and
-determinism.
+The traditional basis set for describing intersystem crossing is
+diagonal in ``brightness.'' For the first excited state of
+closed-shell molecules, the basis set typically consists of a singlet
+bright state coupled directly to many triplet dark states. This type
+of basis reflects the response of the system to excitation by a
+photon, and is useful for understanding systems in both the large
+molecule and small molecule limits. In the small molecule limit,
+experimental results may often be deperturbed explicitly due to the
+small number of interacting states. In the large molecule limit, many
+states are involved in the interaction, and analysis focuses on
+properties of the \emph{ensemble} of dark states rather than the
+deperturbation of individual states.  As experimental techniques
+evolve, the dividing line between small and large molecules is pushed
+back, expanding the domain of complete deperturbation and determinism.
 
-In the intermediate case between the large and small molecule limits,
-a few dark states may mediate the coupling between a bright state and
+In the case intermediate between the large and small molecule limits,
+a few special dark states may mediate the coupling between one bright state and
 the remaining ensemble of dark states. When this happens, the directly
 observable spectrum and the inferred dynamics of the system depend on
 both the ensemble properties of the bath of dark states and the
@@ -84,13 +84,16 @@ to a single doorway basis state $\ket{\ell}$ by a spin-orbit matrix
 element $H_{s \ell}$. The doorway basis state is, in turn, connected
 to a block of prediagonalized dark states $\lbrace \ket{m} \rbrace$ by
 a vector of matrix elements $\lbrace H_{\ell m} \rbrace$. Such a
-Hamiltonian is shown in figure~\ref{fig:matrix-doorway}.
+Hamiltonian is shown in Figure~\ref{fig:matrix-doorway}.  The labels
+$s$, $\ell$, and $m$ used here are chosen to be consistent with those
+used in the book \emph{Energy Dissipation is Molecular Systems}, by
+Tramer, Jungen, and Lahmani \cite{tramer05}.
 
 \begin{figure}
   \caption{Schematic of a doorway-mediated Hamiltonian. A single
-    bright basis state $\ket{s}$ is connected to a single doorway
-    basis state $\ket{\ell}$, which is, in turn, connected to a block
-    of prediagonalized dark states $\lbrace \ket{m} \rbrace$.}
+    bright basis state, $\ket{s}$, is connected to a single doorway
+    basis state, $\ket{\ell}$, which is, in turn, connected to a block
+    of prediagonalized dark states, $\lbrace \ket{m} \rbrace$.}
   \label{fig:matrix-doorway}
   \begin{equation*}
     \begin{bmatrix}
@@ -106,14 +109,14 @@ Hamiltonian is shown in figure~\ref{fig:matrix-doorway}.
 
 This form of the Hamiltonian illustrates the dynamics of the system,
 understood in terms of sequential intersystem crossing into a
-heirarchy of coupled states. However, other patterns of interaction
+hierarchy of coupled states. However, other patterns of interaction
 between the bright state and the dark states are not immediately
 apparent unless we do some more work.
 
 A crucial quantity from the standpoint of dynamics is the fractional
 bright state character of each eigenstate of the system. This
-determines the radiative lifetime and absorption linestrength of
-states observed in the spectrum. We examine this property for each
+determines the radiative lifetime and absorption linestrength of each
+state observed in the spectrum. We examine this property for each
 arrangement, and draw parallels between the results.
 
 \subsection{The mixed basis}
@@ -125,10 +128,10 @@ bright state character among the dark states is to prediagonalize the
 interaction between the bright state and the doorway state.  This
 creates a new basis of ``mixed'' bright and doorway basis states,
 which we refer to as the mixed basis.  From the mixed basis, we use
-perturbaion theory to evaluate intensity lending among the dark
+perturbaion theory to evaluate intensity-lending among the dark
 states.  
 % Does this even make sense? Am I ruining this section?
-Due to this use of perturbation theory in the second step, we consider
+Due to this use of perturbation theory in the second step, we approach
 the mixed basis using a working assumption of a system in the strong
 coupling limit, defined below.
 
@@ -136,9 +139,9 @@ The strong coupling limit of DMISC is characterized by a strong
 doorway$\sim$bright state interaction compared to the average
 doorway$\sim$dark state interaction. As a first step, the problem is
 recast from a basis that contains one bright state and one doorway
-state to a basis where the bright$\sim$doorway interaction is
-diagonal.  The mixed bright and mixed doorway basis states are defined
-as
+state to a basis that diagonalizes the bright$\sim$doorway
+interaction.  The mixed bright and mixed doorway basis states are
+defined as
 \begin{equation}
   \label{eq:mixed-basis-def}
   \begin{split}
@@ -176,10 +179,11 @@ Two rows of matrix elements connect the mixed states to the dark
 states, suggesting two separate direct-coupled systems. However,
 \textbf{correlations between the two rows of matrix elements make the
   distribution of fractional bright state character for a
-  doorway-mediated system different from that of two direct-coupled
-  systems.}  The matrix elements $H_{\ts m}$ and $H_{\tl m}$ can be
-written in terms of the zero-order matrix element $H_{\ell m}$ and the
-$\ket{s}$, $\ket{\ell}$ mixing amplitude $\alpha$:
+  doorway-mediated system different from that of two independent
+  direct-coupled systems.}  The matrix elements $H_{\ts m}$ and
+$H_{\tl m}$ can be written in terms of the zero-order matrix element
+$H_{\ell m}$ and the $\ket{s}$, $\ket{\ell}$ mixing amplitude
+$\alpha$:
 \begin{equation}
   \begin{split}
     H_{\ts m} &= + \alpha H_{\ell m}\\
@@ -213,15 +217,15 @@ The fractional bright state character of $\ket{M}$ may be written as
    - \frac{2}{\Delta E_{m \ts} \Delta E_{m \tl}}
    \biggr \rbrace.
 \end{equation}
-The three terms in this equation correspond to intensity lending
-through the mixed bright state $\ket{\ts}$, the mixed doorway state
-$\ket{\tl}$, and a cross term.  If this cross term is neglected, the
-fractional bright state character of dark states behaves as \emph{two
-  separate direct-coupled systems of equal coupling strength}, each
-with an effective matrix element $\alpha (1-\alpha^2)^{1/2} H_{\ell
-  m}$. The square terms dominate the intensity equation when $\Delta
-E_{m \tl}$ becomes very large compared to $\Delta E_{m \ts}$ or
-\emph{vice versa}.
+The three terms in the braces of Equation \ref{eq:mixed-basis-int}
+correspond to intensity lending through the mixed bright state
+$\ket{\ts}$, the mixed doorway state $\ket{\tl}$, and a cross term.
+If this cross term is neglected, the fractional bright state character
+of dark states behaves as \emph{two separate direct-coupled systems of
+  equal coupling strength}, each with an effective matrix element
+$\alpha (1-\alpha^2)^{1/2} H_{\ell m}$. One of the square terms
+dominates the intensity equation when $\Delta E_{m \tl}$ becomes very
+large compared to $\Delta E_{m \ts}$ or \emph{vice versa}.
 
 The cross term is important when the energy difference
 between the mixed basis states $\Delta E_{\ts \tl}$ is comparable in
@@ -268,8 +272,8 @@ expression for fractional bright state character, equation
     arising from three terms: borrowing through the mixed basis state
     $\ket{\ts}$, borrowing through the other mixed basis state
     $\ket{\tl}$, and a cross term.  Also shown is the ratio of the
-    cross term to the square terms, exhibiting a maximum at the energy
-    midpoint between $E_{\ts}$ and $E_{\tl}$.}
+    cross term to the square terms, which exhibits a maximum at the
+    energy midpoint between $E_{\ts}$ and $E_{\tl}$.}
   \label{fig:local-cross-term}
   \includegraphics[width=8in, angle=90]{local-doorway-terms.png}
 \end{figure}
@@ -332,12 +336,13 @@ of
 \end{equation}
 
 To compare this expression with the mixed basis results, one
-adjustment must be made. Since we are evaluating dark state
+adjustment must be made. Since we are evaluating nominal dark state
 intensities in the vicinity of $E_s$, $\lvert \Delta E_{ms} \rvert \ll
 \lvert \Delta E_{s\ell} \rvert$, and $\lvert \Delta E_{m\ell} \rvert
 \approx \lvert \Delta E_{s\ell} \rvert$. In light of this
 approximation, the fractional bright state character becomes
 \begin{equation}\label{eq:ebsa-bright-int-approx}
+  \lvert \braket{M|s} \rvert^2 = 
   \frac{H_{s\ell}^2 H_{\ell m}^2}{\Delta E_{ms}^2 \Delta E_{s\ell}^2} \approx 
   \alpha^2 H_{\ell m}^2 \frac{1}{\Delta E_{ms}^2},
 \end{equation}
@@ -345,6 +350,7 @@ since $\alpha \approx H_{s\ell} / \Delta E_{s\ell}$.
 Using this, we look for an equivalence with the mixed basis intensity
 formula, equation \ref{eq:mixed-basis-int}:
 \begin{equation*}
+  \lvert \braket{M|s} \rvert^2 = 
   \alpha^2 (1-\alpha^2) H_{\ell m}^2 
    \biggl \lbrace 
    \frac{1}{\Delta E_{m \ts}^2} +\frac{1}{\Delta E_{m \tl}^2} 
@@ -363,6 +369,7 @@ the mixed basis results are appropriate:
 With these approximations, the mixed basis expression becomes:
 \begin{equation}
   \label{eq:mixed-basis-int-approx}
+  \lvert \braket{M|s} \rvert^2 \approx
   \alpha^2 H_{\ell m}^2 
    \biggl \lbrace 
    \frac{1}{\Delta E_{ms}^2} +\frac{1}{\Delta E_{m\ell}^2} 
@@ -370,7 +377,7 @@ With these approximations, the mixed basis expression becomes:
    \biggr \rbrace,
 \end{equation}
 and it is clear that our result for the embedded bright state
-arrangement in the vicinity of $\ket{s}$ (equation
+arrangement in the vicinity of $\ket{s}$ (Eq.
 \ref{eq:ebsa-bright-int-approx}) is equal to the square term for
 borrowing from the bright state in the mixed basis.
 
@@ -404,8 +411,8 @@ immediately,
 \end{equation}
 
 To compare the above expression with the mixed basis formulas,
-we rewrite equation \ref{eq:ebsa-inblock-int} using the
-perturbation-theoretic approximation for $C_{\ell\tm}$, $H_{\ell\tm} /
+we rewrite Eq. \ref{eq:ebsa-inblock-int} using the
+perturbation-theory approximation for $C_{\ell\tm}$, $H_{\ell\tm} /
 \Delta E_{\ell\tm}$:
 \begin{equation}
   \label{eq:ebsa-inblock-int-approx}
@@ -435,8 +442,8 @@ The consequences of the embedded bright state arrangement extend
 beyond the evaluation of systems in the weak coupling limit.  The fact
 that the Hamiltonian can be arranged to have the same form as a
 direct-coupling Hamiltonian has ramifications for eigenstate energies
-and spectral deconvolution; we discus these at length in a later
-chapter.
+and spectral deconvolution; we discus these at length in
+Chapter~3.
 
 \subsection{Formulation as a complex-energy effective
   Hamiltonian}
@@ -467,7 +474,7 @@ matrix element by the golden rule relation $\Gamma_{\ell} = 2 \pi \langle
 V_{\ell m}^2 \rangle \rho_{m}$.
 
 Results for a two-level complex-energy Hamiltonian are derived in
-detail in chapter 9 of reference [REF: Bob's book]. Following the
+detail in chapter 9 of reference \cite{field04}. Following the
 derivation therein, we rewrite the Hamiltonian as two terms:
 \begin{equation}
   \label{eq:complex-zero}
@@ -592,7 +599,7 @@ $\mathbf{H}$, only two diagonal elements remain:
 \end{equation}
 Therefore, the intensity distribution for the complex energy
 Hamiltonian is the sum of two Lorentzian functions, with energies and
-widths given by the eigenvalues of the Hamiltonian, and weigted in
+widths given by the eigenvalues of the Hamiltonian, and weighted in
 magnitude by the fractional bright state character.
 
 \begin{figure}
@@ -619,7 +626,7 @@ magnitude by the fractional bright state character.
     the energy separation of the eigenstates $\ket{S}$ and $\ket{L}$ 
     is approximately that of the zero-order states $\ket{s}$ and 
     $\ket{\ell}$.  The nominal bright eigenstate $\ket{S}$ borrows 
-    little coupling width from the dorway state, and remains narrow.
+    little coupling width from the doorway state, and remains narrow.
     In the strong coupling regime, the eigenstates are
     separated in energy by $2V_{s\ell}$ and have similar widths.}
   \label{table:complex-int-params}
@@ -636,15 +643,15 @@ magnitude by the fractional bright state character.
     \bottomrule
   \end{tabular}
 \end{table}
-Figure~\ref{fig:complex-overlaps} shows the terms of equation
+Figure~\ref{fig:complex-overlaps} shows the terms of Eq.
 \ref{eq:greens-func} for each of the three coupling regimes. In order
 to show details of the intensity distribution for each regime, the
 scale of the axes was adjusted for each subplot. Although the scales
 were chosen carefully to show the general trends in the distributions,
-the plots cannot simultaneously and clearly communicate the
-dramatic changes in $\delta \epsilon_{SL}$ and $\Gamma_S$ as the
-magnitude of $V_{s\ell}$ changes. For this reason, these quantities
-are listed in table~\ref{table:complex-int-params}.
+the plots cannot simultaneously and clearly communicate the dramatic
+changes in $\delta \epsilon_{SL}$ and $\Gamma_S$ as the magnitude of
+$V_{s\ell}$ changes. For this reason, these quantities are listed in
+table~\ref{table:complex-int-params}.
 
 \begin{figure}
   \caption{A comparison of the intensity distribution results from
@@ -697,11 +704,11 @@ state intensity distribution was presented graphically for the weak,
 intermediate, and strong coupling regimes. The distributions derived
 from diagonalizing the $2 \times 2$ complex energy Hamiltonian were
 shown to have the same trends as those obtained using perturbation
-theory for the mixed basis and the embedded bright state picture.
-Like the results from the embedded bright state arrangement, the
+theory for the mixed basis and the embedded bright state picture.  As
+for the results from the embedded bright state arrangement, the
 complex energy Hamiltonian formula does not include a cross term in
 the distribution of fractional bright state character.  We will return
-to the complex energy formulation later in the chapter when we
+to the complex energy formulation later in Section 2.6, when we
 consider the local doorway plus direct coupling model.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1143,7 +1150,7 @@ equation, we have also made the approximation that $(1-\alpha^2)
 \approx 1$.  This approximation is fairly good (5\% error) if
 $\ket{s}$ and $\ket{\ell}$ are mixed to less than 25\%.  The SEELEM
 intensity distribution above is equivalent to the weak coupling
-formula in section\ref{sec:bright-state-term}.
+formula in section~\ref{sec:bright-state-term}.
 
 If a spectrum is observed in the vicinity of the bright state and a
 distant doorway model is assumed, the question can be asked: what is
@@ -1188,14 +1195,15 @@ increase in $H_{s\ell}$ or a decrease in $\langle H_{\ell m}
 the spectrum.
 
 If the spectrum has been observed within a certain range of the bright
-state and the nominal doorway state has not been observed in LIF, an
-upper limit can be placed on $\alpha^2$, the fractional bright state
-character of the nominal doorway state $\ket{L}$. At small values
-of $\alpha^2$, the doorway state will be detectable in SEELEM but not
-in LIF.  We evaluate the SEELEM detection probability in the weak
-coupling regime, recalling that, under these circumstances, any doorway
-contribution to the SEELEM intensity has the same form as the bright
-state contribution.  The SEELEM detection probability scales as
+state and the nominal doorway state has not been observed in the LIF
+spectrum, an upper limit can be placed on $\alpha^2$, the fractional
+bright state character of the nominal doorway state $\ket{L}$. At
+small values of $\alpha^2$, the doorway state will be detectable in
+SEELEM but not in LIF.  We evaluate the SEELEM detection probability
+in the weak coupling regime, recalling that, under these
+circumstances, any doorway contribution to the SEELEM intensity has
+the same form as the bright state contribution.  The SEELEM detection
+probability scales as
 \begin{equation}
   \alpha^4 \, exp(-R_m \alpha^2),
 \end{equation}
@@ -1283,12 +1291,12 @@ $H_{\ell m}$, and $H_{sm}$ to odd powers, so the overall sign of this
 term is determined by the product of these three quantities.
 
 The quantity $\alpha$ is determined by only the zero-order bright and
-doorway basis states; its phase and magnitude are the same
-regardless of the identity of the dark state of interest, $\ket{m}$.
-The matrix elements $H_{s m}$ and $H_{\ell m}$ are different for
-each dark state, thus the sign of the final term in
-equation~\ref{eq:lddm-total-int} for one dark state compared to
-another is determined by the relative signs of the matrix elements.
+doorway basis states; its phase and magnitude are the same regardless
+of the identity of the dark state of interest, $\ket{m}$.  The matrix
+elements $H_{s m}$ and $H_{\ell m}$ are different for each dark state,
+thus the sign of the final term in equation~\ref{eq:lddm-total-int}
+for one dark state compared to another is determined by the relative
+signs of the matrix elements $H_{s m}$ and $H_{\ell m}$.
 
 The question becomes: are the phases of the matrix elements $H_{s m}$
 and $H_{\ell m}$ correlated?  To address this question, we consider
@@ -1340,7 +1348,8 @@ decrease of the difference in coupling widths $\delta \epsilon_{SL}$
 pushes the system toward the strong coupling regime, defined by the
 inequality $V_{s\ell} \gg \Gamma_\ell$.
 
-% Write a section summary
+% Write a section summary 
+% More discussion, figure?
 
 \section{The double doorway model}
 \label{sec:model-double}
@@ -1375,7 +1384,7 @@ Hamiltonian is shown in figure \ref{fig:matrix-double}.
 
 
 Our first step in deriving the intensity distribution is to remove the
-distant doorway state $\ket{\ell'}$ from the Hamiltonian using a Van Vleck
+distant doorway state $\ket{\ell'}$ from the Hamiltonian using a van Vleck
 transformation.  This leads to the following nonzero diagonal
 corrections for the bright state and dark states:
 \begin{align}
@@ -1423,13 +1432,13 @@ After this transformation,
          \frac{H_{1 \ell'}H_{3 \ell'}}{\Delta E_{1 3 \ell'}} \\
     & & & \frac{H_{2 \ell'}^2}{\Delta E_{2 \ell'}} &
           \frac{ H_{2 \ell'}H_{3 \ell'}}{ \Delta E_{2 3 \ell'}} \\
-    & & & & \frac{H_{3 \ell'}^2}{ \Delta E_{3 ell'}} \\
+    & & & & \frac{H_{3 \ell'}^2}{ \Delta E_{3 \ell'}} \\
     & & & & & \ddots \\
     \end{bmatrix},
   \end{split}
 \end{equation}
 where the energy denominators with three subscript labels correspond
-to the Van Vleck energy denominators
+to the van Vleck energy denominators
 \begin{equation}
   \frac{1}{\Delta E_{a b c}} = 
   \frac{\bar{E}_{a b} - E_c}
@@ -1467,7 +1476,7 @@ where the distant doorway coupling term $\lvert \braket{M|s}_{distant}
   \left \lbrace
     \frac{(1 - \alpha^2)}{\Delta E_{\ts m}} +
     \frac{\alpha^2}{\Delta E_{\tl m}}
-  \right \rbrace^2
+  \right \rbrace^2.
 \end{equation}
 
 Interference effects arising from the local$\sim$distant doorway cross
